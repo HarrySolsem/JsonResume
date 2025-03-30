@@ -1,0 +1,906 @@
+﻿{
+  "basics": {
+    "name": "Harry Solsem",
+    "label": "Ledelse | ISO27001 | Teamleder | Prosjektleder | Digital produktutvikling | Endringsledelse | Virksomhetsarkitekt",
+    "image": "",
+    "email": "harry.solsem@solsem.no",
+    "phone": "+47 91 60 46 00",
+    "url": "https://harry.solsem.no",
+    "summary": "Med over 30 års ledererfaring, erfaring fra tekniske og administrative stillinger i selskaper som DNB, Riverty, Neonomics og Sharecat Solutions, har jeg hatt ansvar for teamledelse, produktutvikling og IT-prosjekter. Jeg har ledet team med opptil 50 medarbeidere, med fullt ansvar for personal, budsjett og resultater.",
+    "location": {
+      "address": "Teglverksfaret 16",
+      "postalCode": "1405",
+      "city": "Langhus",
+      "countryCode": "NO",
+      "region": "Akershus"
+    },
+    "profiles": [
+      {
+        "network": "Linkedin",
+        "username": "harrysolsem",
+        "url": "https://wwww.linkedin.com/in/harrysolsem"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Prosperastiftelsen",
+      "position": "Prosjektleder",
+      "website": "https://www.prosperastiftelsen.no",
+      "startDate": "2024-10-01",
+      "summary": "Innleid som prosjektleder hos Prosperastiftelsen. Her har jeg oppgaver innen ledelse av prosjektteamet, planlegging, prioritere og beslutte, overordnet ansvar for kvalitet på leveransen, sørge for at tidsfrister holdes og forankring hos prosjektmottaker. I denne stillingen benytter jeg aktivt lærdom fra mine sertifiseringer innen Prosci endringsledelse og Prince2 prosjektmetodikk i blandet en liten dose erfaring fra Lean og Agile.",
+      "highlights": []
+    },
+    {
+      "name": "Riverty",
+      "position": "Avdelingsleder",
+      "website": "https://www.riverty.com",
+      "startDate": "2023-09-01",
+      "summary": "Har jobbet aktivt med å sette fokus på god og effektiv ledelse av et mangfold av ingeniørressurser. I rollen ledet jeg 5 direkterapporterende teamledere (personalansvar), i tillegg til å ha 15 ingeniører som har rapporterte direkte til meg. Jeg har hatt overordnet ansvar for 50 kollegaer når det gjelder felles kultur, sosiale aktiviteter og utforming av det fysiske arbeidsmiljøet. Jeg har hatt som ansvar å utvikle avdelingen med et mål om å bli en magnet for programvareingeniører. Hovedansvar for å rekruttere programvareingeniører med rett kompetanse til avdelingen. Jeg har meget god erfaring i å jobbe i tverrfaglige team, sammen med for eksempel People & Culture, med å rekruttere talenter til organisasjonen. Jeg har hatt hovedansvaret for onboarding og å få disse inn i tverrfaglige team som en produktiv ressurs raskest mulig. Som personalleder har jeg også hatt fokus på å skape psykologisk trygghet, det er lov å gjøre feil og det viktigste at vi lærer av det, og at vi ikke gjentar samme feil neste gang. Med utgangspunkt i mitt ansvar var mitt hovedmål at alle relevante prosesser ble omforent og ble implementert i alle Riverty Tech Hubs rundt i Europa. Riverty har avdelinger med programvareingeniører og støttefunksjoner i Oslo, Stockholm, Tallin og Berlin. Innad i Riverty har disse betegnelse som en Tech Hub. Antall ingeniører er i Oslo omtrent 50, omtrent 30 i Stockholm, omtrent 80 i Tallin og omtrent 65 i Berlin. Som leder er jeg opptatt av tilstedeværelse på kontoret, noe som har ført til betydelig økt medarbeidertilfredshet. Verktøy som her er benyttet er blant andre Microsoft Office, Atlassian Confluence (som er et verktøy for kunnskapsdeling på teamnivå).",
+      "highlights": [],
+      "endDate": "2024-05-01"
+    },
+    {
+      "name": "STOFFSKIFTEFORBUNDET",
+      "position": "Konsulent",
+      "website": "https://www.stofo.org",
+      "startDate": "2023-05-01",
+      "summary": "Konsulent som har støttet generalsekretær med strategiavklaringer, organisasjonsutvikling, rekruttering, onboarding av nye medarbeidere og forefallende administrasjonsoppgaver innen drift av forbundet.",
+      "highlights": [],
+      "endDate": "2023-05-01"
+    },
+    {
+      "name": "Neonomics",
+      "position": "Engineering Manager",
+      "website": "https://www.neonomics.io",
+      "startDate": "2021-11-01",
+      "summary": "I Neonomics, ivaretok jeg rollen som først som Teamlead og deretter Engineering Manager. Under min ledelse klarte jeg å sørge for at mine medarbeidere ble hos meg, til tross for en dynamikk rundt produktfokus. I denne rollen hadde jeg ansvar for en ledergruppe på 2 teamledere, hvor jeg hadde stort fokus på å utføre god og effektiv ledelse. Jeg har også hatt 11 ingeniører som har rapportert direkte til meg. Med mitt tilstedeværende lederskap har jeg her via direkte og via min ledergruppe sørget for at ingeniørene har følt en trygghet, i forhold til sin fremtid i Neonomics og en økt grad av psykologisk trygghet, i medarbeiderrollen. Verktøy benyttet er blant andre Microsoft Office, Atlassian Jira og Atlassian Confluence.",
+      "highlights": [],
+      "endDate": "2023-03-01"
+    },
+    {
+      "name": "Neonomics",
+      "position": "Team Lead",
+      "website": "https://www.neonomics.io",
+      "startDate": "2021-08-01",
+      "summary": "I Neonomics, ivaretok jeg rollen som først som Teamlead og deretter Engineering Manager. Under min ledelse klarte jeg å sørge for at mine medarbeidere ble hos meg, til tross for en dynamikk rundt produktfokus. I denne rollen hadde jeg ansvar for en ledergruppe på 2 teamledere, hvor jeg hadde stort fokus på å utføre god og effektiv ledelse. Jeg har også hatt 11 ingeniører som har rapportert direkte til meg. Med mitt tilstedeværende lederskap har jeg her via direkte og via min ledergruppe sørget for at ingeniørene har følt en trygghet, i forhold til sin fremtid i Neonomics og en økt grad av psykologisk trygghet, i medarbeiderrollen. Verktøy benyttet er blant andre Microsoft Office, Atlassian Jira og Atlassian Confluence.",
+      "highlights": [],
+      "endDate": "2021-11-01"
+    },
+    {
+      "name": "KPMG Norway",
+      "position": "Senior Manager",
+      "website": "https://www.kpmg.no",
+      "startDate": "2021-02-01",
+      "summary": "Konsulent innen prosjekt og endringsledelse",
+      "highlights": [],
+      "endDate": "2021-08-01"
+    },
+    {
+      "name": "DNB",
+      "position": "Prosjektleder",
+      "website": "https://www.dbn.no",
+      "startDate": "2020-05-01",
+      "summary": "Mitt bidrag har her ført til at prosjektene leverte raskere og med bedre sluttresultat for brukerne, i tillegg til økt verdi for midlene som er investert i prosjektene. Som prosjektleder i DNB avdeling IT-sikkerhet hadde jeg ansvar for 5 prosjekter og daglig ledelse av disse, rapporterte til styringsgruppene og fulgte opp leveranser og økonomi. Dette er IAM compliance prosjekt, implementasjon av DDOS-beskyttelse for et utvalg av DNB systemportefølje, økning av sikkerhetsfokus innen DNB programvarelivssyklus samt sanering av gammel felles løsning for logging. Verktøy benyttet er blant andre Microsoft Project, ServiceNow og Microsoft Office.",
+      "highlights": [],
+      "endDate": "2021-01-01"
+    },
+    {
+      "name": "DNB",
+      "position": "Teknisk leder",
+      "website": "https://www.dbn.no",
+      "startDate": "2017-10-01",
+      "summary": "Har jeg bidratt til å endre arbeidsmetodikk fra å benytte fossefall i prosjekter til å benytte en smidig tilnærming ved hjelp av scrum. Jeg har hatt ansvar for å lære opp kollegaer i smidige metodikk. Dette har vært både tekniske it-ressurser og kollegaer fra andre deler av organisasjonen.",
+      "highlights": [],
+      "endDate": "2020-05-01"
+    },
+    {
+      "name": "Web Services Technology AS",
+      "position": "Plattformingeniør",
+      "website": "https://wst.no",
+      "startDate": "2015-05-01",
+      "summary": "Ansvar for definering/implementasjon og vedlikehold av CI verdikjede bestående av TeamCity og OctoDeploy. Portere Java applikasjon til C#, JavaScript, Xsl/xml.",
+      "highlights": [],
+      "endDate": "2017-09-01"
+    },
+    {
+      "name": "Sharecat Solutions AS",
+      "position": "Prosjektleder/Scrum Master/Senior programvareutvikler",
+      "website": "https://home.sharecat.com/",
+      "startDate": "2013-02-01",
+      "summary": "Senior programvareutvikler Microsoft stack, scrum master og agile coach ved innføring av scrum som prosjektgjennomføringsmetodikk. Prosjektleder Prince2 leveranseprosjekt",
+      "highlights": [],
+      "endDate": "2015-04-01"
+    },
+    {
+      "name": "Ventelo",
+      "position": "Teknisk prosjektleder/Service Delivery Manager/Software Engineer",
+      "website": "https://www.ventelo.no",
+      "startDate": "2010-03-01",
+      "summary": "Utvikle støtte- og front-end systemer. Dette inkluderer web-applikasjoner som benyttes av Ventelos kunder for å administrere sitt kundeforhold/abonnement hos Ventelo. Pluss  videreutvikling av Ventelos interne crm-systemer. Ventelo benytter SOA, og utvikler ved bruk av smidige metoder og continuous integration.  C#, Asp.net, MS SQL, TDD, FakeItEasy.",
+      "highlights": [],
+      "endDate": "2012-06-01"
+    },
+    {
+      "name": "Engineering Systems",
+      "position": "Programvareutvikler",
+      "website": "https://www.once.no/",
+      "startDate": "2008-09-01",
+      "summary": "Utvikle nye applikasjoner i C#, Windows Sharepoint Services pluss videreutvikle/utvide eksisterende applikasjoner.",
+      "highlights": [],
+      "endDate": "2010-03-01"
+    },
+    {
+      "name": "Comunic AS",
+      "position": "Programvareutvikler",
+      "website": "",
+      "startDate": "2008-03-01",
+      "summary": "Utvikle winforms prosjektkalkylesystem, C#, MS SQL Database.",
+      "highlights": [],
+      "endDate": "2008-08-01"
+    },
+    {
+      "name": "Umoe Mandal AS",
+      "position": "Programvareutvikler",
+      "website": "https://www.um.no",
+      "startDate": "2002-10-01",
+      "summary": "Gjennomført alle faser innen applikasjonsutvikling, kravspesifikasjon, løsningsforslag, implementasjon, utrulling, opplæring og drift. VB.Net, C#, MS Sql, Oracle.  Utvikle mellomvare for datamanipulering for dataoverføring/endring mellom Oracle Sql database - MS Sql database.",
+      "highlights": [],
+      "endDate": "2008-02-01"
+    },
+    {
+      "name": "Intershare AS",
+      "position": "Programvarekonsulent",
+      "website": "https://www.intershare.no",
+      "startDate": "2001-10-01",
+      "summary": "1. Videreutvikle firmaets programvare for administrasjon av utleie.  2. Leveranse av konsulent-timer mot firmaets kunder.   MS Visual C++, MFC, Sybase Sql Anywhere, MS Sql",
+      "highlights": [],
+      "endDate": "2002-04-01"
+    },
+    {
+      "name": "Edb Avdelingen Sør AS",
+      "position": "Edb-konsulent",
+      "website": "https://www.edbavd.no/",
+      "startDate": "1997-08-01",
+      "summary": "Konsulent med oppdrag innen brukerstøtte, drift av nettverk (Microsoft og Novell), klientkonfigurering av windows, oppsett av backuprutiner. Utvikling i Ansi C.",
+      "highlights": [],
+      "endDate": "2001-08-01"
+    },
+    {
+      "name": "Manpower AS",
+      "position": "Brukerstøtte",
+      "website": "https://www.manpower.no",
+      "startDate": "1994-08-01",
+      "summary": "Brukerstøtte windows 95, drift Token-Ring nettverk, oppsett av windowsklienter.",
+      "highlights": [],
+      "endDate": "1997-06-01"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Langhus IL Bordtennis",
+      "position": "Gruppeleder og styreleder",
+      "url": "https://www.langhusil.no",
+      "startDate": "2012-01-01",
+      "summary": "Jeg leder bordtennisgruppen i Langhus IL Allianseidrettslag",
+      "highlights": []
+    },
+    {
+      "organization": "Langhus 1405 Sameie",
+      "position": "Styremedlem",
+      "startDate": "2012-01-01",
+      "summary": "Styremedlem i sameiet",
+      "highlights": []
+    },
+    {
+      "organization": "STOFFSKIFTEFORBUNDET",
+      "position": "Forbundsstyremedlem",
+      "url": "https://stofo.no/",
+      "startDate": "2012-01-01",
+      "summary": "Styremedlem i forbundsstyret til Stoffskifteforbundet",
+      "highlights": []
+    },
+    {
+      "organization": "STOFFSKIFTEFORBUNDET",
+      "position": "Likeperson",
+      "url": "https://stofo.no/",
+      "startDate": "2012-01-01",
+      "summary": "Likeperson",
+      "highlights": []
+    },
+    {
+      "organization": "Norges Fotballforbund",
+      "position": "Dommer, dommerveileder, kursinstruktør",
+      "url": "https://fotball.no/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Dommer, dommerveileder og kursinstruktør",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Handelshøyskolen BI",
+      "area": "Bergen",
+      "studyType": "Studie på bachelornivå",
+      "startDate": "2018-01-01",
+      "gpa": "",
+      "courses": [],
+      "endDate": "2019-01-01"
+    },
+    {
+      "institution": "Universitetet i Agder (UiA)",
+      "area": "Kristiansand",
+      "studyType": "Studie på bachelornivå",
+      "startDate": "1999-01-01",
+      "gpa": "",
+      "courses": [],
+      "endDate": "2000-01-01"
+    },
+    {
+      "institution": "NHI, Norges Høyskole for Informasjonsteknologi",
+      "area": "Oslo",
+      "studyType": "Linje for administrativ databehandling",
+      "startDate": "1992-08-01",
+      "gpa": "",
+      "courses": [],
+      "endDate": "1994-05-01"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Applied TOGAF Enterprise Architecture Practitioner",
+      "date": "2024-10-01",
+      "issuer": "The Open Group",
+      "url": "https://www.credly.com/badges/3f2e9c94-582a-4b9f-ba7a-df65c303ee1b/linked_in_profile"
+    },
+    {
+      "name": "PROSCI Certified Change Practitioner",
+      "date": "2024-03-01",
+      "issuer": "PROSCI",
+      "url": "https://www.credly.com/badges/d734928d-07f3-4056-8b21-82e1e21bb0cc/linked_in_profile"
+    },
+    {
+      "name": "Product Owner",
+      "date": "2021-03-01",
+      "issuer": "Agile Lean House",
+      "url": "https://www.linkedin.com/in/harrysolsem"
+    },
+    {
+      "name": "Prince2Agile",
+      "date": "2019-01-01",
+      "issuer": "Axelos Global Best Practise",
+      "url": "https://www.linkedin.com/in/harrysolsem"
+    },
+    {
+      "name": "Prince2 Registered Practitioner",
+      "date": "2016-11-01",
+      "issuer": "APMG International",
+      "url": "https://www.linkedin.com/in/harrysolsem"
+    },
+    {
+      "name": "Prince2 Foundation",
+      "date": "2014-08-01",
+      "issuer": "Adding Value Consulting AB",
+      "url": "https://www.linkedin.com/in/harrysolsem"
+    },
+    {
+      "name": "ITIL Foundation",
+      "date": "2012-11-01",
+      "issuer": "PeopleCert Group",
+      "url": "https://www.linkedin.com/in/harrysolsem"
+    },
+    {
+      "name": "Certified Scrum Master",
+      "date": "2010-01-01",
+      "issuer": "Scrum Alliance",
+      "url": "https://www.linkedin.com/in/harrysolsem"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Mangfold og inkludering",
+      "level": "",
+      "keywords": [ "mangfold", "inkludering", "diversitet", "likestilling", "kulturforståelse" ]
+    },
+    {
+      "name": "Beslutninger",
+      "level": "",
+      "keywords": [ "beslutningstaking", "analyse", "vurdering", "prioritering", "problemløsning" ]
+    },
+    {
+      "name": "Team-motivasjon",
+      "level": "",
+      "keywords": [ "motivasjon", "teambygging", "engasjement", "anerkjennelse", "inspirasjon" ]
+    },
+    {
+      "name": "Kommunikasjon",
+      "level": "",
+      "keywords": [ "formidling", "presentasjon", "dialog", "tilbakemelding", "lytting" ]
+    },
+    {
+      "name": "Teamledelse",
+      "level": "",
+      "keywords": [ "teamutvikling", "målstyring", "delegering", "koordinering", "oppfølging" ]
+    },
+    {
+      "name": "Utvikling av personale",
+      "level": "",
+      "keywords": [ "kompetanseutvikling", "mentoring", "karriereplanlegging", "talentutvikling", "læring" ]
+    },
+    {
+      "name": "Virksomhetsarkitektur",
+      "level": "",
+      "keywords": [ "forretningsarkitektur", "systemintegrasjon", "IT-strategi", "arkitekturprinsipper", "teknologiportefølje" ]
+    },
+    {
+      "name": "Teambygging",
+      "level": "",
+      "keywords": [ "samarbeid", "teamkultur", "gruppedynamikk", "tillit", "fellesskap" ]
+    },
+    {
+      "name": "Prosjektledelse",
+      "level": "",
+      "keywords": [ "prosjektstyring", "ressursplanlegging", "milepælsplan", "risikoanalyse", "interessenthåndtering" ]
+    },
+    {
+      "name": "Mellommenneskelig kommunikasjon",
+      "level": "",
+      "keywords": [ "relasjonskompetanse", "konflikthåndtering", "empatisk kommunikasjon", "aktiv lytting", "feedback" ]
+    },
+    {
+      "name": "Sustainable Development",
+      "level": "",
+      "keywords": [ "sustainability", "green development", "CSR", "environmental management", "social responsibility" ]
+    },
+    {
+      "name": "Managing Project Budgets",
+      "level": "",
+      "keywords": [ "budget planning", "cost control", "financial monitoring", "resource allocation", "ROI analysis" ]
+    },
+    {
+      "name": "Engineering Leadership",
+      "level": "",
+      "keywords": [ "technical leadership", "engineering management", "technical strategy", "innovation management", "R&D leadership" ]
+    },
+    {
+      "name": "System Development",
+      "level": "",
+      "keywords": [ "systemdesign", "systemarkitektur", "utviklingsmetodikk", "integrasjon", "versjonshåndtering" ]
+    },
+    {
+      "name": "Personutvikling",
+      "level": "",
+      "keywords": [ "selvutvikling", "ferdighetsutvikling", "karriereveiledning", "selvledelse", "kompetanseheving" ]
+    },
+    {
+      "name": "Datavitenskap",
+      "level": "",
+      "keywords": [ "statistikk", "maskinlæring", "dataanalyse", "algoritmer", "prediktiv modellering" ]
+    },
+    {
+      "name": "Agile Coaching",
+      "level": "",
+      "keywords": [ "agile facilitation", "scrum master", "team development", "continuous improvement", "sprint planning" ]
+    },
+    {
+      "name": "Service-Now",
+      "level": "",
+      "keywords": [ "ITSM", "workflow automation", "incident management", "service catalog", "knowledge management" ]
+    },
+    {
+      "name": "Cross-functional Team Leadership",
+      "level": "",
+      "keywords": [ "matrix management", "interdisciplinary leadership", "functional integration", "cross-department collaboration", "diverse team management" ]
+    },
+    {
+      "name": "Solution-oriented",
+      "level": "",
+      "keywords": [ "problem-solving", "pragmatic approach", "results focus", "practical solutions", "action-oriented" ]
+    },
+    {
+      "name": "Technical Competence",
+      "level": "",
+      "keywords": [ "technical expertise", "technical knowledge", "specialized skills", "technical proficiency", "domain knowledge" ]
+    },
+    {
+      "name": "REST APIs",
+      "level": "",
+      "keywords": [ "API design", "RESTful services", "HTTP methods", "API documentation", "endpoint development" ]
+    },
+    {
+      "name": "Resource Allocation",
+      "level": "",
+      "keywords": [ "resource planning", "capacity management", "utilization optimization", "workload distribution", "prioritization" ]
+    },
+    {
+      "name": "IT Operations",
+      "level": "",
+      "keywords": [ "service delivery", "infrastructure management", "operational support", "incident response", "change management" ]
+    },
+    {
+      "name": "Engineering",
+      "level": "",
+      "keywords": [ "technical design", "development", "implementation", "troubleshooting", "systems thinking" ]
+    },
+    {
+      "name": "Talent Management",
+      "level": "",
+      "keywords": [ "talent acquisition", "performance management", "succession planning", "employee retention", "competency mapping" ]
+    },
+    {
+      "name": "Onboarding",
+      "level": "",
+      "keywords": [ "employee orientation", "integration process", "training program", "knowledge transfer", "role familiarization" ]
+    },
+    {
+      "name": "Oral Communication",
+      "level": "",
+      "keywords": [ "public speaking", "presentation skills", "verbal articulation", "speech delivery", "audience engagement" ]
+    },
+    {
+      "name": "Microsoft Project",
+      "level": "",
+      "keywords": [ "project scheduling", "Gantt charts", "task management", "resource tracking", "project timeline" ]
+    },
+    {
+      "name": "Mellommenneskelige ferdigheter",
+      "level": "",
+      "keywords": [ "relasjonsbygging", "sosial kompetanse", "samhandling", "samarbeid", "empatisk kommunikasjon" ]
+    },
+    {
+      "name": "Teamarbeid",
+      "level": "",
+      "keywords": [ "samarbeid", "gruppedynamikk", "rolleforståelse", "medansvar", "kollektiv problemløsning" ]
+    },
+    {
+      "name": "Kontinuerlig forbedring",
+      "level": "",
+      "keywords": [ "prosessforbedring", "kvalitetssikring", "evaluering", "optimalisering", "innovasjon" ]
+    },
+    {
+      "name": "Microsoft SQL Server",
+      "level": "",
+      "keywords": [ "databaseadministrasjon", "T-SQL", "spørreoptimalisering", "datamodellering", "databasesikkerhet" ]
+    },
+    {
+      "name": "Project Planning",
+      "level": "",
+      "keywords": [ "scope definition", "work breakdown structure", "milestone planning", "scheduling", "resource estimation" ]
+    },
+    {
+      "name": "Engineering Management",
+      "level": "",
+      "keywords": [ "technical team leadership", "engineering processes", "product development", "technology roadmap", "R&D management" ]
+    },
+    {
+      "name": "Leadership",
+      "level": "",
+      "keywords": [ "vision setting", "strategic direction", "people management", "influence", "decision-making" ]
+    },
+    {
+      "name": "Kanban",
+      "level": "",
+      "keywords": [ "workflow visualization", "WIP limits", "pull system", "flow management", "continuous delivery" ]
+    },
+    {
+      "name": "Software Solution Architecture",
+      "level": "",
+      "keywords": [ "system design", "architectural patterns", "technical specifications", "component design", "integration architecture" ]
+    },
+    {
+      "name": "Databases",
+      "level": "",
+      "keywords": [ "data modeling", "query optimization", "database design", "data normalization", "SQL" ]
+    },
+    {
+      "name": ".NET Framework",
+      "level": "",
+      "keywords": [ "C#", "ASP.NET", "WPF", "Entity Framework", "LINQ" ]
+    },
+    {
+      "name": "Service Delivery Management",
+      "level": "",
+      "keywords": [ "SLA management", "service quality", "customer satisfaction", "operational excellence", "service improvement" ]
+    },
+    {
+      "name": "Agile Application Development",
+      "level": "",
+      "keywords": [ "iterative development", "sprint planning", "user stories", "product backlog", "continuous integration" ]
+    },
+    {
+      "name": "Presentations",
+      "level": "",
+      "keywords": [ "public speaking", "slide design", "audience engagement", "visual communication", "storytelling" ]
+    },
+    {
+      "name": "Selvledelse",
+      "level": "",
+      "keywords": [ "selvmotivasjon", "tidsplanlegging", "prioritering", "selvdisiplin", "målsetting" ]
+    },
+    {
+      "name": "kommunikasjon",
+      "level": "",
+      "keywords": [ "formidling", "klarspråk", "dialog", "tilbakemelding", "kommunikasjonsstrategi" ]
+    },
+    {
+      "name": "Stressmestring",
+      "level": "",
+      "keywords": [ "stresshåndtering", "arbeidsbelastning", "mindfulness", "balanse", "selvregulering" ]
+    },
+    {
+      "name": "Prosjektledelse innen programvare",
+      "level": "",
+      "keywords": [ "utviklingsmetodikk", "releaseplanlegging", "kravhåndtering", "teknisk prosjektstyring", "leveransehåndtering" ]
+    },
+    {
+      "name": "Software Development Life Cycle (SDLC)",
+      "level": "",
+      "keywords": [ "requirements analysis", "design", "implementation", "testing", "deployment", "maintenance" ]
+    },
+    {
+      "name": "Organizational Development",
+      "level": "",
+      "keywords": [ "change management", "culture building", "organizational effectiveness", "process improvement", "strategic alignment" ]
+    },
+    {
+      "name": "Strategic Leadership",
+      "level": "",
+      "keywords": [ "vision development", "strategic planning", "organizational direction", "long-term thinking", "executive decision-making" ]
+    },
+    {
+      "name": "Strategic Thinking",
+      "level": "",
+      "keywords": [ "long-term planning", "market analysis", "competitive positioning", "business vision", "strategic foresight" ]
+    },
+    {
+      "name": "Team Motivation",
+      "level": "",
+      "keywords": [ "employee engagement", "performance incentives", "morale building", "team spirit", "recognition programs" ]
+    },
+    {
+      "name": "Team Management",
+      "level": "",
+      "keywords": [ "team coordination", "delegation", "performance monitoring", "team development", "conflict resolution" ]
+    },
+    {
+      "name": "FinTech",
+      "level": "",
+      "keywords": [ "financial technology", "digital banking", "payment systems", "blockchain", "regulatory compliance" ]
+    },
+    {
+      "name": "ASP.NET Web API",
+      "level": "",
+      "keywords": [ "RESTful services", "HTTP endpoints", "API development", "request handling", "response formatting" ]
+    },
+    {
+      "name": "Ledelse",
+      "level": "",
+      "keywords": [ "personalansvar", "strategiarbeid", "virksomhetsstyring", "lederskap", "beslutningsansvar" ]
+    },
+    {
+      "name": "Teknologistyring",
+      "level": "",
+      "keywords": [ "IT-strategi", "teknologiportefølje", "systemarkitektur", "teknologivalg", "teknologisk veikart" ]
+    },
+    {
+      "name": "JIRA",
+      "level": "",
+      "keywords": [ "prosjektsporing", "oppgavehåndtering", "arbeidsflyt", "backlog-administrasjon", "agil prosjektstyring" ]
+    },
+    {
+      "name": "T-SQL",
+      "level": "",
+      "keywords": [ "lagrede prosedyrer", "triggere", "spørreoptimalisering", "transaksjonshåndtering", "databasefunksjoner" ]
+    },
+    {
+      "name": "WinForms",
+      "level": "",
+      "keywords": [ ".NET Windows Forms", "GUI-utvikling", "brukergrensesnitt", "desktop-applikasjoner", "kontrollbibliotek" ]
+    },
+    {
+      "name": "Prosjektlevering",
+      "level": "",
+      "keywords": [ "leveransestyring", "kvalitetssikring", "milepælsoppnåelse", "gevinstrealisering", "akseptansetesting" ]
+    },
+    {
+      "name": "Karriereutvikling",
+      "level": "",
+      "keywords": [ "karriereplanlegging", "kompetanseutvikling", "karriereveiledning", "faglig utvikling", "karriereløp" ]
+    },
+    {
+      "name": "Leverandørledelse",
+      "level": "",
+      "keywords": [ "leverandørstyring", "kontraktsoppfølging", "forhandlinger", "leverandørrelasjoner", "tjenestenivåavtaler" ]
+    },
+    {
+      "name": "Applikasjonsarkitektur",
+      "level": "",
+      "keywords": [ "løsningsdesign", "komponentarkitektur", "applikasjonsstruktur", "mønsterbasert design", "systemintegrasjon" ]
+    },
+    {
+      "name": "Endringsledelse",
+      "level": "",
+      "keywords": [ "organisasjonsendring", "endringsimplementering", "endringskommunikasjon", "omstillingsprosesser", "endringsstrategi" ]
+    },
+    {
+      "name": "C#",
+      "level": "",
+      "keywords": [ ".NET", "objektorientert programmering", "LINQ", "asynkron programmering", "generics" ]
+    },
+    {
+      "name": "SQL-server administrasjonsstudio",
+      "level": "",
+      "keywords": [ "SSMS", "databaseadministrasjon", "spørreoptimalisering", "databasesikring", "serverkonfigurasjon" ]
+    },
+    {
+      "name": "Styring av frivillig arbeid",
+      "level": "",
+      "keywords": [ "frivillighetsledelse", "frivilligkoordinering", "motivasjon av frivillige", "rekruttering", "oppfølging" ]
+    },
+    {
+      "name": "Personlig utvikling",
+      "level": "",
+      "keywords": [ "kompetansebygging", "selvrefleksjon", "ferdighetsutvikling", "læringsevne", "tilpasningsevne" ]
+    },
+    {
+      "name": "Visual Studio",
+      "level": "",
+      "keywords": [ "IDE", "kodeeditering", "debugging", "versjonskontroll", "utviklingsverktøy" ]
+    },
+    {
+      "name": "Agile og fossefallsmetodikk",
+      "level": "",
+      "keywords": [ "hybrid metodikk", "iterativ utvikling", "strukturert planlegging", "metodetilpasning", "prosjektmetodologi" ]
+    },
+    {
+      "name": "Programmering",
+      "level": "",
+      "keywords": [ "kodeutvikling", "algoritmer", "objektorientert design", "kildekodeanalyse", "debugging" ]
+    },
+    {
+      "name": "Teknisk ledelse",
+      "level": "",
+      "keywords": [ "teknologistyring", "teknisk kompetanseledelse", "systemarkitektur", "teknologievaluering", "produktutvikling" ]
+    },
+    {
+      "name": "Personalutvikling",
+      "level": "",
+      "keywords": [ "medarbeiderutvikling", "kompetansebygging", "karriereplanlegging", "talentutvikling", "oppfølging" ]
+    },
+    {
+      "name": "Coaching",
+      "level": "",
+      "keywords": [ "veiledning", "utviklingsstøtte", "tilbakemelding", "personlig vekst", "måloppnåelse" ]
+    },
+    {
+      "name": "Rekruttering",
+      "level": "",
+      "keywords": [ "talent acquisition", "intervjuteknikk", "kandidatvurdering", "jobbanalyse", "ansettelsesprosess" ]
+    },
+    {
+      "name": "Teamlederskap",
+      "level": "",
+      "keywords": [ "teamutvikling", "teamkoordinering", "målsetting", "resultatoppfølging", "motivering" ]
+    },
+    {
+      "name": "Agilitetsledelse",
+      "level": "",
+      "keywords": [ "smidig metodikk", "scrum", "kanban", "iterativ utvikling", "kontinuerlig forbedring" ]
+    },
+    {
+      "name": "Personledelse",
+      "level": "",
+      "keywords": [ "medarbeideroppfølging", "medarbeidersamtaler", "teambygging", "personalansvar", "kompetanseutvikling" ]
+    },
+    {
+      "name": "Tilbudsutarbeidelse",
+      "level": "",
+      "keywords": [ "anbudsprosesser", "tilbudsskriving", "prismodellering", "løsningsbeskrivelse", "kontraktsforhandlinger" ]
+    },
+    {
+      "name": "Teknologisk produktutvikling",
+      "level": "",
+      "keywords": [ "produktinnovasjon", "teknologivalg", "produktstrategi", "MVP-utvikling", "produktroadmap" ]
+    },
+    {
+      "name": "Ingeniørledelse",
+      "level": "",
+      "keywords": [ "teknisk teamledelse", "ingeniørprosesser", "teknologistyring", "utviklingsledelse", "teknisk prosjektledelse" ]
+    },
+    {
+      "name": "Organisasjonsutvikling",
+      "level": "",
+      "keywords": [ "organisasjonsdesign", "kulturutvikling", "prosessoptimalisering", "strukturendring", "kompetanseutvikling" ]
+    },
+    {
+      "name": "Produktutvikling",
+      "level": "",
+      "keywords": [ "produktstrategi", "produktdesign", "markedsanalyse", "brukerinnsikt", "innovasjonsprosesser" ]
+    },
+    {
+      "name": "IT-ledelse",
+      "level": "",
+      "keywords": [ "IT-strategi", "teknologiledelse", "IT-styring", "digital transformasjon", "IT-tjenestestyring" ]
+    },
+    {
+      "name": "Scrum",
+      "level": "",
+      "keywords": [ "sprint planning", "daily stand-up", "sprint review", "backlog refinement", "sprint retrospective" ]
+    },
+    {
+      "name": "Agile Methodologies",
+      "level": "",
+      "keywords": [ "scrum", "kanban", "lean", "XP", "iterative development", "adaptive planning" ]
+    },
+    {
+      "name": "Project Management",
+      "level": "",
+      "keywords": [ "scope management", "timeline planning", "risk assessment", "stakeholder management", "project governance" ]
+    },
+    {
+      "name": "Software Development",
+      "level": "",
+      "keywords": [ "coding", "software engineering", "application development", "programming", "software architecture" ]
+    },
+    {
+      "name": "Test Driven Development",
+      "level": "",
+      "keywords": [ "unit testing", "test automation", "behavior-driven development", "test-first approach", "code quality" ]
+    },
+    {
+      "name": "Requirements Analysis",
+      "level": "",
+      "keywords": [ "user stories", "use cases", "functional requirements", "business analysis", "requirement specification" ]
+    },
+    {
+      "name": "Service Management",
+      "level": "",
+      "keywords": [ "ITIL", "service catalog", "incident management", "change management", "service level agreements" ]
+    },
+    {
+      "name": "PRINCE2",
+      "level": "",
+      "keywords": [ "controlled environments", "structured project management", "business case", "project board", "stage planning" ]
+    },
+    {
+      "name": "Continuous Integration",
+      "level": "",
+      "keywords": [ "automated builds", "CI/CD pipelines", "code integration", "automated testing", "deployment automation" ]
+    },
+    {
+      "name": "Software Design",
+      "level": "",
+      "keywords": [ "architecture patterns", "design patterns", "system modeling", "interface design", "component design" ]
+    },
+    {
+      "name": "Software Project Management",
+      "level": "",
+      "keywords": [ "development lifecycle", "technical planning", "code review", "release management", "quality assurance" ]
+    },
+    {
+      "name": "Negotiation",
+      "level": "",
+      "keywords": [ "bargaining", "conflict resolution", "agreement facilitation", "stakeholder management", "win-win solutions" ]
+    },
+    {
+      "name": "Communication Skills",
+      "level": "",
+      "keywords": [ "verbal communication", "written communication", "presentation", "active listening", "interpersonal skills" ]
+    },
+    {
+      "name": "Union Representation",
+      "level": "",
+      "keywords": [ "employee advocacy", "collective bargaining", "labor relations", "worker rights", "dispute resolution" ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Engelsk",
+      "fluency": "Full professional proficiency"
+    },
+    {
+      "language": "Norsk",
+      "fluency": "Morsmål"
+    }
+  ],
+  "projects": [
+    {
+      "name": "RELOVE V25",
+      "startDate": "2025-02-01",
+      "summary": "RELOVE ønsker effektive metoder for å dokumentere og synliggjøre sin samfunnsnytte. Dette er viktig for å sikre videre støtte og for å kommunisere organisasjonens betydning i lokalmiljøet. I tillegg har RELOVE et langsiktig ønske om å komme på statsbudsjettet. Pro bono-teamet skal derfor hjelpe RELOVE med å beskrive deres kjerneaktivitet og identitet på en enkel måte.  Teamet skal ● Formulere noen få og presise setninger som beskriver RELOVE ● Beskrive hvilken verdi som skapes av de ulike aktivitetene i RELOVE ● Utarbeide en rutine på hvordan RELOVE kan måle impact videre fremover, f.eks. en struktur på måling av antall kg tekstil som resirkuleres, antall ungdom som får seg jobb eller lignende.",
+      "url": "https://www.relove.info"
+    },
+    {
+      "name": "OOF H24 - Økonomi og Virksomhetsstyring",
+      "startDate": "2024-10-01",
+      "summary": "Formålet med dette prosjektet er at OOF får støtte til å velge og implementere digitale verktøy som forenkler og forbedrer effektiviteten i administrasjon og drift. Ønsket til OOF er å redusere manuelle oppgaver, og sikre bedre oversikt og styring av prosesser som timeføring, budsjettering, regnskap og prosjektstyring.",
+      "url": "https://www.osloogomlandfriluftsrad.no/",
+      "endDate": "2025-01-01"
+    },
+    {
+      "name": "Sanering av gammelt log-verktøy og utrulling av agenter",
+      "startDate": "2020-07-01",
+      "summary": "Prosjektets mandat er å få sanert gammel maskinvare, sette opp ny maskinvare samt å rulle ut diverse sikkerhets-relaterte agenter på x antall tusen servere.  Mine oppgaver i dette prosjektet er blant annet, fortløpende oppfølging, håndtering av interessenter, planlegging, rapportering til porteføljestyrer, rapportering til styringsgruppe, håndtering av dokumentasjon i prosjektet. Koordinering av ressurser, både interne og fra våre partnere. Grunnet situasjonen i landet er disse oppgavene i en stor grad gjennomført via Microsoft Teams.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2020-11-01"
+    },
+    {
+      "name": "Implementere utvidet sikkerhetsfokus i DNB programvarelivssyklus",
+      "startDate": "2020-07-01",
+      "summary": "Prosjektets mandat er å avklare behov, anskaffe, implementere og få på plass styringsdokumenter for løsninger som øker fokus på sikkerhetsaspekter i løpet av programvarelivssyklusen for den programvare som lages av internt og av våre partnere.  Mine oppgaver i dette prosjektet er blant annet, fortløpende oppfølging, håndtering av interessenter, planlegging, rapportering til porteføljestyrer, rapportering til styringsgruppe, håndtering av dokumentasjon i prosjektet. Koordinering av ressurser, både interne og fra våre partnere. Leverandørdialog, herunder beskrive krav til disse, utføre leverandør-evaluering. Grunnet situasjonen i landet er disse oppgavene i en stor grad gjennomført via Microsoft Teams.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2020-11-01"
+    },
+    {
+      "name": "IAM- Cleanup and Compliance",
+      "startDate": "2020-06-01",
+      "summary": "Ledelse av prosjekt som har som mandat å implementere en utvidet automasjon av tilgangsstyring gjennom bruk av ServiceNow, IIQ og andre relevante verktøy. Mine oppgaver i dette prosjektet er blant annet, fortløpende oppfølging, håndtering av interessenter, planlegging, rapportering til porteføljestyrer, rapportering til styringsgruppe, håndtering av dokumentasjon i prosjektet. Grunnet situasjonen i landet er disse oppgavene i en stor grad gjennomført via Microsoft Teams.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2020-11-01"
+    },
+    {
+      "name": "Penetrasjonstesting",
+      "startDate": "2019-08-01",
+      "summary": "Dette prosjektet har som mandat å legge til rette for penetrasjonstesting av DNB sine systemer. Mine oppgaver i dette prosjektet er blant annet, fortløpende oppfølging, håndtering av interessenter, planlegging, rapportering til porteføljestyrer, rapportering til styringsgruppe, håndtering av dokumentasjon i prosjektet. Koordinering av ressurser, både interne og fra våre partnere. Grunnet situasjonen i landet er disse oppgavene i en stor grad gjennomført via Microsoft Teams.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2020-11-01"
+    },
+    {
+      "name": "Implementere DDOS-beskyttelse for en spesifikk del av DNB-systemportefølje.",
+      "startDate": "2019-07-01",
+      "summary": "Prosjekts mandat er å flytte deler av DNB sin systemportefølje bak forsterkede DDOS-beskyttelse.  Mine oppgaver i dette prosjektet er blant annet, fortløpende oppfølging, håndtering av interessenter, planlegging, rapportering til porteføljestyrer, rapportering til styringsgruppe, håndtering av dokumentasjon i prosjektet. Koordinering av ressurser, både interne og fra våre partnere. Grunnet situasjonen i landet er disse oppgavene i en stor grad gjennomført via Microsoft Teams.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2020-11-01"
+    },
+    {
+      "name": "Ny bedriftsportal",
+      "startDate": "2018-01-01",
+      "summary": "Scrum Master for dette utviklingsprosjektet. Gjennomførte de oppgaver som ligger til rollen i henhold til Scrumguiden. I tillegg til innføring og opplæring i smidige metodikk for deltakere i prosjektet, både innad i IT-organisasjonen i tillegg til deltakere i prosjektet fra andre forretningsområder.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2019-01-01"
+    },
+    {
+      "name": "GDPR i DNB Liv",
+      "startDate": "2018-01-01",
+      "summary": "Compliance-prosjekt som hadde til mandat å sørge for at systemene til DNB-Liv møter GDPR-kravene. I dette prosjektet hadde jeg rollen som Scrum Master, med tilhørende oppgaver som beskrevet i scrumguiden.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2018-03-01"
+    },
+    {
+      "name": "Supplier Catalogue",
+      "startDate": "2014-09-01",
+      "summary": "Prosjektets mandat er å tilpasse og implementere Sharecats familie av katalog-tjenester til å kunne benyttes hos en av verdens største olje-leverandører. Jeg overtok prosjektet som prosjektleder da dette hadde vært pågående i noen måneder. Mine oppgaver ble da å samle alle løse tråder, opprette en detaljert prosjektplan for resterende leveranser, og daglig oppfølging av dette. Prosjektet ble gjennomført med multi-disiplin ressurser og med deltagere i flere land. Planlegging, gjennomføring og oppfølging ble utført ved hjelp av MS Project 2013.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2015-04-01"
+    },
+    {
+      "name": "Utvidelse av vCRM",
+      "startDate": "2011-03-01",
+      "summary": "Dette prosjektets mandat var å utvide/forbedre eksisterende Ventelo crm system. Basert på analyse av innkommende forespørsler om hjelp til it-avdeling ble det definert 5 områder hvor eksisterende systemerer manglet støtte for forretningscaser. Prosjektets oppgave ble deretter å analysere og implementere støtte for disse business-caser. Min rolle i dette prosjektet var prosjektleder og utvikler.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2011-10-01"
+    },
+    {
+      "name": "IRIS - Rapportdistribuerings-system",
+      "startDate": "2007-02-01",
+      "summary": "System for distribusjon av rapporter. Administrasjon av brukere, administrasjon av rapport-objekter som skal distribueres, oppsett av abonnement på rapporter, tidspunkt og hvor ofte det skal gjennomføres distribusjon. AD-integrasjon.  Utviklet i C#, ADO.Net, MS Sql Database",
+      "url": "https://harry.solsem.no",
+      "endDate": "2007-06-01"
+    },
+    {
+      "name": "ULV - UtLevering av Verktøy",
+      "startDate": "2005-03-01",
+      "summary": "System som administrerer utlevering og innlevering av verktøy. Utviklet i C#, MS Sql database, ADO.Net, elektronisk signatur, diverse rapporter og AD-integrasjon.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2006-05-01"
+    },
+    {
+      "name": "tiUM - timeregistrering Umoe Mandal",
+      "startDate": "2004-05-01",
+      "summary": "Gjennomførte alle faser i nytt timeregistrerings-system for Umoe Mandal.  * kravpesifikasjon * løsningsforslag * implementasjon * utrulling * opplæring av brukere og teknisk personell * drift av applikasjon * brukerdokumentasjon * systemteknisk dokumentasjon  System utviklet i VB.Net, winforms applikasjon med MS Sql Server som database. Integrasjon mot stemplingssystem. Epost-varsling for godkjenning av timelister av overordnede. Overføring av datagrunnlag til lønns-system. Autogenerering av timelister ved gitte kriterier.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2007-08-01"
+    }
+  ]
+}
