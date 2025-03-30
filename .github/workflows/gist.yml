@@ -1,0 +1,17 @@
+name: Update Resume Gist
+
+on: push
+
+jobs:
+  update-resume-gist:
+    runs-on: ubuntu-latest 
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Update Resume Gist
+      uses: exuanbo/actions-deploy-gist@v1
+      with:
+        token: ${{ secrets.TOKEN }}
+        gist_id: f92fdc3f7bee3d295f93b45aee401c29
+        file_path: resume.json
