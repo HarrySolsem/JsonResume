@@ -45,7 +45,7 @@
       "position": "Konsulent",
       "website": "https://www.stofo.org",
       "startDate": "2023-05-01",
-      "summary": "Konsulent som har støttet generalsekretær med strategiavklaringer, organisasjonsutvikling, rekruttering, onboarding av nye medarbeidere og forefallende administrasjonsoppgaver innen drift av forbundet.",
+      "summary": "Konsulent som har støttet nyansatt generalsekretær med strategiavklaringer, organisasjonsutvikling, rekruttering, onboarding av nye medarbeidere og forefallende administrasjonsoppgaver innen drift av forbundet.",
       "highlights": [],
       "endDate": "2023-06-01"
     },
@@ -171,7 +171,7 @@
       "position": "Brukerstøtte",
       "website": "https://www.manpower.no",
       "startDate": "1994-08-01",
-      "summary": "Brukerstøtte windows 95, drift Token-Ring nettverk, oppsett av windowsklienter.",
+      "summary": "Brukerstøtte windows 95, drift Token-Ring nettverk, oppsett og drift av windowsklienter.",
       "highlights": [],
       "endDate": "1997-06-01"
     }
@@ -180,7 +180,7 @@
     {
       "organization": "Langhus IL Bordtennis",
       "position": "Gruppeleder og styreleder",
-      "url": "https://www.langhusil.no",
+      "url": "https://www.langhusil.no/bordtennis",
       "startDate": "2024-09-01",
       "summary": "Jeg leder bordtennisgruppen i Langhus IL Allianseidrettslag",
       "highlights": []
@@ -225,7 +225,7 @@
       "studyType": "Studie på bachelornivå",
       "startDate": "2018-01-01",
       "gpa": "",
-      "courses": [],
+      "courses": [ "Prosjektledelse 1", "Prosjektledelse 2", "Prosjektledelse 3" ],
       "endDate": "2019-01-01"
     },
     {
@@ -234,7 +234,7 @@
       "studyType": "Studie på bachelornivå",
       "startDate": "1999-01-01",
       "gpa": "",
-      "courses": [],
+      "courses": [ "User interfaces", "Algorithms and Data Structures", "Advanced Database Systems", " XML & UML & Java" ],
       "endDate": "2000-01-01"
     },
     {
@@ -243,7 +243,24 @@
       "studyType": "Linje for administrativ databehandling",
       "startDate": "1992-08-01",
       "gpa": "",
-      "courses": [],
+      "courses": [
+        "Administrasjonslære og Bedriftsøkonomi",
+        "Innføring i systemutvikling",
+        "Organisasjon samarbeid og ledelse",
+        "Grunnkurs programmering",
+        "Markedsføring",
+        "Databaser og datamodeller",
+        "Algoritmer og datastrukturer",
+        "Maskinspråkprogrammering",
+        "Datakommunikasjon I",
+        "Systemutvikling II",
+        "Applikasjonsutvikling",
+        "Applikasjonsprogrammering i C++",
+        "Matematisk Analyse I",
+        "Diskrete matematikk",
+        "Operativsystemer",
+        "Sanntidsprogrammering"
+      ],
       "endDate": "1994-05-01"
     }
   ],
@@ -269,7 +286,7 @@
     {
       "name": "Prince2Agile",
       "date": "2019-01-01",
-      "issuer": "Axelos Global Best Practise",
+      "issuer": "Axelos Global Best Practice",
       "url": "https://www.linkedin.com/in/harrysolsem"
     },
     {
@@ -833,7 +850,7 @@
       "endDate": "2020-11-01"
     },
     {
-      "name": "IAM- Cleanup and Compliance",
+      "name": "IAM - Cleanup and Compliance",
       "startDate": "2020-06-01",
       "summary": "Ledelse av prosjekt som har som mandat å implementere en utvidet automasjon av tilgangsstyring gjennom bruk av ServiceNow, IIQ og andre relevante verktøy. Mine oppgaver i dette prosjektet er blant annet, fortløpende oppfølging, håndtering av interessenter, planlegging, rapportering til porteføljestyrer, rapportering til styringsgruppe, håndtering av dokumentasjon i prosjektet. Grunnet situasjonen i landet er disse oppgavene i en stor grad gjennomført via Microsoft Teams.",
       "url": "https://harry.solsem.no",
@@ -898,7 +915,7 @@
     {
       "name": "tiUM - timeregistrering Umoe Mandal",
       "startDate": "2004-05-01",
-      "summary": "Gjennomførte alle faser i nytt timeregistrerings-system for Umoe Mandal.  * kravpesifikasjon * løsningsforslag * implementasjon * utrulling * opplæring av brukere og teknisk personell * drift av applikasjon * brukerdokumentasjon * systemteknisk dokumentasjon  System utviklet i VB.Net, winforms applikasjon med MS Sql Server som database. Integrasjon mot stemplingssystem. Epost-varsling for godkjenning av timelister av overordnede. Overføring av datagrunnlag til lønns-system. Autogenerering av timelister ved gitte kriterier.",
+      "summary": "Gjennomførte alle faser i nytt timeregistrerings-system for Umoe Mandal.  * kravspesifikasjon * løsningsforslag * implementasjon * utrulling * opplæring av brukere og teknisk personell * drift av applikasjon * brukerdokumentasjon * systemteknisk dokumentasjon  System utviklet i VB.Net, winforms applikasjon med MS Sql Server som database. Integrasjon mot stemplingssystem. Epost-varsling for godkjenning av timelister av overordnede. Overføring av datagrunnlag til lønns-system. Autogenerering av timelister ved gitte kriterier.",
       "url": "https://harry.solsem.no",
       "endDate": "2007-08-01"
     }
