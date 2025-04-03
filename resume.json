@@ -207,15 +207,6 @@
       "startDate": "2017-03-01",
       "summary": "Likeperson",
       "highlights": []
-    },
-    {
-      "organization": "Norges Fotballforbund",
-      "position": "Dommer, dommerveileder, kursinstruktør",
-      "url": "https://fotball.no/",
-      "startDate": "1996-03-01",
-      "endDate": "2014-04-01",
-      "summary": "Dommer, dommerveileder og kursinstruktør",
-      "highlights": []
     }
   ],
   "education": [
@@ -809,6 +800,96 @@
       "name": "Union Representation",
       "level": "",
       "keywords": [ "employee advocacy", "collective bargaining", "labor relations", "worker rights", "dispute resolution" ]
+    },
+    {
+      "name": "Agile Methodologies",
+      "level": "Expert",
+      "keywords": [
+        "Scrum",
+        "Kanban",
+        "Lean",
+        "Team Topologies"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "level": "Advanced",
+      "keywords": [
+        "Turbo Pascal",
+        "Assembler",
+        "Ada",
+        "Delphi",
+        "Basic",
+        "Visual Basic",
+        "C++",
+        "C",
+        "Java",
+        "JavaScript",
+        "C#",
+        "SQL",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Microsoft Tools",
+      "level": "Advanced",
+      "keywords": [
+        "Microsoft Visual Studio",
+        "Microsoft Foundation Classes",
+        "Microsoft Visual Studio Code",
+        "Microsoft.NET",
+        "Sql Management Studio",
+        "Microsoft Winforms",
+        "Microsoft ADO.NET",
+        "Microsoft Entity Framework"
+      ]
+    },
+    {
+      "name": "Change Management",
+      "level": "Expert",
+      "keywords": [
+        "Prosci Change Management"
+      ]
+    },
+    {
+      "name": "Project Management",
+      "level": "Expert",
+      "keywords": [
+        "Prince2",
+        "Prince2Agile"
+      ]
+    },
+    {
+      "name": "DevOps Tools",
+      "level": "Advanced",
+      "keywords": [
+        "TeamCity",
+        "Octopus Deploy",
+        "Git",
+        "Github Actions",
+        "Github Pages",
+        "Jira",
+        "Confluence",
+        "Docker",
+        "ServiceNow",
+        "Team Foundation Server"
+      ]
+    },
+    {
+      "name": "Testing and Debugging Tools",
+      "level": "Intermediate",
+      "keywords": [
+        "Fiddler",
+        "Postman"
+      ]
+    },
+    {
+      "name": "Team Structuring",
+      "level": "Intermediate",
+      "keywords": [
+        "Team Topologies"
+      ]
     }
   ],
   "languages": [
