@@ -246,497 +246,1093 @@
     {
       "name": "Mangfold og inkludering",
       "level": "Advanced",
-      "keywords": [ "mangfold", "inkludering", "diversitet", "likestilling", "kulturforståelse" ]
+      "keywords": [
+        "mangfold",
+        "inkludering",
+        "diversitet",
+        "likestilling",
+        "kulturforståelse"
+      ]
     },
     {
       "name": "Beslutninger",
       "level": "Advanced",
-      "keywords": [ "beslutningstaking", "analyse", "vurdering", "prioritering", "problemløsning" ]
+      "keywords": [
+        "beslutningstaking",
+        "analyse",
+        "vurdering",
+        "prioritering",
+        "problemløsning"
+      ]
     },
     {
       "name": "Team-motivasjon",
       "level": "Advanced",
-      "keywords": [ "motivasjon", "teambygging", "engasjement", "anerkjennelse", "inspirasjon" ]
+      "keywords": [
+        "motivasjon",
+        "teambygging",
+        "engasjement",
+        "anerkjennelse",
+        "inspirasjon"
+      ]
     },
     {
       "name": "Kommunikasjon",
       "level": "Advanced",
-      "keywords": [ "formidling", "presentasjon", "dialog", "tilbakemelding", "lytting" ]
+      "keywords": [
+        "formidling",
+        "presentasjon",
+        "dialog",
+        "tilbakemelding",
+        "lytting"
+      ]
     },
     {
       "name": "Teamledelse",
       "level": "Advanced",
-      "keywords": [ "teamutvikling", "målstyring", "delegering", "koordinering", "oppfølging" ]
+      "keywords": [
+        "teamutvikling",
+        "målstyring",
+        "delegering",
+        "koordinering",
+        "oppfølging"
+      ]
     },
     {
       "name": "Utvikling av personale",
       "level": "Advanced",
-      "keywords": [ "kompetanseutvikling", "mentoring", "karriereplanlegging", "talentutvikling", "læring" ]
+      "keywords": [
+        "kompetanseutvikling",
+        "mentoring",
+        "karriereplanlegging",
+        "talentutvikling",
+        "læring"
+      ]
     },
     {
       "name": "Virksomhetsarkitektur",
       "level": "Advanced",
-      "keywords": [ "forretningsarkitektur", "systemintegrasjon", "IT-strategi", "arkitekturprinsipper", "teknologiportefølje" ]
+      "keywords": [
+        "forretningsarkitektur",
+        "systemintegrasjon",
+        "IT-strategi",
+        "arkitekturprinsipper",
+        "teknologiportefølje"
+      ]
     },
     {
       "name": "Teambygging",
       "level": "Advanced",
-      "keywords": [ "samarbeid", "teamkultur", "gruppedynamikk", "tillit", "fellesskap" ]
+      "keywords": [
+        "samarbeid",
+        "teamkultur",
+        "gruppedynamikk",
+        "tillit",
+        "fellesskap"
+      ]
     },
     {
       "name": "Prosjektledelse",
       "level": "Advanced",
-      "keywords": [ "prosjektstyring", "ressursplanlegging", "milepælsplan", "risikoanalyse", "interessenthåndtering" ]
+      "keywords": [
+        "prosjektstyring",
+        "ressursplanlegging",
+        "milepælsplan",
+        "risikoanalyse",
+        "interessenthåndtering"
+      ]
     },
     {
       "name": "Mellommenneskelig kommunikasjon",
       "level": "Advanced",
-      "keywords": [ "relasjonskompetanse", "konflikthåndtering", "empatisk kommunikasjon", "aktiv lytting", "feedback" ]
+      "keywords": [
+        "relasjonskompetanse",
+        "konflikthåndtering",
+        "empatisk kommunikasjon",
+        "aktiv lytting",
+        "feedback"
+      ]
     },
     {
       "name": "Sustainable Development",
       "level": "Advanced",
-      "keywords": [ "sustainability", "green development", "CSR", "environmental management", "social responsibility" ]
+      "keywords": [
+        "sustainability",
+        "green development",
+        "CSR",
+        "environmental management",
+        "social responsibility"
+      ]
     },
     {
       "name": "Managing Project Budgets",
       "level": "Advanced",
-      "keywords": [ "budget planning", "cost control", "financial monitoring", "resource allocation", "ROI analysis" ]
+      "keywords": [
+        "budget planning",
+        "cost control",
+        "financial monitoring",
+        "resource allocation",
+        "ROI analysis"
+      ]
     },
     {
       "name": "Engineering Leadership",
       "level": "Advanced",
-      "keywords": [ "technical leadership", "engineering management", "technical strategy", "innovation management", "R&D leadership" ]
+      "keywords": [
+        "technical leadership",
+        "engineering management",
+        "technical strategy",
+        "innovation management",
+        "R&D leadership"
+      ]
     },
     {
       "name": "System Development",
       "level": "Advanced",
-      "keywords": [ "systemdesign", "systemarkitektur", "utviklingsmetodikk", "integrasjon", "versjonshåndtering" ]
+      "keywords": [
+        "systemdesign",
+        "systemarkitektur",
+        "utviklingsmetodikk",
+        "integrasjon",
+        "versjonshåndtering"
+      ]
     },
     {
       "name": "Personutvikling",
       "level": "Advanced",
-      "keywords": [ "selvutvikling", "ferdighetsutvikling", "karriereveiledning", "selvledelse", "kompetanseheving" ]
+      "keywords": [
+        "selvutvikling",
+        "ferdighetsutvikling",
+        "karriereveiledning",
+        "selvledelse",
+        "kompetanseheving"
+      ]
     },
     {
       "name": "Datavitenskap",
       "level": "Advanced",
-      "keywords": [ "statistikk", "maskinlæring", "dataanalyse", "algoritmer", "prediktiv modellering" ]
+      "keywords": [
+        "statistikk",
+        "maskinlæring",
+        "dataanalyse",
+        "algoritmer",
+        "prediktiv modellering"
+      ]
     },
     {
       "name": "Agile Coaching",
       "level": "Advanced",
-      "keywords": [ "agile facilitation", "scrum master", "team development", "continuous improvement", "sprint planning" ]
+      "keywords": [
+        "agile facilitation",
+        "scrum master",
+        "team development",
+        "continuous improvement",
+        "sprint planning"
+      ]
     },
     {
       "name": "Service-Now",
       "level": "Advanced",
-      "keywords": [ "ITSM", "workflow automation", "incident management", "service catalog", "knowledge management" ]
+      "keywords": [
+        "ITSM",
+        "workflow automation",
+        "incident management",
+        "service catalog",
+        "knowledge management"
+      ]
     },
     {
       "name": "Cross-functional Team Leadership",
       "level": "Advanced",
-      "keywords": [ "matrix management", "interdisciplinary leadership", "functional integration", "cross-department collaboration", "diverse team management" ]
+      "keywords": [
+        "matrix management",
+        "interdisciplinary leadership",
+        "functional integration",
+        "cross-department collaboration",
+        "diverse team management"
+      ]
     },
     {
       "name": "Solution-oriented",
       "level": "Advanced",
-      "keywords": [ "problem-solving", "pragmatic approach", "results focus", "practical solutions", "action-oriented" ]
+      "keywords": [
+        "problem-solving",
+        "pragmatic approach",
+        "results focus",
+        "practical solutions",
+        "action-oriented"
+      ]
     },
     {
       "name": "Technical Competence",
       "level": "Advanced",
-      "keywords": [ "technical expertise", "technical knowledge", "specialized skills", "technical proficiency", "domain knowledge" ]
+      "keywords": [
+        "technical expertise",
+        "technical knowledge",
+        "specialized skills",
+        "technical proficiency",
+        "domain knowledge"
+      ]
     },
     {
       "name": "REST APIs",
       "level": "Advanced",
-      "keywords": [ "API design", "RESTful services", "HTTP methods", "API documentation", "endpoint development" ]
+      "keywords": [
+        "API design",
+        "RESTful services",
+        "HTTP methods",
+        "API documentation",
+        "endpoint development"
+      ]
     },
     {
       "name": "Resource Allocation",
       "level": "Advanced",
-      "keywords": [ "resource planning", "capacity management", "utilization optimization", "workload distribution", "prioritization" ]
+      "keywords": [
+        "resource planning",
+        "capacity management",
+        "utilization optimization",
+        "workload distribution",
+        "prioritization"
+      ]
     },
     {
       "name": "IT Operations",
       "level": "Advanced",
-      "keywords": [ "service delivery", "infrastructure management", "operational support", "incident response", "change management" ]
+      "keywords": [
+        "service delivery",
+        "infrastructure management",
+        "operational support",
+        "incident response",
+        "change management"
+      ]
     },
     {
       "name": "Engineering",
       "level": "Advanced",
-      "keywords": [ "technical design", "development", "implementation", "troubleshooting", "systems thinking" ]
+      "keywords": [
+        "technical design",
+        "development",
+        "implementation",
+        "troubleshooting",
+        "systems thinking"
+      ]
     },
     {
       "name": "Talent Management",
       "level": "Advanced",
-      "keywords": [ "talent acquisition", "performance management", "succession planning", "employee retention", "competency mapping" ]
+      "keywords": [
+        "talent acquisition",
+        "performance management",
+        "succession planning",
+        "employee retention",
+        "competency mapping"
+      ]
     },
     {
       "name": "Onboarding",
       "level": "Advanced",
-      "keywords": [ "employee orientation", "integration process", "training program", "knowledge transfer", "role familiarization" ]
+      "keywords": [
+        "employee orientation",
+        "integration process",
+        "training program",
+        "knowledge transfer",
+        "role familiarization"
+      ]
     },
     {
       "name": "Oral Communication",
       "level": "Advanced",
-      "keywords": [ "public speaking", "presentation skills", "verbal articulation", "speech delivery", "audience engagement" ]
+      "keywords": [
+        "public speaking",
+        "presentation skills",
+        "verbal articulation",
+        "speech delivery",
+        "audience engagement"
+      ]
     },
     {
       "name": "Microsoft Project",
       "level": "Advanced",
-      "keywords": [ "project scheduling", "Gantt charts", "task management", "resource tracking", "project timeline" ]
+      "keywords": [
+        "project scheduling",
+        "Gantt charts",
+        "task management",
+        "resource tracking",
+        "project timeline"
+      ]
     },
     {
       "name": "Mellommenneskelige ferdigheter",
       "level": "Advanced",
-      "keywords": [ "relasjonsbygging", "sosial kompetanse", "samhandling", "samarbeid", "empatisk kommunikasjon" ]
+      "keywords": [
+        "relasjonsbygging",
+        "sosial kompetanse",
+        "samhandling",
+        "samarbeid",
+        "empatisk kommunikasjon"
+      ]
     },
     {
       "name": "Teamarbeid",
       "level": "Advanced",
-      "keywords": [ "samarbeid", "gruppedynamikk", "rolleforståelse", "medansvar", "kollektiv problemløsning" ]
+      "keywords": [
+        "samarbeid",
+        "gruppedynamikk",
+        "rolleforståelse",
+        "medansvar",
+        "kollektiv problemløsning"
+      ]
     },
     {
       "name": "Kontinuerlig forbedring",
       "level": "Advanced",
-      "keywords": [ "prosessforbedring", "kvalitetssikring", "evaluering", "optimalisering", "innovasjon" ]
+      "keywords": [
+        "prosessforbedring",
+        "kvalitetssikring",
+        "evaluering",
+        "optimalisering",
+        "innovasjon"
+      ]
     },
     {
       "name": "Microsoft SQL Server",
       "level": "Advanced",
-      "keywords": [ "databaseadministrasjon", "T-SQL", "spørreoptimalisering", "datamodellering", "databasesikkerhet" ]
+      "keywords": [
+        "databaseadministrasjon",
+        "T-SQL",
+        "spørreoptimalisering",
+        "datamodellering",
+        "databasesikkerhet"
+      ]
     },
     {
       "name": "Project Planning",
       "level": "Advanced",
-      "keywords": [ "scope definition", "work breakdown structure", "milestone planning", "scheduling", "resource estimation" ]
+      "keywords": [
+        "scope definition",
+        "work breakdown structure",
+        "milestone planning",
+        "scheduling",
+        "resource estimation"
+      ]
     },
     {
       "name": "Engineering Management",
       "level": "Advanced",
-      "keywords": [ "technical team leadership", "engineering processes", "product development", "technology roadmap", "R&D management" ]
+      "keywords": [
+        "technical team leadership",
+        "engineering processes",
+        "product development",
+        "technology roadmap",
+        "R&D management"
+      ]
     },
     {
       "name": "Leadership",
       "level": "Advanced",
-      "keywords": [ "vision setting", "strategic direction", "people management", "influence", "decision-making" ]
+      "keywords": [
+        "vision setting",
+        "strategic direction",
+        "people management",
+        "influence",
+        "decision-making"
+      ]
     },
     {
       "name": "Kanban",
       "level": "Advanced",
-      "keywords": [ "workflow visualization", "WIP limits", "pull system", "flow management", "continuous delivery" ]
+      "keywords": [
+        "workflow visualization",
+        "WIP limits",
+        "pull system",
+        "flow management",
+        "continuous delivery"
+      ]
     },
     {
       "name": "Software Solution Architecture",
       "level": "Advanced",
-      "keywords": [ "system design", "architectural patterns", "technical specifications", "component design", "integration architecture" ]
+      "keywords": [
+        "system design",
+        "architectural patterns",
+        "technical specifications",
+        "component design",
+        "integration architecture"
+      ]
     },
     {
       "name": "Databases",
       "level": "Advanced",
-      "keywords": [ "data modeling", "query optimization", "database design", "data normalization", "SQL" ]
+      "keywords": [
+        "data modeling",
+        "query optimization",
+        "database design",
+        "data normalization",
+        "SQL"
+      ]
     },
     {
       "name": ".NET Framework",
       "level": "Advanced",
-      "keywords": [ "C#", "ASP.NET", "WPF", "Entity Framework", "LINQ" ]
+      "keywords": [
+        "C#",
+        "ASP.NET",
+        "WPF",
+        "Entity Framework",
+        "LINQ"
+      ]
     },
     {
       "name": "Service Delivery Management",
       "level": "Advanced",
-      "keywords": [ "SLA management", "service quality", "customer satisfaction", "operational excellence", "service improvement" ]
+      "keywords": [
+        "SLA management",
+        "service quality",
+        "customer satisfaction",
+        "operational excellence",
+        "service improvement"
+      ]
     },
     {
       "name": "Agile Application Development",
       "level": "Advanced",
-      "keywords": [ "iterative development", "sprint planning", "user stories", "product backlog", "continuous integration" ]
+      "keywords": [
+        "iterative development",
+        "sprint planning",
+        "user stories",
+        "product backlog",
+        "continuous integration"
+      ]
     },
     {
       "name": "Presentations",
       "level": "Advanced",
-      "keywords": [ "public speaking", "slide design", "audience engagement", "visual communication", "storytelling" ]
+      "keywords": [
+        "public speaking",
+        "slide design",
+        "audience engagement",
+        "visual communication",
+        "storytelling"
+      ]
     },
     {
       "name": "Selvledelse",
       "level": "Advanced",
-      "keywords": [ "selvmotivasjon", "tidsplanlegging", "prioritering", "selvdisiplin", "målsetting" ]
+      "keywords": [
+        "selvmotivasjon",
+        "tidsplanlegging",
+        "prioritering",
+        "selvdisiplin",
+        "målsetting"
+      ]
     },
     {
       "name": "kommunikasjon",
       "level": "Advanced",
-      "keywords": [ "formidling", "klarspråk", "dialog", "tilbakemelding", "kommunikasjonsstrategi" ]
+      "keywords": [
+        "formidling",
+        "klarspråk",
+        "dialog",
+        "tilbakemelding",
+        "kommunikasjonsstrategi"
+      ]
     },
     {
       "name": "Stressmestring",
       "level": "Advanced",
-      "keywords": [ "stresshåndtering", "arbeidsbelastning", "mindfulness", "balanse", "selvregulering" ]
+      "keywords": [
+        "stresshåndtering",
+        "arbeidsbelastning",
+        "mindfulness",
+        "balanse",
+        "selvregulering"
+      ]
     },
     {
       "name": "Prosjektledelse innen programvare",
       "level": "Advanced",
-      "keywords": [ "utviklingsmetodikk", "releaseplanlegging", "kravhåndtering", "teknisk prosjektstyring", "leveransehåndtering" ]
+      "keywords": [
+        "utviklingsmetodikk",
+        "releaseplanlegging",
+        "kravhåndtering",
+        "teknisk prosjektstyring",
+        "leveransehåndtering"
+      ]
     },
     {
       "name": "Software Development Life Cycle (SDLC)",
       "level": "Advanced",
-      "keywords": [ "requirements analysis", "design", "implementation", "testing", "deployment", "maintenance" ]
+      "keywords": [
+        "requirements analysis",
+        "design",
+        "implementation",
+        "testing",
+        "deployment",
+        "maintenance"
+      ]
     },
     {
       "name": "Organizational Development",
       "level": "Advanced",
-      "keywords": [ "change management", "culture building", "organizational effectiveness", "process improvement", "strategic alignment" ]
+      "keywords": [
+        "change management",
+        "culture building",
+        "organizational effectiveness",
+        "process improvement",
+        "strategic alignment"
+      ]
     },
     {
       "name": "Strategic Leadership",
       "level": "Advanced",
-      "keywords": [ "vision development", "strategic planning", "organizational direction", "long-term thinking", "executive decision-making" ]
+      "keywords": [
+        "vision development",
+        "strategic planning",
+        "organizational direction",
+        "long-term thinking",
+        "executive decision-making"
+      ]
     },
     {
       "name": "Strategic Thinking",
       "level": "Advanced",
-      "keywords": [ "long-term planning", "market analysis", "competitive positioning", "business vision", "strategic foresight" ]
+      "keywords": [
+        "long-term planning",
+        "market analysis",
+        "competitive positioning",
+        "business vision",
+        "strategic foresight"
+      ]
     },
     {
       "name": "Team Motivation",
       "level": "Advanced",
-      "keywords": [ "employee engagement", "performance incentives", "morale building", "team spirit", "recognition programs" ]
+      "keywords": [
+        "employee engagement",
+        "performance incentives",
+        "morale building",
+        "team spirit",
+        "recognition programs"
+      ]
     },
     {
       "name": "Team Management",
       "level": "Advanced",
-      "keywords": [ "team coordination", "delegation", "performance monitoring", "team development", "conflict resolution" ]
+      "keywords": [
+        "team coordination",
+        "delegation",
+        "performance monitoring",
+        "team development",
+        "conflict resolution"
+      ]
     },
     {
       "name": "FinTech",
       "level": "Advanced",
-      "keywords": [ "financial technology", "digital banking", "payment systems", "blockchain", "regulatory compliance" ]
+      "keywords": [
+        "financial technology",
+        "digital banking",
+        "payment systems",
+        "blockchain",
+        "regulatory compliance"
+      ]
     },
     {
       "name": "ASP.NET Web API",
       "level": "Advanced",
-      "keywords": [ "RESTful services", "HTTP endpoints", "API development", "request handling", "response formatting" ]
+      "keywords": [
+        "RESTful services",
+        "HTTP endpoints",
+        "API development",
+        "request handling",
+        "response formatting"
+      ]
     },
     {
       "name": "Ledelse",
       "level": "Advanced",
-      "keywords": [ "personalansvar", "strategiarbeid", "virksomhetsstyring", "lederskap", "beslutningsansvar" ]
+      "keywords": [
+        "personalansvar",
+        "strategiarbeid",
+        "virksomhetsstyring",
+        "lederskap",
+        "beslutningsansvar"
+      ]
     },
     {
       "name": "Teknologistyring",
       "level": "Advanced",
-      "keywords": [ "IT-strategi", "teknologiportefølje", "systemarkitektur", "teknologivalg", "teknologisk veikart" ]
+      "keywords": [
+        "IT-strategi",
+        "teknologiportefølje",
+        "systemarkitektur",
+        "teknologivalg",
+        "teknologisk veikart"
+      ]
     },
     {
       "name": "JIRA",
       "level": "Advanced",
-      "keywords": [ "prosjektsporing", "oppgavehåndtering", "arbeidsflyt", "backlog-administrasjon", "agil prosjektstyring" ]
+      "keywords": [
+        "prosjektsporing",
+        "oppgavehåndtering",
+        "arbeidsflyt",
+        "backlog-administrasjon",
+        "agil prosjektstyring"
+      ]
     },
     {
       "name": "T-SQL",
       "level": "Advanced",
-      "keywords": [ "lagrede prosedyrer", "triggere", "spørreoptimalisering", "transaksjonshåndtering", "databasefunksjoner" ]
+      "keywords": [
+        "lagrede prosedyrer",
+        "triggere",
+        "spørreoptimalisering",
+        "transaksjonshåndtering",
+        "databasefunksjoner"
+      ]
     },
     {
       "name": "WinForms",
       "level": "Advanced",
-      "keywords": [ ".NET Windows Forms", "GUI-utvikling", "brukergrensesnitt", "desktop-applikasjoner", "kontrollbibliotek" ]
+      "keywords": [
+        ".NET Windows Forms",
+        "GUI-utvikling",
+        "brukergrensesnitt",
+        "desktop-applikasjoner",
+        "kontrollbibliotek"
+      ]
     },
     {
       "name": "Prosjektlevering",
       "level": "Advanced",
-      "keywords": [ "leveransestyring", "kvalitetssikring", "milepælsoppnåelse", "gevinstrealisering", "akseptansetesting" ]
+      "keywords": [
+        "leveransestyring",
+        "kvalitetssikring",
+        "milepælsoppnåelse",
+        "gevinstrealisering",
+        "akseptansetesting"
+      ]
     },
     {
       "name": "Karriereutvikling",
       "level": "Advanced",
-      "keywords": [ "karriereplanlegging", "kompetanseutvikling", "karriereveiledning", "faglig utvikling", "karriereløp" ]
+      "keywords": [
+        "karriereplanlegging",
+        "kompetanseutvikling",
+        "karriereveiledning",
+        "faglig utvikling",
+        "karriereløp"
+      ]
     },
     {
       "name": "Leverandørledelse",
       "level": "Advanced",
-      "keywords": [ "leverandørstyring", "kontraktsoppfølging", "forhandlinger", "leverandørrelasjoner", "tjenestenivåavtaler" ]
+      "keywords": [
+        "leverandørstyring",
+        "kontraktsoppfølging",
+        "forhandlinger",
+        "leverandørrelasjoner",
+        "tjenestenivåavtaler"
+      ]
     },
     {
       "name": "Applikasjonsarkitektur",
       "level": "Advanced",
-      "keywords": [ "løsningsdesign", "komponentarkitektur", "applikasjonsstruktur", "mønsterbasert design", "systemintegrasjon" ]
+      "keywords": [
+        "løsningsdesign",
+        "komponentarkitektur",
+        "applikasjonsstruktur",
+        "mønsterbasert design",
+        "systemintegrasjon"
+      ]
     },
     {
       "name": "Endringsledelse",
       "level": "Advanced",
-      "keywords": [ "organisasjonsendring", "endringsimplementering", "endringskommunikasjon", "omstillingsprosesser", "endringsstrategi" ]
+      "keywords": [
+        "organisasjonsendring",
+        "endringsimplementering",
+        "endringskommunikasjon",
+        "omstillingsprosesser",
+        "endringsstrategi"
+      ]
     },
     {
       "name": "C#",
       "level": "Advanced",
-      "keywords": [ ".NET", "objektorientert programmering", "LINQ", "asynkron programmering", "generics" ]
+      "keywords": [
+        ".NET",
+        "objektorientert programmering",
+        "LINQ",
+        "asynkron programmering",
+        "generics"
+      ]
     },
     {
       "name": "SQL-server administrasjonsstudio",
       "level": "Advanced",
-      "keywords": [ "SSMS", "databaseadministrasjon", "spørreoptimalisering", "databasesikring", "serverkonfigurasjon" ]
+      "keywords": [
+        "SSMS",
+        "databaseadministrasjon",
+        "spørreoptimalisering",
+        "databasesikring",
+        "serverkonfigurasjon"
+      ]
     },
     {
       "name": "Styring av frivillig arbeid",
       "level": "Advanced",
-      "keywords": [ "frivillighetsledelse", "frivilligkoordinering", "motivasjon av frivillige", "rekruttering", "oppfølging" ]
+      "keywords": [
+        "frivillighetsledelse",
+        "frivilligkoordinering",
+        "motivasjon av frivillige",
+        "rekruttering",
+        "oppfølging"
+      ]
     },
     {
       "name": "Personlig utvikling",
       "level": "Advanced",
-      "keywords": [ "kompetansebygging", "selvrefleksjon", "ferdighetsutvikling", "læringsevne", "tilpasningsevne" ]
+      "keywords": [
+        "kompetansebygging",
+        "selvrefleksjon",
+        "ferdighetsutvikling",
+        "læringsevne",
+        "tilpasningsevne"
+      ]
     },
     {
       "name": "Visual Studio",
       "level": "Advanced",
-      "keywords": [ "IDE", "kodeeditering", "debugging", "versjonskontroll", "utviklingsverktøy" ]
+      "keywords": [
+        "IDE",
+        "kodeeditering",
+        "debugging",
+        "versjonskontroll",
+        "utviklingsverktøy"
+      ]
     },
     {
       "name": "Agile og fossefallsmetodikk",
       "level": "Advanced",
-      "keywords": [ "hybrid metodikk", "iterativ utvikling", "strukturert planlegging", "metodetilpasning", "prosjektmetodologi" ]
+      "keywords": [
+        "hybrid metodikk",
+        "iterativ utvikling",
+        "strukturert planlegging",
+        "metodetilpasning",
+        "prosjektmetodologi"
+      ]
     },
     {
       "name": "Programmering",
       "level": "Advanced",
-      "keywords": [ "kodeutvikling", "algoritmer", "objektorientert design", "kildekodeanalyse", "debugging" ]
+      "keywords": [
+        "kodeutvikling",
+        "algoritmer",
+        "objektorientert design",
+        "kildekodeanalyse",
+        "debugging"
+      ]
     },
     {
       "name": "Teknisk ledelse",
       "level": "Advanced",
-      "keywords": [ "teknologistyring", "teknisk kompetanseledelse", "systemarkitektur", "teknologievaluering", "produktutvikling" ]
+      "keywords": [
+        "teknologistyring",
+        "teknisk kompetanseledelse",
+        "systemarkitektur",
+        "teknologievaluering",
+        "produktutvikling"
+      ]
     },
     {
       "name": "Personalutvikling",
       "level": "Advanced",
-      "keywords": [ "medarbeiderutvikling", "kompetansebygging", "karriereplanlegging", "talentutvikling", "oppfølging" ]
+      "keywords": [
+        "medarbeiderutvikling",
+        "kompetansebygging",
+        "karriereplanlegging",
+        "talentutvikling",
+        "oppfølging"
+      ]
     },
     {
       "name": "Coaching",
       "level": "Advanced",
-      "keywords": [ "veiledning", "utviklingsstøtte", "tilbakemelding", "personlig vekst", "måloppnåelse" ]
+      "keywords": [
+        "veiledning",
+        "utviklingsstøtte",
+        "tilbakemelding",
+        "personlig vekst",
+        "måloppnåelse"
+      ]
     },
     {
       "name": "Rekruttering",
       "level": "Advanced",
-      "keywords": [ "talent acquisition", "intervjuteknikk", "kandidatvurdering", "jobbanalyse", "ansettelsesprosess" ]
+      "keywords": [
+        "talent acquisition",
+        "intervjuteknikk",
+        "kandidatvurdering",
+        "jobbanalyse",
+        "ansettelsesprosess"
+      ]
     },
     {
       "name": "Teamlederskap",
       "level": "Advanced",
-      "keywords": [ "teamutvikling", "teamkoordinering", "målsetting", "resultatoppfølging", "motivering" ]
+      "keywords": [
+        "teamutvikling",
+        "teamkoordinering",
+        "målsetting",
+        "resultatoppfølging",
+        "motivering"
+      ]
     },
     {
       "name": "Agilitetsledelse",
       "level": "Advanced",
-      "keywords": [ "smidig metodikk", "scrum", "kanban", "iterativ utvikling", "kontinuerlig forbedring" ]
+      "keywords": [
+        "smidig metodikk",
+        "scrum",
+        "kanban",
+        "iterativ utvikling",
+        "kontinuerlig forbedring"
+      ]
     },
     {
       "name": "Personledelse",
       "level": "Advanced",
-      "keywords": [ "medarbeideroppfølging", "medarbeidersamtaler", "teambygging", "personalansvar", "kompetanseutvikling" ]
+      "keywords": [
+        "medarbeideroppfølging",
+        "medarbeidersamtaler",
+        "teambygging",
+        "personalansvar",
+        "kompetanseutvikling"
+      ]
     },
     {
       "name": "Tilbudsutarbeidelse",
       "level": "Advanced",
-      "keywords": [ "anbudsprosesser", "tilbudsskriving", "prismodellering", "løsningsbeskrivelse", "kontraktsforhandlinger" ]
+      "keywords": [
+        "anbudsprosesser",
+        "tilbudsskriving",
+        "prismodellering",
+        "løsningsbeskrivelse",
+        "kontraktsforhandlinger"
+      ]
     },
     {
       "name": "Teknologisk produktutvikling",
       "level": "Advanced",
-      "keywords": [ "produktinnovasjon", "teknologivalg", "produktstrategi", "MVP-utvikling", "produktroadmap" ]
+      "keywords": [
+        "produktinnovasjon",
+        "teknologivalg",
+        "produktstrategi",
+        "MVP-utvikling",
+        "produktroadmap"
+      ]
     },
     {
       "name": "Ingeniørledelse",
       "level": "Advanced",
-      "keywords": [ "teknisk teamledelse", "ingeniørprosesser", "teknologistyring", "utviklingsledelse", "teknisk prosjektledelse" ]
+      "keywords": [
+        "teknisk teamledelse",
+        "ingeniørprosesser",
+        "teknologistyring",
+        "utviklingsledelse",
+        "teknisk prosjektledelse"
+      ]
     },
     {
       "name": "Organisasjonsutvikling",
       "level": "Advanced",
-      "keywords": [ "organisasjonsdesign", "kulturutvikling", "prosessoptimalisering", "strukturendring", "kompetanseutvikling" ]
+      "keywords": [
+        "organisasjonsdesign",
+        "kulturutvikling",
+        "prosessoptimalisering",
+        "strukturendring",
+        "kompetanseutvikling"
+      ]
     },
     {
       "name": "Produktutvikling",
       "level": "Advanced",
-      "keywords": [ "produktstrategi", "produktdesign", "markedsanalyse", "brukerinnsikt", "innovasjonsprosesser" ]
+      "keywords": [
+        "produktstrategi",
+        "produktdesign",
+        "markedsanalyse",
+        "brukerinnsikt",
+        "innovasjonsprosesser"
+      ]
     },
     {
       "name": "IT-ledelse",
       "level": "Advanced",
-      "keywords": [ "IT-strategi", "teknologiledelse", "IT-styring", "digital transformasjon", "IT-tjenestestyring" ]
+      "keywords": [
+        "IT-strategi",
+        "teknologiledelse",
+        "IT-styring",
+        "digital transformasjon",
+        "IT-tjenestestyring"
+      ]
     },
     {
       "name": "Scrum",
       "level": "Advanced",
-      "keywords": [ "sprint planning", "daily stand-up", "sprint review", "backlog refinement", "sprint retrospective" ]
+      "keywords": [
+        "sprint planning",
+        "daily stand-up",
+        "sprint review",
+        "backlog refinement",
+        "sprint retrospective"
+      ]
     },
     {
       "name": "Agile Methodologies",
       "level": "Advanced",
-      "keywords": [ "scrum", "kanban", "lean", "XP", "iterative development", "adaptive planning" ]
+      "keywords": [
+        "scrum",
+        "kanban",
+        "lean",
+        "XP",
+        "iterative development",
+        "adaptive planning"
+      ]
     },
     {
       "name": "Project Management",
       "level": "Advanced",
-      "keywords": [ "scope management", "timeline planning", "risk assessment", "stakeholder management", "project governance" ]
+      "keywords": [
+        "scope management",
+        "timeline planning",
+        "risk assessment",
+        "stakeholder management",
+        "project governance"
+      ]
     },
     {
       "name": "Software Development",
       "level": "Advanced",
-      "keywords": [ "coding", "software engineering", "application development", "programming", "software architecture" ]
+      "keywords": [
+        "coding",
+        "software engineering",
+        "application development",
+        "programming",
+        "software architecture"
+      ]
     },
     {
       "name": "Test Driven Development",
       "level": "Advanced",
-      "keywords": [ "unit testing", "test automation", "behavior-driven development", "test-first approach", "code quality" ]
+      "keywords": [
+        "unit testing",
+        "test automation",
+        "behavior-driven development",
+        "test-first approach",
+        "code quality"
+      ]
     },
     {
       "name": "Requirements Analysis",
       "level": "Advanced",
-      "keywords": [ "user stories", "use cases", "functional requirements", "business analysis", "requirement specification" ]
+      "keywords": [
+        "user stories",
+        "use cases",
+        "functional requirements",
+        "business analysis",
+        "requirement specification"
+      ]
     },
     {
       "name": "Service Management",
       "level": "Advanced",
-      "keywords": [ "ITIL", "service catalog", "incident management", "change management", "service level agreements" ]
+      "keywords": [
+        "ITIL",
+        "service catalog",
+        "incident management",
+        "change management",
+        "service level agreements"
+      ]
     },
     {
       "name": "PRINCE2",
       "level": "Advanced",
-      "keywords": [ "controlled environments", "structured project management", "business case", "project board", "stage planning" ]
+      "keywords": [
+        "controlled environments",
+        "structured project management",
+        "business case",
+        "project board",
+        "stage planning"
+      ]
     },
     {
       "name": "Continuous Integration",
       "level": "Advanced",
-      "keywords": [ "automated builds", "CI/CD pipelines", "code integration", "automated testing", "deployment automation" ]
+      "keywords": [
+        "automated builds",
+        "CI/CD pipelines",
+        "code integration",
+        "automated testing",
+        "deployment automation"
+      ]
     },
     {
       "name": "Software Design",
       "level": "Advanced",
-      "keywords": [ "architecture patterns", "design patterns", "system modeling", "interface design", "component design" ]
+      "keywords": [
+        "architecture patterns",
+        "design patterns",
+        "system modeling",
+        "interface design",
+        "component design"
+      ]
     },
     {
       "name": "Software Project Management",
       "level": "Advanced",
-      "keywords": [ "development lifecycle", "technical planning", "code review", "release management", "quality assurance" ]
+      "keywords": [
+        "development lifecycle",
+        "technical planning",
+        "code review",
+        "release management",
+        "quality assurance"
+      ]
     },
     {
       "name": "Negotiation",
       "level": "Advanced",
-      "keywords": [ "bargaining", "conflict resolution", "agreement facilitation", "stakeholder management", "win-win solutions" ]
+      "keywords": [
+        "bargaining",
+        "conflict resolution",
+        "agreement facilitation",
+        "stakeholder management",
+        "win-win solutions"
+      ]
     },
     {
       "name": "Communication Skills",
       "level": "Advanced",
-      "keywords": [ "verbal communication", "written communication", "presentation", "active listening", "interpersonal skills" ]
+      "keywords": [
+        "verbal communication",
+        "written communication",
+        "presentation",
+        "active listening",
+        "interpersonal skills"
+      ]
     },
     {
       "name": "Union Representation",
       "level": "Advanced",
-      "keywords": [ "employee advocacy", "collective bargaining", "labor relations", "worker rights", "dispute resolution" ]
+      "keywords": [
+        "employee advocacy",
+        "collective bargaining",
+        "labor relations",
+        "worker rights",
+        "dispute resolution"
+      ]
     },
     {
       "name": "Agile Methodologies",
