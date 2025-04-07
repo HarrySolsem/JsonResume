@@ -259,113 +259,49 @@
       "name": "Applied TOGAF Enterprise Architecture Practitioner",
       "date": "2024-10-01",
       "issuer": "The Open Group",
-      "url": "https://www.credly.com/badges/3f2e9c94-582a-4b9f-ba7a-df65c303ee1b/linked_in_profile",
-      "summary": "TOGAF 9.2 Certified Enterprise Architect",
-      "keywords": [
-        "Enterprise Architecture",
-        "TOGAF",
-        "Architecture Framework",
-        "Business Architecture",
-        "IT Strategy"
-      ]
+      "url": "https://www.credly.com/badges/3f2e9c94-582a-4b9f-ba7a-df65c303ee1b/linked_in_profile"
     },
     {
       "name": "PROSCI Certified Change Practitioner",
       "date": "2024-03-01",
       "issuer": "PROSCI",
-      "url": "https://www.credly.com/badges/d734928d-07f3-4056-8b21-82e1e21bb0cc/linked_in_profile",
-      "summary": "PROSCI Certified Change Practitioner",
-      "keywords": [
-        "Change Management",
-        "ADKAR",
-        "Organizational Change",
-        "Change Leadership",
-        "Stakeholder Engagement"
-      ]
+      "url": "https://www.credly.com/badges/d734928d-07f3-4056-8b21-82e1e21bb0cc/linked_in_profile"
     },
     {
       "name": "Product Owner",
       "date": "2021-03-01",
       "issuer": "Agile Lean House",
-      "url": "https://agileleanhouse.com/en/cspo",
-      "summary": "Certified Scrum Product Owner",
-      "keywords": [
-        "Scrum",
-        "Agile",
-        "Product Management",
-        "Backlog Management",
-        "Stakeholder Collaboration"
-      ]
+      "url": "https://agileleanhouse.com/en/cspo"
     },
     {
       "name": "Prince2Agile",
       "date": "2019-01-01",
       "issuer": "Axelos Global Best Practice",
-      "url": "https://www.axelos.com/certifications/propath/prince2-agile-project-management/prince2-agile-foundation",
-      "summary": "Prince2Agile Foundation",
-      "keywords": [
-        "Agile Project Management",
-        "Prince2",
-        "Scrum",
-        "Kanban",
-        "Lean"
-      ]
+      "url": "https://www.axelos.com/certifications/propath/prince2-agile-project-management/prince2-agile-foundation"
     },
     {
       "name": "Prince2 Registered Practitioner",
       "date": "2016-11-01",
       "issuer": "APMG International",
-      "url": "https://www.axelos.com/certifications/propath/prince2-project-management/prince2-practitioner",
-      "summary": "Prince2 Registered Practitioner",
-      "keywords": [
-        "Project Management",
-        "Prince2",
-        "Agile",
-        "Risk Management",
-        "Stakeholder Engagement"
-      ]
+      "url": "https://www.axelos.com/certifications/propath/prince2-project-management/prince2-practitioner"
     },
     {
       "name": "Prince2 Foundation",
       "date": "2014-08-01",
       "issuer": "Adding Value Consulting AB",
-      "url": "https://www.axelos.com/certifications/propath/prince2-project-management/prince2-foundation",
-      "summary": "Prince2 Foundation",
-      "keywords": [
-        "Project Management",
-        "Prince2",
-        "Agile",
-        "Risk Management",
-        "Stakeholder Engagement"
-      ]
+      "url": "https://www.axelos.com/certifications/propath/prince2-project-management/prince2-foundation"
     },
     {
       "name": "ITIL Foundation",
       "date": "2012-11-01",
       "issuer": "PeopleCert Group",
-      "url": "https://www.axelos.com/certifications/itil-service-management/itil-4-foundation",
-      "summary": "ITIL Foundation",
-      "keywords": [
-        "ITIL",
-        "Service Management",
-        "IT Service Management",
-        "ITIL 4",
-        "Best Practices"
-      ]
+      "url": "https://www.axelos.com/certifications/itil-service-management/itil-4-foundation"
     },
     {
       "name": "Certified Scrum Master",
       "date": "2010-01-01",
       "issuer": "Scrum Alliance",
-      "url": "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster",
-      "summary": "Certified Scrum Master",
-      "keywords": [
-        "Scrum",
-        "Agile",
-        "Project Management",
-        "Team Leadership",
-        "Facilitation"
-      ]
+      "url": "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster"
     }
   ],
   "skills": [
