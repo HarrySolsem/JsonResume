@@ -1420,7 +1420,9 @@
         "timeline planning",
         "risk assessment",
         "stakeholder management",
-        "project governance"
+        "project governance",
+        "Prince2",
+        "Prince2Agile"
       ],
       "description": "Experience in managing projects from initiation to closure, ensuring successful delivery."
     },
@@ -1556,17 +1558,6 @@
       "description": "Experience in representing employees' interests in negotiations and discussions with management."
     },
     {
-      "name": "Agile Methodologies",
-      "level": "Expert",
-      "keywords": [
-        "Scrum",
-        "Kanban",
-        "Lean",
-        "Team Topologies"
-      ],
-      "description": "Experience in applying Agile methodologies for software development and project management."
-    },
-    {
       "name": "Programming Languages",
       "level": "Advanced",
       "keywords": [
@@ -1609,15 +1600,6 @@
         "Prosci Change Management"
       ],
       "description": "Experience in managing organizational change and implementing change management strategies."
-    },
-    {
-      "name": "Project Management",
-      "level": "Expert",
-      "keywords": [
-        "Prince2",
-        "Prince2Agile"
-      ],
-      "description": "Experience in managing projects using Prince2 and Prince2Agile methodologies."
     },
     {
       "name": "DevOps Tools",
