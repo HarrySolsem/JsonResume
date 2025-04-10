@@ -1,9 +1,4 @@
 ﻿{
-  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
-  "meta": {
-    "version": "0.0.0.1",
-    "lastModified": "2025-04-0808:46:00"
-  },
   "basics": {
     "name": "Harry Solsem",
     "label": "Ledelse | ISO27001 | Teamleder | Prosjektleder | Digital produktutvikling | Endringsledelse | Virksomhetsarkitekt",
@@ -50,7 +45,6 @@
       "url": "https://www.stofo.org",
       "startDate": "2023-05-01",
       "summary": "Konsulent som har støttet nyansatt generalsekretær med strategiavklaringer, organisasjonsutvikling, rekruttering, onboarding av nye medarbeidere og forefallende administrasjonsoppgaver innen drift av forbundet.",
-
       "endDate": "2023-06-01"
     },
     {
@@ -173,14 +167,12 @@
       "url": "https://www.langhusil.no/bordtennis",
       "startDate": "2024-09-01",
       "summary": "Jeg koordinerer styremøter og årsmøter, utarbeider sakslister og følger opp vedtak som blir fattet. Jeg representerer også klubben utad i møter med kommunen, idrettskrets og Norges Bordtennisforbund. God økonomistyring er en sentral del av min rolle, hvor jeg har ansvar for budsjett, rapportering og søknader om økonomisk støtte. Jeg organiserer treninger, skaffer kvalifiserte trenere og tilrettelegger for spillerutvikling på alle nivåer. Planlegging og gjennomføring av klubbturneringer samt koordinering av deltagelse i eksterne turneringer faller også under mitt ansvarsområde. Jeg jobber aktivt med å rekruttere nye medlemmer gjennom markedsføring og ulike rekrutteringsaktiviteter. Videre sørger jeg for vedlikehold av utstyr, bord og treningsfasiliteter. En viktig del av mitt lederskap er å skape et godt miljø i klubben gjennom sosiale aktiviteter og god kommunikasjon mellom medlemmene."
-
     },
     {
       "organization": "Langhus 1405 Sameie",
       "position": "Styremedlem",
       "startDate": "2021-07-01",
       "summary": "Som styremedlem i et sameie har jeg flere ansvarsområder som bidrar til å sikre en velfungerende og harmonisk boenhet for alle beboerne. Jeg deltar aktivt i styremøter hvor jeg er med på å ta viktige beslutninger angående drift, vedlikehold og utvikling av sameiet. Jeg arbeider med budsjett og økonomistyring, og følger opp regnskap og rapportering for å sikre at sameiets midler brukes ansvarlig og effektivt. I tillegg har jeg ansvar for å inngå avtaler med leverandører og tjenesteytere for å sikre at nødvendige oppgaver som renhold, vedlikehold og reparasjoner utføres på en profesjonell måte. Jeg er også med på å utarbeide og oppdatere sameiets vedtekter og husordensregler, og sørger for å håndheve disse på en rettferdig måte. Jeg kommuniserer jevnlig med beboerne, både ved å informere om saker som angår fellesskapet og ved å lytte til deres innspill og bekymringer. Videre bidrar jeg til planlegging og gjennomføring av årsmøter, hvor jeg presenterer status for sameiet, diskuterer planer for fremtiden og sørger for at alle får muligheten til å delta i beslutningsprosesser."
-
     },
     {
       "organization": "STOFFSKIFTEFORBUNDET",
@@ -188,7 +180,6 @@
       "url": "https://stofo.no/",
       "startDate": "2020-11-01",
       "summary": "Som styremedlem i Stoffskifteforbundet bidrar jeg til å fremme forbundets arbeid for personer med stoffskiftesykdommer. Jeg deltar i planlegging og gjennomføring av møter, utvikler strategier og sørger for å følge opp vedtak. Jeg bidrar til økonomisk styring, deltar i budsjettarbeid og følger opp økonomiske rapporter. I tillegg arbeider jeg med kommunikasjon og informasjon, der jeg hjelper til med å nå ut til medlemmer og samarbeidspartnere. Gjennom mitt engasjement bidrar jeg til et inkluderende miljø som fremmer kunnskap, støtte og utvikling for medlemmene."
-
     },
     {
       "organization": "STOFFSKIFTEFORBUNDET",
@@ -196,7 +187,6 @@
       "url": "https://stofo.no/",
       "startDate": "2017-03-01",
       "summary": "Som likeperson i Stoffskifteforbundet tilbyr jeg støtte og veiledning til personer som lever med stoffskiftesykdommer. Jeg deler erfaringer, lytter til andres utfordringer og bidrar til å skape et trygt rom hvor medlemmene kan utveksle råd og finne motivasjon. Gjennom mitt engasjement bidrar jeg til å styrke fellesskapet og fremme forståelse for sykdommen."
-
     }
   ],
   "education": [
@@ -207,7 +197,11 @@
       "studyType": "Bachelor",
       "startDate": "2018-01-01",
       "score": "",
-      "courses": [ "Prosjektledelse 1", "Prosjektledelse 2", "Prosjektledelse 3" ],
+      "courses": [
+        "Prosjektledelse 1",
+        "Prosjektledelse 2",
+        "Prosjektledelse 3"
+      ],
       "endDate": "2019-01-01"
     },
     {
@@ -1321,7 +1315,9 @@
       "url": "https://www.relove.info",
       "entity": "Prosperastiftelsen",
       "endDate": "2025-05-01",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Ledet et team på 5 personer i et prosjekt for å utvikle en ny strategi for RELOVE.",
         "Sikret at prosjektet ble levert innen tidsrammen og budsjettet.",
@@ -1335,7 +1331,9 @@
       "url": "https://www.osloogomlandfriluftsrad.no/",
       "entity": "Prosperastiftelsen",
       "endDate": "2025-01-01",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Ledet prosjektet for å digitalisere administrative prosesser hos OOF, med fokus på timeføring, budsjettering og prosjektstyring.",
         "Gjennomførte behovsanalyse og evaluering av digitale verktøy som best kunne møte organisasjonens behov.",
@@ -1349,7 +1347,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2020-11-01",
       "entity": "DNB",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Ledet sanering av utdatert maskinvare og implementering av nye sikkerhetsløsninger på flere tusen servere.",
         "Koordinerte tverrfaglige team i en fullt digital arbeidsmodell under pandemien via Microsoft Teams.",
@@ -1363,7 +1363,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2020-11-01",
       "entity": "DNB",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Utviklet og implementerte omfattende sikkerhetsfokuserte styringsdokumenter for programvareutvikling i DNB.",
         "Gjennomførte leverandørevalueringer og etablerte nye sikkerhetskrav for eksterne utviklingspartnere.",
@@ -1377,7 +1379,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2020-11-01",
       "entity": "DNB",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Ledet implementeringen av automatisert tilgangsstyring med ServiceNow og IIQ, som resulterte i 40% reduksjon i manuelle tilgangsprosesser.",
         "Sikret compliance med interne og eksterne reguleringer gjennom forbedret dokumentasjon og prosesser.",
@@ -1391,7 +1395,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2020-11-01",
       "entity": "DNB",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Etablerte og ledet et omfattende program for penetrasjonstesting av kritiske systemer i DNB.",
         "Koordinerte interne sikkerhetseksperter og eksterne partnere for å gjennomføre grundige sikkerhetstester.",
@@ -1405,7 +1411,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2020-11-01",
       "entity": "DNB",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Ledet implementeringen av forsterket DDOS-beskyttelse for kritiske systemkomponenter i DNB.",
         "Utarbeidet omfattende migreringsstrategi som minimerte nedetid under flytting av systemer.",
@@ -1419,7 +1427,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2019-01-01",
       "entity": "DNB",
-      "roles": [ "Scrum master" ],
+      "roles": [
+        "Scrum master"
+      ],
       "highlights": [
         "Fungerte som Scrum Master for et tverrfaglig team på 8 personer som utviklet DNBs nye bedriftsportal.",
         "Gjennomførte grundig opplæring i smidig metodikk for både IT-utviklere og forretningsrepresentanter.",
@@ -1433,7 +1443,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2018-03-01",
       "entity": "DNB",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Ledet GDPR-implementeringsprosjektet for DNB Liv, som sikret full compliance innen fristen mai 2018.",
         "Koordinerte tverrfaglig team bestående av juridiske eksperter, IT-spesialister og forretningsanalytikere.",
@@ -1447,7 +1459,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2015-04-01",
       "entity": "Sharecat Solutions AS",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Overtok et komplekst internasjonalt prosjekt og utviklet en detaljert prosjektplan som sikret vellykket leveranse.",
         "Ledet et geografisk spredt team på tvers av flere land i implementeringen av Sharecats katalog-tjenester.",
@@ -1461,7 +1475,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2011-10-01",
       "entity": "Ventelo",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Ledet og utviklet utvidelser til Ventelos CRM-system basert på grundig analyse av IT-støttehenvendelser.",
         "Identifiserte og implementerte løsninger for 5 kritiske forretningsområder som manglet systemstøtte.",
@@ -1475,7 +1491,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2007-06-01",
       "entity": "Umoe Mandal",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Utviklet og implementerte et komplett rapportdistribueringssystem med C# og MS SQL Server.",
         "Implementerte avansert AD-integrasjon for automatisert brukeradministrasjon.",
@@ -1489,7 +1507,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2006-05-01",
       "entity": "Umoe Mandal",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Ledet prosjektet fra kravspesifikasjon til implementering og drift.",
         "Utviklet en C# applikasjon med MS SQL Server som database.",
@@ -1503,7 +1523,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2007-08-01",
       "entity": "Umoe Mandal",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Ledet prosjektet fra kravspesifikasjon til implementering og drift.",
         "Utviklet en VB.Net applikasjon med MS SQL Server som database.",
