@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/HarrySolsem/JsonResume#readme",
   "dependencies": {
-    "jsonresume-theme-elegant": "^1.16.1",
-    "resume-cli": "^3.0.8"
+    "puppeteer": "^24.6.1"
   }
 }
