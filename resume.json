@@ -268,7 +268,7 @@
   ],
   "skills": [
     {
-      "name": "Agile Practices",
+      "name": "Agile metodikker",
       "level": "Advanced",
       "keywords": [
         "iterative development",
@@ -294,7 +294,7 @@
       ]
     },
     {
-      "name": "Software Development & Architecture",
+      "name": "Software utvikling og arkitektur",
       "level": "Advanced",
       "keywords": [
         "C#",
@@ -370,7 +370,7 @@
       ]
     },
     {
-      "name": "Project & Process Management",
+      "name": "Prosjekt- og prosessledelse",
       "level": "Advanced",
       "keywords": [
         "scope management",
@@ -401,7 +401,7 @@
       ]
     },
     {
-      "name": "Technical Tools & Platforms",
+      "name": "Tekniske verktøy og plattformer",
       "level": "Advanced",
       "keywords": [
         "TeamCity",
