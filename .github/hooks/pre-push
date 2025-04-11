@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh 
 echo "Running pre-push hook..."
 # Add validation scripts here
 exit 0
