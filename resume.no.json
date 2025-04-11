@@ -6,7 +6,7 @@
   },
   "basics": {
     "name": "Harry Solsem",
-    "label": "Ledelse | ISO27001 | Teamleder | Prosjektleder | Digital produktutvikling | Endringsledelse | Virksomhetsarkitekt",
+    "label": "IT-ledelse og prosjektledelse",
     "summary": "Med over 30 års ledererfaring, erfaring fra tekniske og administrative stillinger i selskaper som DNB, Riverty, Neonomics og Sharecat Solutions, har jeg hatt ansvar for teamledelse, produktutvikling og IT-prosjekter. Jeg har ledet team med opptil 50 medarbeidere, med fullt ansvar for personal, budsjett og resultater.",
     "picture": "https://avatars.githubusercontent.com/u/2042298?v=4",
     "image": "https://avatars.githubusercontent.com/u/2042298?v=4",
@@ -332,15 +332,15 @@
       "name": "Agile metodikker",
       "level": "Advanced",
       "keywords": [
-        "iterative development",
-        "sprint planning",
-        "user stories",
-        "product backlog",
-        "continuous integration",
-        "agile facilitation",
-        "scrum master",
-        "team development",
-        "continuous improvement",
+        "iterativ utvikling",
+        "sprintplanlegging",
+        "brukerhistorier",
+        "produktkø",
+        "kontinuerlig integrasjon",
+        "smidig fasilitering",
+        "scrum-master",
+        "teamutvikling",
+        "kontinuerlig forbedring",
         "scrum",
         "kanban",
         "lean",
@@ -365,38 +365,36 @@
         "LINQ",
         "RESTful services",
         "HTTP endpoints",
-        "API development",
-        "request handling",
-        "response formatting",
+        "API utvikling",
         "løsningsdesign",
         "komponentarkitektur",
         "applikasjonsstruktur",
-        "mønsterbasert design",
+        "patternbasert design",
         "systemintegrasjon",
-        "architecture patterns",
-        "design patterns",
-        "system modeling",
-        "interface design",
-        "component design",
-        "coding",
-        "software engineering",
-        "application development",
-        "programming",
-        "software architecture",
-        "requirements analysis",
+        "arkitektur-patterns",
+        "designpatterns",
+        "systemmodellering",
+        "grensesnittdesign",
+        "komponentdesign",
+        "koding",
+        "programvareutvikling",
+        "applikasjonsutvikling",
+        "programmering",
+        "programvarearkitektur",
+        "kravanalyse",
         "design",
-        "implementation",
+        "implementering",
         "testing",
-        "deployment",
-        "maintenance",
-        "system design",
-        "architectural patterns",
-        "technical specifications",
-        "integration architecture"
+        "utrulling",
+        "vedlikehold",
+        "systemdesign",
+        "arkitektpatterns",
+        "tekniske spesifikasjoner",
+        "integrasjonsarkitektur"
       ]
     },
     {
-      "name": "Leadership & Management",
+      "name": "Ledelse & Administrasjon",
       "level": "Advanced",
       "keywords": [
         "vision setting",
@@ -500,21 +498,21 @@
       "organization": "Langhus 1405 Sameie",
       "position": "Styremedlem",
       "startDate": "2021-07-01",
-      "summary": "Som styremedlem i et sameie har jeg flere ansvarsområder som bidrar til å sikre en velfungerende og harmonisk boenhet for alle beboerne. Jeg deltar aktivt i styremøter hvor jeg er med på å ta viktige beslutninger angående drift, vedlikehold og utvikling av sameiet. Jeg arbeider med budsjett og økonomistyring, og følger opp regnskap og rapportering for å sikre at sameiets midler brukes ansvarlig og effektivt. I tillegg har jeg ansvar for å inngå avtaler med leverandører og tjenesteytere for å sikre at nødvendige oppgaver som renhold, vedlikehold og reparasjoner utføres på en profesjonell måte. Jeg er også med på å utarbeide og oppdatere sameiets vedtekter og husordensregler, og sørger for å håndheve disse på en rettferdig måte. Jeg kommuniserer jevnlig med beboerne, både ved å informere om saker som angår fellesskapet og ved å lytte til deres innspill og bekymringer. Videre bidrar jeg til planlegging og gjennomføring av årsmøter, hvor jeg presenterer status for sameiet, diskuterer planer for fremtiden og sørger for at alle får muligheten til å delta i beslutningsprosesser."
+      "summary": "Jeg har flere ansvarsområder som bidrar til å sikre en velfungerende og harmonisk boenhet for alle beboerne. Jeg deltar aktivt i styremøter hvor jeg er med på å ta viktige beslutninger angående drift, vedlikehold og utvikling av sameiet. Jeg arbeider med budsjett og økonomistyring, og følger opp regnskap og rapportering for å sikre at sameiets midler brukes ansvarlig og effektivt. I tillegg har jeg ansvar for å inngå avtaler med leverandører og tjenesteytere for å sikre at nødvendige oppgaver som renhold, vedlikehold og reparasjoner utføres på en profesjonell måte. Jeg er også med på å utarbeide og oppdatere sameiets vedtekter og husordensregler, og sørger for å håndheve disse på en rettferdig måte. Jeg kommuniserer jevnlig med beboerne, både ved å informere om saker som angår fellesskapet og ved å lytte til deres innspill og bekymringer. Videre bidrar jeg til planlegging og gjennomføring av årsmøter, hvor jeg presenterer status for sameiet, diskuterer planer for fremtiden og sørger for at alle får muligheten til å delta i beslutningsprosesser."
     },
     {
       "organization": "STOFFSKIFTEFORBUNDET",
       "position": "Forbundsstyremedlem",
       "url": "https://stofo.no/",
       "startDate": "2020-11-01",
-      "summary": "Som styremedlem i Stoffskifteforbundet bidrar jeg til å fremme forbundets arbeid for personer med stoffskiftesykdommer. Jeg deltar i planlegging og gjennomføring av møter, utvikler strategier og sørger for å følge opp vedtak. Jeg bidrar til økonomisk styring, deltar i budsjettarbeid og følger opp økonomiske rapporter. I tillegg arbeider jeg med kommunikasjon og informasjon, der jeg hjelper til med å nå ut til medlemmer og samarbeidspartnere. Gjennom mitt engasjement bidrar jeg til et inkluderende miljø som fremmer kunnskap, støtte og utvikling for medlemmene."
+      "summary": "Jeg bidrar til å fremme forbundets arbeid for personer med stoffskiftesykdommer. Jeg deltar i planlegging og gjennomføring av møter, utvikler strategier og sørger for å følge opp vedtak. Jeg bidrar til økonomisk styring, deltar i budsjettarbeid og følger opp økonomiske rapporter. I tillegg arbeider jeg med kommunikasjon og informasjon, der jeg hjelper til med å nå ut til medlemmer og samarbeidspartnere. Gjennom mitt engasjement bidrar jeg til et inkluderende miljø som fremmer kunnskap, støtte og utvikling for medlemmene. Jeg har også hatt oppgaver med å ansette ny generalsekretær."
     },
     {
       "organization": "STOFFSKIFTEFORBUNDET",
       "position": "Likeperson",
       "url": "https://stofo.no/",
       "startDate": "2017-03-01",
-      "summary": "Som likeperson i Stoffskifteforbundet tilbyr jeg støtte og veiledning til personer som lever med stoffskiftesykdommer. Jeg deler erfaringer, lytter til andres utfordringer og bidrar til å skape et trygt rom hvor medlemmene kan utveksle råd og finne motivasjon. Gjennom mitt engasjement bidrar jeg til å styrke fellesskapet og fremme forståelse for sykdommen."
+      "summary": "Jeg tilbyr støtte og veiledning til personer som lever med stoffskiftesykdommer. Jeg deler erfaringer, lytter til andres utfordringer og bidrar til å skape et trygt rom hvor medlemmene kan utveksle råd og finne motivasjon. Gjennom mitt engasjement bidrar jeg til å styrke fellesskapet og fremme forståelse for sykdommen."
     }
   ],
   "work": [
@@ -523,7 +521,7 @@
       "position": "Prosjektleder",
       "url": "https://www.prosperastiftelsen.no",
       "startDate": "2024-10-01",
-      "summary": "Innleid som prosjektleder hos Prosperastiftelsen. Her har jeg oppgaver innen ledelse av prosjektteam, planlegging, prioritere og beslutte, overordnet ansvar for kvalitet på leveranse, sørge for at tidsfrister holdes og forankring hos prosjektmottaker. I denne stillingen benytter jeg aktivt lærdom fra mine sertifiseringer innen Prosci endringsledelse og Prince2 prosjektmetodikk i blandet en dose erfaring fra Lean og Agile. Jeg har bygget og ledet flere team på opp til 5 personer hvor jeg har hatt fokus på å skape teamfølelse og psykologisk trygghet. Alle prosjekter har levert i henhold til mål om kvalitet og innen de tidsfrister som er satt."
+      "summary": "Innleid prosjektleder hos Prosperastiftelsen med ansvar for prosjektteamledelse, planlegging, prioritering og beslutningstaking. Overordnet ansvar for å sikre kvaliteten på leveranser, opprettholde tidsfrister og forankre prosjektene hos mottakere. I rollen drar jeg nytte av sertifiseringer innen Prosci endringsledelse og Prince2 prosjektmetodikk, kombinert med verdifull erfaring fra Lean og Agile. Jeg har bygget og ledet flere team på opptil fem personer, med fokus på å skape en sterk teamfølelse og psykologisk trygghet. Alle prosjekter har levert i henhold til mål for kvalitet og innen de fastsatte tidsfrister."
     },
     {
       "name": "Riverty",
@@ -554,7 +552,7 @@
       "position": "Senior Manager",
       "url": "https://www.kpmg.no",
       "startDate": "2021-02-01",
-      "summary": "Konsulent innen prosjektledelse og smidig metodikker.",
+      "summary": "Konsulent med spesialisering i prosjektledelse og smidige metodikker, med fokus på effektivisering av prosesser og optimalisering av teamytelse.",
       "endDate": "2021-08-01"
     },
     {
@@ -562,7 +560,7 @@
       "position": "Prosjektleder",
       "url": "https://www.dbn.no",
       "startDate": "2020-05-01",
-      "summary": "Mitt bidrag har her ført til at prosjektene leverte raskere og med bedre sluttresultat for brukerne, i tillegg til økt verdi for midlene som er investert i prosjektene. Som prosjektleder i DNB avdeling IT-sikkerhet hadde jeg ansvar for 5 prosjekter og daglig ledelse av disse, rapporterte til styringsgruppene og fulgte opp leveranser og økonomi. Dette er IAM compliance prosjekt, implementasjon av DDOS-beskyttelse for et utvalg av DNB systemportefølje, økning av sikkerhetsfokus innen DNB programvarelivssyklus samt sanering av gammel felles løsning for logging. Verktøy benyttet er blant andre Microsoft Project, ServiceNow og Microsoft Office.",
+      "summary": "Mitt bidrag resulterte i raskere prosjektleveranser og forbedrede sluttresultater for brukerne, samtidig som investerte midler ga økt verdi. Som prosjektleder i DNBs IT-sikkerhetsavdeling hadde jeg ansvar for fem prosjekter, inkludert deres daglige ledelse. Jeg rapporterte til styringsgruppene og fulgte opp både leveranser og økonomi. Prosjektene omfattet IAM-compliance, implementering av DDOS-beskyttelse for utvalgte deler av DNBs systemportefølje, økt sikkerhetsfokus i programvarelivssyklusen samt sanering av gamle felles logging-løsninger. Arbeidet ble støttet av verktøy som Microsoft Project, ServiceNow og Microsoft Office.",
       "endDate": "2021-01-01"
     },
     {
@@ -570,7 +568,7 @@
       "position": "Teknisk leder",
       "url": "https://www.dbn.no",
       "startDate": "2017-10-01",
-      "summary": "Har jeg bidratt til å endre arbeidsmetodikk fra å benytte fossefall i prosjekter til å benytte en smidig tilnærming ved hjelp av scrum. Jeg har hatt ansvar for å lære opp kollegaer i smidige metodikk. Dette har vært både tekniske it-ressurser og kollegaer fra andre deler av organisasjonen.",
+      "summary": "Bidro til å transformere arbeidsmetodikken i prosjekter fra fossefall til en smidig tilnærming gjennom implementering av Scrum. Hadde ansvar for opplæring av kollegaer i smidige metodikker, inkludert både tekniske IT-ressurser og medarbeidere fra andre avdelinger, og sikret dermed en effektiv og helhetlig tilpasning til den nye arbeidsmetoden.",
       "endDate": "2020-05-01"
     },
     {
@@ -578,7 +576,7 @@
       "position": "Plattformingeniør",
       "url": "https://wst.no",
       "startDate": "2015-05-01",
-      "summary": "Ansvarlig for design, implementering og vedlikehold av en CI/CD-verdikjede ved bruk av TeamCity og OctoDeploy. Arbeidet inkluderte portering av en Java-applikasjon til C#, JavaScript og XSL/XML for å sikre kompatibilitet og forbedret funksjonalitet. Opplæring av veiledning i bruk av Microsoft utviklerverktøy som Visual Studio.",
+      "summary": "Ansvarlig for design, implementasjon og vedlikehold av en effektiv CI/CD-verdikjede ved hjelp av TeamCity og OctoDeploy. Utførte migrering av en Java-applikasjon til C#, JavaScript og XSL/XML, noe som resulterte i forbedret funksjonalitet og økt kompatibilitet. Tilrettela opplæring og veiledning i bruk av Microsoft-utviklingsverktøy, inkludert Visual Studio, for å styrke teamets produktivitet og kompetanse.",
       "endDate": "2017-09-01"
     },
     {
@@ -586,7 +584,7 @@
       "position": "Prosjektleder/Scrum Master/Senior programvareutvikler",
       "url": "https://home.sharecat.com/",
       "startDate": "2013-02-01",
-      "summary": "Senior programvareutvikler med ekspertise i Microsoft-stacken, Scrum Master og Agile Coach med ansvar for å implementere Scrum som prosjektgjennomføringsmetodikk. Ledet leveranseprosjekter som prosjektleder ved bruk av Prince2-metodikk, med fokus på strukturert planlegging, effektiv ressursstyring og kvalitetsleveranser.",
+      "summary": "Jeg fungerer som senior programvareutvikler med dyp ekspertise innen Microsoft-teknologistacken, samtidig som jeg innehar rollene som Scrum Master og Agile Coach med ansvar for å implementere og forankre Scrum som prosjektgjennomføringsmetodikk i organisasjonen. I tillegg har jeg ledet leveranseprosjekter i rollen som prosjektleder hvor jeg har anvendt Prince2-metodikk for å sikre strukturert planlegging, effektiv ressursstyring og gjennomgående høy kvalitet på leveransene. Denne kombinasjonen av teknisk utviklingskompetanse og prosjektledelseserfaring gjør at jeg kan bidra både på operativt og strategisk nivå i komplekse IT-prosjekter.",
       "endDate": "2015-04-01"
     },
     {
@@ -594,7 +592,7 @@
       "position": "Teknisk prosjektleder/Service Delivery Manager/Software Engineer",
       "url": "https://www.ventelo.no",
       "startDate": "2010-03-01",
-      "summary": "Utvikle støtte- og front-end systemer. Dette inkluderer web-applikasjoner som benyttes av Ventelos kunder for å administrere sitt kundeforhold/abonnement hos Ventelo. Pluss  videreutvikling av Ventelos interne crm-systemer. Ventelo benytter SOA, og utvikler ved bruk av smidige metoder og continuous integration.  C#, Asp.net, MS SQL, TDD, FakeItEasy.",
+      "summary": "Jeg har ansvar for utvikling av sofistikerte støtte- og front-end systemer for Ventelo, med hovedvekt på web-applikasjoner som gir kundene mulighet til å selvstendig administrere sine kundeforhold og abonnementer gjennom en intuitiv digital plattform. Parallelt arbeider jeg med kontinuerlig videreutvikling og forbedring av Ventelos interne CRM-systemer for å optimalisere kundebehandlingsprosesser. I dette utviklingsarbeidet følger jeg Ventelos tjenesteorienterte arkitektur (SOA) og anvender smidige utviklingsmetoder sammen med continuous integration for å sikre høy kvalitet og rask leveranse. Teknisk sett benytter jeg C# og ASP.NET for applikasjonsutvikling, Microsoft SQL Server for databasehåndtering, og følger testdrevet utviklingsmetodikk (TDD) med FakeItEasy som rammeverk for enhetstesting.",
       "endDate": "2012-06-01"
     },
     {
@@ -602,7 +600,7 @@
       "position": "Programvareutvikler",
       "url": "https://www.once.no/",
       "startDate": "2008-09-01",
-      "summary": "Utvikle nye applikasjoner i C#, Windows Sharepoint Services pluss videreutvikle/utvide eksisterende applikasjoner.",
+      "summary": "Jeg har ansvar for å utvikle nye, innovative applikasjoner med C# som primært programmeringsspråk, med særlig fokus på integrasjon mot Windows SharePoint Services for å sikre effektiv samhandling og dokumenthåndtering i organisasjonen. I tillegg har jeg ansvar for å videreutvikle og utvide funksjonaliteten i eksisterende applikasjoner, noe som omfatter både feilretting, optimalisering av ytelse og implementering av nye funksjoner basert på brukerbehov og teknologisk utvikling.",
       "endDate": "2010-03-01"
     },
     {
@@ -610,7 +608,7 @@
       "position": "Programvareutvikler",
       "url": "https://www.comunic.no",
       "startDate": "2008-03-01",
-      "summary": "Utvikle winforms prosjektkalkylesystem, C#, MS SQL Database.",
+      "summary": "Jeg har ansvar for utvikling av et avansert prosjektkalkylesystem basert på Windows Forms-teknologi, der jeg benytter programmeringsspråket C# for applikasjonslogikk og Microsoft SQL Server som databaseplattform. Dette systemet gir brukerne et kraftig verktøy for å kalkulere, analysere og følge opp økonomiske aspekter ved prosjekter, med en brukervennlig grensesnitt som forenkler komplekse kalkyleprosesser og gir verdifull beslutningsstøtte ved prosjektplanlegging og -gjennomføring.",
       "endDate": "2008-08-01"
     },
     {
@@ -618,7 +616,7 @@
       "position": "Programvareutvikler",
       "url": "https://www.um.no",
       "startDate": "2002-10-01",
-      "summary": "Gjennomført alle faser innen applikasjonsutvikling, kravspesifikasjon, løsningsforslag, implementasjon, utrulling, opplæring og drift. VB.Net, C#, MS Sql, Oracle.  Utvikle mellomvare for datamanipulering for dataoverføring/endring mellom Oracle Sql database - MS Sql database.",
+      "summary": "Jeg har erfaring med hele livssyklusen for systemutvikling, fra innhenting og analyse av kravspesifikasjoner, utarbeidelse av løsningsforslag, selve implementasjonen av koden, til utrulling av ferdig programvare, opplæring av sluttbrukere og etablering av driftsrutiner. I dette arbeidet benytter jeg primært programmeringsspråkene VB.Net og C#, samt databaseteknologiene Microsoft SQL Server og Oracle. En sentral del av mitt arbeid har vært utvikling av spesialisert mellomvare for datamanipulering som effektivt håndterer dataoverføring og transformasjon mellom Oracle SQL-databaser og Microsoft SQL Server-databaser, noe som sikrer sømløs dataintegrasjon mellom ulike systemplattformer.",
       "endDate": "2008-02-01"
     },
     {
@@ -626,7 +624,7 @@
       "position": "Programvarekonsulent",
       "url": "https://www.intershare.no",
       "startDate": "2001-10-01",
-      "summary": "1. Videreutvikle firmaets programvare for administrasjon av utleie.  2. Leveranse av konsulent-timer mot firmaets kunder.   MS Visual C++, MFC, Sybase Sql Anywhere, MS Sql",
+      "summary": "Min hovedrolle involverer videreutvikling av firmaets programvare for administrasjon av utleie, der jeg arbeider med teknologier som Microsoft Visual C++, MFC, Sybase SQL Anywhere og Microsoft SQL Server. I tillegg har jeg ansvar for å levere konsulenttjenester til firmaets kunder, hvor jeg bidrar med min tekniske ekspertise innen disse plattformene. Dette innebærer både å forbedre eksisterende funksjonalitet i utleieadministrasjonssystemet og å bistå kunder med deres spesifikke behov relatert til våre teknologiløsninger.",
       "endDate": "2002-04-01"
     },
     {
@@ -634,7 +632,7 @@
       "position": "Edb-konsulent",
       "url": "https://www.edbavd.no/",
       "startDate": "1997-08-01",
-      "summary": "Konsulent med oppdrag innen brukerstøtte, drift av nettverk (Microsoft og Novell), klientkonfigurering av windows, oppsett av backuprutiner. Utvikling i Ansi C.",
+      "summary": "Som konsulent har jeg ansvar for et bredt spekter av IT-tjenester, inkludert førstelinje brukerstøtte og drift av sammensatte nettverksmiljøer som benytter både Microsoft- og Novell-plattformer. Jeg konfigurerer Windows-klienter for optimal ytelse i henhold til virksomhetens behov og etablerer robuste backuprutiner for å sikre datasikkerhet. I tillegg utvikler jeg spesialtilpassede løsninger med programmering i ANSI C for å møte spesifikke tekniske oppgaver.",
       "endDate": "2001-08-01"
     },
     {
@@ -642,7 +640,7 @@
       "position": "Brukerstøtte",
       "url": "https://www.manpower.no",
       "startDate": "1994-08-01",
-      "summary": "Brukerstøtte windows 95, drift Token-Ring nettverk, oppsett og drift av windowsklienter.",
+      "summary": "Jeg yter omfattende brukerstøtte for Windows 95-operativsystemer og har medansvar for den daglige driften av Token-Ring nettverk, en oppgave som krever spesialisert teknisk kompetanse innen eldre nettverksteknologi. I tillegg har jeg ansvar for oppsett og løpende vedlikehold av Windows-klienter, der jeg sørger for optimal konfigurasjon, oppdatering og problemløsning for å sikre stabil og effektiv drift av klientmaskiner i virksomhetens IT-miljø.",
       "endDate": "1997-06-01"
     }
   ]
