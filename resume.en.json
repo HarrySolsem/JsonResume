@@ -133,6 +133,69 @@
         "Real-Time Programming"
       ],
       "endDate": "1994-05-01"
+    },
+    {
+      "institution": "Melbu Videregående skole",
+      "area": "IT",
+      "studyType": "VK2, Handel og kontor, Data- og informasjonsbehandling",
+      "startDate": "1989-08-01",
+      "score": "",
+      "courses": [
+        "Norsk og kommunikasjon, hovedmål, skriftlig",
+        "Norsk og kommunikasjon, sidemål, skriftlig",
+        "Norsk og kommunikasjon, muntlig",
+        "Organisasjonslære",
+        "Engelsk, skriftlig",
+        "Engelsk, muntlig",
+        "Sosialøkonomi",
+        "Kroppsøving",
+        "Systemering",
+        "Programmering",
+        "Administrative EDB-verktøy",
+        "Samfunnsfag"
+      ],
+      "endDate": "1990-06-01"
+    },
+    {
+      "institution": "Melbu Videregående skole",
+      "area": "Økonomi",
+      "studyType": "VK1, Handel og kontor",
+      "startDate": "1988-08-01",
+      "score": "",
+      "courses": [
+        "Norsk med sidemål skriftlig",
+        "Norsk muntlig",
+        "Engelsk, skriftlig",
+        "Engelsk, muntlig",
+        "Kroppsøving",
+        "Rettslære",
+        "Sosialøkonomi",
+        "Bedriftsøkonomi",
+        "Markedsføring",
+        "Matematikk og statistikk",
+        "Informasjonsbehandling"
+      ],
+      "endDate": "1989-06-01"
+    },
+    {
+      "institution": "Sortland Videregående skole",
+      "area": "Handels- og kontorfag",
+      "studyType": "Grunnkurs",
+      "startDate": "1987-08-01",
+      "score": "",
+      "courses": [
+        "Norsk",
+        "Engelsk",
+        "Kroppsøving",
+        "Regnskapslære",
+        "Matematikk I",
+        "Samfunns- og næringslære",
+        "Korrespondanse- og dokumentlære",
+        "Maskinskriving",
+        "Praktisk kontorarbeid",
+        "Tekstbehandling"
+      ],
+      "endDate": "1988-06-01"
     }
   ],
   "interests": [
@@ -710,6 +773,38 @@
       "startDate": "1994-08-01",
       "summary": "User support for Windows 95, operation of Token-Ring networks, setup, and operation of Windows clients.",
       "endDate": "1997-06-01"
+    },
+    {
+      "name": "PC-LAND SOFTWARE",
+      "position": "Programvareutvikler",
+      "url": "",
+      "startDate": "1995-02-01",
+      "summary": "Utviklet programvare i Microsoft Visual Foxpro 3.0",
+      "endDate": "1995-03-28"
+    },
+    {
+      "name": "Total Consept Development",
+      "position": "Programvareutvikler",
+      "url": "",
+      "startDate": "1994-08-01",
+      "summary": "Hovedansvar for utvikling av administrative systemer for resturantbranje og jukebox-databaser. Utviklet i Visual Basic",
+      "endDate": "1994-11-31"
+    },
+    {
+      "name": "BÅDE OG RADIOREKLAMEBYRÅ",
+      "position": "IT-konsulent",
+      "url": "",
+      "startDate": "1994-06-01",
+      "summary": "Hovedansvar for utarbeidelse av ethernett, klientoppsett av Windows for Workgroups 11 og brukerstøtte",
+      "endDate": "1994-07-31"
+    },
+    {
+      "name": "NHI-Datahøgskolen",
+      "position": "Veileder",
+      "url": "",
+      "startDate": "1994-01-01",
+      "summary": "Veileder i faget Algoritmer og datastrukturer",
+      "endDate": "1994-06-01"
     }
   ]
 }
