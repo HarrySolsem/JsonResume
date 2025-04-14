@@ -86,7 +86,11 @@
       "studyType": "Bachelor",
       "startDate": "2018-01-01",
       "score": "",
-      "courses": [ "Project Management 1", "Project Management 2", "Project Management 3" ],
+      "courses": [
+        "Project Management 1",
+        "Project Management 2",
+        "Project Management 3"
+      ],
       "endDate": "2019-01-01"
     },
     {
@@ -96,7 +100,12 @@
       "studyType": "Bachelor",
       "startDate": "1999-08-01",
       "score": "",
-      "courses": [ "User Interfaces", "Problem Solving Using Java", "Advanced Database Systems XML", "OO Systems Design Using UML" ],
+      "courses": [
+        "User Interfaces",
+        "Problem Solving Using Java",
+        "Advanced Database Systems XML",
+        "OO Systems Design Using UML"
+      ],
       "endDate": "2000-05-01"
     },
     {
@@ -105,14 +114,35 @@
       "studyType": "Administrative Data Processing",
       "startDate": "1992-08-01",
       "score": "",
-      "courses": [ "Administration and Business Economics", "Introduction to Systems Development", "Organization, Collaboration, and Leadership", "Basic Programming", "Marketing", "Databases and Data Models", "Algorithms and Data Structures", "Assembly Language Programming", "Data Communication I", "Systems Development II", "Application Development", "Application Programming in C++", "Mathematical Analysis I", "Discrete Mathematics", "Operating Systems", "Real-Time Programming" ],
+      "courses": [
+        "Administration and Business Economics",
+        "Introduction to Systems Development",
+        "Organization, Collaboration, and Leadership",
+        "Basic Programming",
+        "Marketing",
+        "Databases and Data Models",
+        "Algorithms and Data Structures",
+        "Assembly Language Programming",
+        "Data Communication I",
+        "Systems Development II",
+        "Application Development",
+        "Application Programming in C++",
+        "Mathematical Analysis I",
+        "Discrete Mathematics",
+        "Operating Systems",
+        "Real-Time Programming"
+      ],
       "endDate": "1994-05-01"
     }
   ],
   "interests": [
     {
       "name": "Sports",
-      "keywords": [ "Table Tennis", "Running", "Liverpool FC" ]
+      "keywords": [
+        "Table Tennis",
+        "Running",
+        "Liverpool FC"
+      ]
     }
   ],
   "languages": [
@@ -120,13 +150,20 @@
       "language": "Norwegian",
       "fluency": "Native",
       "native": true,
-      "keywords": [ "Norwegian", "Bokmål" ]
+      "keywords": [
+        "Norwegian",
+        "Bokmål"
+      ]
     },
     {
       "language": "English",
       "fluency": "Full Professional Proficiency",
       "native": false,
-      "keywords": [ "English", "American English", "British English" ]
+      "keywords": [
+        "English",
+        "American English",
+        "British English"
+      ]
     }
   ],
   "projects": [
@@ -137,7 +174,9 @@
       "url": "https://www.relove.info",
       "entity": "Prosperastiftelsen",
       "endDate": "2025-05-01",
-      "roles": [ "project manager" ],
+      "roles": [
+        "project manager"
+      ],
       "highlights": [
         "Led a team of 5 people in a project to develop a new strategy for RELOVE.",
         "Ensured the project was delivered within the timeframe and budget.",
@@ -151,7 +190,9 @@
       "url": "https://www.osloogomlandfriluftsrad.no/",
       "entity": "Prosperastiftelsen",
       "endDate": "2025-01-01",
-      "roles": [ "project manager" ],
+      "roles": [
+        "project manager"
+      ],
       "highlights": [
         "Led the project to digitize administrative processes at OOF, focusing on time tracking, budgeting, and project management.",
         "Conducted needs analysis and evaluation of digital tools that best met the organization's requirements.",
@@ -165,7 +206,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2020-11-01",
       "entity": "DNB",
-      "roles": [ "project manager" ],
+      "roles": [
+        "project manager"
+      ],
       "highlights": [
         "Led the decommissioning of outdated hardware and implementation of new security solutions on thousands of servers.",
         "Coordinated cross-functional teams in a fully digital work model during the pandemic via Microsoft Teams.",
@@ -179,7 +222,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2020-11-01",
       "entity": "DNB",
-      "roles": [ "project manager" ],
+      "roles": [
+        "project manager"
+      ],
       "highlights": [
         "Developed and implemented comprehensive security-focused governance documents for software development at DNB.",
         "Conducted supplier evaluations and established new security requirements for external development partners.",
@@ -193,7 +238,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2020-11-01",
       "entity": "DNB",
-      "roles": [ "project manager" ],
+      "roles": [
+        "project manager"
+      ],
       "highlights": [
         "Led the implementation of automated access management with ServiceNow and IIQ, resulting in a 40% reduction in manual access processes.",
         "Ensured compliance with internal and external regulations through improved documentation and processes.",
@@ -207,7 +254,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2020-11-01",
       "entity": "DNB",
-      "roles": [ "project manager" ],
+      "roles": [
+        "project manager"
+      ],
       "highlights": [
         "Established and led a comprehensive program for penetration testing of critical systems at DNB.",
         "Coordinated internal security experts and external partners to conduct thorough security tests.",
@@ -221,7 +270,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2020-11-01",
       "entity": "DNB",
-      "roles": [ "project manager" ],
+      "roles": [
+        "project manager"
+      ],
       "highlights": [
         "Led the implementation of enhanced DDOS protection for critical system components at DNB.",
         "Developed a comprehensive migration strategy that minimized downtime during system transitions.",
@@ -235,7 +286,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2019-01-01",
       "entity": "DNB",
-      "roles": [ "Scrum master" ],
+      "roles": [
+        "Scrum master"
+      ],
       "highlights": [
         "Served as Scrum Master for a cross-functional team of 8 people developing DNB's new business portal.",
         "Conducted thorough training in agile methodologies for both IT developers and business representatives.",
@@ -249,7 +302,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2018-03-01",
       "entity": "DNB",
-      "roles": [ "project manager" ],
+      "roles": [
+        "project manager"
+      ],
       "highlights": [
         "Led the GDPR implementation project for DNB Liv, ensuring full compliance by the May 2018 deadline.",
         "Coordinated a cross-functional team consisting of legal experts, IT specialists, and business analysts.",
@@ -263,7 +318,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2015-04-01",
       "entity": "Sharecat Solutions AS",
-      "roles": [ "project manager" ],
+      "roles": [
+        "project manager"
+      ],
       "highlights": [
         "Took over a complex international project and developed a detailed project plan that ensured successful delivery.",
         "Led a geographically distributed team across multiple countries in implementing Sharecat's catalog services.",
@@ -277,7 +334,10 @@
       "url": "https://harry.solsem.no",
       "endDate": "2011-10-01",
       "entity": "Ventelo",
-      "roles": [ "project manager", "software engineer" ],
+      "roles": [
+        "project manager",
+        "software engineer"
+      ],
       "highlights": [
         "Led and developed extensions to Ventelo's CRM system based on a thorough analysis of IT support requests.",
         "Identified and implemented solutions for 5 critical business areas that lacked system support.",
@@ -291,7 +351,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2007-06-01",
       "entity": "Umoe Mandal",
-      "roles": [ "project manager" ],
+      "roles": [
+        "project manager"
+      ],
       "highlights": [
         "Developed and implemented a complete report distribution system using C# and MS SQL Server.",
         "Implemented advanced AD integration for automated user management.",
@@ -305,7 +367,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2006-05-01",
       "entity": "Umoe Mandal",
-      "roles": [ "project manager" ],
+      "roles": [
+        "project manager"
+      ],
       "highlights": [
         "Led the project from requirements specification to implementation and operation.",
         "Developed a C# application with MS SQL Server as the database.",
@@ -319,7 +383,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2007-08-01",
       "entity": "Umoe Mandal",
-      "roles": [ "project manager" ],
+      "roles": [
+        "project manager"
+      ],
       "highlights": [
         "Led the project from requirements specification to implementation and operation.",
         "Developed a VB.Net application with MS SQL Server as the database.",
