@@ -1,9 +1,9 @@
-{ 
+{
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
     "lastModified": "2025-04-11T15:24:00Z",
-    "version": "1.0.0" 
-  }, 
+    "version": "1.0.0"
+  },
   "basics": {
     "name": "Harry Solsem",
     "label": "IT-ledelse og prosjektledelse",
@@ -86,7 +86,11 @@
       "studyType": "Bachelor",
       "startDate": "2018-01-01",
       "score": "",
-      "courses": [ "Prosjektledelse 1", "Prosjektledelse 2", "Prosjektledelse 3" ],
+      "courses": [
+        "Prosjektledelse 1",
+        "Prosjektledelse 2",
+        "Prosjektledelse 3"
+      ],
       "endDate": "2019-01-01"
     },
     {
@@ -96,7 +100,12 @@
       "studyType": "Bachelor",
       "startDate": "1999-08-01",
       "score": "",
-      "courses": [ "User interfaces", "Problem solving using Java", "Advanced Database Systems XML", "OO Systems Design using UML" ],
+      "courses": [
+        "User interfaces",
+        "Problem solving using Java",
+        "Advanced Database Systems XML",
+        "OO Systems Design using UML"
+      ],
       "endDate": "2000-05-01"
     },
     {
@@ -105,14 +114,98 @@
       "studyType": "Linje for administrativ databehandling",
       "startDate": "1992-08-01",
       "score": "",
-      "courses": [ "Administrasjonslære og Bedriftsøkonomi", "Innføring i systemutvikling", "Organisasjon samarbeid og ledelse", "Grunnkurs programmering", "Markedsføring", "Databaser og datamodeller", "Algoritmer og datastrukturer", "Maskinspråkprogrammering", "Datakommunikasjon I", "Systemutvikling II", "Applikasjonsutvikling", "Applikasjonsprogrammering i C++", "Matematisk Analyse I", "Diskrete matematikk", "Operativsystemer", "Sanntidsprogrammering" ],
+      "courses": [
+        "Administrasjonslære og Bedriftsøkonomi",
+        "Innføring i systemutvikling",
+        "Organisasjon samarbeid og ledelse",
+        "Grunnkurs programmering",
+        "Markedsføring",
+        "Databaser og datamodeller",
+        "Algoritmer og datastrukturer",
+        "Maskinspråkprogrammering",
+        "Datakommunikasjon I",
+        "Systemutvikling II",
+        "Applikasjonsutvikling",
+        "Applikasjonsprogrammering i C++",
+        "Matematisk Analyse I",
+        "Diskrete matematikk",
+        "Operativsystemer",
+        "Sanntidsprogrammering"
+      ],
       "endDate": "1994-05-01"
+    },
+    {
+      "institution": "Melbu Videregående skole",
+      "area": "IT",
+      "studyType": "VK2, Handel og kontor, Data- og informasjonsbehandling",
+      "startDate": "1989-08-01",
+      "score": "",
+      "courses": [
+        "Norsk og kommunikasjon, hovedmål, skriftlig",
+        "Norsk og kommunikasjon, sidemål, skriftlig",
+        "Norsk og kommunikasjon, muntlig",
+        "Organisasjonslære",
+        "Engelsk, skriftlig",
+        "Engelsk, muntlig",
+        "Sosialøkonomi",
+        "Kroppsøving",
+        "Systemering",
+        "Programmering",
+        "Administrative EDB-verktøy",
+        "Samfunnsfag"
+      ],
+      "endDate": "1990-06-01"
+    },
+    {
+      "institution": "Melbu Videregående skole",
+      "area": "Økonomi",
+      "studyType": "VK1, Handel og kontor",
+      "startDate": "1988-08-01",
+      "score": "",
+      "courses": [
+        "Norsk med sidemål skriftlig",
+        "Norsk muntlig",
+        "Engelsk, skriftlig",
+        "Engelsk, muntlig",
+        "Kroppsøving",
+        "Rettslære",
+        "Sosialøkonomi",
+        "Bedriftsøkonomi",
+        "Markedsføring",
+        "Matematikk og statistikk",
+        "Informasjonsbehandling"
+      ],
+      "endDate": "1989-06-01"
+    },
+    {
+      "institution": "Sortland Videregående skole",
+      "area": "Handels- og kontorfag",
+      "studyType": "Grunnkurs",
+      "startDate": "1987-08-01",
+      "score": "",
+      "courses": [
+        "Norsk",
+        "Engelsk",
+        "Kroppsøving",
+        "Regnskapslære",
+        "Matematikk I",
+        "Samfunns- og næringslære",
+        "Korrespondanse- og dokumentlære",
+        "Maskinskriving",
+        "Praktisk kontorarbeid",
+        "Tekstbehandling"
+      ],
+      "endDate": "1988-06-01"
     }
   ],
   "interests": [
     {
       "name": "Sport",
-      "keywords": [ "Bordtennis", "Løping", "Liverpool FC" ]
+      "keywords": [
+        "Bordtennis",
+        "Løping",
+        "Liverpool FC"
+      ]
     }
   ],
   "languages": [
@@ -120,13 +213,20 @@
       "language": "Norsk",
       "fluency": "Morsmål",
       "native": true,
-      "keywords": [ "Norsk", "Bokmål" ]
+      "keywords": [
+        "Norsk",
+        "Bokmål"
+      ]
     },
     {
       "language": "Engelsk",
       "fluency": "Full professional proficiency",
       "native": false,
-      "keywords": [ "Engelsk", "Engelsk (amerikansk)", "Engelsk (britisk)" ]
+      "keywords": [
+        "Engelsk",
+        "Engelsk (amerikansk)",
+        "Engelsk (britisk)"
+      ]
     }
   ],
   "projects": [
@@ -137,7 +237,9 @@
       "url": "https://www.relove.info",
       "entity": "Prosperastiftelsen",
       "endDate": "2025-05-01",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Ledet et team på 5 personer i et prosjekt for å utvikle en ny strategi for RELOVE.",
         "Sikret at prosjektet ble levert innen tidsrammen og budsjettet.",
@@ -151,7 +253,9 @@
       "url": "https://www.osloogomlandfriluftsrad.no/",
       "entity": "Prosperastiftelsen",
       "endDate": "2025-01-01",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Ledet prosjektet for å digitalisere administrative prosesser hos OOF, med fokus på timeføring, budsjettering og prosjektstyring.",
         "Gjennomførte behovsanalyse og evaluering av digitale verktøy som best kunne møte organisasjonens behov.",
@@ -165,7 +269,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2020-11-01",
       "entity": "DNB",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Ledet sanering av utdatert maskinvare og implementering av nye sikkerhetsløsninger på flere tusen servere.",
         "Koordinerte tverrfaglige team i en fullt digital arbeidsmodell under pandemien via Microsoft Teams.",
@@ -179,7 +285,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2020-11-01",
       "entity": "DNB",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Utviklet og implementerte omfattende sikkerhetsfokuserte styringsdokumenter for programvareutvikling i DNB.",
         "Gjennomførte leverandørevalueringer og etablerte nye sikkerhetskrav for eksterne utviklingspartnere.",
@@ -193,7 +301,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2020-11-01",
       "entity": "DNB",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Ledet implementeringen av automatisert tilgangsstyring med ServiceNow og IIQ, som resulterte i 40% reduksjon i manuelle tilgangsprosesser.",
         "Sikret compliance med interne og eksterne reguleringer gjennom forbedret dokumentasjon og prosesser.",
@@ -207,7 +317,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2020-11-01",
       "entity": "DNB",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Etablerte og ledet et omfattende program for penetrasjonstesting av kritiske systemer i DNB.",
         "Koordinerte interne sikkerhetseksperter og eksterne partnere for å gjennomføre grundige sikkerhetstester.",
@@ -221,7 +333,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2020-11-01",
       "entity": "DNB",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Ledet implementeringen av forsterket DDOS-beskyttelse for kritiske systemkomponenter i DNB.",
         "Utarbeidet omfattende migreringsstrategi som minimerte nedetid under flytting av systemer.",
@@ -235,7 +349,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2019-01-01",
       "entity": "DNB",
-      "roles": [ "Scrum master" ],
+      "roles": [
+        "Scrum master"
+      ],
       "highlights": [
         "Fungerte som Scrum Master for et tverrfaglig team på 8 personer som utviklet DNBs nye bedriftsportal.",
         "Gjennomførte grundig opplæring i smidig metodikk for både IT-utviklere og forretningsrepresentanter.",
@@ -249,7 +365,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2018-03-01",
       "entity": "DNB",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Ledet GDPR-implementeringsprosjektet for DNB Liv, som sikret full compliance innen fristen mai 2018.",
         "Koordinerte tverrfaglig team bestående av juridiske eksperter, IT-spesialister og forretningsanalytikere.",
@@ -263,7 +381,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2015-04-01",
       "entity": "Sharecat Solutions AS",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Overtok et komplekst internasjonalt prosjekt og utviklet en detaljert prosjektplan som sikret vellykket leveranse.",
         "Ledet et geografisk spredt team på tvers av flere land i implementeringen av Sharecats katalog-tjenester.",
@@ -277,7 +397,10 @@
       "url": "https://harry.solsem.no",
       "endDate": "2011-10-01",
       "entity": "Ventelo",
-      "roles": [ "prosjektleder", "programvareingeniør" ],
+      "roles": [
+        "prosjektleder",
+        "programvareingeniør"
+      ],
       "highlights": [
         "Ledet og utviklet utvidelser til Ventelos CRM-system basert på grundig analyse av IT-støttehenvendelser.",
         "Identifiserte og implementerte løsninger for 5 kritiske forretningsområder som manglet systemstøtte.",
@@ -291,7 +414,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2007-06-01",
       "entity": "Umoe Mandal",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Utviklet og implementerte et komplett rapportdistribueringssystem med C# og MS SQL Server.",
         "Implementerte avansert AD-integrasjon for automatisert brukeradministrasjon.",
@@ -305,7 +430,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2006-05-01",
       "entity": "Umoe Mandal",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Ledet prosjektet fra kravspesifikasjon til implementering og drift.",
         "Utviklet en C# applikasjon med MS SQL Server som database.",
@@ -319,7 +446,9 @@
       "url": "https://harry.solsem.no",
       "endDate": "2007-08-01",
       "entity": "Umoe Mandal",
-      "roles": [ "prosjektleder" ],
+      "roles": [
+        "prosjektleder"
+      ],
       "highlights": [
         "Ledet prosjektet fra kravspesifikasjon til implementering og drift.",
         "Utviklet en VB.Net applikasjon med MS SQL Server som database.",
@@ -641,7 +770,39 @@
       "url": "https://www.manpower.no",
       "startDate": "1994-08-01",
       "summary": "Jeg yter omfattende brukerstøtte for Windows 95-operativsystemer og har medansvar for den daglige driften av Token-Ring nettverk, en oppgave som krever spesialisert teknisk kompetanse innen eldre nettverksteknologi. I tillegg har jeg ansvar for oppsett og løpende vedlikehold av Windows-klienter, der jeg sørger for optimal konfigurasjon, oppdatering og problemløsning for å sikre stabil og effektiv drift av klientmaskiner i virksomhetens IT-miljø.",
-      "endDate": "1997-06-01"
+      "endDate": "1997-07-01"
+    },
+    {
+      "name": "PC-LAND SOFTWARE",
+      "position": "Programvareutvikler",
+      "url": "https://www.ikke.no",
+      "startDate": "1995-02-01",
+      "summary": "Utviklet programvare i Microsoft Visual Foxpro 3.0",
+      "endDate": "1995-03-28"
+    },
+    {
+      "name": "Total Consept Development",
+      "position": "Programvareutvikler",
+      "url": "https://www.ikke.no",
+      "startDate": "1994-08-01",
+      "summary": "Hovedansvar for utvikling av administrative systemer for resturantbranje og jukebox-databaser. Utviklet i Visual Basic",
+      "endDate": "1994-11-31"
+    },
+    {
+      "name": "BÅDE OG RADIOREKLAMEBYRÅ",
+      "position": "IT-konsulent",
+      "url": "https://www.ikke.no",
+      "startDate": "1994-06-01",
+      "summary": "Hovedansvar for utarbeidelse av ethernett, klientoppsett av Windows for Workgroups 11 og brukerstøtte",
+      "endDate": "1994-07-31"
+    },
+    {
+      "name": "NHI-Datahøgskolen",
+      "position": "Veileder",
+      "url": "https://www.ikke.no",
+      "startDate": "1994-01-01",
+      "summary": "Veileder i faget Algoritmer og datastrukturer",
+      "endDate": "1994-06-01"
     }
   ]
 }
