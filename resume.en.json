@@ -7,7 +7,7 @@
   "basics": {
     "name": "Harry Solsem",
     "label": "Leadership | ISO27001 | Team Leader | Project Manager | Digital Product Development | Change Management | Enterprise Architect",
-    "summary": "With over 30 years of leadership experience, including technical and administrative roles in companies such as DNB, Riverty, Neonomics, and Sharecat Solutions, I have Leadership Experience: Led teams of up to 50 employees, Managed full responsibility for personnel, budget, and results, provided leadership across multiple organizations Key Areas of Expertise: Team leadership, Product development, IT project management Notable Companies: DNB, Riverty, Neonomics, Sharecat Solutions",
+    "summary": "With over 30 years of leadership experience, including technical and administrative roles in companies such as DNB, Riverty, Neonomics, and Sharecat Solutions. I have Leadership experience: Led teams of up to 50 employees, Managed full responsibility for personnel, budget, and results, provided leadership across multiple organizations. Key areas of expertise: Team leadership, Product development, IT project management. Notable Companies: DNB, Riverty, Neonomics, Sharecat Solutions",
     "picture": "https://avatars.githubusercontent.com/u/2042298?v=4",
     "image": "https://avatars.githubusercontent.com/u/2042298?v=4",
     "email": "harry.solsem@solsem.no",
@@ -279,13 +279,13 @@
         "project manager"
       ],
       "highlights": [
-        "Led the project to digitize administrative processes at OOF, focusing on time tracking, budgeting, and project management.",
+        "Led the project to digitize administrative processes at Oslo og Omland Friluftsråd, focusing on time tracking, budgeting, and project management.",
         "Conducted needs analysis and evaluation of digital tools that best met the organization's requirements.",
         "Coordinated the implementation of new systems, resulting in a 30% reduction in manual administrative work."
       ]
     },
     {
-      "name": "Sanitation of Old Log Tool and Deployment of Agents",
+      "name": "Sanitation of old Log tool and seployment of agents",
       "startDate": "2020-07-01",
       "description": "The project's mandate is to decommission old hardware, set up new hardware, and deploy various security-related agents on thousands of servers. My tasks in this project included continuous follow-up, stakeholder management, planning, reporting to portfolio management, reporting to the steering group, and handling project documentation. I coordinated resources, both internal and from our partners. Due to the country's situation, these tasks were largely carried out via Microsoft Teams.",
       "url": "https://harry.solsem.no",
@@ -301,7 +301,7 @@
       ]
     },
     {
-      "name": "Implementing Extended Security Focus in DNB Software Lifecycle",
+      "name": "Implementing extended security focus in DNB software lifecycle",
       "startDate": "2020-07-01",
       "description": "The project's mandate is to identify needs, procure, implement, and establish governance documents for solutions that increase focus on security aspects throughout the software lifecycle for software developed internally and by our partners. My tasks in this project included continuous follow-up, stakeholder management, planning, reporting to portfolio management, reporting to the steering group, and handling project documentation. I coordinated resources, both internal and from our partners. Supplier dialogue included describing requirements, conducting supplier evaluations. Due to the country's situation, these tasks were largely carried out via Microsoft Teams.",
       "url": "https://harry.solsem.no",
@@ -317,7 +317,7 @@
       ]
     },
     {
-      "name": "IAM - Cleanup and Compliance",
+      "name": "IAM - cleanup and compliance",
       "startDate": "2020-06-01",
       "description": "The project's mandate is to implement extended automation of access management using ServiceNow, IIQ, and other relevant tools. My tasks in this project included continuous follow-up, stakeholder management, planning, reporting to portfolio management, reporting to the steering group, and handling project documentation. Due to the country's situation, these tasks were largely carried out via Microsoft Teams.",
       "url": "https://harry.solsem.no",
@@ -333,7 +333,7 @@
       ]
     },
     {
-      "name": "Penetration Testing",
+      "name": "Penetration testing",
       "startDate": "2019-08-01",
       "description": "The project's mandate was to facilitate penetration testing of DNB's systems. My tasks in this project included continuous follow-up, stakeholder management, planning, reporting to portfolio management, reporting to the steering group, and handling project documentation. I coordinated resources, both internal and from our partners. Due to the country's situation, these tasks were largely carried out via Microsoft Teams.",
       "url": "https://harry.solsem.no",
@@ -349,7 +349,7 @@
       ]
     },
     {
-      "name": "Implementing DDOS Protection for a Specific Part of DNB's System Portfolio",
+      "name": "Implementing DDOS protection for a defined part of DNB's system portfolio",
       "startDate": "2019-07-01",
       "description": "The project's mandate was to move parts of DNB's system portfolio behind enhanced DDOS protection. My tasks in this project included continuous follow-up, stakeholder management, planning, reporting to portfolio management, reporting to the steering group, and handling project documentation. I coordinated resources, both internal and from our partners. Due to the country's situation, these tasks were largely carried out via Microsoft Teams.",
       "url": "https://harry.solsem.no",
@@ -365,7 +365,7 @@
       ]
     },
     {
-      "name": "New Business Portal",
+      "name": "New business portal",
       "startDate": "2018-01-01",
       "description": "Scrum Master for this development project. Performed the tasks associated with the role according to the Scrum Guide. Additionally, introduced and trained participants in agile methodologies, both within the IT organization and among participants from other business areas.",
       "url": "https://harry.solsem.no",
@@ -397,7 +397,7 @@
       ]
     },
     {
-      "name": "Supplier Catalogue",
+      "name": "Supplier catalogue",
       "startDate": "2014-09-01",
       "description": "The project's mandate was to adapt and implement Sharecat's family of catalog services to be used by one of the world's largest oil suppliers. I took over the project as project manager after it had been ongoing for a few months. My tasks included tying up all loose ends, creating a detailed project plan for the remaining deliverables, and daily follow-up. The project was carried out with multi-disciplinary resources and participants in several countries. Planning, execution, and follow-up were carried out using MS Project 2013.",
       "url": "https://harry.solsem.no",
@@ -446,7 +446,7 @@
       ]
     },
     {
-      "name": "ULV - Tool Delivery",
+      "name": "ULV - Tool delivery",
       "startDate": "2005-03-01",
       "description": "A system designed to manage the delivery and return of tools. The solution is developed in C# with MS SQL Server as the database and ADO.Net for data access. The system includes functionality for electronic signatures, generation of customized reports, and seamless integration with Active Directory (AD) for efficient user management.",
       "url": "https://harry.solsem.no",
@@ -501,8 +501,7 @@
         "structured planning",
         "method adaptation",
         "project methodology",
-        "agile methodology",
-        "continuous improvement"
+        "agile methodology"
       ]
     },
     {
@@ -645,20 +644,29 @@
       "position": "Group Leader and Chairman",
       "url": "https://www.langhusil.no/bordtennis",
       "startDate": "2024-09-01",
-      "summary": "I coordinate board meetings and annual meetings, prepare agendas, and follow up on decisions made. I also represent the club externally in meetings with the municipality, sports associations, and the Norwegian Table Tennis Federation. Good financial management is a central part of my role, where I am responsible for budgeting, reporting, and applying for financial support. I organize training sessions, recruit qualified coaches, and facilitate player development at all levels. Planning and executing club tournaments as well as coordinating participation in external tournaments also fall under my responsibilities. I actively work to recruit new members through marketing and various recruitment activities. Furthermore, I ensure the maintenance of equipment, tables, and training facilities. An important part of my leadership is creating a positive environment in the club through social activities and good communication among members."
+      "summary": "I coordinate board meetings and annual meetings, prepare agendas, and follow up on decisions made. I also represent the club externally in meetings with the municipality, sports associations, and the Norwegian Table Tennis Federation. Good financial management is a central part of my role, where I am responsible for budgeting, reporting, and applying for financial support. I organize training sessions, recruit qualified coaches, and facilitate player development at all levels. Planning and executing club tournaments as well as coordinating participation in external tournaments also fall under my responsibilities. I actively work to recruit new members through marketing and various recruitment activities. Furthermore, I ensure the maintenance of equipment, tables, and training facilities. An important part of my leadership is creating a positive environment in the club through social activities and good communication among members.",
+      "highlights": [
+        "Reelected for this position is an indication that the members are pleased with how I am performing my duties"
+      ]
     },
     {
       "organization": "Langhus 1405 Housing Association",
       "position": "Board Member",
       "startDate": "2021-07-01",
-      "summary": "As a board member of a housing association, I have several responsibilities that contribute to ensuring a well-functioning and harmonious living environment for all residents. I actively participate in board meetings where I help make important decisions regarding the operation, maintenance, and development of the association. I work on budgeting and financial management, and I follow up on accounts and reporting to ensure that the association's funds are used responsibly and effectively. Additionally, I am responsible for entering into agreements with suppliers and service providers to ensure that necessary tasks such as cleaning, maintenance, and repairs are carried out professionally. I also help draft and update the association's statutes and house rules, ensuring they are enforced fairly. I regularly communicate with residents, both by informing them about matters affecting the community and by listening to their input and concerns. Furthermore, I contribute to planning and conducting annual meetings, where I present the association's status, discuss future plans, and ensure that everyone has the opportunity to participate in decision-making processes."
+      "summary": "As a board member of a housing association, I have several responsibilities that contribute to ensuring a well-functioning and harmonious living environment for all residents. I actively participate in board meetings where I help make important decisions regarding the operation, maintenance, and development of the association. I work on budgeting and financial management, and I follow up on accounts and reporting to ensure that the association's funds are used responsibly and effectively. Additionally, I am responsible for entering into agreements with suppliers and service providers to ensure that necessary tasks such as cleaning, maintenance, and repairs are carried out professionally. I also help draft and update the association's statutes and house rules, ensuring they are enforced fairly. I regularly communicate with residents, both by informing them about matters affecting the community and by listening to their input and concerns. Furthermore, I contribute to planning and conducting annual meetings, where I present the association's status, discuss future plans, and ensure that everyone has the opportunity to participate in decision-making processes.",
+      "highlights": [
+        "Reelected for this position on several occations, is an indication that the members are pleased with how I am performing my duties"
+      ]
     },
     {
       "organization": "The Norwegian Thyroid Association",
       "position": "Board Member",
       "url": "https://stofo.no/",
       "startDate": "2020-11-01",
-      "summary": "As a board member of the Norwegian Thyroid Association, I contribute to promoting the association's work for people with thyroid disorders. I participate in planning and conducting meetings, develop strategies, and ensure follow-up on decisions. I contribute to financial management, participate in budgeting, and follow up on financial reports. Additionally, I work on communication and information, helping to reach out to members and partners. Through my engagement, I contribute to an inclusive environment that promotes knowledge, support, and development for members."
+      "summary": "As a board member of the Norwegian Thyroid Association, I contribute to promoting the association's work for people with thyroid disorders. I participate in planning and conducting meetings, develop strategies, and ensure follow-up on decisions. I contribute to financial management, participate in budgeting, and follow up on financial reports. Additionally, I work on communication and information, helping to reach out to members and partners. Through my engagement, I contribute to an inclusive environment that promotes knowledge, support, and development for members.",
+      "highlights": [
+        "Reelected for this position on several occations, is an indication that the members are pleased with how I am performing my duties"
+      ]
     },
     {
       "organization": "The Norwegian Thyroid Association",
@@ -674,7 +682,10 @@
       "position": "Project Manager",
       "url": "https://www.prosperastiftelsen.no",
       "startDate": "2024-10-01",
-      "summary": "Hired as a project manager at Prosperastiftelsen. My responsibilities include leading project teams, planning, prioritizing, and decision-making, overall responsibility for the quality of deliverables, ensuring deadlines are met, and anchoring with the project recipient. In this role, I actively apply knowledge from my certifications in Prosci Change Management and Prince2 project methodology, combined with experience from Lean and Agile. I have built and led several teams of up to 5 people, focusing on creating team spirit and psychological safety. All projects have been delivered according to quality goals and within the set deadlines."
+      "summary": "Hired as a project manager at Prosperastiftelsen. My responsibilities include leading project teams, planning, prioritizing, and decision-making, overall responsibility for the quality of deliverables, ensuring deadlines are met, and anchoring with the project recipient. In this role, I actively apply knowledge from my certifications in Prosci Change Management and Prince2 project methodology, combined with experience from Lean and Agile. I have built and led several teams of up to 5 people, focusing on creating team spirit and psychological safety. All projects have been delivered according to quality goals and within the set deadlines.",
+      "highlights": [
+        "Being asked to manage several projects indicates that Prosperastiftelsen are happy with my performance as project manager"
+      ]
     },
     {
       "name": "Riverty",
@@ -799,7 +810,7 @@
     {
       "name": "PC-LAND SOFTWARE",
       "position": "Software Developer",
-      "url": "",
+      "url": "https://www.ikke.no",
       "startDate": "1995-02-01",
       "summary": "Developed software in Microsoft Visual Foxpro 3.0",
       "endDate": "1995-03-28"
@@ -807,7 +818,7 @@
     {
       "name": "Total Consept Development",
       "position": "Software Developer",
-      "url": "",
+      "url": "https://www.ikke.no",
       "startDate": "1994-08-01",
       "summary": "Main responsibility for developing administrative systems for restaurant industry and jukebox databases. Developed in Visual Basic",
       "endDate": "1994-11-31"
@@ -815,7 +826,7 @@
     {
       "name": "BÅDE OG RADIOREKLAMEBYRÅ",
       "position": "IT Consultant",
-      "url": "",
+      "url": "https://www.ikke.no",
       "startDate": "1994-06-01",
       "summary": "Main responsibility for development of ethernet network, client setup of Windows for Workgroups 11 and user support",
       "endDate": "1994-07-31"
@@ -823,7 +834,7 @@
     {
       "name": "NHI-Datahøgskolen",
       "position": "Instructor",
-      "url": "",
+      "url": "https://www.ikke.no",
       "startDate": "1994-01-01",
       "summary": "Instructor for the subject Algorithms and Data Structures",
       "endDate": "1994-06-01"

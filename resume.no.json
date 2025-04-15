@@ -479,8 +479,7 @@
         "strukturert planlegging",
         "metodetilpasning",
         "prosjektmetodologi",
-        "smidig metodikk",
-        "kontinuerlig forbedring"
+        "smidig metodikk"
       ]
     },
     {
@@ -775,7 +774,7 @@
     {
       "name": "PC-LAND SOFTWARE",
       "position": "Programvareutvikler",
-      "url": "",
+      "url": "https://www.ikke.no",
       "startDate": "1995-02-01",
       "summary": "Utviklet programvare i Microsoft Visual Foxpro 3.0",
       "endDate": "1995-03-28"
@@ -783,7 +782,7 @@
     {
       "name": "Total Consept Development",
       "position": "Programvareutvikler",
-      "url": "",
+      "url": "https://www.ikke.no",
       "startDate": "1994-08-01",
       "summary": "Hovedansvar for utvikling av administrative systemer for resturantbranje og jukebox-databaser. Utviklet i Visual Basic",
       "endDate": "1994-11-31"
@@ -791,7 +790,7 @@
     {
       "name": "BÅDE OG RADIOREKLAMEBYRÅ",
       "position": "IT-konsulent",
-      "url": "",
+      "url": "https://www.ikke.no",
       "startDate": "1994-06-01",
       "summary": "Hovedansvar for utarbeidelse av ethernett, klientoppsett av Windows for Workgroups 11 og brukerstøtte",
       "endDate": "1994-07-31"
@@ -799,7 +798,7 @@
     {
       "name": "NHI-Datahøgskolen",
       "position": "Veileder",
-      "url": "",
+      "url": "https://www.ikke.no",
       "startDate": "1994-01-01",
       "summary": "Veileder i faget Algoritmer og datastrukturer",
       "endDate": "1994-06-01"
