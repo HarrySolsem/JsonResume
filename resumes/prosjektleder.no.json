@@ -1,0 +1,810 @@
+{
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "lastModified": "2025-04-11T15:24:00Z",
+    "version": "1.0.0"
+  },
+  "basics": {
+    "name": "Harry Solsem",
+    "label": "IT-ledelse og prosjektledelse",
+    "summary": "Med over 30 års ledererfaring, inkludert tekniske og administrative roller i selskaper som DNB, Riverty, Neonomics og Sharecat Solutions. Min ledererfaring: Ledet team med opptil 50 ansatte, hatt fullt ansvar for personale, budsjett og resultater, samt gitt ledelse på tvers av flere organisasjoner. Nøkkelområder for kompetanse: Teamledelse, produktutvikling, IT-prosjektledelse. Fremtredende selskaper: DNB, Riverty, Neonomics, Sharecat Solutions.",
+    "picture": "https://avatars.githubusercontent.com/u/2042298?v=4",
+    "image": "https://avatars.githubusercontent.com/u/2042298?v=4",
+    "email": "harry.solsem@solsem.no",
+    "phone": "+47 91 60 46 00",
+    "url": "https://harry.solsem.no",
+    "location": {
+      "address": "Teglverksfaret 16",
+      "postalCode": "1405",
+      "city": "Langhus",
+      "countryCode": "NO",
+      "region": "Akershus"
+    },
+    "profiles": [
+      {
+        "network": "Linkedin",
+        "username": "harrysolsem",
+        "url": "https://www.linkedin.com/in/harrysolsem"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Prosperastiftelsen",
+      "position": "Prosjektleder",
+      "url": "https://www.prosperastiftelsen.no",
+      "startDate": "2024-10-01",
+      "summary": "Innleid prosjektleder hos Prosperastiftelsen med ansvar for prosjektteamledelse, planlegging, prioritering og beslutningstaking. Overordnet ansvar for å sikre kvaliteten på leveranser, opprettholde tidsfrister og forankre prosjektene hos mottakere. I rollen drar jeg nytte av sertifiseringer innen Prosci endringsledelse og Prince2 prosjektmetodikk, kombinert med verdifull erfaring fra Lean og Agile. Jeg har bygget og ledet flere team på opptil fem personer, med fokus på å skape en sterk teamfølelse og psykologisk trygghet. Alle prosjekter har levert i henhold til mål for kvalitet og innen de fastsatte tidsfrister."
+    },
+    {
+      "name": "Riverty",
+      "position": "Avdelingsleder",
+      "url": "https://www.riverty.com",
+      "startDate": "2023-09-01",
+      "summary": "Som mangfoldsleder for tekniske ressurser i Riverty har jeg oppnådd betydelige resultater gjennom strategisk personalledelse og organisasjonsutvikling. Jeg utviklet et høytpresterende lederteam bestående av 5 teamledere som konsekvent oppnådde økt tilfredshet på medarbeiderundersøkelser. Gjennom strukturerte utviklingssamtaler og individuelt tilpassede karriereplaner for mine 15 direkterapporterende ingeniører og for min ledergruppe reduserte jeg turnover med 20%, noe som skapte stabilitet og kontinuitet i avdelingen. For de 50 medarbeiderne jeg hadde overordnet ansvar for, implementerte jeg månedlige fagdager og sosiale arrangementer som målbart styrket både teamfølelse og tverrfaglig samarbeid. På rekrutteringssiden lyktes jeg med å tiltrekke og ansette 5 topptalenter med en økende retensjon. Dette ble oppnådd gjennom et tett og velstrukturert samarbeid med People & Culture, hvor vi sammen utviklet et rekrutteringsprogram som reduserte time-to-hire med 20% uten å kompromisse på kvalitet. For nyansatte skapte jeg et strukturert onboarding-program som reduserte tiden til full produktivitet fra 4 til 2 måneder. Et av mine viktigste bidrag var standardiseringen av utviklingsprosesser på tvers av alle fire Tech Hubs i Europa (Oslo, Stockholm, Tallin og Berlin). Denne harmoniseringen resulterte i 30% økt leveransekapasitet og muliggjorde en felles teknisk plattform som akselererte time to market. Gjennom systematisk arbeid med å skape et arbeidsmiljø preget av psykologisk trygghet og en sunn feilkultur, økte meg medarbeidertilfredsheten i forhold til tidligere rapporterte erdier. Dette fremmet også innovasjon i organisasjonen. Min vektlegging av fysisk tilstedeværelse på kontoret, kombinert med strukturert kunnskapsdeling gjennom blant annet Atlassian Confluence, har skapt et dynamisk arbeidsmiljø hvor både individer og team kan utvikle seg og levere resultater av høy kvalitet.",
+      "endDate": "2024-06-01"
+    },
+    {
+      "name": "STOFFSKIFTEFORBUNDET",
+      "position": "Konsulent",
+      "url": "https://www.stofo.org",
+      "startDate": "2023-05-01",
+      "summary": "Konsulent som har støttet nyansatt generalsekretær med strategiavklaringer, organisasjonsutvikling, rekruttering, onboarding av nye medarbeidere og forefallende administrasjonsoppgaver innen drift av forbundet.",
+      "endDate": "2023-06-01"
+    },
+    {
+      "name": "Neonomics",
+      "position": "Team Lead | Engineering Manager",
+      "url": "https://www.neonomics.io",
+      "startDate": "2021-08-01",
+      "summary": "Som Engineering Manager i Neonomics oppnådde jeg betydelige resultater innen personalledelse og organisasjonsutvikling. Jeg begynte som Teamlead og avanserte til Engineering Manager, hvor jeg gjennom målrettet innsats sikret økt medarbeiderretensjon i en periode med skiftende produktfokus. Denne stabiliteten utgjorde en vesentlig konkurransefordel i et marked preget av høy turnover blant teknisk personell. I min lederrolle hadde jeg ansvar for en ledergruppe på 2 teamledere, hvor jeg implementerte strukturerte lederutviklingsprogrammer som forbedret deres evne til effektiv teamledelse og personaloppfølging. Dette resulterte i målbare forbedringer i teamprestasjoner og leveransekvalitet. Parallelt hadde jeg direkte personalansvar for 11 ingeniører, hvor jeg gjennom regelmessige én-til-én-samtaler og karriereplaner økte både produktivitet og jobbtilfredsheten. Mitt tilstedeværende lederskap skapte et arbeidsmiljø preget av høy psykologisk trygghet, som førte til økt innovasjon og problemløsningsevne i teamet. Gjennom strategisk kommunikasjon rundt selskapets retning og fremtidsutsikter bygget jeg tillitsfulle relasjoner med medarbeiderne, noe som reduserte usikkerhet og styrket engasjementet selv i perioder med endringer. Ved effektiv bruk av verktøy som Microsoft Office, Atlassian Jira og Confluence optimaliserte jeg prosjektstyring og kunnskapsdeling, som resulterte i mer strømlinjeformede arbeidsprosesser og bedre tverrfaglig samarbeid. Dette bidro til både høyere leveransekvalitet og økt medarbeidertilfredshet, dokumentert gjennom forbedrede resultater på interne undersøkelser.",
+      "endDate": "2023-03-01"
+    },
+    {
+      "name": "KPMG Norway",
+      "position": "Senior Manager",
+      "url": "https://www.kpmg.no",
+      "startDate": "2021-02-01",
+      "summary": "Konsulent med spesialisering i prosjektledelse og smidige metodikker, med fokus på effektivisering av prosesser og optimalisering av teamytelse.",
+      "endDate": "2021-08-01"
+    },
+    {
+      "name": "DNB",
+      "position": "Prosjektleder",
+      "url": "https://www.dbn.no",
+      "startDate": "2020-05-01",
+      "summary": "Mitt bidrag resulterte i raskere prosjektleveranser og forbedrede sluttresultater for brukerne, samtidig som investerte midler ga økt verdi. Som prosjektleder i DNBs IT-sikkerhetsavdeling hadde jeg ansvar for fem prosjekter, inkludert deres daglige ledelse. Jeg rapporterte til styringsgruppene og fulgte opp både leveranser og økonomi. Prosjektene omfattet IAM-compliance, implementering av DDOS-beskyttelse for utvalgte deler av DNBs systemportefølje, økt sikkerhetsfokus i programvarelivssyklusen samt sanering av gamle felles logging-løsninger. Arbeidet ble støttet av verktøy som Microsoft Project, ServiceNow og Microsoft Office.",
+      "endDate": "2021-01-01"
+    },
+    {
+      "name": "DNB",
+      "position": "Teknisk leder",
+      "url": "https://www.dbn.no",
+      "startDate": "2017-10-01",
+      "summary": "Bidro til å transformere arbeidsmetodikken i prosjekter fra fossefall til en smidig tilnærming gjennom implementering av Scrum. Hadde ansvar for opplæring av kollegaer i smidige metodikker, inkludert både tekniske IT-ressurser og medarbeidere fra andre avdelinger, og sikret dermed en effektiv og helhetlig tilpasning til den nye arbeidsmetoden.",
+      "endDate": "2020-05-01"
+    },
+    {
+      "name": "Web Services Technology AS",
+      "position": "Plattformingeniør",
+      "url": "https://wst.no",
+      "startDate": "2015-05-01",
+      "summary": "Ansvarlig for design, implementasjon og vedlikehold av en effektiv CI/CD-verdikjede ved hjelp av TeamCity og OctoDeploy. Utførte migrering av en Java-applikasjon til C#, JavaScript og XSL/XML, noe som resulterte i forbedret funksjonalitet og økt kompatibilitet. Tilrettela opplæring og veiledning i bruk av Microsoft-utviklingsverktøy, inkludert Visual Studio, for å styrke teamets produktivitet og kompetanse.",
+      "endDate": "2017-09-01"
+    },
+    {
+      "name": "Sharecat Solutions AS",
+      "position": "Prosjektleder/Scrum Master/Senior programvareutvikler",
+      "url": "https://home.sharecat.com/",
+      "startDate": "2013-02-01",
+      "summary": "Jeg fungerer som senior programvareutvikler med dyp ekspertise innen Microsoft-teknologistacken, samtidig som jeg innehar rollene som Scrum Master og Agile Coach med ansvar for å implementere og forankre Scrum som prosjektgjennomføringsmetodikk i organisasjonen. I tillegg har jeg ledet leveranseprosjekter i rollen som prosjektleder hvor jeg har anvendt Prince2-metodikk for å sikre strukturert planlegging, effektiv ressursstyring og gjennomgående høy kvalitet på leveransene. Denne kombinasjonen av teknisk utviklingskompetanse og prosjektledelseserfaring gjør at jeg kan bidra både på operativt og strategisk nivå i komplekse IT-prosjekter.",
+      "endDate": "2015-04-01"
+    },
+    {
+      "name": "Ventelo",
+      "position": "Teknisk prosjektleder/Service Delivery Manager/Software Engineer",
+      "url": "https://www.ventelo.no",
+      "startDate": "2010-03-01",
+      "summary": "Jeg har ansvar for utvikling av sofistikerte støtte- og front-end systemer for Ventelo, med hovedvekt på web-applikasjoner som gir kundene mulighet til å selvstendig administrere sine kundeforhold og abonnementer gjennom en intuitiv digital plattform. Parallelt arbeider jeg med kontinuerlig videreutvikling og forbedring av Ventelos interne CRM-systemer for å optimalisere kundebehandlingsprosesser. I dette utviklingsarbeidet følger jeg Ventelos tjenesteorienterte arkitektur (SOA) og anvender smidige utviklingsmetoder sammen med continuous integration for å sikre høy kvalitet og rask leveranse. Teknisk sett benytter jeg C# og ASP.NET for applikasjonsutvikling, Microsoft SQL Server for databasehåndtering, og følger testdrevet utviklingsmetodikk (TDD) med FakeItEasy som rammeverk for enhetstesting.",
+      "endDate": "2012-06-01"
+    },
+    {
+      "name": "Engineering Systems",
+      "position": "Programvareutvikler",
+      "url": "https://www.once.no/",
+      "startDate": "2008-09-01",
+      "summary": "Jeg har ansvar for å utvikle nye, innovative applikasjoner med C# som primært programmeringsspråk, med særlig fokus på integrasjon mot Windows SharePoint Services for å sikre effektiv samhandling og dokumenthåndtering i organisasjonen. I tillegg har jeg ansvar for å videreutvikle og utvide funksjonaliteten i eksisterende applikasjoner, noe som omfatter både feilretting, optimalisering av ytelse og implementering av nye funksjoner basert på brukerbehov og teknologisk utvikling.",
+      "endDate": "2010-03-01"
+    },
+    {
+      "name": "Comunic AS",
+      "position": "Programvareutvikler",
+      "url": "https://www.comunic.no",
+      "startDate": "2008-03-01",
+      "summary": "Jeg har ansvar for utvikling av et avansert prosjektkalkylesystem basert på Windows Forms-teknologi, der jeg benytter programmeringsspråket C# for applikasjonslogikk og Microsoft SQL Server som databaseplattform. Dette systemet gir brukerne et kraftig verktøy for å kalkulere, analysere og følge opp økonomiske aspekter ved prosjekter, med en brukervennlig grensesnitt som forenkler komplekse kalkyleprosesser og gir verdifull beslutningsstøtte ved prosjektplanlegging og -gjennomføring.",
+      "endDate": "2008-08-01"
+    },
+    {
+      "name": "Umoe Mandal AS",
+      "position": "Programvareutvikler",
+      "url": "https://www.um.no",
+      "startDate": "2002-10-01",
+      "summary": "Jeg har erfaring med hele livssyklusen for systemutvikling, fra innhenting og analyse av kravspesifikasjoner, utarbeidelse av løsningsforslag, selve implementasjonen av koden, til utrulling av ferdig programvare, opplæring av sluttbrukere og etablering av driftsrutiner. I dette arbeidet benytter jeg primært programmeringsspråkene VB.Net og C#, samt databaseteknologiene Microsoft SQL Server og Oracle. En sentral del av mitt arbeid har vært utvikling av spesialisert mellomvare for datamanipulering som effektivt håndterer dataoverføring og transformasjon mellom Oracle SQL-databaser og Microsoft SQL Server-databaser, noe som sikrer sømløs dataintegrasjon mellom ulike systemplattformer.",
+      "endDate": "2008-02-01"
+    },
+    {
+      "name": "Intershare AS",
+      "position": "Programvarekonsulent",
+      "url": "https://www.intershare.no",
+      "startDate": "2001-10-01",
+      "summary": "Min hovedrolle involverer videreutvikling av firmaets programvare for administrasjon av utleie, der jeg arbeider med teknologier som Microsoft Visual C++, MFC, Sybase SQL Anywhere og Microsoft SQL Server. I tillegg har jeg ansvar for å levere konsulenttjenester til firmaets kunder, hvor jeg bidrar med min tekniske ekspertise innen disse plattformene. Dette innebærer både å forbedre eksisterende funksjonalitet i utleieadministrasjonssystemet og å bistå kunder med deres spesifikke behov relatert til våre teknologiløsninger.",
+      "endDate": "2002-04-01"
+    },
+    {
+      "name": "Edb Avdelingen Sør AS",
+      "position": "Edb-konsulent",
+      "url": "https://www.edbavd.no/",
+      "startDate": "1997-08-01",
+      "summary": "Som konsulent har jeg ansvar for et bredt spekter av IT-tjenester, inkludert førstelinje brukerstøtte og drift av sammensatte nettverksmiljøer som benytter både Microsoft- og Novell-plattformer. Jeg konfigurerer Windows-klienter for optimal ytelse i henhold til virksomhetens behov og etablerer robuste backuprutiner for å sikre datasikkerhet. I tillegg utvikler jeg spesialtilpassede løsninger med programmering i ANSI C for å møte spesifikke tekniske oppgaver.",
+      "endDate": "2001-08-01"
+    },
+    {
+      "name": "Manpower AS",
+      "position": "Brukerstøtte",
+      "url": "https://www.manpower.no",
+      "startDate": "1994-08-01",
+      "summary": "Jeg yter omfattende brukerstøtte for Windows 95-operativsystemer og har medansvar for den daglige driften av Token-Ring nettverk, en oppgave som krever spesialisert teknisk kompetanse innen eldre nettverksteknologi. I tillegg har jeg ansvar for oppsett og løpende vedlikehold av Windows-klienter, der jeg sørger for optimal konfigurasjon, oppdatering og problemløsning for å sikre stabil og effektiv drift av klientmaskiner i virksomhetens IT-miljø.",
+      "endDate": "1997-07-01"
+    },
+    {
+      "name": "PC-LAND SOFTWARE",
+      "position": "Programvareutvikler",
+      "url": "https://www.ikke.no",
+      "startDate": "1995-02-01",
+      "summary": "Utviklet programvare i Microsoft Visual Foxpro 3.0",
+      "endDate": "1995-03-28"
+    },
+    {
+      "name": "Total Consept Development",
+      "position": "Programvareutvikler",
+      "url": "https://www.ikke.no",
+      "startDate": "1994-08-01",
+      "summary": "Hovedansvar for utvikling av administrative systemer for resturantbranje og jukebox-databaser. Utviklet i Visual Basic",
+      "endDate": "1994-11-30"
+    },
+    {
+      "name": "BÅDE OG RADIOREKLAMEBYRÅ",
+      "position": "IT-konsulent",
+      "url": "https://www.ikke.no",
+      "startDate": "1994-06-01",
+      "summary": "Hovedansvar for utarbeidelse av ethernett, klientoppsett av Windows for Workgroups 11 og brukerstøtte",
+      "endDate": "1994-07-31"
+    },
+    {
+      "name": "NHI-Datahøgskolen",
+      "position": "Veileder",
+      "url": "https://www.ikke.no",
+      "startDate": "1994-01-01",
+      "summary": "Veileder i faget Algoritmer og datastrukturer",
+      "endDate": "1994-06-01"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Langhus IL Bordtennis",
+      "position": "Gruppeleder og styreleder",
+      "url": "https://www.langhusil.no/bordtennis",
+      "startDate": "2024-09-01",
+      "summary": "Jeg koordinerer styremøter og årsmøter, utarbeider sakslister og følger opp vedtak som blir fattet. Jeg representerer også klubben utad i møter med kommunen, idrettskrets og Norges Bordtennisforbund. God økonomistyring er en sentral del av min rolle, hvor jeg har ansvar for budsjett, rapportering og søknader om økonomisk støtte. Jeg organiserer treninger, skaffer kvalifiserte trenere og tilrettelegger for spillerutvikling på alle nivåer. Planlegging og gjennomføring av klubbturneringer samt koordinering av deltagelse i eksterne turneringer faller også under mitt ansvarsområde. Jeg jobber aktivt med å rekruttere nye medlemmer gjennom markedsføring og ulike rekrutteringsaktiviteter. Videre sørger jeg for vedlikehold av utstyr, bord og treningsfasiliteter. En viktig del av mitt lederskap er å skape et godt miljø i klubben gjennom sosiale aktiviteter og god kommunikasjon mellom medlemmene."
+    },
+    {
+      "organization": "Langhus 1405 Sameie",
+      "position": "Styremedlem",
+      "startDate": "2021-07-01",
+      "summary": "Jeg har flere ansvarsområder som bidrar til å sikre en velfungerende og harmonisk boenhet for alle beboerne. Jeg deltar aktivt i styremøter hvor jeg er med på å ta viktige beslutninger angående drift, vedlikehold og utvikling av sameiet. Jeg arbeider med budsjett og økonomistyring, og følger opp regnskap og rapportering for å sikre at sameiets midler brukes ansvarlig og effektivt. I tillegg har jeg ansvar for å inngå avtaler med leverandører og tjenesteytere for å sikre at nødvendige oppgaver som renhold, vedlikehold og reparasjoner utføres på en profesjonell måte. Jeg er også med på å utarbeide og oppdatere sameiets vedtekter og husordensregler, og sørger for å håndheve disse på en rettferdig måte. Jeg kommuniserer jevnlig med beboerne, både ved å informere om saker som angår fellesskapet og ved å lytte til deres innspill og bekymringer. Videre bidrar jeg til planlegging og gjennomføring av årsmøter, hvor jeg presenterer status for sameiet, diskuterer planer for fremtiden og sørger for at alle får muligheten til å delta i beslutningsprosesser."
+    },
+    {
+      "organization": "STOFFSKIFTEFORBUNDET",
+      "position": "Forbundsstyremedlem",
+      "url": "https://stofo.no/",
+      "startDate": "2020-11-01",
+      "summary": "Jeg bidrar til å fremme forbundets arbeid for personer med stoffskiftesykdommer. Jeg deltar i planlegging og gjennomføring av møter, utvikler strategier og sørger for å følge opp vedtak. Jeg bidrar til økonomisk styring, deltar i budsjettarbeid og følger opp økonomiske rapporter. I tillegg arbeider jeg med kommunikasjon og informasjon, der jeg hjelper til med å nå ut til medlemmer og samarbeidspartnere. Gjennom mitt engasjement bidrar jeg til et inkluderende miljø som fremmer kunnskap, støtte og utvikling for medlemmene. Jeg har også hatt oppgaver med å ansette ny generalsekretær."
+    },
+    {
+      "organization": "STOFFSKIFTEFORBUNDET",
+      "position": "Likeperson",
+      "url": "https://stofo.no/",
+      "startDate": "2017-03-01",
+      "summary": "Jeg tilbyr støtte og veiledning til personer som lever med stoffskiftesykdommer. Jeg deler erfaringer, lytter til andres utfordringer og bidrar til å skape et trygt rom hvor medlemmene kan utveksle råd og finne motivasjon. Gjennom mitt engasjement bidrar jeg til å styrke fellesskapet og fremme forståelse for sykdommen."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Handelshøyskolen BI",
+      "area": "Management",
+      "url": "https://wwww.bi.no",
+      "studyType": "Bachelor",
+      "startDate": "2018-01-01",
+      "score": "",
+      "courses": [
+        "Prosjektledelse 1",
+        "Prosjektledelse 2",
+        "Prosjektledelse 3"
+      ],
+      "endDate": "2019-01-01"
+    },
+    {
+      "institution": "Universitetet i Agder (UiA)",
+      "area": "Software Engineering",
+      "url": "https://www.uia.no",
+      "studyType": "Bachelor",
+      "startDate": "1999-08-01",
+      "score": "",
+      "courses": [
+        "User interfaces",
+        "Problem solving using Java",
+        "Advanced Database Systems XML",
+        "OO Systems Design using UML"
+      ],
+      "endDate": "2000-05-01"
+    },
+    {
+      "institution": "NHI, Norges Høyskole for Informasjonsteknologi",
+      "area": "Computer Science",
+      "studyType": "Linje for administrativ databehandling",
+      "startDate": "1992-08-01",
+      "score": "",
+      "courses": [
+        "Administrasjonslære og Bedriftsøkonomi",
+        "Innføring i systemutvikling",
+        "Organisasjon samarbeid og ledelse",
+        "Grunnkurs programmering",
+        "Markedsføring",
+        "Databaser og datamodeller",
+        "Algoritmer og datastrukturer",
+        "Maskinspråkprogrammering",
+        "Datakommunikasjon I",
+        "Systemutvikling II",
+        "Applikasjonsutvikling",
+        "Applikasjonsprogrammering i C++",
+        "Matematisk Analyse I",
+        "Diskrete matematikk",
+        "Operativsystemer",
+        "Sanntidsprogrammering"
+      ],
+      "endDate": "1994-05-01"
+    },
+    {
+      "institution": "Melbu Videregående skole",
+      "area": "IT",
+      "studyType": "VK2, Handel og kontor, Data- og informasjonsbehandling",
+      "startDate": "1989-08-01",
+      "score": "",
+      "courses": [
+        "Norsk og kommunikasjon, hovedmål, skriftlig",
+        "Norsk og kommunikasjon, sidemål, skriftlig",
+        "Norsk og kommunikasjon, muntlig",
+        "Organisasjonslære",
+        "Engelsk, skriftlig",
+        "Engelsk, muntlig",
+        "Sosialøkonomi",
+        "Kroppsøving",
+        "Systemering",
+        "Programmering",
+        "Administrative EDB-verktøy",
+        "Samfunnsfag"
+      ],
+      "endDate": "1990-06-01"
+    },
+    {
+      "institution": "Melbu Videregående skole",
+      "area": "Økonomi",
+      "studyType": "VK1, Handel og kontor",
+      "startDate": "1988-08-01",
+      "score": "",
+      "courses": [
+        "Norsk med sidemål skriftlig",
+        "Norsk muntlig",
+        "Engelsk, skriftlig",
+        "Engelsk, muntlig",
+        "Kroppsøving",
+        "Rettslære",
+        "Sosialøkonomi",
+        "Bedriftsøkonomi",
+        "Markedsføring",
+        "Matematikk og statistikk",
+        "Informasjonsbehandling"
+      ],
+      "endDate": "1989-06-01"
+    },
+    {
+      "institution": "Sortland Videregående skole",
+      "area": "Handels- og kontorfag",
+      "studyType": "Grunnkurs",
+      "startDate": "1987-08-01",
+      "score": "",
+      "courses": [
+        "Norsk",
+        "Engelsk",
+        "Kroppsøving",
+        "Regnskapslære",
+        "Matematikk I",
+        "Samfunns- og næringslære",
+        "Korrespondanse- og dokumentlære",
+        "Maskinskriving",
+        "Praktisk kontorarbeid",
+        "Tekstbehandling"
+      ],
+      "endDate": "1988-06-01"
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Applied TOGAF Enterprise Architecture Practitioner",
+      "date": "2024-10-01",
+      "issuer": "The Open Group",
+      "url": "https://www.credly.com/badges/3f2e9c94-582a-4b9f-ba7a-df65c303ee1b/linked_in_profile"
+    },
+    {
+      "name": "PROSCI Certified Change Practitioner",
+      "date": "2024-03-01",
+      "issuer": "PROSCI",
+      "url": "https://www.credly.com/badges/d734928d-07f3-4056-8b21-82e1e21bb0cc/linked_in_profile"
+    },
+    {
+      "name": "Product Owner",
+      "date": "2021-03-01",
+      "issuer": "Agile Lean House",
+      "url": "https://agileleanhouse.com/en/cspo"
+    },
+    {
+      "name": "Prince2Agile",
+      "date": "2019-01-01",
+      "issuer": "Axelos Global Best Practice",
+      "url": "https://www.axelos.com/certifications/propath/prince2-agile-project-management/prince2-agile-foundation"
+    },
+    {
+      "name": "Prince2 Registered Practitioner",
+      "date": "2016-11-01",
+      "issuer": "APMG International",
+      "url": "https://www.axelos.com/certifications/propath/prince2-project-management/prince2-practitioner"
+    },
+    {
+      "name": "Prince2 Foundation",
+      "date": "2014-08-01",
+      "issuer": "Adding Value Consulting AB",
+      "url": "https://www.axelos.com/certifications/propath/prince2-project-management/prince2-foundation"
+    },
+    {
+      "name": "ITIL Foundation",
+      "date": "2012-11-01",
+      "issuer": "PeopleCert Group",
+      "url": "https://www.axelos.com/certifications/itil-service-management/itil-4-foundation"
+    },
+    {
+      "name": "Certified Scrum Master",
+      "date": "2010-01-01",
+      "issuer": "Scrum Alliance",
+      "url": "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Agile metodikker",
+      "level": "Advanced",
+      "keywords": [
+        "iterativ utvikling",
+        "sprintplanlegging",
+        "brukerhistorier",
+        "produktkø",
+        "kontinuerlig integrasjon",
+        "smidig fasilitering",
+        "scrum-master",
+        "teamutvikling",
+        "kontinuerlig forbedring",
+        "scrum",
+        "kanban",
+        "lean",
+        "XP",
+        "adaptive planning",
+        "hybrid metodikk",
+        "strukturert planlegging",
+        "metodetilpasning",
+        "prosjektmetodologi",
+        "smidig metodikk"
+      ]
+    },
+    {
+      "name": "Software utvikling og arkitektur",
+      "level": "Advanced",
+      "keywords": [
+        "C#",
+        "ASP.NET",
+        "WPF",
+        "Entity Framework",
+        "LINQ",
+        "RESTful services",
+        "HTTP endpoints",
+        "API utvikling",
+        "løsningsdesign",
+        "komponentarkitektur",
+        "applikasjonsstruktur",
+        "patternbasert design",
+        "systemintegrasjon",
+        "arkitektur-patterns",
+        "designpatterns",
+        "systemmodellering",
+        "grensesnittdesign",
+        "komponentdesign",
+        "koding",
+        "programvareutvikling",
+        "applikasjonsutvikling",
+        "programmering",
+        "programvarearkitektur",
+        "kravanalyse",
+        "design",
+        "implementering",
+        "testing",
+        "utrulling",
+        "vedlikehold",
+        "systemdesign",
+        "arkitektpatterns",
+        "tekniske spesifikasjoner",
+        "integrasjonsarkitektur"
+      ]
+    },
+    {
+      "name": "Ledelse & Administrasjon",
+      "level": "Advanced",
+      "keywords": [
+        "vision setting",
+        "strategic direction",
+        "people management",
+        "influence",
+        "decision-making",
+        "team coordination",
+        "delegation",
+        "performance monitoring",
+        "team development",
+        "conflict resolution",
+        "employee engagement",
+        "performance incentives",
+        "morale building",
+        "team spirit",
+        "recognition programs",
+        "teamutvikling",
+        "målstyring",
+        "delegering",
+        "koordinering",
+        "oppfølging",
+        "strategic planning",
+        "organizational direction",
+        "long-term thinking",
+        "executive decision-making",
+        "technical leadership",
+        "engineering management",
+        "technical strategy",
+        "innovation management",
+        "R&D leadership"
+      ]
+    },
+    {
+      "name": "Prosjekt- og prosessledelse",
+      "level": "Advanced",
+      "keywords": [
+        "scope management",
+        "timeline planning",
+        "risk assessment",
+        "stakeholder management",
+        "project governance",
+        "controlled environments",
+        "structured project management",
+        "business case",
+        "project board",
+        "stage planning",
+        "development lifecycle",
+        "technical planning",
+        "code review",
+        "release management",
+        "quality assurance",
+        "prosessforbedring",
+        "kvalitetssikring",
+        "evaluering",
+        "optimalisering",
+        "innovasjon",
+        "resource planning",
+        "capacity management",
+        "utilization optimization",
+        "workload distribution",
+        "prioritization"
+      ]
+    },
+    {
+      "name": "Tekniske verktøy og plattformer",
+      "level": "Advanced",
+      "keywords": [
+        "TeamCity",
+        "Octopus Deploy",
+        "Git",
+        "Github Actions",
+        "Docker",
+        "Microsoft Visual Studio",
+        "Microsoft.NET",
+        "Sql Management Studio",
+        "Microsoft Winforms",
+        "Microsoft Entity Framework",
+        "Fiddler",
+        "Postman",
+        "T-SQL",
+        "databaseadministrasjon",
+        "spørreoptimalisering",
+        "ITIL",
+        "service catalog",
+        "incident management",
+        "change management",
+        "service level agreements"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Norsk",
+      "fluency": "Morsmål",
+      "native": true,
+      "keywords": [
+        "Norsk",
+        "Bokmål"
+      ]
+    },
+    {
+      "language": "Engelsk",
+      "fluency": "Full professional proficiency",
+      "native": false,
+      "keywords": [
+        "Engelsk",
+        "Engelsk (amerikansk)",
+        "Engelsk (britisk)"
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Sport",
+      "keywords": [
+        "Bordtennis",
+        "Løping",
+        "Liverpool FC"
+      ]
+    }
+  ],
+  "references": [],
+  "projects": [
+    {
+      "name": "RELOVE V25",
+      "startDate": "2025-02-01",
+      "description": "RELOVE trenger effektive metoder for å dokumentere og synliggjøre sin samfunnsverdi. Dette er avgjørende både for å sikre fortsatt støtte og for å kommunisere organisasjonens betydning i lokalsamfunnet. På sikt har RELOVE ambisjoner om å kvalifisere for fast post på statsbudsjettet. Pro bono-teamet skal derfor bistå RELOVE med å artikulere deres kjernevirksomhet og identitet på en klar og lettfattelig måte. Teamet skal utvikle noen få, konsise formuleringer som fanger essensen av RELOVEs virksomhet, definere den konkrete verdiskapingen fra RELOVEs ulike aktivitetsområder, samt etablere systematiske målingsrutiner for å dokumentere organisasjonens effekt og resultater fremover, eksempelvis gjennom strukturert registrering av resirkulert tekstilvolum eller antall ungdommer som kommer i arbeid.",
+      "url": "https://www.relove.info",
+      "entity": "Prosperastiftelsen",
+      "endDate": "2025-05-01",
+      "roles": [
+        "prosjektleder"
+      ],
+      "highlights": [
+        "Ledet et team på 5 personer i et prosjekt for å utvikle en ny strategi for RELOVE.",
+        "Sikret at prosjektet ble levert innen tidsrammen og budsjettet.",
+        "Utvikling av ny kommunikasjonsstrategi som økte synligheten til RELOVE."
+      ]
+    },
+    {
+      "name": "OOF H24 - Økonomi og Virksomhetsstyring",
+      "startDate": "2024-10-01",
+      "description": "Formålet med dette prosjektet er å bistå OOF i utvelgelse og implementering av digitale verktøy som vil effektivisere og forenkle administrative og operasjonelle prosesser. OOF ønsker å minimere manuelle arbeidsoppgaver og samtidig styrke sin evne til oversikt og kontroll innen sentrale funksjoner som timeregistrering, budsjetthåndtering, regnskapsføring og prosjektledelse.",
+      "url": "https://www.osloogomlandfriluftsrad.no/",
+      "entity": "Prosperastiftelsen",
+      "endDate": "2025-01-01",
+      "roles": [
+        "prosjektleder"
+      ],
+      "highlights": [
+        "Ledet prosjektet for å digitalisere administrative prosesser hos OOF, med fokus på timeføring, budsjettering og prosjektstyring.",
+        "Gjennomførte behovsanalyse og evaluering av digitale verktøy som best kunne møte organisasjonens behov.",
+        "Koordinerte implementeringen av nye systemer som resulterte i 30% reduksjon i manuelt administrativt arbeid."
+      ]
+    },
+    {
+      "name": "Sanering av gammelt log-verktøy og utrulling av agenter",
+      "startDate": "2020-07-01",
+      "description": "Prosjektets mandat er å få sanert gammel maskinvare, sette opp ny maskinvare samt å rulle ut diverse sikkerhets-relaterte agenter på x antall tusen servere.  Mine oppgaver i dette prosjektet er blant annet, fortløpende oppfølging, håndtering av interessenter, planlegging, rapportering til porteføljestyrer, rapportering til styringsgruppe, håndtering av dokumentasjon i prosjektet. Koordinering av ressurser, både interne og fra våre partnere. Grunnet situasjonen i landet er disse oppgavene i en stor grad gjennomført via Microsoft Teams.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2020-11-01",
+      "entity": "DNB",
+      "roles": [
+        "prosjektleder"
+      ],
+      "highlights": [
+        "Ledet sanering av utdatert maskinvare og implementering av nye sikkerhetsløsninger på flere tusen servere.",
+        "Koordinerte tverrfaglige team i en fullt digital arbeidsmodell under pandemien via Microsoft Teams.",
+        "Rapporterte jevnlig til styringsgruppe og porteføljestyrer, med 100% oppnåelse av prosjektets milepæler."
+      ]
+    },
+    {
+      "name": "Implementere utvidet sikkerhetsfokus i DNB programvarelivssyklus",
+      "startDate": "2020-07-01",
+      "description": "Prosjektets mandat er å avklare behov, anskaffe, implementere og få på plass styringsdokumenter for løsninger som øker fokus på sikkerhetsaspekter i løpet av programvarelivssyklusen for den programvare som lages av internt og av våre partnere.  Mine oppgaver i dette prosjektet er blant annet, fortløpende oppfølging, håndtering av interessenter, planlegging, rapportering til porteføljestyrer, rapportering til styringsgruppe, håndtering av dokumentasjon i prosjektet. Koordinering av ressurser, både interne og fra våre partnere. Leverandørdialog, herunder beskrive krav til disse, utføre leverandør-evaluering. Grunnet situasjonen i landet er disse oppgavene i en stor grad gjennomført via Microsoft Teams.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2020-11-01",
+      "entity": "DNB",
+      "roles": [
+        "prosjektleder"
+      ],
+      "highlights": [
+        "Utviklet og implementerte omfattende sikkerhetsfokuserte styringsdokumenter for programvareutvikling i DNB.",
+        "Gjennomførte leverandørevalueringer og etablerte nye sikkerhetskrav for eksterne utviklingspartnere.",
+        "Oppnådde betydelig forbedring i sikkerhetsfokus gjennom hele programvarelivssyklusen ved å implementere nye verktøy og rutiner."
+      ]
+    },
+    {
+      "name": "IAM - Cleanup and Compliance",
+      "startDate": "2020-06-01",
+      "description": "Prosjekt som har som mandat å implementere en utvidet automasjon av tilgangsstyring gjennom bruk av ServiceNow, IIQ og andre relevante verktøy. Mine oppgaver i dette prosjektet er blant annet, fortløpende oppfølging, håndtering av interessenter, planlegging, rapportering til porteføljestyrer, rapportering til styringsgruppe, håndtering av dokumentasjon i prosjektet. Grunnet situasjonen i landet er disse oppgavene i en stor grad gjennomført via Microsoft Teams.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2020-11-01",
+      "entity": "DNB",
+      "roles": [
+        "prosjektleder"
+      ],
+      "highlights": [
+        "Ledet implementeringen av automatisert tilgangsstyring med ServiceNow og IIQ, som resulterte i 40% reduksjon i manuelle tilgangsprosesser.",
+        "Sikret compliance med interne og eksterne reguleringer gjennom forbedret dokumentasjon og prosesser.",
+        "Koordinerte interessenter på tvers av avdelinger for å sikre optimal implementering av IAM-løsningen."
+      ]
+    },
+    {
+      "name": "Penetrasjonstesting",
+      "startDate": "2019-08-01",
+      "description": "Dette prosjektet har som mandat å legge til rette for penetrasjonstesting av DNB sine systemer. Mine oppgaver i dette prosjektet er blant annet, fortløpende oppfølging, håndtering av interessenter, planlegging, rapportering til porteføljestyrer, rapportering til styringsgruppe, håndtering av dokumentasjon i prosjektet. Koordinering av ressurser, både interne og fra våre partnere. Grunnet situasjonen i landet er disse oppgavene i en stor grad gjennomført via Microsoft Teams.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2020-11-01",
+      "entity": "DNB",
+      "roles": [
+        "prosjektleder"
+      ],
+      "highlights": [
+        "Etablerte og ledet et omfattende program for penetrasjonstesting av kritiske systemer i DNB.",
+        "Koordinerte interne sikkerhetseksperter og eksterne partnere for å gjennomføre grundige sikkerhetstester.",
+        "Utviklet protokoller for systematisk oppfølging av funn, som resulterte i 85% reduksjon i kritiske sårbarheter."
+      ]
+    },
+    {
+      "name": "Implementere DDOS-beskyttelse for en spesifikk del av DNB-systemportefølje.",
+      "startDate": "2019-07-01",
+      "description": "Prosjekts mandat er å flytte deler av DNB sin systemportefølje bak forsterkede DDOS-beskyttelse.  Mine oppgaver i dette prosjektet er blant annet, fortløpende oppfølging, håndtering av interessenter, planlegging, rapportering til porteføljestyrer, rapportering til styringsgruppe, håndtering av dokumentasjon i prosjektet. Koordinering av ressurser, både interne og fra våre partnere. Grunnet situasjonen i landet er disse oppgavene i en stor grad gjennomført via Microsoft Teams.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2020-11-01",
+      "entity": "DNB",
+      "roles": [
+        "prosjektleder"
+      ],
+      "highlights": [
+        "Ledet implementeringen av forsterket DDOS-beskyttelse for kritiske systemkomponenter i DNB.",
+        "Utarbeidet omfattende migreringsstrategi som minimerte nedetid under flytting av systemer.",
+        "Koordinerte tekniske ressurser på tvers av team for å sikre sømløs integrasjon med eksisterende infrastruktur."
+      ]
+    },
+    {
+      "name": "Ny bedriftsportal",
+      "startDate": "2018-01-01",
+      "description": "Scrum Master for dette utviklingsprosjektet. Gjennomførte de oppgaver som ligger til rollen i henhold til Scrumguiden. I tillegg til innføring og opplæring i smidige metodikk for deltakere i prosjektet, både innad i IT-organisasjonen i tillegg til deltakere i prosjektet fra andre forretningsområder.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2019-01-01",
+      "entity": "DNB",
+      "roles": [
+        "Scrum master"
+      ],
+      "highlights": [
+        "Fungerte som Scrum Master for et tverrfaglig team på 8 personer som utviklet DNBs nye bedriftsportal.",
+        "Gjennomførte grundig opplæring i smidig metodikk for både IT-utviklere og forretningsrepresentanter.",
+        "Fasiliterte daglige stand-ups, sprint planning og retrospektiver som bidro til 30% økt utviklingseffektivitet."
+      ]
+    },
+    {
+      "name": "GDPR i DNB Liv",
+      "startDate": "2018-01-01",
+      "description": "Compliance-prosjekt som hadde til mandat å sørge for at systemene til DNB-Liv møter GDPR-kravene. I dette prosjektet hadde jeg rollen som Scrum Master, med tilhørende oppgaver som beskrevet i scrumguiden.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2018-03-01",
+      "entity": "DNB",
+      "roles": [
+        "prosjektleder"
+      ],
+      "highlights": [
+        "Ledet GDPR-implementeringsprosjektet for DNB Liv, som sikret full compliance innen fristen mai 2018.",
+        "Koordinerte tverrfaglig team bestående av juridiske eksperter, IT-spesialister og forretningsanalytikere.",
+        "Implementerte nye systemer og prosesser for å håndtere personvernrettigheter og datasletting."
+      ]
+    },
+    {
+      "name": "Supplier Catalogue",
+      "startDate": "2014-09-01",
+      "description": "Prosjektets mandat er å tilpasse og implementere Sharecats familie av katalog-tjenester til å kunne benyttes hos en av verdens største olje-leverandører. Jeg overtok prosjektet som prosjektleder da dette hadde vært pågående i noen måneder. Mine oppgaver ble da å samle alle løse tråder, opprette en detaljert prosjektplan for resterende leveranser, og daglig oppfølging av dette. Prosjektet ble gjennomført med multi-disiplin ressurser og med deltagere i flere land. Planlegging, gjennomføring og oppfølging ble utført ved hjelp av MS Project 2013.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2015-04-01",
+      "entity": "Sharecat Solutions AS",
+      "roles": [
+        "prosjektleder"
+      ],
+      "highlights": [
+        "Overtok et komplekst internasjonalt prosjekt og utviklet en detaljert prosjektplan som sikret vellykket leveranse.",
+        "Ledet et geografisk spredt team på tvers av flere land i implementeringen av Sharecats katalog-tjenester.",
+        "Administrerte prosjektets ressurser og timeplan ved hjelp av MS Project 2013, med levering innenfor opprinnelig budsjett."
+      ]
+    },
+    {
+      "name": "Utvidelse av vCRM",
+      "startDate": "2011-03-01",
+      "description": "Prosjektets mandat var å utvide og forbedre Ventelos CRM-system. Basert på en analyse av innkommende forespørsler til IT-avdelingen ble fem kritiske områder identifisert der det eksisterende systemet manglet støtte for forretningsbehov. Oppgaven besto i å analysere disse behovene og implementere løsninger som adresserte de definerte forretningscasene.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2011-10-01",
+      "entity": "Ventelo",
+      "roles": [
+        "prosjektleder",
+        "programvareingeniør"
+      ],
+      "highlights": [
+        "Ledet og utviklet utvidelser til Ventelos CRM-system basert på grundig analyse av IT-støttehenvendelser.",
+        "Identifiserte og implementerte løsninger for 5 kritiske forretningsområder som manglet systemstøtte.",
+        "Utførte både prosjektleder- og utviklerrolle, som resulterte i sømløs implementering og reduserte IT-støttehenvendelser med 25%."
+      ]
+    },
+    {
+      "name": "IRIS - Rapportdistribuerings-system",
+      "startDate": "2007-02-01",
+      "description": "Et system utviklet for distribusjon av rapporter, med funksjonalitet for administrasjon av brukere og rapportobjekter som skal distribueres. Løsningen inkluderer oppsett av abonnementer, planlegging av distribusjonstidspunkter og frekvens, samt sømløs integrasjon med Active Directory (AD) for effektiv brukerhåndtering. Systemet er bygget med C#, ADO.Net og MS SQL Server som databaseløsning.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2007-06-01",
+      "entity": "Umoe Mandal",
+      "roles": [
+        "prosjektleder"
+      ],
+      "highlights": [
+        "Utviklet og implementerte et komplett rapportdistribueringssystem med C# og MS SQL Server.",
+        "Implementerte avansert AD-integrasjon for automatisert brukeradministrasjon.",
+        "Designet en fleksibel abonnementsløsning som tillot brukere å planlegge og motta rapporter basert på individuelle behov."
+      ]
+    },
+    {
+      "name": "ULV - UtLevering av Verktøy",
+      "startDate": "2005-03-01",
+      "description": "Et system designet for å administrere utlevering og innlevering av verktøy. Løsningen er utviklet i C# med MS SQL Server som database og ADO.Net for datatilgang. Systemet inkluderer funksjonalitet for elektronisk signatur, generering av tilpassede rapporter og sømløs integrasjon med Active Directory (AD) for effektiv brukeradministrasjon",
+      "url": "https://harry.solsem.no",
+      "endDate": "2006-05-01",
+      "entity": "Umoe Mandal",
+      "roles": [
+        "prosjektleder"
+      ],
+      "highlights": [
+        "Ledet prosjektet fra kravspesifikasjon til implementering og drift.",
+        "Utviklet en C# applikasjon med MS SQL Server som database.",
+        "Implementert AD-integrasjon og elektronisk signatur."
+      ]
+    },
+    {
+      "name": "tiUM - timeregistrering Umoe Mandal",
+      "startDate": "2004-05-01",
+      "description": "Ledet en helhetlig implementering av et moderne timeregistreringssystem for Umoe Mandal der jeg hadde ansvar for samtlige prosjektfaser fra kravanalyse til driftssetting. Prosjektet omfattet utarbeidelse av detaljert kravspesifikasjon, design av skreddersydd løsningsarkitektur, teknisk implementasjon, koordinering av utrulling, samt grundig opplæring av både sluttbrukere og teknisk personell. I tillegg utviklet jeg omfattende bruker- og systemdokumentasjon for å sikre bærekraftig videre drift. Systemet ble utviklet i VB.Net med Winforms-grensesnitt og MS SQL Server som databaseløsning. Løsningen inkluderte avansert funksjonalitet som sømløs integrasjon mot eksisterende stemplingssystem, automatisk e-postvarsling for godkjenning av timelister, strukturert dataoverføring til lønnssystemet, samt intelligent autogenerering av timelister basert på predefinerte kriterier. Dette resulterte i betydelig redusert administrativ belastning og forbedret datakvalitet i organisasjonens timeregistrerings- og lønnsbehandlingsprosesser.",
+      "url": "https://harry.solsem.no",
+      "endDate": "2007-08-01",
+      "entity": "Umoe Mandal",
+      "roles": [
+        "prosjektleder"
+      ],
+      "highlights": [
+        "Ledet prosjektet fra kravspesifikasjon til implementering og drift.",
+        "Utviklet en VB.Net applikasjon med MS SQL Server som database.",
+        "Implementert integrasjon mot stemplingssystem og e-postvarsling."
+      ]
+    }
+  ]
+}
