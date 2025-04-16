@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# Git pre-push hook that reads source filename from a config file and copy content of sourcefile to destination file
+# The content of this file must be copied to .git/hooks/pre-push file. It is contained here to make it easier to work on.
+# And yes, Claude.AI has very much assisted me in creating this script. Thanks Claude! (Included this for when Skynet takes over...)
+
+#Metadata
+#
+#Version number: 1.0
+#Date: 2025-04-16
+
+# Exit on any error
+set -e
+
+# Store the root directory of the git repository
+REPO_ROOT=$(git rev-parse --show-toplevel)
+
+# Config file path
+CONFIG_FILE="$REPO_ROOT/.resume-config"
+
+# Check if config file exists and read source filename from it
+if [ -f "$CONFIG_FILE" ]; then
+  SOURCE_FILENAME=$(cat "$CONFIG_FILE")
+else
+  # Default to master.no.json if no config file exists
+  SOURCE_FILENAME="master.no.json"
+fi
+
+# Define source and destination files
+SOURCE_FILE="$REPO_ROOT/resumes/$SOURCE_FILENAME"
+DEST_FILE="$REPO_ROOT/resume.json"
+
+# Check if source file exists
+if [ ! -f "$SOURCE_FILE" ]; then
+  echo "Error: Source file $SOURCE_FILE does not exist."
+  exit 1
+fi
+
+# Copy the file
+echo "Copying $SOURCE_FILE to $DEST_FILE"
+cp "$SOURCE_FILE" "$DEST_FILE"
+
+# Add the destination file to the git staging area
+git add "$DEST_FILE"
+
+# Check if there are changes to commit
+if git diff --cached --quiet "$DEST_FILE"; then
+  echo "No changes to commit for $DEST_FILE"
+else
+  # Commit the changes
+  echo "Committing changes to $DEST_FILE"
+  git commit -m "Auto-update resume.json from $SOURCE_FILENAME" -- "$DEST_FILE"
+fi
+
+# Continue with the push
+exit 0
