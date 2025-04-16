@@ -1,7 +1,7 @@
-# This file is used to configure the build and deploy process for my resume. It should contain the name of the source file to be used for the resume.
-# The entry will be read by the pre-push hook and used to copy the source file to resume.json
-# The default value is defined in the pre-push hook.
-# You could keep a list of all your source files here, in your resumes folder, and then just uncomment the one you want to use.
+#This file is used to configure the build and deploy process for my resume. It should contain the name of the source file to be used for the resume.
+#The entry will be read by the pre-push hook and used to copy the source file to resume.json
+#The default value is defined in the pre-push hook.
+#You could keep a list of all your source files here, in your resumes folder, and then just uncomment the one you want to use.
  
 #master.no.json
 #master.en.json

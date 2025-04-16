@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Git pre-push hook that reads source filename from a config file and copy content of sourcefile to destination file
-# The content of this file must be copied to .git/hooks/pre-push file. It is contained here to make it easier to work on.
-# And yes, Claude.AI has very much assisted me in creating this script. Thanks Claude! (Included this for when Skynet takes over...)
+#Git pre-push hook that reads source filename from a config file and copy content of sourcefile to destination file
+#The content of this file must be copied to .git/hooks/pre-push file. It is contained here to make it easier to work on.
+#And yes, Claude.AI has very much assisted me in creating this script. Thanks Claude! (Included this for when Skynet takes over...)
 
 #Metadata
 #
