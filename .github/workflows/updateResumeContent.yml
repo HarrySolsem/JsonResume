@@ -17,8 +17,8 @@ jobs:
       
       - name: Set Git Identity
         run: |
-          git config user.name "harrysolsem"
-          git config user.email "harry@solsem.no"
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
       
       - name: Copy Resume File
         run: |
