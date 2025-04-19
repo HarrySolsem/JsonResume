@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main  # Or whatever your primary branch is named
-    paths:
-      - 'resumes/**'  # Only trigger when files in the resumes directory change
+    #paths:
+      # - 'resumes/**'  # Only trigger when files in the resumes directory change
 
 jobs:
   update-resume:
