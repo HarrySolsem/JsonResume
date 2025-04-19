@@ -1,4 +1,4 @@
-name: Update Resume File
+name: Update Resume File and publish to Gist
 
 on:
   push:
