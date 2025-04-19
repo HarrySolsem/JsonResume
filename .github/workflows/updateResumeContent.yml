@@ -1,0 +1,52 @@
+name: Update Resume File
+
+on:
+  push:
+    branches:
+      - main  # Or whatever your primary branch is named
+    paths:
+      - 'resumes/**'  # Only trigger when files in the resumes directory change
+
+jobs:
+  update-resume:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set Git Identity
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+      
+      - name: Copy Resume File
+        run: |
+          # Check for config file or use default
+          if [ -f ".resume-config" ]; then
+            SOURCE_FILENAME=$(cat .resume-config)
+          else
+            SOURCE_FILENAME="master.no.json"
+          fi
+          
+          # Copy the file if it exists
+          if [ -f "resumes/$SOURCE_FILENAME" ]; then
+            cp "resumes/$SOURCE_FILENAME" "resume.json"
+            echo "Copied $SOURCE_FILENAME to resume.json"
+          else
+            echo "Error: Source file resumes/$SOURCE_FILENAME not found"
+            exit 1
+          fi
+      
+      - name: Commit and Push Changes
+        run: |
+          git add resume.json
+          
+          # Only commit if there are changes
+          if ! git diff --cached --quiet resume.json; then
+            git commit -m "Auto-update resume.json [skip ci]"
+            git push
+            echo "Changes committed and pushed"
+          else
+            echo "No changes to commit"
+          fi
