@@ -27,7 +27,7 @@ log() {
 
 #make sure the log file is created in the root of the repository
 if [ ! -f "$LOG_FILE" ]; then
-    echo "Log file not found. Creating log file: $LOG_FILE"
+    log "Log file not found. Creating log file: $LOG_FILE"
     touch "$LOG_FILE"
     log "[INFO]" "log file created: $LOG_FILE"
 fi
