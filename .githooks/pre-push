@@ -76,6 +76,8 @@ else
   SOURCE_FILENAME="master.no.json"
 fi
 
+log "[INFO]" "Pushing with this source file: $SOURCE_FILENAME"
+
 # Define source and destination files
 SOURCE_FILE="$REPO_ROOT/resumes/$SOURCE_FILENAME"
 DEST_FILENAME="resume.json"
