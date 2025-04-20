@@ -14,7 +14,7 @@
 # Store the root directory of the git repository
 REPO_ROOT=$(git rev-parse --show-toplevel)
 
-LOG_FILE="REPO_ROOT/.git-pre-push.log"
+LOG_FILE="$REPO_ROOT/.git-pre-push.log"
 
 # This script is intended to be run as a pre-push hook in a Git repository.
 log() {
