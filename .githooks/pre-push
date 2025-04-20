@@ -19,15 +19,21 @@ LOG_FILE="$REPO_ROOT/.git-pre-push.log"
 log() {
   # Check if the log file exists, create it if not
   if [ ! -f "$LOG_FILE" ]; then
-    touch "$LOG_FILE"
+    echo "Creating log file: $LOG_FILE"
+    touch "$LOG_FILE" 2> echo "Failed to create log file: $LOG_FILE"
+  fi
+  else
+    echo "Log file already exists: $LOG_FILE"
   fi
   
+  #Do the actual logging to file and stdout
   local message="[$(date '+%Y-%m-%d %H:%M:%S')] $1 $2"
   echo "$message" >> "$LOG_FILE"
   echo "$message"
 }
 
 log "[INFO]" "Repository root: $REPO_ROOT"
+log "[INFO]" "Log file: $LOG_FILE"
 
 log "[INFO]" "Using pre-push from .githooks folder"
 # Exit on any error
