@@ -20,7 +20,7 @@ LOG_FILE="$REPO_ROOT/.git-pre-push.log"
 #make sure the log file is created in the root of the repository
 if [ ! -f "$LOG_FILE" ]; then
     echo "Creating log file: $LOG_FILE"
-    local output = $(touch "$LOG_FILE" 2>&1)
+    output = $(touch "$LOG_FILE" 2>&1)
     echo "Failed to create log file: output"
 fi
 
