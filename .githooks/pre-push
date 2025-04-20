@@ -11,6 +11,9 @@
 
 
 # This version explicitly passes the git identity when committing
+# Store the root directory of the git repository
+REPO_ROOT=$(git rev-parse --show-toplevel)
+log "Repository root: $REPO_ROOT"
 
 LOG_FILE="REPO_ROOT/.git-pre-push.log"
 
@@ -26,16 +29,7 @@ log() {
   echo "$message"
 }
 
-
-# Store the root directory of the git repository
-REPO_ROOT=$(git rev-parse --show-toplevel)
-log "Repository root: $REPO_ROOT"
-
-
 log "Using pre-push from .githooks folder"
-
-
-
 # Exit on any error
 set -euo pipefail
 
