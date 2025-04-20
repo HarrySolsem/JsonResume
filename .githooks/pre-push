@@ -14,6 +14,7 @@
 
 # Store the root directory of the git repository
 REPO_ROOT=$(git rev-parse --show-toplevel)
+log "Repository root: $REPO_ROOT"
 
 LOG_FILE="REPO_ROOT/.git-pre-push.log"
 
@@ -34,9 +35,6 @@ log "Using pre-push from .githooks folder"
 
 # Exit on any error
 set -euo pipefail
-
-# Store the root directory of the git repository
-REPO_ROOT=$(git rev-parse --show-toplevel)
 
 # Get the Git username and email from the repo config
 GIT_USERNAME=$(git config user.name)
