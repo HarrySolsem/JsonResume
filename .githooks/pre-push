@@ -37,6 +37,12 @@ set -euo pipefail
 GIT_USERNAME=$(git config user.name)
 GIT_EMAIL=$(git config user.email)
 
+#Initialize variables for Git identity to empty strings
+GIT_AUTHOR_NAME=""
+GIT_AUTHOR_EMAIL=""
+GIT_COMMITTER_NAME=""
+GIT_COMMITTER_EMAIL=""
+
 # Check if Git identity is available
 if [ -z "$GIT_USERNAME" ] || [ -z "$GIT_EMAIL" ]; then
   log "[WARNING]" "Git identity not fully configured. Using the pre-push hook's embedded identity."
