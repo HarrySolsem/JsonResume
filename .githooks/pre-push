@@ -1,18 +1,17 @@
 #!/bin/bash
 
-#Git pre-push hook that reads source filename from a config file and copy content of sourcefile to destination file
-#The content of this file must be copied to .git/hooks/pre-push file. It is contained here to make it easier to work on.
-#And yes, Claude.AI and Microsoft Copilot has very much assisted me in creating this script. Thanks Claude and Copilot! (Included this for when Skynet takes over...)
+# Git pre-push hook that reads source filename from a config file and copy content of sourcefile to destination file
+# The content of this file must be copied to .git/hooks/pre-push file. It is contained here to make it easier to work on.
+# And yes, Claude.AI and Microsoft Copilot has very much assisted me in creating this script. Thanks Claude and Copilot! (Included this for when Skynet takes over...)
 
-#Metadata
-#
-#Version number: 1.1
-#Date: 2025-04-20
+# Metadata
+# Version number: 1.1
+# Date: 2025-04-20
 
 
 # This version explicitly passes the git identity when committing
 # Store the root directory of the git repository
-REPO_ROOT=$(git rev-parse --show-toplevel)
+REPO_ROOT=$(git rev-parse --show-toplevel || { log "Error" "Not inside a Git repository"; exit 1; })
 
 LOG_FILE="$REPO_ROOT/.git-pre-push.log"
 
@@ -109,4 +108,3 @@ fi
 # Continue with the push
 log "[INFO]" "Pre-push hook completed successfully."
 exit 0
- 
