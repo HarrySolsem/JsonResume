@@ -29,7 +29,7 @@ log() {
 if [ ! -f "$LOG_FILE" ]; then
     echo "Creating log file: $LOG_FILE"
     touch "$LOG_FILE"
-    log"[INFO]" "log file created: $LOG_FILE"
+    log "[INFO]" "log file created: $LOG_FILE"
 fi
 
 
