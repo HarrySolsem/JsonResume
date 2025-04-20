@@ -2,20 +2,38 @@
 
 #Git pre-push hook that reads source filename from a config file and copy content of sourcefile to destination file
 #The content of this file must be copied to .git/hooks/pre-push file. It is contained here to make it easier to work on.
-#And yes, Claude.AI has very much assisted me in creating this script. Thanks Claude! (Included this for when Skynet takes over...)
+#And yes, Claude.AI and Microsoft Copilot has very much assisted me in creating this script. Thanks Claude and Copilot! (Included this for when Skynet takes over...)
 
 #Metadata
 #
-#Version number: 1.0
-#Date: 2025-04-16
+#Version number: 1.1
+#Date: 2025-04-20
 
 
 # This version explicitly passes the git identity when committing
 
-echo "Using pre-push from .githooks folder"
+# Store the root directory of the git repository
+REPO_ROOT=$(git rev-parse --show-toplevel)
+
+LOG_FILE="REPO_ROOT/.git-pre-push.log"
+
+log() {
+  # Check if the log file exists, create it if not
+  if [ ! -f "$LOG_FILE" ]; then
+    touch "$LOG_FILE"
+  fi
+  
+  local message="[$(date '+%Y-%m-%d %H:%M:%S')] $1"
+  echo "$message" >> "$LOG_FILE"
+  echo "$message"
+}
+
+log "Using pre-push from .githooks folder"
+
+
 
 # Exit on any error
-set -e
+set -euo pipefail
 
 # Store the root directory of the git repository
 REPO_ROOT=$(git rev-parse --show-toplevel)
@@ -26,7 +44,7 @@ GIT_EMAIL=$(git config user.email)
 
 # Check if Git identity is available
 if [ -z "$GIT_USERNAME" ] || [ -z "$GIT_EMAIL" ]; then
-  echo "Warning: Git identity not fully configured. Using the pre-push hook's embedded identity."
+  log "Warning: Git identity not fully configured. Using the pre-push hook's embedded identity."
   # Use hardcoded values as a fallback
   GIT_USERNAME="Pre-Push Hook"
   GIT_EMAIL="pre-push-hook@localhost"
@@ -42,23 +60,34 @@ fi
 CONFIG_FILE="$REPO_ROOT/.resume-config"
 if [ -f "$CONFIG_FILE" ]; then
   SOURCE_FILENAME=$(cat "$CONFIG_FILE")
+  if [[ "$SOURCE_FILENAME" =~ [^a-zA-Z0-9._-] ]]; then
+    log "Error: Invalid filename detected in .resume-config."
+    exit 1
+  fi
+   # Check for directory traversal patterns
+  if [[ "$SOURCE_FILENAME" =~ (\.\./|^\.\.) ]]; then
+    log "Error: Invalid filename detected in .resume-config. Directory traversal patterns are not allowed."
+    exit 1
+  fi
 else
   # Default to master.no.json if no config file exists
+  log "Warning: .resume-config not found. Defaulting to master.no.json."
   SOURCE_FILENAME="master.no.json"
 fi
 
 # Define source and destination files
 SOURCE_FILE="$REPO_ROOT/resumes/$SOURCE_FILENAME"
-DEST_FILE="$REPO_ROOT/resume.json"
+DEST_FILENAME="resume.json"
+DEST_FILE="$REPO_ROOT/$DEST_FILENAME"
 
 # Check if source file exists
 if [ ! -f "$SOURCE_FILE" ]; then
-  echo "Error: Source file $SOURCE_FILE does not exist."
+  log "Error: Source file $SOURCE_FILE does not exist."
   exit 1
 fi
 
 # Copy the file
-echo "Copying $SOURCE_FILE to $DEST_FILE"
+log "Copying $SOURCE_FILE to $DEST_FILE"
 cp "$SOURCE_FILE" "$DEST_FILE"
 
 # Add the destination file to the git staging area
@@ -66,18 +95,21 @@ git add "$DEST_FILE"
 
 # Check if there are changes to commit
 if git diff --cached --quiet "$DEST_FILE"; then
-  echo "No changes to commit for $DEST_FILE"
+  log "No changes to commit for $DEST_FILE"
 else
   # Commit the changes with explicit identity
-  echo "Committing changes to $DEST_FILE"
+  log "Committing changes to $DEST_FILE"
   if [ -n "$GIT_AUTHOR_NAME" ]; then
     # Use the environment variables we set
+    log "Using embedded identity for commit"
     git commit -m "Auto-update resume.json from $SOURCE_FILENAME" -- "$DEST_FILE"
   else
     # Use the config values directly
+    log "Using config identity for commit"
     git -c "user.name=$GIT_USERNAME" -c "user.email=$GIT_EMAIL" commit -m "Auto-update resume.json from $SOURCE_FILENAME" -- "$DEST_FILE"
   fi
 fi
 
 # Continue with the push
+log "Pre-push hook completed successfully."
 exit 0
