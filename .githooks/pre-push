@@ -20,10 +20,9 @@ log() {
   # Check if the log file exists, create it if not
   if [ ! -f "$LOG_FILE" ]; then
     echo "Creating log file: $LOG_FILE"
-    touch "$LOG_FILE" 2> echo "Failed to create log file: $LOG_FILE"
-  fi
+    local output = $(touch "$LOG_FILE" 2>&1)
+    echo "Failed to create log file: output"
   else
-  if
     echo "Log file already exists: $LOG_FILE"
   fi
   
