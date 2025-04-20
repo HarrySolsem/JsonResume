@@ -28,9 +28,9 @@ log() {
   echo "$message"
 }
 
-log "INFO" "Repository root: $REPO_ROOT"
+log "[INFO]" "Repository root: $REPO_ROOT"
 
-log "INFO" "Using pre-push from .githooks folder"
+log "[INFO]" "Using pre-push from .githooks folder"
 # Exit on any error
 set -euo pipefail
 
@@ -40,7 +40,7 @@ GIT_EMAIL=$(git config user.email)
 
 # Check if Git identity is available
 if [ -z "$GIT_USERNAME" ] || [ -z "$GIT_EMAIL" ]; then
-  log "WARNING" "Git identity not fully configured. Using the pre-push hook's embedded identity."
+  log "[WARNING]" "Git identity not fully configured. Using the pre-push hook's embedded identity."
   # Use hardcoded values as a fallback
   GIT_USERNAME="Pre-Push Hook"
   GIT_EMAIL="pre-push-hook@localhost"
@@ -57,12 +57,12 @@ CONFIG_FILE="$REPO_ROOT/.resume-config"
 if [ -f "$CONFIG_FILE" ]; then
   SOURCE_FILENAME=$(cat "$CONFIG_FILE")
   if [[ "$SOURCE_FILENAME" =~ [^a-zA-Z0-9._-] ]]; then
-    log "ERROR" "Invalid filename detected in .resume-config."
+    log "[ERROR]" "Invalid filename detected in .resume-config."
     exit 1
   fi
    # Check for directory traversal patterns
   if [[ "$SOURCE_FILENAME" =~ (\.\./|^\.\.) ]]; then
-    log "ERROR" "Invalid filename detected in .resume-config. Directory traversal patterns are not allowed."
+    log "[ERROR]" "Invalid filename detected in .resume-config. Directory traversal patterns are not allowed."
     exit 1
   fi
 else
@@ -78,12 +78,12 @@ DEST_FILE="$REPO_ROOT/$DEST_FILENAME"
 
 # Check if source file exists
 if [ ! -f "$SOURCE_FILE" ]; then
-  log "ERROR" "Source file $SOURCE_FILE does not exist."
+  log "[ERROR]" "Source file $SOURCE_FILE does not exist."
   exit 1
 fi
 
 # Copy the file
-log "INFO" "Copying $SOURCE_FILE to $DEST_FILE"
+log "[INFO]" "Copying $SOURCE_FILE to $DEST_FILE"
 cp "$SOURCE_FILE" "$DEST_FILE"
 
 # Add the destination file to the git staging area
@@ -91,22 +91,22 @@ git add "$DEST_FILE"
 
 # Check if there are changes to commit
 if git diff --cached --quiet "$DEST_FILE"; then
-  log "INFO" "No changes to commit for $DEST_FILE"
+  log "[INFO]" "No changes to commit for $DEST_FILE"
 else
   # Commit the changes with explicit identity
-  log "INFO" "Committing changes to $DEST_FILE"
+  log "[INFO]" "Committing changes to $DEST_FILE"
   if [ -n "$GIT_AUTHOR_NAME" ]; then
     # Use the environment variables we set
-    log "INFO" "Using embedded identity for commit"
+    log "[INFO]" "Using embedded identity for commit"
     git commit -m "Auto-update resume.json from $SOURCE_FILENAME" -- "$DEST_FILE"
   else
     # Use the config values directly
-    log "INFO" "Using config identity for commit"
+    log "[INFO]" "Using config identity for commit"
     git -c "user.name=$GIT_USERNAME" -c "user.email=$GIT_EMAIL" commit -m "Auto-update resume.json from $SOURCE_FILENAME" -- "$DEST_FILE"
   fi
 fi
 
 # Continue with the push
-log "INFO" "Pre-push hook completed successfully."
+log "[INFO]" "Pre-push hook completed successfully."
 exit 0
  
