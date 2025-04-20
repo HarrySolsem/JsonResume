@@ -21,7 +21,7 @@ LOG_FILE="$REPO_ROOT/.git-pre-push.log"
 if [ ! -f "$LOG_FILE" ]; then
     echo "Creating log file: $LOG_FILE"
     output = $(touch "$LOG_FILE" 2>&1)
-    echo "Failed to create log file: output"
+    echo "Failed to create log file: $output"
 fi
 
 log() {
