@@ -1,9 +1,0 @@
-[2025-04-20 10:33:31] Repository root: /mnt/c/Users/harry/Source/Repos/JsonResume
-[2025-04-20 10:33:31] Using pre-push from .githooks folder
-[2025-04-20 10:33:31] Copying /mnt/c/Users/harry/Source/Repos/JsonResume/resumes/master.en.json to /mnt/c/Users/harry/Source/Repos/JsonResume/resume.json
-[2025-04-20 10:33:31] Committing changes to /mnt/c/Users/harry/Source/Repos/JsonResume/resume.json
-[2025-04-20 10:35:48] Repository root: /mnt/c/Users/harry/Source/Repos/JsonResume
-[2025-04-20 10:35:48] Using pre-push from .githooks folder
-[2025-04-20 10:35:48] Copying /mnt/c/Users/harry/Source/Repos/JsonResume/resumes/master.en.json to /mnt/c/Users/harry/Source/Repos/JsonResume/resume.json
-[2025-04-20 10:35:48] No changes to commit for /mnt/c/Users/harry/Source/Repos/JsonResume/resume.json
-[2025-04-20 10:35:48] Pre-push hook completed successfully.
