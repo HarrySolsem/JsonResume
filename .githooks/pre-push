@@ -23,6 +23,7 @@ log() {
     touch "$LOG_FILE" 2> echo "Failed to create log file: $LOG_FILE"
   fi
   else
+  if
     echo "Log file already exists: $LOG_FILE"
   fi
   
