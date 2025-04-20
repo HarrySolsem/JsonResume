@@ -22,9 +22,7 @@ if [ ! -f "$LOG_FILE" ]; then
     echo "Creating log file: $LOG_FILE"
     local output = $(touch "$LOG_FILE" 2>&1)
     echo "Failed to create log file: output"
-  else
-    echo "Log file already exists: $LOG_FILE"
-  fi
+fi
 
 log() {
   #Do the actual logging to file and stdout
