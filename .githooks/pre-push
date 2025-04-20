@@ -16,24 +16,26 @@ REPO_ROOT=$(git rev-parse --show-toplevel || { log "Error" "Not inside a Git rep
 LOG_FILE="$REPO_ROOT/.git-pre-push.log"
 
 # This script is intended to be run as a pre-push hook in a Git repository.
-log() {
-  # Check if the log file exists, create it if not
-  if [ ! -f "$LOG_FILE" ]; then
+
+#make sure the log file is created in the root of the repository
+if [ ! -f "$LOG_FILE" ]; then
     echo "Creating log file: $LOG_FILE"
     local output = $(touch "$LOG_FILE" 2>&1)
     echo "Failed to create log file: output"
   else
     echo "Log file already exists: $LOG_FILE"
   fi
-  
+
+log() {
   #Do the actual logging to file and stdout
   local message="[$(date '+%Y-%m-%d %H:%M:%S')] $1 $2"
   echo "$message" >> "$LOG_FILE"
   echo "$message"
 }
+log "[INFO]" "Log file: $LOG_FILE"
 
 log "[INFO]" "Repository root: $REPO_ROOT"
-log "[INFO]" "Log file: $LOG_FILE"
+
 
 log "[INFO]" "Using pre-push from .githooks folder"
 # Exit on any error
