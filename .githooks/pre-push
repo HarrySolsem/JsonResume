@@ -19,7 +19,8 @@ async function getRepoRoot() {
 
 // Log function with async file operations
 async function log(level, message) {
-  const timestamp = new Intl.DateTimeFormat('en-US', { dateStyle: 'short',  timeStyle: 'medium'}).format(new Date());
+  // const timestamp = new Intl.DateTimeFormat('en-US', { dateStyle: 'short',  timeStyle: 'medium'}).format(new Date());
+  new Intl.DateTimeFormat('en-US', {  year: 'numeric',  month: '2-digit',  day: '2-digit',  hour: '2-digit',  minute: '2-digit',  second: '2-digit',  hour12: false }).format(new Date());
   const logMessage = `[${timestamp}] [${level}] ${message}`;
   
   try {
