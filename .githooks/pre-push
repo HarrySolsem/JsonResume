@@ -12,14 +12,14 @@ async function getRepoRoot() {
     const { stdout } = await exec('git rev-parse --show-toplevel');
     return stdout.trim();
   } catch (error) {
-    await log('ERROR', 'Not inside a Git repository');
+    await log('ERROR', 'Not inside a Git repository. Ensure the script is executed within a valid Git workspace.');
     process.exit(1);
   }
 }
 
 // Log function with async file operations
 async function log(level, message) {
-  const timestamp = new Date().toISOString().replace('T', ' ').substring(0, 19);
+  const timestamp = new Intl.DateTimeFormat('en-US', { dateStyle: 'short',  timeStyle: 'medium'}).format(new Date());
   const logMessage = `[${timestamp}] [${level}] ${message}`;
   
   try {
@@ -67,11 +67,15 @@ async function checkFileChanges(filePath) {
   }
 }
 
+// Declare LOG_FILE globally
+let LOG_FILE;
+
+
 // Main function with async operations
 async function main() {
   // Get repository root
   const REPO_ROOT = await getRepoRoot();
-  const LOG_FILE = path.join(REPO_ROOT, '.git-pre-push.log');
+  LOG_FILE = path.join(REPO_ROOT, '.git-pre-push.log');
   
   await log('INFO', `Log file: ${LOG_FILE}`);
   await log('INFO', `Repository root: ${REPO_ROOT}`);
