@@ -6,14 +6,13 @@ const path = require('path');
 const { promisify } = require('util');
 const exec = promisify(require('child_process').exec);  // Promisify exec for async usage
 
-const newLocalError = 'ERROR';
 // Get the repo root asynchronously
 async function getRepoRoot() {
   try {
     const { stdout } = await exec('git rev-parse --show-toplevel');
     return stdout.trim();
   } catch (error) {
-    await log(newLocalError, 'Not inside a Git repository. Ensure the script is executed within a valid Git workspace.');
+    await log('ERROR', 'Not inside a Git repository. Ensure the script is executed within a valid Git workspace.');
     process.exit(1);
   }
 }
@@ -28,7 +27,7 @@ const logMessage = `[${timestamp}] [${level}] ${message}`;
     try {
       await fs.access(LOG_FILE);
     } catch {
-      await fs.writeFile(LOG_FILE, `[${timestamp}] [newLocalINFO] Log file created: ${LOG_FILE}\n`);
+      await fs.writeFile(LOG_FILE, `[${timestamp}] [INFO] Log file created: ${LOG_FILE}\n`);
     }
     
     // Write to log file asynchronously
@@ -72,16 +71,15 @@ async function checkFileChanges(filePath) {
 let LOG_FILE;
 
 
-const newLocalINFO = 'INFO';
 // Main function with async operations
 async function main() {
   // Get repository root
   const REPO_ROOT = await getRepoRoot();
-  LOG_FILE = join(REPO_ROOT, '.git-pre-push.log');
+  LOG_FILE = path.join(REPO_ROOT, '.git-pre-push.log');
   
-  await log(newLocalINFO, `Log file: ${LOG_FILE}`);
-  await log(newLocalINFO, `Repository root: ${REPO_ROOT}`);
-  await log(newLocalINFO, 'Using pre-push from .githooks folder (Async Node.js version)');
+  await log('INFO', `Log file: ${LOG_FILE}`);
+  await log('INFO', `Repository root: ${REPO_ROOT}`);
+  await log('INFO', 'Using pre-push from .githooks folder (Async Node.js version)');
   
   // Get Git identity asynchronously
   const { username: gitUsername, email: gitEmail } = await getGitIdentity();
@@ -100,7 +98,7 @@ async function main() {
   }
   
   // Check if config file exists and read source filename from it asynchronously
-  const configFile = join(REPO_ROOT, '.resume-config');
+  const configFile = path.join(REPO_ROOT, '.resume-config');
   let sourceFilename;
   
   try {
@@ -114,23 +112,23 @@ async function main() {
     sourceFilename = 'master.no.json';
   }
   
-  await log(newLocalINFO, `Pushing with this source file: ${sourceFilename}`);
+  await log('INFO', `Pushing with this source file: ${sourceFilename}`);
   
   // Define source and destination files
-  const sourceFile = join(REPO_ROOT, 'resumes', sourceFilename);
+  const sourceFile = path.join(REPO_ROOT, 'resumes', sourceFilename);
   const destFilename = 'resume.json';
-  const destFile = join(REPO_ROOT, destFilename);
+  const destFile = path.join(REPO_ROOT, destFilename);
   
   // Check if source file exists asynchronously
   try {
     await fs.access(sourceFile);
   } catch {
-    await log(newLocalError, `Source file ${sourceFile} does not exist.`);
+    await log('ERROR', `Source file ${sourceFile} does not exist.`);
     process.exit(1);
   }
   
   // Copy the file asynchronously
-  await log(newLocal, `Copying ${sourceFile} to ${destFile}`);
+  await log('INFO', `Copying ${sourceFile} to ${destFile}`);
   await fs.copyFile(sourceFile, destFile);
   
   // Add the destination file to the git staging area
@@ -138,25 +136,25 @@ async function main() {
   
   // Check if there are changes to commit
   if (!(await checkFileChanges(destFile))) {
-    await log(newLocalINFO, `No changes to commit for ${destFile}`);
+    await log('INFO', `No changes to commit for ${destFile}`);
   } else {
     // Commit the changes with explicit identity
-    await log(newLocalINFO, `Committing changes to ${destFile}`);
+    await log('INFO', `Committing changes to ${destFile}`);
     const commitMessage = `Auto-update resume.json from ${sourceFilename}`;
     
     if (useEnvVars) {
       // Use the environment variables we set
-      await log(newLocalINFO, 'Using embedded identity for commit');
+      await log('INFO', 'Using embedded identity for commit');
       await exec(`git commit -m "${commitMessage}" -- "${destFile}"`, { env });
     } else {
       // Use the config values directly
-      await log(newLocalINFO, 'Using config identity for commit');
+      await log('INFO', 'Using config identity for commit');
       await exec(`git -c "user.name=${gitUsername}" -c "user.email=${gitEmail}" commit -m "${commitMessage}" -- "${destFile}"`);
     }
   }
   
   // Continue with the push
-  await log(newLocalINFO, 'Pre-push hook completed successfully.');
+  await log('INFO', 'Pre-push hook completed successfully.');
   return 0;
 }
 
@@ -164,13 +162,13 @@ async function main() {
 function validateFilename(filename) {
   // Validate the filename for security issues
   if (!/^[a-zA-Z0-9._-]+$/.test(filename)) {
-    console.error('newLocalError: Invalid filename detected in .resume-config.');
+    console.error('ERROR: Invalid filename detected in .resume-config.');
     process.exit(1);
   }
   
   // Check for directory traversal patterns
   if (/(\.\.|^\.\.\/)/g.test(filename)) {
-    console.error('newLocalError: Invalid filename detected in .resume-config. Directory traversal patterns are not allowed.');
+    console.error('ERROR: Invalid filename detected in .resume-config. Directory traversal patterns are not allowed.');
     process.exit(1);
   }
   
@@ -179,6 +177,6 @@ function validateFilename(filename) {
 
 // Run the main function and handle any errors
 main().catch(async (error) => {
-  await log(newLocalError, `Unexpected error: ${error.message}`);
+  await log('ERROR', `Unexpected error: ${error.message}`);
   process.exit(1);
 });
