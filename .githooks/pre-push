@@ -1,98 +1,91 @@
 #!/usr/bin/env node
 
-// Git pre-push hook that reads source filename from a config file and copy content of sourcefile to destination file
-// The content of this file must be copied to .git/hooks/pre-push file. It is contained here to make it easier to work on.
-// And yes, Claude.AI and Microsoft Copilot has very much assisted me in creating this script. Thanks Claude and Copilot! (Included this for when Skynet takes over...)
-
-// Metadata
-// Version number: 1.1
-// Date: 2025-04-22
-
-const fs = require('fs');
+// Git pre-push hook with async operations
+const fs = require('fs').promises;  // Use the promises version of fs
 const path = require('path');
-const { execSync } = require('child_process');
+const { promisify } = require('util');
+const exec = promisify(require('child_process').exec);  // Promisify exec for async usage
 
-// Store the root directory of the git repository
-function getRepoRoot() {
+// Get the repo root asynchronously
+async function getRepoRoot() {
   try {
-    return execSync('git rev-parse --show-toplevel', { encoding: 'utf8' }).trim();
+    const { stdout } = await exec('git rev-parse --show-toplevel');
+    return stdout.trim();
   } catch (error) {
-    log('ERROR', 'Not inside a Git repository');
+    await log('ERROR', 'Not inside a Git repository');
     process.exit(1);
   }
 }
 
-const REPO_ROOT = getRepoRoot();
-const LOG_FILE = path.join(REPO_ROOT, '.git-pre-push.log');
-
-function log(level, message) {
-  // Log messages to both file and stdout
+// Log function with async file operations
+async function log(level, message) {
   const timestamp = new Date().toISOString().replace('T', ' ').substring(0, 19);
   const logMessage = `[${timestamp}] [${level}] ${message}`;
   
-  // Ensure log file exists
-  if (!fs.existsSync(LOG_FILE)) {
-    fs.writeFileSync(LOG_FILE, `[${timestamp}] [INFO] Log file created: ${LOG_FILE}\n`);
+  try {
+    // Check if log file exists
+    try {
+      await fs.access(LOG_FILE);
+    } catch {
+      await fs.writeFile(LOG_FILE, `[${timestamp}] [INFO] Log file created: ${LOG_FILE}\n`);
+    }
+    
+    // Write to log file asynchronously
+    await fs.appendFile(LOG_FILE, logMessage + '\n');
+    
+    // Write to stdout
+    console.log(logMessage);
+  } catch (error) {
+    console.error(`Failed to write to log: ${error.message}`);
   }
-  
-  // Write to log file
-  fs.appendFileSync(LOG_FILE, logMessage + '\n');
-  
-  // Write to stdout
-  console.log(logMessage);
 }
 
-function getGitIdentity() {
-  // Get Git username and email from repo config
+// Get Git identity asynchronously
+async function getGitIdentity() {
   try {
-    const username = execSync('git config user.name', { encoding: 'utf8' }).trim();
-    const email = execSync('git config user.email', { encoding: 'utf8' }).trim();
-    return { username, email };
+    const [usernameRes, emailRes] = await Promise.all([
+      exec('git config user.name'),
+      exec('git config user.email')
+    ]);
+    
+    return { 
+      username: usernameRes.stdout.trim(), 
+      email: emailRes.stdout.trim() 
+    };
   } catch (error) {
     return { username: '', email: '' };
   }
 }
 
-function validateFilename(filename) {
-  // Validate the filename for security issues
-  if (!/^[a-zA-Z0-9._-]+$/.test(filename)) {
-    log('ERROR', 'Invalid filename detected in .resume-config.');
-    process.exit(1);
-  }
-  
-  // Check for directory traversal patterns
-  if (/(\.\.|^\.\.\/)/g.test(filename)) {
-    log('ERROR', 'Invalid filename detected in .resume-config. Directory traversal patterns are not allowed.');
-    process.exit(1);
-  }
-  
-  return true;
-}
-
-function checkFileChanges(filePath) {
-  // Check if there are changes to commit for a specific file
+// Check file changes asynchronously
+async function checkFileChanges(filePath) {
   try {
-    execSync(`git diff --cached --quiet "${filePath}"`);
+    await exec(`git diff --cached --quiet "${filePath}"`);
     return false; // No changes
   } catch (error) {
     return true; // Changes detected
   }
 }
 
-function main() {
-  log('INFO', `Log file: ${LOG_FILE}`);
-  log('INFO', `Repository root: ${REPO_ROOT}`);
-  log('INFO', 'Using pre-push from .githooks folder (Node.js version)');
+// Main function with async operations
+async function main() {
+  // Get repository root
+  const REPO_ROOT = await getRepoRoot();
+  const LOG_FILE = path.join(REPO_ROOT, '.git-pre-push.log');
   
-  // Get Git identity
-  const { username: gitUsername, email: gitEmail } = getGitIdentity();
+  await log('INFO', `Log file: ${LOG_FILE}`);
+  await log('INFO', `Repository root: ${REPO_ROOT}`);
+  await log('INFO', 'Using pre-push from .githooks folder (Async Node.js version)');
+  
+  // Get Git identity asynchronously
+  const { username: gitUsername, email: gitEmail } = await getGitIdentity();
   
   // Set Git identity environment variables for commits
   const env = { ...process.env };
   let useEnvVars = false;
   
   if (!gitUsername || !gitEmail) {
-    log('WARNING', 'Git identity not fully configured. Using the pre-push hook\'s embedded identity.');
+    await log('WARNING', 'Git identity not fully configured. Using the pre-push hook\'s embedded identity.');
     env.GIT_AUTHOR_NAME = 'Pre-Push Hook';
     env.GIT_AUTHOR_EMAIL = 'pre-push-hook@localhost';
     env.GIT_COMMITTER_NAME = 'Pre-Push Hook';
@@ -100,66 +93,86 @@ function main() {
     useEnvVars = true;
   }
   
-  // Check if config file exists and read source filename from it
+  // Check if config file exists and read source filename from it asynchronously
   const configFile = path.join(REPO_ROOT, '.resume-config');
   let sourceFilename;
   
-  if (fs.existsSync(configFile)) {
-    sourceFilename = fs.readFileSync(configFile, 'utf8').trim();
+  try {
+    // Check if the config file exists
+    await fs.access(configFile);
+    sourceFilename = (await fs.readFile(configFile, 'utf8')).trim();
     validateFilename(sourceFilename);
-  } else {
+  } catch (error) {
     // Default to master.no.json if no config file exists
-    log('WARNING', '.resume-config not found. Defaulting to master.no.json.');
+    await log('WARNING', '.resume-config not found. Defaulting to master.no.json.');
     sourceFilename = 'master.no.json';
   }
   
-  log('INFO', `Pushing with this source file: ${sourceFilename}`);
+  await log('INFO', `Pushing with this source file: ${sourceFilename}`);
   
   // Define source and destination files
   const sourceFile = path.join(REPO_ROOT, 'resumes', sourceFilename);
   const destFilename = 'resume.json';
   const destFile = path.join(REPO_ROOT, destFilename);
   
-  // Check if source file exists
-  if (!fs.existsSync(sourceFile)) {
-    log('ERROR', `Source file ${sourceFile} does not exist.`);
+  // Check if source file exists asynchronously
+  try {
+    await fs.access(sourceFile);
+  } catch {
+    await log('ERROR', `Source file ${sourceFile} does not exist.`);
     process.exit(1);
   }
   
-  // Copy the file
-  log('INFO', `Copying ${sourceFile} to ${destFile}`);
-  fs.copyFileSync(sourceFile, destFile);
+  // Copy the file asynchronously
+  await log('INFO', `Copying ${sourceFile} to ${destFile}`);
+  await fs.copyFile(sourceFile, destFile);
   
   // Add the destination file to the git staging area
-  execSync(`git add "${destFile}"`);
+  await exec(`git add "${destFile}"`);
   
   // Check if there are changes to commit
-  if (!checkFileChanges(destFile)) {
-    log('INFO', `No changes to commit for ${destFile}`);
+  if (!(await checkFileChanges(destFile))) {
+    await log('INFO', `No changes to commit for ${destFile}`);
   } else {
     // Commit the changes with explicit identity
-    log('INFO', `Committing changes to ${destFile}`);
+    await log('INFO', `Committing changes to ${destFile}`);
     const commitMessage = `Auto-update resume.json from ${sourceFilename}`;
     
     if (useEnvVars) {
       // Use the environment variables we set
-      log('INFO', 'Using embedded identity for commit');
-      execSync(`git commit -m "${commitMessage}" -- "${destFile}"`, { env });
+      await log('INFO', 'Using embedded identity for commit');
+      await exec(`git commit -m "${commitMessage}" -- "${destFile}"`, { env });
     } else {
       // Use the config values directly
-      log('INFO', 'Using config identity for commit');
-      execSync(`git -c "user.name=${gitUsername}" -c "user.email=${gitEmail}" commit -m "${commitMessage}" -- "${destFile}"`);
+      await log('INFO', 'Using config identity for commit');
+      await exec(`git -c "user.name=${gitUsername}" -c "user.email=${gitEmail}" commit -m "${commitMessage}" -- "${destFile}"`);
     }
   }
   
   // Continue with the push
-  log('INFO', 'Pre-push hook completed successfully.');
+  await log('INFO', 'Pre-push hook completed successfully.');
   return 0;
 }
 
-try {
-  process.exit(main());
-} catch (error) {
-  log('ERROR', `Unexpected error: ${error.message}`);
-  process.exit(1);
+// Keep the validateFilename function (synchronous is fine here)
+function validateFilename(filename) {
+  // Validate the filename for security issues
+  if (!/^[a-zA-Z0-9._-]+$/.test(filename)) {
+    console.error('ERROR: Invalid filename detected in .resume-config.');
+    process.exit(1);
+  }
+  
+  // Check for directory traversal patterns
+  if (/(\.\.|^\.\.\/)/g.test(filename)) {
+    console.error('ERROR: Invalid filename detected in .resume-config. Directory traversal patterns are not allowed.');
+    process.exit(1);
+  }
+  
+  return true;
 }
+
+// Run the main function and handle any errors
+main().catch(async (error) => {
+  await log('ERROR', `Unexpected error: ${error.message}`);
+  process.exit(1);
+});
