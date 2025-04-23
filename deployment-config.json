@@ -1,6 +1,6 @@
 {
-"deployment": {
-	"resumetype": "master",
-	"language": "no"
+	"deployment": {
+		"resumetype": "master",
+		"language": "no"
 	}
 }
