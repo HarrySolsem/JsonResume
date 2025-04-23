@@ -23,15 +23,13 @@ log() {
 }
 
 #debug information
-log "[DEBUG]" "Current working directory: $(pwd)"
-log "[DEBUG]" "User: $(whoami)"
-log "[DEBUG]" "PATH: $PATH"
-log "[DEBUG]" "SHELL: $SHELL"
+#log "[DEBUG]" "Current working directory: $(pwd)"
+#log "[DEBUG]" "User: $(whoami)"
+#log "[DEBUG]" "PATH: $PATH"
+#log "[DEBUG]" "SHELL: $SHELL"
 
-log "[DEBUG]" "Script location: $0"
-log "[DEBUG]" "Script directory: $(dirname "$0")"
-
-
+#log "[DEBUG]" "Script location: $0"
+#log "[DEBUG]" "Script directory: $(dirname "$0")"
 
 
 #make sure the log file is created in the root of the repository
@@ -83,8 +81,8 @@ if [ -f "$CONFIG_FILE" ]; then
   fi
 
   #debug information
-  log "[DEBUG]" "Absolute config file path: $(realpath "$CONFIG_FILE")"
-  log "[DEBUG]" "File exists check: $([ -f "$CONFIG_FILE" ] && echo "YES" || echo "NO")"
+  #log "[DEBUG]" "Absolute config file path: $(realpath "$CONFIG_FILE")"
+  #log "[DEBUG]" "File exists check: $([ -f "$CONFIG_FILE" ] && echo "YES" || echo "NO")"
   #log "[DEBUG]" "File contents (first 50 chars): $(head -c 50 "$CONFIG_FILE" 2>/dev/null || echo 'CANNOT READ FILE')"
   
   # Read deployment.resumetype and deployment.language from JSON file
