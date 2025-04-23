@@ -73,8 +73,7 @@ if [ -z "$GIT_USERNAME" ] || [ -z "$GIT_EMAIL" ]; then
 fi
 
 # Check if a config file exists and read deployment information from it
-CONFIG_FILE="$REPO_ROOT/config.json"
-#CONFIG_FILE="$REPO_ROOT/deployment-config.json"
+CONFIG_FILE="$REPO_ROOT/deployment-config.json"
 
 if [ -f "$CONFIG_FILE" ]; then
   # Check if jq is installed
