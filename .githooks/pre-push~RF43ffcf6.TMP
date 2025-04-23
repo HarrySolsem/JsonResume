@@ -85,12 +85,15 @@ if [ -f "$CONFIG_FILE" ]; then
   #debug information
   log "[DEBUG]" "Absolute config file path: $(realpath "$CONFIG_FILE")"
   log "[DEBUG]" "File exists check: $([ -f "$CONFIG_FILE" ] && echo "YES" || echo "NO")"
-  #log "[DEBUG]" "File contents (first 50 chars): $(head -c 50 "$CONFIG_FILE" 2>/dev/null || echo 'CANNOT READ FILE')"
+  log "[DEBUG]" "File contents (first 50 chars): $(head -c 50 "$CONFIG_FILE" 2>/dev/null || echo 'CANNOT READ FILE')"
   
   # Read deployment.resumetype and deployment.language from JSON file
+  log "[INFO]" "Before reading deployment-config.json for resumetype and language"
+  
   TARGET_RESUMETYPE=$(jq -r '.deployment.resumetype' "$CONFIG_FILE")
   TARGET_LANGUAGE=$(jq -r '.deployment.language' "$CONFIG_FILE")
-    
+  log "[INFO]" "After reading deployment-config.json for resumetype and language"
+  
   if [ "$TARGET_RESUMETYPE" == "null" ] || [ "$TARGET_LANGUAGE" == "null" ]; then
     log "[ERROR]" "Unable to read deployment.resumetype or deployment.language from $CONFIG_FILE"
     exit 1
