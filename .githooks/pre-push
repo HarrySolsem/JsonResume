@@ -90,7 +90,7 @@ if [ -f "$CONFIG_FILE" ]; then
   
   # Read deployment.resumetype and deployment.language from JSON file
   log "[INFO]" "Before reading deployment-config.json for resumetype and language"
-  jq "." "$CONFIG_FILE"
+  log "[INFO]" < jq "." "$CONFIG_FILE"
   TARGET_RESUMETYPE=$(jq -r '.deployment.resumetype' "$CONFIG_FILE")
   TARGET_LANGUAGE=$(jq -r '.deployment.language' "$CONFIG_FILE")
   log "[INFO]" "After reading deployment-config.json for resumetype and language"
