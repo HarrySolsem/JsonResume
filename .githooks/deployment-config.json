@@ -1,0 +1,6 @@
+﻿{
+	"deployment": {
+		"resumetype": "githook",
+		"language": "js"
+	}
+}
