@@ -15,3 +15,5 @@ In the metasection of the resume you must include resumetype and language
 Then in the deployment-configuration you configure what resume you would like to have deployed.
 
 The pre-push hook will then look thru your resumes folder and check if the resumetype and language matches the deployment-configuration, and then copy the content of the file to the resume.json file, and then deploy it to a gist.
+
+In order to deploy your resume to your own gist you must update the gist_id to use your own, in the .github/workflows/gist.yml.
