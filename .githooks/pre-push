@@ -1,22 +1,19 @@
 #!/bin/bash
 
-# Git pre-push hook that reads source filename from a config file and copy content of sourcefile to destination file
-# The content of this file must be copied to .git/hooks/pre-push file. It is contained here to make it easier to work on.
-# And yes, Claude.AI and Microsoft Copilot has very much assisted me in creating this script. Thanks Claude and Copilot! (Included this for when Skynet takes over...)
+# Git pre-push hook that reads deployment.resumetype and deployment.language from deployment-config.json
+# and finds a matching resume file based on meta.language and meta.resumetype properties
+# The content of this file must be copied to .git/hooks/pre-push file.
 
 # Metadata
-# Version number: 1.1
-# Date: 2025-04-20
+# Version number: 1.2
+# Date: 2025-04-23
 
-
-# This version explicitly passes the git identity when committing
 # Store the root directory of the git repository
 REPO_ROOT=$(git rev-parse --show-toplevel || { log "Error" "Not inside a Git repository"; exit 1; })
 
 LOG_FILE="$REPO_ROOT/.git-pre-push.log"
 
 # This script is intended to be run as a pre-push hook in a Git repository.
-
 
 log() {
   #Do the actual logging to file and stdout
@@ -31,7 +28,6 @@ if [ ! -f "$LOG_FILE" ]; then
     touch "$LOG_FILE"
     log "[INFO]" "log file created: $LOG_FILE"
 fi
-
 
 log "[INFO]" "Log file: $LOG_FILE"
 log "[INFO]" "Repository root: $REPO_ROOT"
@@ -64,37 +60,60 @@ if [ -z "$GIT_USERNAME" ] || [ -z "$GIT_EMAIL" ]; then
   export GIT_COMMITTER_EMAIL="$GIT_EMAIL"
 fi
 
-# Check if a config file exists and read source filename from it
-CONFIG_FILE="$REPO_ROOT/.resume-config"
+# Check if a config file exists and read deployment information from it
+CONFIG_FILE="$REPO_ROOT/deployment-config.json"
 if [ -f "$CONFIG_FILE" ]; then
-  SOURCE_FILENAME=$(cat "$CONFIG_FILE")
-  if [[ "$SOURCE_FILENAME" =~ [^a-zA-Z0-9._-] ]]; then
-    log "[ERROR]" "Invalid filename detected in .resume-config."
+  # Check if jq is installed
+  if ! command -v jq &> /dev/null; then
+    log "[ERROR]" "jq is not installed. Please install jq to parse JSON files."
     exit 1
   fi
-   # Check for directory traversal patterns
-  if [[ "$SOURCE_FILENAME" =~ (\.\./|^\.\.) ]]; then
-    log "[ERROR]" "Invalid filename detected in .resume-config. Directory traversal patterns are not allowed."
+  
+  # Read deployment.resumetype and deployment.language from JSON file
+  TARGET_RESUMETYPE=$(jq -r '.deployment.resumetype' "$CONFIG_FILE")
+  TARGET_LANGUAGE=$(jq -r '.deployment.language' "$CONFIG_FILE")
+  
+  if [ "$TARGET_RESUMETYPE" == "null" ] || [ "$TARGET_LANGUAGE" == "null" ]; then
+    log "[ERROR]" "Unable to read deployment.resumetype or deployment.language from $CONFIG_FILE"
     exit 1
   fi
+  
+  log "[INFO]" "Looking for resume with resumetype: $TARGET_RESUMETYPE and language: $TARGET_LANGUAGE"
 else
-  # Default to master.no.json if no config file exists
-  log "WARNING:" ".resume-config not found. Defaulting to master.no.json."
-  SOURCE_FILENAME="master.no.json"
+  # Default values if no config file exists
+  log "[WARNING]" "deployment-config.json not found. Defaulting to resumetype: master and language: no."
+  TARGET_RESUMETYPE="master"
+  TARGET_LANGUAGE="no"
 fi
 
-log "[INFO]" "Pushing with this source file: $SOURCE_FILENAME"
+# Find the matching resume file in the resumes directory
+FOUND_SOURCE_FILE=""
+for resume_file in "$REPO_ROOT/resumes"/*.json; do
+  if [ -f "$resume_file" ]; then
+    RESUMETYPE=$(jq -r '.meta.resumetype' "$resume_file")
+    LANGUAGE=$(jq -r '.meta.language' "$resume_file")
+    
+    if [ "$RESUMETYPE" == "$TARGET_RESUMETYPE" ] && [ "$LANGUAGE" == "$TARGET_LANGUAGE" ]; then
+      FOUND_SOURCE_FILE="$resume_file"
+      log "[INFO]" "Found matching resume file: $resume_file"
+      break
+    fi
+  fi
+done
+
+if [ -z "$FOUND_SOURCE_FILE" ]; then
+  log "[ERROR]" "Could not find a resume file matching resumetype: $TARGET_RESUMETYPE and language: $TARGET_LANGUAGE"
+  exit 1
+fi
+
+# Extract just the filename from the full path
+SOURCE_FILENAME=$(basename "$FOUND_SOURCE_FILE")
+log "[INFO]" "Using source file: $SOURCE_FILENAME"
 
 # Define source and destination files
 SOURCE_FILE="$REPO_ROOT/resumes/$SOURCE_FILENAME"
 DEST_FILENAME="resume.json"
 DEST_FILE="$REPO_ROOT/$DEST_FILENAME"
-
-# Check if source file exists
-if [ ! -f "$SOURCE_FILE" ]; then
-  log "[ERROR]" "Source file $SOURCE_FILE does not exist."
-  exit 1
-fi
 
 # Copy the file
 log "[INFO]" "Copying $SOURCE_FILE to $DEST_FILE"

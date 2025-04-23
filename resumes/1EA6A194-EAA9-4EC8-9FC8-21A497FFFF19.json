@@ -2,12 +2,14 @@
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
     "lastModified": "2025-04-11T15:24:00Z",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "resumetype": "prosjektleder",
+    "language": "no"
   },
   "basics": {
     "name": "Harry Solsem",
-    "label": "IT-ledelse og prosjektledelse",
-    "summary": "Med over 30 års ledererfaring, inkludert tekniske og administrative roller i selskaper som DNB, Riverty, Neonomics og Sharecat Solutions. Min ledererfaring: Ledet team med opptil 50 ansatte, hatt fullt ansvar for personale, budsjett og resultater, samt gitt ledelse på tvers av flere organisasjoner. Nøkkelområder for kompetanse: Teamledelse, produktutvikling, IT-prosjektledelse. Fremtredende selskaper: DNB, Riverty, Neonomics, Sharecat Solutions.",
+    "label": "Prosjektledelse",
+    "summary": "Erfaren prosjektleder med 8 års dokumentert suksess innen både IT og organisasjonsutvikling. Spesialist i strategisk planlegging, effektiv teamledelse og presis prosjektgjennomføring på tvers av fagområder. Jeg behersker hele prosjektlivssyklusen – fra grundig behovsanalyse og planlegging til smidig implementering og vellykket leveranse. Min drivkraft er å levere komplekse løsninger som konsekvent oppfyller eller overgår forventninger til kvalitet, tidsramme og budsjett. Særlig erfaring med å integrere teknologiske løsninger med organisatoriske endringsprosesser, noe som skaper helhetlig forretningsverdi og varige resultater.",
     "picture": "https://avatars.githubusercontent.com/u/2042298?v=4",
     "image": "https://avatars.githubusercontent.com/u/2042298?v=4",
     "email": "harry.solsem@solsem.no",
