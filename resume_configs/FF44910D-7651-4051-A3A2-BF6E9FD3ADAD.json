@@ -1,0 +1,25 @@
+{
+    "meta": {
+        "version": "1.0",
+        "name": "FF44910D-7651-4051-A3A2-BF6E9FD3ADAD",
+        "description": "A resume template for an norwegian project manager resume.",
+        "date_created": "2025-04-28",
+        "last_updated": "2025-04-28",
+        "type": "pm",
+        "language": "no"
+    },
+    "configuration": {
+        "basics": [ 0 ],
+        "work": [ 1, 2 ],
+        "volunteer": [ 1, 2 ],
+        "education": [ 1, 2 ],
+        "awards": [ 1, 2 ],
+        "certificates": [ 1, 2 ],
+        "publications": [ 1, 2 ],
+        "skills": [ 1, 2 ],
+        "languages": [ 1, 2 ],
+        "interests": [ 1, 2 ],
+        "references": [ 1, 2 ],
+        "projects": [ 1, 2 ]
+    }
+}
