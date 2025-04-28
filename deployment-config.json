@@ -1,6 +1,7 @@
 {
   "deployment": {
     "resumetype": "prosjektleder",
-    "language": "no"
+    "language": "no",
+    "dryrun": "1"
   }
 }

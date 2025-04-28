@@ -88,9 +88,20 @@ if [ -f "$CONFIG_FILE" ]; then
   # Read deployment.resumetype and deployment.language from JSON file
   TARGET_RESUMETYPE=$(jq -r '.deployment.resumetype' "$CONFIG_FILE")
   TARGET_LANGUAGE=$(jq -r '.deployment.language' "$CONFIG_FILE")
+  DRY_RUN=$(jq -r '.deployment.dryrun' "$CONFIG_FILE")
     
-  if [ "$TARGET_RESUMETYPE" == "null" ] || [ "$TARGET_LANGUAGE" == "null" ]; then
-    log "[ERROR]" "Unable to read deployment.resumetype or deployment.language from $CONFIG_FILE"
+  if [ "$TARGET_RESUMETYPE" == "null" ]; then
+    log "[ERROR]" "Unable to read deployment.resumetype from $CONFIG_FILE"
+    exit 1
+  fi
+
+  if [ "$TARGET_LANGUAGE" == "null" ]; then
+    log "[ERROR]" "Unable to read deployment.language from $CONFIG_FILE"
+    exit 1
+  fi
+
+  if [ "$DRY_RUN" == "null" ]; then
+    log "[ERROR]" "Unable to read deployment.dryrun from $CONFIG_FILE"
     exit 1
   fi
   
@@ -134,6 +145,11 @@ DEST_FILE="$REPO_ROOT/$DEST_FILENAME"
 # Copy the file
 log "[INFO]" "Copying $SOURCE_FILE to $DEST_FILE"
 cp "$SOURCE_FILE" "$DEST_FILE"
+
+if [$DRY_RUN == "1" ]; then
+  log "[INFO]" "Dry run mode enabled. No changes will be committed."
+  exit 0
+fi
 
 # Add the destination file to the git staging area
 git add "$DEST_FILE"
