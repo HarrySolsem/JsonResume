@@ -146,7 +146,7 @@ DEST_FILE="$REPO_ROOT/$DEST_FILENAME"
 log "[INFO]" "Copying $SOURCE_FILE to $DEST_FILE"
 cp "$SOURCE_FILE" "$DEST_FILE"
 
-if [$DRY_RUN == "1" ]; then
+if [ "$DRY_RUN" == "1" ]; then
   log "[INFO]" "Dry run mode enabled. No changes will be committed."
   exit 0
 fi
