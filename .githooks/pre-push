@@ -114,7 +114,7 @@ else
 fi
 
 # Define the path to the external script
-GENERATE_RESUME_SCRIPT="$REPO_ROOT/GenerateResume.sh"
+GENERATE_RESUME_SCRIPT="$REPO_ROOT/generate-resume.sh"
 
 # Verify the existence of the external script
 if [ -f "$GENERATE_RESUME_SCRIPT" ]; then

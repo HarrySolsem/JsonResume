@@ -1,0 +1,876 @@
+{
+    "meta": {
+        "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+        "lastModified": "2025-04-11T15:24:00Z",
+        "version": "1.0.0",
+        "resumetype": "master",
+        "language": "no",
+        "summary_management": "Med",
+        "summary_pm": "Erfaren"
+    },
+    "basics": {
+        "ID": "0",
+        "name": "Harry Solsem",
+        "label": "IT-ledelse og prosjektledelse",
+        "summary": "",
+        "picture": "https://avatars.githubusercontent.com/u/2042298?v=4",
+        "image": "https://avatars.githubusercontent.com/u/2042298?v=4",
+        "email": "harry.solsem@solsem.no",
+        "phone": "+47 91 60 46 00",
+        "url": "https://harry.solsem.no",
+        "location": {
+            "address": "Teglverksfaret 16",
+            "postalCode": "1405",
+            "city": "Langhus",
+            "countryCode": "NO",
+            "region": "Akershus"
+        },
+        "profiles": [
+            {
+                "ID": "1",
+                "network": "Linkedin",
+                "username": "harrysolsem",
+                "url": "https://www.linkedin.com/in/harrysolsem"
+            }
+        ]
+    },
+    "work": [
+        {
+            "ID": "10",
+            "name": "Prosperastiftelsen",
+            "position": "Prosjektleder",
+            "url": "https://www.prosperastiftelsen.no",
+            "startDate": "2024-10-01",
+            "summary": ""
+        },
+        {
+            "ID": "11",
+            "name": "Riverty",
+            "position": "Avdelingsleder",
+            "url": "https://www.riverty.com",
+            "startDate": "2023-09-01",
+            "summary": "",
+            "endDate": "2024-06-01"
+        },
+        {
+            "ID": "12",
+            "name": "STOFFSKIFTEFORBUNDET",
+            "position": "Konsulent",
+            "url": "https://www.stofo.org",
+            "startDate": "2023-05-01",
+            "summary": "",
+            "endDate": "2023-06-01"
+        },
+        {
+            "ID": "13",
+            "name": "Neonomics",
+            "position": "Team Lead | Engineering Manager",
+            "url": "https://www.neonomics.io",
+            "startDate": "2021-08-01",
+            "summary": "",
+            "endDate": "2023-03-01"
+        },
+        {
+            "ID": "14",
+            "name": "KPMG Norway",
+            "position": "Senior Manager",
+            "url": "https://www.kpmg.no",
+            "startDate": "2021-02-01",
+            "summary": "",
+            "endDate": "2021-08-01"
+        },
+        {
+            "ID": "15",
+            "name": "DNB",
+            "position": "Prosjektleder",
+            "url": "https://www.dbn.no",
+            "startDate": "2020-05-01",
+            "summary": "",
+            "endDate": "2021-01-01"
+        },
+        {
+            "ID": "16",
+            "name": "DNB",
+            "position": "Teknisk leder",
+            "url": "https://www.dbn.no",
+            "startDate": "2017-10-01",
+            "summary": "",
+            "endDate": "2020-05-01"
+        },
+        {
+            "ID": "17",
+            "name": "Web Services Technology AS",
+            "position": "Plattformingeni�r",
+            "url": "https://wst.no",
+            "startDate": "2015-05-01",
+            "summary": "",
+            "endDate": "2017-09-01"
+        },
+        {
+            "ID": "18",
+            "name": "Sharecat Solutions AS",
+            "position": "Prosjektleder/Scrum Master/Senior programvareutvikler",
+            "url": "https://home.sharecat.com/",
+            "startDate": "2013-02-01",
+            "summary": "",
+            "endDate": "2015-04-01"
+        },
+        {
+            "ID": "19",
+            "name": "Ventelo",
+            "position": "Teknisk prosjektleder/Service Delivery Manager/Software Engineer",
+            "url": "https://www.ventelo.no",
+            "startDate": "2010-03-01",
+            "summary": "",
+            "endDate": "2012-06-01"
+        },
+        {
+            "ID": "20",
+            "name": "Engineering Systems",
+            "position": "Programvareutvikler",
+            "url": "https://www.once.no/",
+            "startDate": "2008-09-01",
+            "summary": "",
+            "endDate": "2010-03-01"
+        },
+        {
+            "ID": "21",
+            "name": "Comunic AS",
+            "position": "Programvareutvikler",
+            "url": "https://www.comunic.no",
+            "startDate": "2008-03-01",
+            "summary": "",
+            "endDate": "2008-08-01"
+        },
+        {
+            "ID": "22",
+            "name": "Umoe Mandal AS",
+            "position": "Programvareutvikler",
+            "url": "https://www.um.no",
+            "startDate": "2002-10-01",
+            "summary": "",
+            "endDate": "2008-02-01"
+        },
+        {
+            "ID": "23",
+            "name": "Intershare AS",
+            "position": "Programvarekonsulent",
+            "url": "https://www.intershare.no",
+            "startDate": "2001-10-01",
+            "summary": "",
+            "endDate": "2002-04-01"
+        },
+        {
+            "ID": "24",
+            "name": "Edb Avdelingen S�r AS",
+            "position": "Edb-konsulent",
+            "url": "https://www.edbavd.no/",
+            "startDate": "1997-08-01",
+            "summary": "",
+            "endDate": "2001-08-01"
+        },
+        {
+            "ID": "25",
+            "name": "Manpower AS",
+            "position": "Brukerst�tte",
+            "url": "https://www.manpower.no",
+            "startDate": "1994-08-01",
+            "summary": "",
+            "endDate": "1997-07-01"
+        },
+        {
+            "ID": "26",
+            "name": "PC-LAND SOFTWARE",
+            "position": "Programvareutvikler",
+            "url": "https://www.ikke.no",
+            "startDate": "1995-02-01",
+            "summary": "",
+            "endDate": "1995-03-28"
+        },
+        {
+            "ID": "27",
+            "name": "Total Consept Development",
+            "position": "Programvareutvikler",
+            "url": "https://www.ikke.no",
+            "startDate": "1994-08-01",
+            "summary": "",
+            "endDate": "1994-11-30"
+        },
+        {
+            "ID": "28",
+            "name": "B�DE OG RADIOREKLAMEBYR�",
+            "position": "IT-konsulent",
+            "url": "https://www.ikke.no",
+            "startDate": "1994-06-01",
+            "summary": "",
+            "endDate": "1994-07-31"
+        },
+        {
+            "ID": "29",
+            "name": "NHI-Datah�gskolen",
+            "position": "Veileder",
+            "url": "https://www.ikke.no",
+            "startDate": "1994-01-01",
+            "summary": "",
+            "endDate": "1994-06-01"
+        }
+    ],
+    "volunteer": [
+        {
+            "ID": "40",
+            "organization": "Langhus IL Bordtennis",
+            "position": "Gruppeleder og styreleder",
+            "url": "https://www.langhusil.no/bordtennis",
+            "startDate": "2024-09-01",
+            "summary": ""
+        },
+        {
+            "ID": "41",
+            "organization": "Langhus 1405 Sameie",
+            "position": "Styremedlem",
+            "startDate": "2021-07-01",
+            "summary": ""
+        },
+        {
+            "ID": "42",
+            "organization": "STOFFSKIFTEFORBUNDET",
+            "position": "Forbundsstyremedlem",
+            "url": "https://stofo.no/",
+            "startDate": "2020-11-01",
+            "summary": ""
+        },
+        {
+            "ID": "43",
+            "organization": "STOFFSKIFTEFORBUNDET",
+            "position": "Likeperson",
+            "url": "https://stofo.no/",
+            "startDate": "2017-03-01",
+            "summary": ""
+        }
+    ],
+    "education": [
+        {
+            "ID": "50",
+            "institution": "Handelsh�yskolen BI",
+            "area": "Management",
+            "url": "https://wwww.bi.no",
+            "studyType": "Bachelor",
+            "startDate": "2018-01-01",
+            "score": "",
+            "courses": [
+                "Prosjektledelse 1",
+                "Prosjektledelse 2",
+                "Prosjektledelse 3"
+            ],
+            "endDate": "2019-01-01"
+        },
+        {
+            "ID": "51",
+            "institution": "Universitetet i Agder (UiA)",
+            "area": "Software Engineering",
+            "url": "https://www.uia.no",
+            "studyType": "Bachelor",
+            "startDate": "1999-08-01",
+            "score": "",
+            "courses": [
+                "User interfaces",
+                "Problem solving using Java",
+                "Advanced Database Systems XML",
+                "OO Systems Design using UML"
+            ],
+            "endDate": "2000-05-01"
+        },
+        {
+            "ID": "52",
+            "institution": "NHI, Norges H�yskole for Informasjonsteknologi",
+            "area": "Computer Science",
+            "studyType": "Linje for administrativ databehandling",
+            "startDate": "1992-08-01",
+            "score": "",
+            "courses": [
+                "Administrasjonsl�re og Bedrifts�konomi",
+                "Innf�ring i systemutvikling",
+                "Organisasjon samarbeid og ledelse",
+                "Grunnkurs programmering",
+                "Markedsf�ring",
+                "Databaser og datamodeller",
+                "Algoritmer og datastrukturer",
+                "Maskinspr�kprogrammering",
+                "Datakommunikasjon I",
+                "Systemutvikling II",
+                "Applikasjonsutvikling",
+                "Applikasjonsprogrammering i C++",
+                "Matematisk Analyse I",
+                "Diskrete matematikk",
+                "Operativsystemer",
+                "Sanntidsprogrammering"
+            ],
+            "endDate": "1994-05-01"
+        },
+        {
+            "ID": "53",
+            "institution": "Melbu Videreg�ende skole",
+            "area": "IT",
+            "studyType": "VK2, Handel og kontor, Data- og informasjonsbehandling",
+            "startDate": "1989-08-01",
+            "score": "",
+            "courses": [
+                "Norsk og kommunikasjon, hovedm�l, skriftlig",
+                "Norsk og kommunikasjon, sidem�l, skriftlig",
+                "Norsk og kommunikasjon, muntlig",
+                "Organisasjonsl�re",
+                "Engelsk, skriftlig",
+                "Engelsk, muntlig",
+                "Sosial�konomi",
+                "Kropps�ving",
+                "Systemering",
+                "Programmering",
+                "Administrative EDB-verkt�y",
+                "Samfunnsfag"
+            ],
+            "endDate": "1990-06-01"
+        },
+        {
+            "ID": "54",
+            "institution": "Melbu Videreg�ende skole",
+            "area": "�konomi",
+            "studyType": "VK1, Handel og kontor",
+            "startDate": "1988-08-01",
+            "score": "",
+            "courses": [
+                "Norsk med sidem�l skriftlig",
+                "Norsk muntlig",
+                "Engelsk, skriftlig",
+                "Engelsk, muntlig",
+                "Kropps�ving",
+                "Rettsl�re",
+                "Sosial�konomi",
+                "Bedrifts�konomi",
+                "Markedsf�ring",
+                "Matematikk og statistikk",
+                "Informasjonsbehandling"
+            ],
+            "endDate": "1989-06-01"
+        },
+        {
+            "ID": "55",
+            "institution": "Sortland Videreg�ende skole",
+            "area": "Handels- og kontorfag",
+            "studyType": "Grunnkurs",
+            "startDate": "1987-08-01",
+            "score": "",
+            "courses": [
+                "Norsk",
+                "Engelsk",
+                "Kropps�ving",
+                "Regnskapsl�re",
+                "Matematikk I",
+                "Samfunns- og n�ringsl�re",
+                "Korrespondanse- og dokumentl�re",
+                "Maskinskriving",
+                "Praktisk kontorarbeid",
+                "Tekstbehandling"
+            ],
+            "endDate": "1988-06-01"
+        }
+    ],
+    "awards": [],
+    "certificates": [
+        {
+            "ID": "60",
+            "name": "Applied TOGAF Enterprise Architecture Practitioner",
+            "date": "2024-10-01",
+            "issuer": "The Open Group",
+            "url": "https://www.credly.com/badges/3f2e9c94-582a-4b9f-ba7a-df65c303ee1b/linked_in_profile"
+        },
+        {
+            "ID": "61",
+            "name": "PROSCI Certified Change Practitioner",
+            "date": "2024-03-01",
+            "issuer": "PROSCI",
+            "url": "https://www.credly.com/badges/d734928d-07f3-4056-8b21-82e1e21bb0cc/linked_in_profile"
+        },
+        {
+            "ID": "62",
+            "name": "Product Owner",
+            "date": "2021-03-01",
+            "issuer": "Agile Lean House",
+            "url": "https://agileleanhouse.com/en/cspo"
+        },
+        {
+            "ID": "63",
+            "name": "Prince2Agile",
+            "date": "2019-01-01",
+            "issuer": "Axelos Global Best Practice",
+            "url": "https://www.axelos.com/certifications/propath/prince2-agile-project-management/prince2-agile-foundation"
+        },
+        {
+            "ID": "64",
+            "name": "Prince2 Registered Practitioner",
+            "date": "2016-11-01",
+            "issuer": "APMG International",
+            "url": "https://www.axelos.com/certifications/propath/prince2-project-management/prince2-practitioner"
+        },
+        {
+            "ID": "65",
+            "name": "Prince2 Foundation",
+            "date": "2014-08-01",
+            "issuer": "Adding Value Consulting AB",
+            "url": "https://www.axelos.com/certifications/propath/prince2-project-management/prince2-foundation"
+        },
+        {
+            "ID": "66",
+            "name": "ITIL Foundation",
+            "date": "2012-11-01",
+            "issuer": "PeopleCert Group",
+            "url": "https://www.axelos.com/certifications/itil-service-management/itil-4-foundation"
+        },
+        {
+            "ID": "67",
+            "name": "Certified Scrum Master",
+            "date": "2010-01-01",
+            "issuer": "Scrum Alliance",
+            "url": "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster"
+        }
+    ],
+    "publications": [],
+    "skills": [
+        {
+            "ID": "70",
+            "name": "Agile metodikker",
+            "level": "Advanced",
+            "keywords": [
+                "iterativ utvikling",
+                "sprintplanlegging",
+                "brukerhistorier",
+                "produktk�",
+                "kontinuerlig integrasjon",
+                "smidig fasilitering",
+                "scrum-master",
+                "teamutvikling",
+                "kontinuerlig forbedring",
+                "scrum",
+                "kanban",
+                "lean",
+                "XP",
+                "adaptive planning",
+                "hybrid metodikk",
+                "strukturert planlegging",
+                "metodetilpasning",
+                "prosjektmetodologi",
+                "smidig metodikk"
+            ]
+        },
+        {
+            "ID": "71",
+            "name": "Software utvikling og arkitektur",
+            "level": "Advanced",
+            "keywords": [
+                "C#",
+                "ASP.NET",
+                "WPF",
+                "Entity Framework",
+                "LINQ",
+                "RESTful services",
+                "HTTP endpoints",
+                "API utvikling",
+                "l�sningsdesign",
+                "komponentarkitektur",
+                "applikasjonsstruktur",
+                "patternbasert design",
+                "systemintegrasjon",
+                "arkitektur-patterns",
+                "designpatterns",
+                "systemmodellering",
+                "grensesnittdesign",
+                "komponentdesign",
+                "koding",
+                "programvareutvikling",
+                "applikasjonsutvikling",
+                "programmering",
+                "programvarearkitektur",
+                "kravanalyse",
+                "design",
+                "implementering",
+                "testing",
+                "utrulling",
+                "vedlikehold",
+                "systemdesign",
+                "arkitektpatterns",
+                "tekniske spesifikasjoner",
+                "integrasjonsarkitektur"
+            ]
+        },
+        {
+            "ID": "72",
+            "name": "Ledelse & Administrasjon",
+            "level": "Advanced",
+            "keywords": [
+                "vision setting",
+                "strategic direction",
+                "people management",
+                "influence",
+                "decision-making",
+                "team coordination",
+                "delegation",
+                "performance monitoring",
+                "team development",
+                "conflict resolution",
+                "employee engagement",
+                "performance incentives",
+                "morale building",
+                "team spirit",
+                "recognition programs",
+                "teamutvikling",
+                "m�lstyring",
+                "delegering",
+                "koordinering",
+                "oppf�lging",
+                "strategic planning",
+                "organizational direction",
+                "long-term thinking",
+                "executive decision-making",
+                "technical leadership",
+                "engineering management",
+                "technical strategy",
+                "innovation management",
+                "R&D leadership"
+            ]
+        },
+        {
+            "ID": "73",
+            "name": "Prosjekt- og prosessledelse",
+            "level": "Advanced",
+            "keywords": [
+                "scope management",
+                "timeline planning",
+                "risk assessment",
+                "stakeholder management",
+                "project governance",
+                "controlled environments",
+                "structured project management",
+                "business case",
+                "project board",
+                "stage planning",
+                "development lifecycle",
+                "technical planning",
+                "code review",
+                "release management",
+                "quality assurance",
+                "prosessforbedring",
+                "kvalitetssikring",
+                "evaluering",
+                "optimalisering",
+                "innovasjon",
+                "resource planning",
+                "capacity management",
+                "utilization optimization",
+                "workload distribution",
+                "prioritization"
+            ]
+        },
+        {
+            "ID": "74",
+            "name": "Tekniske verkt�y og plattformer",
+            "level": "Advanced",
+            "keywords": [
+                "TeamCity",
+                "Octopus Deploy",
+                "Git",
+                "Github Actions",
+                "Docker",
+                "Microsoft Visual Studio",
+                "Microsoft.NET",
+                "Sql Management Studio",
+                "Microsoft Winforms",
+                "Microsoft Entity Framework",
+                "Fiddler",
+                "Postman",
+                "T-SQL",
+                "databaseadministrasjon",
+                "sp�rreoptimalisering",
+                "ITIL",
+                "service catalog",
+                "incident management",
+                "change management",
+                "service level agreements"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "ID": "80",
+            "language": "Norsk",
+            "fluency": "Morsm�l",
+            "native": true,
+            "keywords": [
+                "Norsk",
+                "Bokm�l"
+            ]
+        },
+        {
+            "ID": "81",
+            "language": "Engelsk",
+            "fluency": "Full professional proficiency",
+            "native": false,
+            "keywords": [
+                "Engelsk",
+                "Engelsk (amerikansk)",
+                "Engelsk (britisk)"
+            ]
+        }
+    ],
+    "interests": [
+        {
+            "ID": "90",
+            "name": "Sport",
+            "keywords": [
+                "Bordtennis",
+                "L�ping",
+                "Liverpool FC"
+            ]
+        }
+    ],
+    "references": [],
+    "projects": [
+        {
+            "ID": "100",
+            "name": "RELOVE V25",
+            "startDate": "2025-02-01",
+            "description": "",
+            "url": "https://www.relove.info",
+            "entity": "Prosperastiftelsen",
+            "endDate": "2025-05-01",
+            "roles": [
+                "prosjektleder"
+            ],
+            "highlights": [
+                "Ledet et team p� 5 personer i et prosjekt for � utvikle en ny strategi for RELOVE.",
+                "Sikret at prosjektet ble levert innen tidsrammen og budsjettet.",
+                "Utvikling av ny kommunikasjonsstrategi som �kte synligheten til RELOVE."
+            ]
+        },
+        {
+            "ID": "101",
+            "name": "OOF H24 - �konomi og Virksomhetsstyring",
+            "startDate": "2024-10-01",
+            "description": "",
+            "url": "https://www.osloogomlandfriluftsrad.no/",
+            "entity": "Prosperastiftelsen",
+            "endDate": "2025-01-01",
+            "roles": [
+                "prosjektleder"
+            ],
+            "highlights": [
+                "Ledet prosjektet for � digitalisere administrative prosesser hos OOF, med fokus p� timef�ring, budsjettering og prosjektstyring.",
+                "Gjennomf�rte behovsanalyse og evaluering av digitale verkt�y som best kunne m�te organisasjonens behov.",
+                "Koordinerte implementeringen av nye systemer som resulterte i 30% reduksjon i manuelt administrativt arbeid."
+            ]
+        },
+        {
+            "ID": "102",
+            "name": "Sanering av gammelt log-verkt�y og utrulling av agenter",
+            "startDate": "2020-07-01",
+            "description": "",
+            "url": "https://harry.solsem.no",
+            "endDate": "2020-11-01",
+            "entity": "DNB",
+            "roles": [
+                "prosjektleder"
+            ],
+            "highlights": [
+                "Ledet sanering av utdatert maskinvare og implementering av nye sikkerhetsl�sninger p� flere tusen servere.",
+                "Koordinerte tverrfaglige team i en fullt digital arbeidsmodell under pandemien via Microsoft Teams.",
+                "Rapporterte jevnlig til styringsgruppe og portef�ljestyrer, med 100% oppn�else av prosjektets milep�ler."
+            ]
+        },
+        {
+            "ID": "103",
+            "name": "Implementere utvidet sikkerhetsfokus i DNB programvarelivssyklus",
+            "startDate": "2020-07-01",
+            "description": "",
+            "url": "https://harry.solsem.no",
+            "endDate": "2020-11-01",
+            "entity": "DNB",
+            "roles": [
+                "prosjektleder"
+            ],
+            "highlights": [
+                "Utviklet og implementerte omfattende sikkerhetsfokuserte styringsdokumenter for programvareutvikling i DNB.",
+                "Gjennomf�rte leverand�revalueringer og etablerte nye sikkerhetskrav for eksterne utviklingspartnere.",
+                "Oppn�dde betydelig forbedring i sikkerhetsfokus gjennom hele programvarelivssyklusen ved � implementere nye verkt�y og rutiner."
+            ]
+        },
+        {
+            "ID": "104",
+            "name": "IAM - Cleanup and Compliance",
+            "startDate": "2020-06-01",
+            "description": "",
+            "url": "https://harry.solsem.no",
+            "endDate": "2020-11-01",
+            "entity": "DNB",
+            "roles": [
+                "prosjektleder"
+            ],
+            "highlights": [
+                "Ledet implementeringen av automatisert tilgangsstyring med ServiceNow og IIQ, som resulterte i 40% reduksjon i manuelle tilgangsprosesser.",
+                "Sikret compliance med interne og eksterne reguleringer gjennom forbedret dokumentasjon og prosesser.",
+                "Koordinerte interessenter p� tvers av avdelinger for � sikre optimal implementering av IAM-l�sningen."
+            ]
+        },
+        {
+            "ID": "105",
+            "name": "Penetrasjonstesting",
+            "startDate": "2019-08-01",
+            "description": "",
+            "url": "https://harry.solsem.no",
+            "endDate": "2020-11-01",
+            "entity": "DNB",
+            "roles": [
+                "prosjektleder"
+            ],
+            "highlights": [
+                "Etablerte og ledet et omfattende program for penetrasjonstesting av kritiske systemer i DNB.",
+                "Koordinerte interne sikkerhetseksperter og eksterne partnere for � gjennomf�re grundige sikkerhetstester.",
+                "Utviklet protokoller for systematisk oppf�lging av funn, som resulterte i 85% reduksjon i kritiske s�rbarheter."
+            ]
+        },
+        {
+            "ID": "106",
+            "name": "Implementere DDOS-beskyttelse for en spesifikk del av DNB-systemportef�lje.",
+            "startDate": "2019-07-01",
+            "description": "",
+            "url": "https://harry.solsem.no",
+            "endDate": "2020-11-01",
+            "entity": "DNB",
+            "roles": [
+                "prosjektleder"
+            ],
+            "highlights": [
+                "Ledet implementeringen av forsterket DDOS-beskyttelse for kritiske systemkomponenter i DNB.",
+                "Utarbeidet omfattende migreringsstrategi som minimerte nedetid under flytting av systemer.",
+                "Koordinerte tekniske ressurser p� tvers av team for � sikre s�ml�s integrasjon med eksisterende infrastruktur."
+            ]
+        },
+        {
+            "ID": "107",
+            "name": "Ny bedriftsportal",
+            "startDate": "2018-01-01",
+            "description": "",
+            "url": "https://harry.solsem.no",
+            "endDate": "2019-01-01",
+            "entity": "DNB",
+            "roles": [
+                "Scrum master"
+            ],
+            "highlights": [
+                "Fungerte som Scrum Master for et tverrfaglig team p� 8 personer som utviklet DNBs nye bedriftsportal.",
+                "Gjennomf�rte grundig oppl�ring i smidig metodikk for b�de IT-utviklere og forretningsrepresentanter.",
+                "Fasiliterte daglige stand-ups, sprint planning og retrospektiver som bidro til 30% �kt utviklingseffektivitet."
+            ]
+        },
+        {
+            "ID": "108",
+            "name": "GDPR i DNB Liv",
+            "startDate": "2018-01-01",
+            "description": "",
+            "url": "https://harry.solsem.no",
+            "endDate": "2018-03-01",
+            "entity": "DNB",
+            "roles": [
+                "prosjektleder"
+            ],
+            "highlights": [
+                "Ledet GDPR-implementeringsprosjektet for DNB Liv, som sikret full compliance innen fristen mai 2018.",
+                "Koordinerte tverrfaglig team best�ende av juridiske eksperter, IT-spesialister og forretningsanalytikere.",
+                "Implementerte nye systemer og prosesser for � h�ndtere personvernrettigheter og datasletting."
+            ]
+        },
+        {
+            "ID": "109",
+            "name": "Supplier Catalogue",
+            "startDate": "2014-09-01",
+            "description": "",
+            "url": "https://harry.solsem.no",
+            "endDate": "2015-04-01",
+            "entity": "Sharecat Solutions AS",
+            "roles": [
+                "prosjektleder"
+            ],
+            "highlights": [
+                "Overtok et komplekst internasjonalt prosjekt og utviklet en detaljert prosjektplan som sikret vellykket leveranse.",
+                "Ledet et geografisk spredt team p� tvers av flere land i implementeringen av Sharecats katalog-tjenester.",
+                "Administrerte prosjektets ressurser og timeplan ved hjelp av MS Project 2013, med levering innenfor opprinnelig budsjett."
+            ]
+        },
+        {
+            "ID": "110",
+            "name": "Utvidelse av vCRM",
+            "startDate": "2011-03-01",
+            "description": "",
+            "url": "https://harry.solsem.no",
+            "endDate": "2011-10-01",
+            "entity": "Ventelo",
+            "roles": [
+                "prosjektleder",
+                "programvareingeni�r"
+            ],
+            "highlights": [
+                "Ledet og utviklet utvidelser til Ventelos CRM-system basert p� grundig analyse av IT-st�ttehenvendelser.",
+                "Identifiserte og implementerte l�sninger for 5 kritiske forretningsomr�der som manglet systemst�tte.",
+                "Utf�rte b�de prosjektleder- og utviklerrolle, som resulterte i s�ml�s implementering og reduserte IT-st�ttehenvendelser med 25%."
+            ]
+        },
+        {
+            "ID": "111",
+            "name": "IRIS - Rapportdistribuerings-system",
+            "startDate": "2007-02-01",
+            "description": "",
+            "url": "https://harry.solsem.no",
+            "endDate": "2007-06-01",
+            "entity": "Umoe Mandal",
+            "roles": [
+                "prosjektleder"
+            ],
+            "highlights": [
+                "Utviklet og implementerte et komplett rapportdistribueringssystem med C# og MS SQL Server.",
+                "Implementerte avansert AD-integrasjon for automatisert brukeradministrasjon.",
+                "Designet en fleksibel abonnementsl�sning som tillot brukere � planlegge og motta rapporter basert p� individuelle behov."
+            ]
+        },
+        {
+            "ID": "112",
+            "name": "ULV - UtLevering av Verkt�y",
+            "startDate": "2005-03-01",
+            "description": "",
+            "url": "https://harry.solsem.no",
+            "endDate": "2006-05-01",
+            "entity": "Umoe Mandal",
+            "roles": [
+                "prosjektleder"
+            ],
+            "highlights": [
+                "Ledet prosjektet fra kravspesifikasjon til implementering og drift.",
+                "Utviklet en C# applikasjon med MS SQL Server som database.",
+                "Implementert AD-integrasjon og elektronisk signatur."
+            ]
+        },
+        {
+            "ID": "113",
+            "name": "tiUM - timeregistrering Umoe Mandal",
+            "startDate": "2004-05-01",
+            "description": "",
+            "url": "https://harry.solsem.no",
+            "endDate": "2007-08-01",
+            "entity": "Umoe Mandal",
+            "roles": [
+                "prosjektleder"
+            ],
+            "highlights": [
+                "Ledet prosjektet fra kravspesifikasjon til implementering og drift.",
+                "Utviklet en VB.Net applikasjon med MS SQL Server som database.",
+                "Implementert integrasjon mot stemplingssystem og e-postvarsling."
+            ]
+        }
+    ]
+}
