@@ -113,6 +113,25 @@ else
   TARGET_LANGUAGE="no"
 fi
 
+# Define the path to the external script
+GENERATE_RESUME_SCRIPT="$REPO_ROOT/GenerateResume.sh"
+
+# Verify the existence of the external script
+if [ -f "$GENERATE_RESUME_SCRIPT" ]; then
+  log "[INFO]" "Found GenerateResume.sh at $GENERATE_RESUME_SCRIPT"
+else
+  log "[ERROR]" "GenerateResume.sh not found at $GENERATE_RESUME_SCRIPT. Please make sure it exists."
+  exit 1
+fi
+
+# Call the external GenerateResume.sh script
+log "[INFO]" "Calling GenerateResume.sh"
+bash "$GENERATE_RESUME_SCRIPT"
+if [ $? -ne 0 ]; then
+  log "[ERROR]" "GenerateResume.sh execution failed. Please check the script for errors."
+  exit 1
+fi
+
 # Find the matching resume file in the resumes directory
 FOUND_SOURCE_FILE=""
 for resume_file in "$REPO_ROOT/resumes"/*.json; do
