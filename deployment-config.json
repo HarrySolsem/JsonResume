@@ -1,6 +1,7 @@
 {
   "deployment": {
     "resumetype": "master",
-    "language": "no"
+    "language": "no",
+    "dryrun": "true"
   }
 }
