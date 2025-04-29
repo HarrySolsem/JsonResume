@@ -5,6 +5,10 @@ set -euo pipefail
 REPO_ROOT=$(git rev-parse --show-toplevel || { echo "Error: Not inside a Git repository." >&2; exit 1; })
 LOG_FILE="$REPO_ROOT/.git-pre-push.log"
 
+CONFIG_FILE="$REPO_ROOT/config.json"
+export DEBUG_MODE=$(jq -r '.environment.debug // "0"' "$CONFIG_FILE")
+echo "Debug mode1: $DEBUG_MODE"
+
 # Log function to print to stdout and append to a log file.
 log() {
   local level="$1"
@@ -60,7 +64,7 @@ read_config() {
     TARGET_RESUMETYPE=$(jq -r '.deployment.resumetype // empty' "$CONFIG_FILE")
     TARGET_LANGUAGE=$(jq -r '.deployment.language // empty' "$CONFIG_FILE")
     DRY_RUN=$(jq -r '.environment.dryrun // empty' "$CONFIG_FILE")
-    export DEBUG_MODE=$(jq -r '.environment.debug // "0"' "$CONFIG_FILE")
+    
     echo "Debug mode: $DEBUG_MODE"
     
     if [ -z "$TARGET_RESUMETYPE" ]; then
