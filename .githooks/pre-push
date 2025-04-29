@@ -18,6 +18,7 @@ log() {
 # Debug log that only outputs when DEBUG_MODE is true.
 debug_log() {
   # Handle DEBUG_MODE safely with a fallback default
+  echo "Debug mode: $DEBUG_MODE"
   if [ "${DEBUG_MODE:-false}" = "1" ]; then
     log "[DEBUG]" "$1"
     echo "$1"
