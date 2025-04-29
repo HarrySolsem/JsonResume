@@ -6,7 +6,7 @@ REPO_ROOT=$(git rev-parse --show-toplevel || { echo "Error: Not inside a Git rep
 LOG_FILE="$REPO_ROOT/.git-pre-push.log"
 
 # Default values for variables.
-DEBUG_MODE = "false"
+#DEBUG_MODE="false"
 
 # Log function to print to stdout and append to a log file.
 log() {
