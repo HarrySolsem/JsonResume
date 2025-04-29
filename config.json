@@ -5,6 +5,6 @@
     },
     "environment": {
         "debug": "1",
-        "dryrun": "1"
+        "dryrun": "0"
     }
 }   
