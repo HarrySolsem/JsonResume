@@ -20,6 +20,7 @@ debug_log() {
   # Handle DEBUG_MODE safely with a fallback default
   if [ "${DEBUG_MODE:-false}" = "1" ]; then
     log "[DEBUG]" "$1"
+    echo "$1"
   fi
 }
 
