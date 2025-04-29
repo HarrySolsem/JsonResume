@@ -7,7 +7,6 @@ LOG_FILE="$REPO_ROOT/.git-pre-push.log"
 
 CONFIG_FILE="$REPO_ROOT/config.json"
 export DEBUG_MODE=$(jq -r '.environment.debug // "0"' "$CONFIG_FILE")
-echo "Debug mode1: $DEBUG_MODE"
 
 # Log function to print to stdout and append to a log file.
 log() {
@@ -17,6 +16,7 @@ log() {
   timestamp=$(date '+%Y-%m-%d %H:%M:%S')
   local output="[$timestamp] $level $message"
   echo "$output" | tee -a "$LOG_FILE"
+  echo "$output"
 }
 
 # Debug log that only outputs when DEBUG_MODE is true.
@@ -24,11 +24,6 @@ debug_log() {
   # Handle DEBUG_MODE safely with a fallback default
   if [ "${DEBUG_MODE:-0}" = "1" ]; then
     log "[DEBUG]" "$1"
-    echo "$1"
-    echo "Debug mode(in debug_log1): $DEBUG_MODE"
-    else
-    log "[DEBUG]" "Debug mode is off. Skipping debug log."
-    echo "Debug mode(in debug_log2): $DEBUG_MODE"
   fi
 }
 
@@ -64,8 +59,6 @@ read_config() {
     TARGET_RESUMETYPE=$(jq -r '.deployment.resumetype // empty' "$CONFIG_FILE")
     TARGET_LANGUAGE=$(jq -r '.deployment.language // empty' "$CONFIG_FILE")
     DRY_RUN=$(jq -r '.environment.dryrun // empty' "$CONFIG_FILE")
-    
-    echo "Debug mode: $DEBUG_MODE"
     
     if [ -z "$TARGET_RESUMETYPE" ]; then
       log "[ERROR]" "Missing key 'deployment.resumetype' in $CONFIG_FILE."
