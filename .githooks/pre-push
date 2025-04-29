@@ -23,6 +23,7 @@ debug_log() {
     echo "$1"
     else
     log "[DEBUG]" "Debug mode is off. Skipping debug log."
+    echo "Debug mode(in debug_log): $DEBUG_MODE"
   fi
 }
 
