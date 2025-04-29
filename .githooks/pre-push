@@ -163,6 +163,7 @@ if [ ! -f "$LOG_FILE" ]; then
 else
   log "[INFO]" "Log file already exists at $LOG_FILE truncating." To avoid filling up the disk space.
   > "$LOG_FILE"
+  log "[INFO]" "Log file truncated."
 fi
 
 # Run the steps.
