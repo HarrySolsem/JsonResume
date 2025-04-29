@@ -1,7 +1,7 @@
 {
     "deployment": {
-        "resumetype": "prosjektleder",
-        "language": "no"
+        "resumetype": "master",
+        "language": "en"
     },
     "environment": {
         "debug": "1",
