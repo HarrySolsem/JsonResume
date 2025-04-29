@@ -1,4 +1,4 @@
-#!/bin/sh -xv
+#!/bin/bash
 set -euo pipefail
 
 # Get the root directory of the Git repository.
