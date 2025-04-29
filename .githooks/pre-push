@@ -57,6 +57,7 @@ read_config() {
     TARGET_LANGUAGE=$(jq -r '.deployment.language // empty' "$CONFIG_FILE")
     DRY_RUN=$(jq -r '.environment.dryrun // empty' "$CONFIG_FILE")
     DEBUG_MODE=$(jq -r '.environment.debug // "0"' "$CONFIG_FILE")
+    echo "Debug_mode: $DEBUG_MODE"
     
     if [ -z "$TARGET_RESUMETYPE" ]; then
       log "[ERROR]" "Missing key 'deployment.resumetype' in $CONFIG_FILE."
