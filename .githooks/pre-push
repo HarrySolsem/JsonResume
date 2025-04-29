@@ -16,7 +16,6 @@ log() {
   timestamp=$(date '+%Y-%m-%d %H:%M:%S')
   local output="[$timestamp] $level $message"
   echo "$output" | tee -a "$LOG_FILE"
-  echo "$output"
 }
 
 # Debug log that only outputs when DEBUG_MODE is true.
