@@ -70,7 +70,7 @@ read_config() {
       exit 1
     fi
     
-    log "[INFO]" "Config read: resumetype='$TARGET_RESUMETYPE', language='$TARGET_LANGUAGE', dryrun='$DRY_RUN'"
+    log "[INFO]" "Config read: resumetype='$TARGET_RESUMETYPE', language='$TARGET_LANGUAGE', dryrun='$DRY_RUN', debug_mode='$DEBUG_MODE'"
   else
     log "[WARNING]" "deployment-config.json not found. Defaulting to resumetype: master, language: no, dryrun: 0."
     TARGET_RESUMETYPE="master"
