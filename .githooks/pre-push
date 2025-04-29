@@ -59,6 +59,7 @@ read_config() {
     TARGET_LANGUAGE=$(jq -r '.deployment.language // empty' "$CONFIG_FILE")
     DRY_RUN=$(jq -r '.environment.dryrun // empty' "$CONFIG_FILE")
     DEBUG_MODE=$(jq -r '.environment.debug // "0"' "$CONFIG_FILE")
+    echo "Debug mode: $DEBUG_MODE"
     
     if [ -z "$TARGET_RESUMETYPE" ]; then
       log "[ERROR]" "Missing key 'deployment.resumetype' in $CONFIG_FILE."
@@ -75,7 +76,7 @@ read_config() {
     
     log "[INFO]" "Config read: resumetype='$TARGET_RESUMETYPE', language='$TARGET_LANGUAGE', dryrun='$DRY_RUN', debug_mode='$DEBUG_MODE'"
   else
-    log "[WARNING]" "deployment-config.json not found. Defaulting to resumetype: master, language: no, dryrun: 0."
+    log "[WARNING]" "config.json not found. Defaulting to resumetype: master, language: no, dryrun: 0."
     TARGET_RESUMETYPE="master"
     TARGET_LANGUAGE="no"
     DRY_RUN="0"
