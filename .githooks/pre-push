@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh -xv
 set -euo pipefail
 
 # Get the root directory of the Git repository.
@@ -28,6 +28,7 @@ debug_log() {
 
 # Ensure prerequisites are met.
 check_prerequisites() {
+  debug_log "Init check_prerequisites()"
   if ! command -v jq &> /dev/null; then
     log "[ERROR]" "jq is not installed. Please install jq (e.g., 'sudo apt install jq')."
     exit 1
@@ -41,6 +42,7 @@ check_prerequisites() {
 
 # Validate that a JSON file is correctly formatted.
 validate_json_file() {
+  debug_log "Init validate_json_file()"
   local file="$1"
   if ! jq empty "$file" &> /dev/null; then
     log "[ERROR]" "Invalid JSON in file: $file. Contents: $(cat "$file")"
@@ -50,6 +52,7 @@ validate_json_file() {
 
 # Read config from the JSON file.
 read_config() {
+  debug_log "Init read_config()"
   CONFIG_FILE="$REPO_ROOT/config.json"
   if [ -f "$CONFIG_FILE" ]; then
     validate_json_file "$CONFIG_FILE"
@@ -68,13 +71,19 @@ read_config() {
       exit 1
     fi
     if [ -z "$DRY_RUN" ]; then
-      log "[ERROR]" "Missing key 'deployment.dryrun' in $CONFIG_FILE."
+      log "[ERROR]" "Missing key 'environment.dryrun' in $CONFIG_FILE."
+      exit 1
+    fi
+
+    if [ -z "DEBUG_MODE" ]; then
+      log "[ERROR]" "Missing key 'environment.dryrun' in $CONFIG_FILE."
       exit 1
     fi
     
     log "[INFO]" "Config read: resumetype='$TARGET_RESUMETYPE', language='$TARGET_LANGUAGE', dryrun='$DRY_RUN', debug_mode='$DEBUG_MODE'"
   else
-    log "[WARNING]" "config.json not found. Defaulting to resumetype: master, language: no, dryrun: 0."
+    log "[WARNING]" "config.json not found. Defaulting to resumetype: master, language: no, dryrun: 0, debug: 1"
+    
     TARGET_RESUMETYPE="master"
     TARGET_LANGUAGE="no"
     DRY_RUN="0"
@@ -83,6 +92,7 @@ read_config() {
 
 # Find a matching resume file based on the config.
 find_resume_file() {
+  debug_log "Init find_resume_file()"
   FOUND_SOURCE_FILE=""
   for resume_file in "$REPO_ROOT/resumes"/*.json; do
     if [ -f "$resume_file" ]; then
@@ -111,6 +121,7 @@ find_resume_file() {
 
 # Copy the found resume file, stage it, and commit if changes exist.
 commit_changes() {
+  debug_log "Init commit_changes()"
   DEST_FILENAME="resume.json"
   DEST_FILE="$REPO_ROOT/$DEST_FILENAME"
 
