@@ -17,7 +17,8 @@ log() {
 
 # Debug log that only outputs when DEBUG_MODE is true.
 debug_log() {
-  if [ "$DEBUG_MODE" = "true" ]; then
+  # Handle DEBUG_MODE safely with a fallback default
+  if [ "${DEBUG_MODE:-false}" = "1" ]; then
     log "[DEBUG]" "$1"
   fi
 }
@@ -39,7 +40,7 @@ check_prerequisites() {
 validate_json_file() {
   local file="$1"
   if ! jq empty "$file" &> /dev/null; then
-    log "[ERROR]" "Invalid JSON in file: $file"
+    log "[ERROR]" "Invalid JSON in file: $file. Contents: $(cat "$file")"
     exit 1
   fi
 }
@@ -54,7 +55,7 @@ read_config() {
     TARGET_RESUMETYPE=$(jq -r '.deployment.resumetype // empty' "$CONFIG_FILE")
     TARGET_LANGUAGE=$(jq -r '.deployment.language // empty' "$CONFIG_FILE")
     DRY_RUN=$(jq -r '.environment.dryrun // empty' "$CONFIG_FILE")
-    DEBUG_MODE=$(jq -r '.environment.debug // empty' "$CONFIG_FILE")
+    DEBUG_MODE=$(jq -r '.environment.debug // "0"' "$CONFIG_FILE")
     
     if [ -z "$TARGET_RESUMETYPE" ]; then
       log "[ERROR]" "Missing key 'deployment.resumetype' in $CONFIG_FILE."
@@ -114,7 +115,7 @@ commit_changes() {
   cp "$FOUND_SOURCE_FILE" "$DEST_FILE"
   log "[INFO]" "Copied $(basename "$FOUND_SOURCE_FILE") to $DEST_FILE"
     
-  if [ "$DRY_RUN" == "1" ]; then
+  if [ "$DRY_RUN" == 1 ]; then
     log "[INFO]" "Dry run mode enabled. No commit will be made."
     exit 0
   fi
@@ -159,6 +160,9 @@ debug_log "Script: $0"
 if [ ! -f "$LOG_FILE" ]; then
   touch "$LOG_FILE"
   log "[INFO]" "Log file created at $LOG_FILE"
+else
+  log "[INFO]" "Log file already exists at $LOG_FILE truncating." To avoid filling up the disk space.
+  > "$LOG_FILE"
 fi
 
 # Run the steps.
