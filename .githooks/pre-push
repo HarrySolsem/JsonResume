@@ -18,8 +18,7 @@ log() {
 # Debug log that only outputs when DEBUG_MODE is true.
 debug_log() {
   # Handle DEBUG_MODE safely with a fallback default
-  echo "Debug mode: $DEBUG_MODE"
-  if [ "${DEBUG_MODE:-false}" = "1" ]; then
+  if [ "${DEBUG_MODE:-0}" = "1" ]; then
     log "[DEBUG]" "$1"
     echo "$1"
     else
@@ -59,7 +58,7 @@ read_config() {
     TARGET_RESUMETYPE=$(jq -r '.deployment.resumetype // empty' "$CONFIG_FILE")
     TARGET_LANGUAGE=$(jq -r '.deployment.language // empty' "$CONFIG_FILE")
     DRY_RUN=$(jq -r '.environment.dryrun // empty' "$CONFIG_FILE")
-    DEBUG_MODE=$(jq -r '.environment.debug // "0"' "$CONFIG_FILE")
+    export DEBUG_MODE=$(jq -r '.environment.debug // "0"' "$CONFIG_FILE")
     echo "Debug mode: $DEBUG_MODE"
     
     if [ -z "$TARGET_RESUMETYPE" ]; then
