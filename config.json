@@ -1,0 +1,10 @@
+{
+    "deployment": {
+        "resumetype": "prosjektleder",
+        "language": "no"
+    },
+    "environment": {
+        "debug": "true",
+        "dryrun": "1"
+    }
+}   
