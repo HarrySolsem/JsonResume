@@ -4,6 +4,7 @@ runs:
   using: 'composite'
   steps:
     - run: |
+        pwd
         chmod +x ./resume_manpulation.sh
         ./resume_manpulation.sh
       shell: bash
