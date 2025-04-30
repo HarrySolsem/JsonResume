@@ -1,0 +1,9 @@
+name: 'Run resume_manpulation.sh Script'
+description: 'Executes a shell script'
+runs:
+  using: 'composite'
+  steps:
+    - run: |
+        chmod +x ./resume_manpulation.sh
+        ./resume_manpulation.sh
+      shell: bash

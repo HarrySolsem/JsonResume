@@ -4,7 +4,7 @@
         "language": "en"
     },
     "environment": {
-        "debug": "0",
-        "dryrun": "0"
+        "debug": "1",
+        "dryrun": "1"
     }
 }   
