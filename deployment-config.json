@@ -1,6 +1,6 @@
 {
   "deployment": {
-    "resumetype": "pm",
+    "resumetype": "projectmanager",
     "language": "en"
   }
 }
