@@ -1,15 +1,15 @@
-{ 
+{
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
     "lastModified": "2025-04-11T15:25:00Z",
     "version": "1.0.0",
-    "resumetype": "master",
+    "resumetype": "projectmanager",
     "language": "en"
   },
   "basics": {
     "name": "Harry Solsem",
     "label": "Leadership | ISO27001 | Team Leader | Project Manager | Digital Product Development | Change Management | Enterprise Architect",
-    "summary": "With over 30 years of leadership experience, including technical and administrative roles in companies such as DNB, Riverty, Neonomics, and Sharecat Solutions. I have Leadership experience: Led teams of up to 50 employees, Managed full responsibility for personnel, budget, and results, provided leadership across multiple organizations. Key areas of expertise: Team leadership, Product development, IT project management. Notable Companies: DNB, Riverty, Neonomics, Sharecat Solutions",
+    "summary": "Experienced project manager with 8 years of documented success across both IT and organizational development. Specialist in strategic planning, effective team leadership, and precise project execution across multiple disciplines. I master the entire project lifecycle – from thorough needs analysis and planning to agile implementation and successful delivery. My driving force is delivering complex solutions that consistently meet or exceed expectations for quality, timeline, and budget. Particular expertise in integrating technological solutions with organizational change processes, creating comprehensive business value and lasting results.",
     "picture": "https://avatars.githubusercontent.com/u/2042298?v=4",
     "image": "https://avatars.githubusercontent.com/u/2042298?v=4",
     "email": "harry.solsem@solsem.no",
