@@ -5,6 +5,6 @@ runs:
   steps:
     - run: |
         pwd
-        chmod +x .github/actions/ConfigureResume/resume_manpulation.sh
-        .github/actions/ConfigureResume/resume_manpulation.sh
+        chmod +x .github/actions/ConfigureResume/resume_manipulation.sh
+        .github/actions/ConfigureResume/resume_manipulation.sh
       shell: bash
