@@ -10,7 +10,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Performing resume substitution  
-      uses: .github/actions/ConfigureResume/action.yml
+      uses: ./.github/actions/ConfigureResume/action.yml
 
     - name: Update Resume Gist
       uses: exuanbo/actions-deploy-gist@v1
