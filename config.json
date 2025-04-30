@@ -1,7 +1,7 @@
 {
     "deployment": {
-        "resumetype": "master",
-        "language": "no"
+        "resumetype": "projectmanager",
+        "language": "en"
     },
     "environment": {
         "debug": "1",
