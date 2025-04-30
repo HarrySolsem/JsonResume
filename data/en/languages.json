@@ -1,0 +1,23 @@
+[
+    [
+        {
+            "language": "Norwegian",
+            "fluency": "Native",
+            "native": true,
+            "keywords": [
+                "Norwegian",
+                "Bokmål"
+            ]
+        },
+        {
+            "language": "English",
+            "fluency": "Full Professional Proficiency",
+            "native": false,
+            "keywords": [
+                "English",
+                "American English",
+                "British English"
+            ]
+        }
+    ]
+]
