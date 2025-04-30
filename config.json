@@ -1,7 +1,8 @@
 {
     "deployment": {
         "resumetype": "projectmanager",
-        "language": "en"
+        "language": "en",
+        "gist_id": ""
     },
     "environment": {
         "debug": "1",
