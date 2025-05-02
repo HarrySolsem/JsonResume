@@ -1,5 +1,8 @@
-[
-    [
+{
+    "meta": {
+        "language": "en"
+    },
+    "interests": [
         {
             "name": "Sports",
             "keywords": [
@@ -9,4 +12,4 @@
             ]
         }
     ]
-]
+}

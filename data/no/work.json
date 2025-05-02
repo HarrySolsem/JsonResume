@@ -1,5 +1,8 @@
-[
-    [
+{
+    "meta": {
+        "language": "no"
+    },
+    "publications": [
         {
             "name": "Prosperastiftelsen",
             "position": "Prosjektleder",
@@ -160,4 +163,4 @@
             "endDate": "1994-06-01"
         }
     ]
-]
+}

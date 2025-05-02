@@ -1,5 +1,8 @@
-[
-    [
+{
+    "meta": {
+        "language": "en"
+    },
+    "skills": [
         {
             "name": "Agile methodologies",
             "level": "Advanced",
@@ -159,4 +162,4 @@
             ]
         }
     ]
-]
+}

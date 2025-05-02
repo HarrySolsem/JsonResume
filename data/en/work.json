@@ -1,5 +1,8 @@
-[
-    [
+{
+    "meta": {
+        "language": "en"
+    },
+    "work": [
         {
             "name": "Prosperastiftelsen",
             "position": "Project Manager",
@@ -163,4 +166,4 @@
             "endDate": "1994-06-01"
         }
     ]
-]
+}

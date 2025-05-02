@@ -1,5 +1,8 @@
-[
-    [
+{
+    "meta": {
+        "language": "en"
+    },
+    "projects": [
         {
             "name": "RELOVE V25",
             "startDate": "2025-02-01",
@@ -226,4 +229,4 @@
             ]
         }
     ]
-]
+}

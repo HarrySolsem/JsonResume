@@ -1,5 +1,8 @@
-[
-    [
+{
+    "meta": {
+        "language": "no"
+    },
+    "publications": [
         {
             "organization": "Langhus IL Bordtennis",
             "position": "Gruppeleder og styreleder",
@@ -28,4 +31,4 @@
             "summary": "Jeg tilbyr støtte og veiledning til personer som lever med stoffskiftesykdommer. Jeg deler erfaringer, lytter til andres utfordringer og bidrar til å skape et trygt rom hvor medlemmene kan utveksle råd og finne motivasjon. Gjennom mitt engasjement bidrar jeg til å styrke fellesskapet og fremme forståelse for sykdommen."
         }
     ]
-]
+}

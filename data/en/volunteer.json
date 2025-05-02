@@ -1,5 +1,8 @@
-[
-    [
+{
+    "meta": {
+        "language": "en"
+    },
+    "volunteer": [
         {
             "organization": "Langhus IL Table Tennis",
             "position": "Group Leader and Chairman",
@@ -37,4 +40,4 @@
             "summary": "As a peer supporter in the Norwegian Thyroid Association, I offer support and guidance to individuals living with thyroid disorders. I share experiences, listen to others' challenges, and help create a safe space where members can exchange advice and find motivation. Through my engagement, I contribute to strengthening the community and promoting understanding of the condition."
         }
     ]
-]
+}

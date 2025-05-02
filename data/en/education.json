@@ -1,5 +1,8 @@
-[
-    [
+{
+    "meta": {
+        "language": "en"
+    },
+    "education":    [
         {
             "institution": "BI Norwegian Business School",
             "area": "Management",
@@ -141,4 +144,4 @@
             "endDate": "1988-06-01"
         }
     ]
-]
+}

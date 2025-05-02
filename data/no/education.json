@@ -1,5 +1,8 @@
-[
-    [
+{
+    "meta": {
+        "language": "no"
+    },
+    "education": [
         {
             "institution": "Handelshøyskolen BI",
             "area": "Management",
@@ -119,4 +122,4 @@
             "endDate": "1988-06-01"
         }
     ]
-]
+}

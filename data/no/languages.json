@@ -1,5 +1,8 @@
-[
-    [
+{
+    "meta": {
+        "language": "no"
+    },
+    "languages": [
         {
             "language": "Norsk",
             "fluency": "Morsmål",
@@ -20,4 +23,4 @@
             ]
         }
     ]
-]
+}

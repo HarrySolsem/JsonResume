@@ -1,5 +1,9 @@
-[
-    [
+{
+    "meta": {
+        "language": "no"
+    },
+    "certificates": [
+
         {
             "name": "Applied TOGAF Enterprise Architecture Practitioner",
             "date": "2024-10-01",
@@ -49,4 +53,4 @@
             "url": "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster"
         }
     ]
-]
+}

@@ -1,5 +1,8 @@
-[
-    [
+{
+    "meta": {
+        "language": "no"
+    },
+    "skills": [
         {
             "name": "Agile metodikker",
             "level": "Advanced",
@@ -157,4 +160,4 @@
             ]
         }
     ]
-]
+}
