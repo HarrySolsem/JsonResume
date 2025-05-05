@@ -10,11 +10,11 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Read gist_id setting from JSON
-      id: read_json gistid value for gist id
+      id: read_json_gistid_value
       run: echo "GISTID=$(jq -r '.deployment.gist_id' ./config.json)" >> $GITHUB_ENV
 
     - name: Read dry-run setting from JSON
-      id: read_json dryrun value for gist id
+      id: read_json_dryrun_value
       run: echo "DRYRUN=$(jq -r '.deployment.dryrun' ./config.json)" >> $GITHUB_ENV
 
     - name: Performing resume substitution  
