@@ -1,0 +1,11 @@
+{
+    "deployment": {
+        "resumetype": "projectmanager",
+        "language": "en",
+        "gist_id": "f92fdc3f7bee3d295f93b45aee401c29"
+    },
+    "environment": {
+        "debug": "1",
+        "dryrun": "1"
+    }
+}   

@@ -1,0 +1,232 @@
+{
+    "meta": {
+        "language": "en"
+    },
+    "projects": [
+        {
+            "name": "RELOVE V25",
+            "startDate": "2025-02-01",
+            "description": "RELOVE needs effective methods to document and showcase its societal value. This is crucial both to ensure continued support and to communicate the organization's significance in the local community. In the long term, RELOVE aims to qualify for a permanent position in the state budget. The pro bono team will therefore assist RELOVE in articulating their core business and identity in a clear and concise manner. The team will develop a few concise statements that capture the essence of RELOVE's operations, define the concrete value creation from RELOVE's various activity areas, and establish systematic measurement routines to document the organization's impact and results going forward, for example, through structured registration of recycled textile volumes or the number of young people entering employment.",
+            "url": "https://www.relove.info",
+            "entity": "Prosperastiftelsen",
+            "endDate": "2025-05-01",
+            "roles": [
+                "project manager"
+            ],
+            "highlights": [
+                "Led a team of 5 people in a project to develop a new strategy for RELOVE.",
+                "Ensured the project was delivered within the timeframe and budget.",
+                "Developed a new communication strategy that increased RELOVE's visibility."
+            ]
+        },
+        {
+            "name": "OOF H24 - Finance and Business Management",
+            "startDate": "2024-10-01",
+            "description": "The purpose of this project is to assist OOF in selecting and implementing digital tools that will streamline and simplify administrative and operational processes. OOF aims to minimize manual tasks while strengthening its ability to maintain oversight and control within key functions such as time tracking, budget management, accounting, and project management.",
+            "url": "https://www.osloogomlandfriluftsrad.no/",
+            "entity": "Prosperastiftelsen",
+            "endDate": "2025-01-01",
+            "roles": [
+                "project manager"
+            ],
+            "highlights": [
+                "Led the project to digitize administrative processes at Oslo og Omland Friluftsråd, focusing on time tracking, budgeting, and project management.",
+                "Conducted needs analysis and evaluation of digital tools that best met the organization's requirements.",
+                "Coordinated the implementation of new systems, resulting in a 30% reduction in manual administrative work."
+            ]
+        },
+        {
+            "name": "Sanitation of old Log tool and seployment of agents",
+            "startDate": "2020-07-01",
+            "description": "The project's mandate is to decommission old hardware, set up new hardware, and deploy various security-related agents on thousands of servers. My tasks in this project included continuous follow-up, stakeholder management, planning, reporting to portfolio management, reporting to the steering group, and handling project documentation. I coordinated resources, both internal and from our partners. Due to the country's situation, these tasks were largely carried out via Microsoft Teams.",
+            "url": "https://harry.solsem.no",
+            "endDate": "2020-11-01",
+            "entity": "DNB",
+            "roles": [
+                "project manager"
+            ],
+            "highlights": [
+                "Led the decommissioning of outdated hardware and implementation of new security solutions on thousands of servers.",
+                "Coordinated cross-functional teams in a fully digital work model during the pandemic via Microsoft Teams.",
+                "Regularly reported to the steering group and portfolio management, achieving 100% of the project's milestones."
+            ]
+        },
+        {
+            "name": "Implementing extended security focus in DNB software lifecycle",
+            "startDate": "2020-07-01",
+            "description": "The project's mandate is to identify needs, procure, implement, and establish governance documents for solutions that increase focus on security aspects throughout the software lifecycle for software developed internally and by our partners. My tasks in this project included continuous follow-up, stakeholder management, planning, reporting to portfolio management, reporting to the steering group, and handling project documentation. I coordinated resources, both internal and from our partners. Supplier dialogue included describing requirements, conducting supplier evaluations. Due to the country's situation, these tasks were largely carried out via Microsoft Teams.",
+            "url": "https://harry.solsem.no",
+            "endDate": "2020-11-01",
+            "entity": "DNB",
+            "roles": [
+                "project manager"
+            ],
+            "highlights": [
+                "Developed and implemented comprehensive security-focused governance documents for software development at DNB.",
+                "Conducted supplier evaluations and established new security requirements for external development partners.",
+                "Achieved significant improvement in security focus throughout the software lifecycle by implementing new tools and routines."
+            ]
+        },
+        {
+            "name": "IAM - cleanup and compliance",
+            "startDate": "2020-06-01",
+            "description": "The project's mandate is to implement extended automation of access management using ServiceNow, IIQ, and other relevant tools. My tasks in this project included continuous follow-up, stakeholder management, planning, reporting to portfolio management, reporting to the steering group, and handling project documentation. Due to the country's situation, these tasks were largely carried out via Microsoft Teams.",
+            "url": "https://harry.solsem.no",
+            "endDate": "2020-11-01",
+            "entity": "DNB",
+            "roles": [
+                "project manager"
+            ],
+            "highlights": [
+                "Led the implementation of automated access management with ServiceNow and IIQ, resulting in a 40% reduction in manual access processes.",
+                "Ensured compliance with internal and external regulations through improved documentation and processes.",
+                "Coordinated stakeholders across departments to ensure optimal implementation of the IAM solution."
+            ]
+        },
+        {
+            "name": "Penetration testing",
+            "startDate": "2019-08-01",
+            "description": "The project's mandate was to facilitate penetration testing of DNB's systems. My tasks in this project included continuous follow-up, stakeholder management, planning, reporting to portfolio management, reporting to the steering group, and handling project documentation. I coordinated resources, both internal and from our partners. Due to the country's situation, these tasks were largely carried out via Microsoft Teams.",
+            "url": "https://harry.solsem.no",
+            "endDate": "2020-11-01",
+            "entity": "DNB",
+            "roles": [
+                "project manager"
+            ],
+            "highlights": [
+                "Established and led a comprehensive program for penetration testing of critical systems at DNB.",
+                "Coordinated internal security experts and external partners to conduct thorough security tests.",
+                "Developed protocols for systematic follow-up of findings, resulting in an 85% reduction in critical vulnerabilities."
+            ]
+        },
+        {
+            "name": "Implementing DDOS protection for a defined part of DNB's system portfolio",
+            "startDate": "2019-07-01",
+            "description": "The project's mandate was to move parts of DNB's system portfolio behind enhanced DDOS protection. My tasks in this project included continuous follow-up, stakeholder management, planning, reporting to portfolio management, reporting to the steering group, and handling project documentation. I coordinated resources, both internal and from our partners. Due to the country's situation, these tasks were largely carried out via Microsoft Teams.",
+            "url": "https://harry.solsem.no",
+            "endDate": "2020-11-01",
+            "entity": "DNB",
+            "roles": [
+                "project manager"
+            ],
+            "highlights": [
+                "Led the implementation of enhanced DDOS protection for critical system components at DNB.",
+                "Developed a comprehensive migration strategy that minimized downtime during system transitions.",
+                "Coordinated technical resources across teams to ensure seamless integration with existing infrastructure."
+            ]
+        },
+        {
+            "name": "New business portal",
+            "startDate": "2018-01-01",
+            "description": "Scrum Master for this development project. Performed the tasks associated with the role according to the Scrum Guide. Additionally, introduced and trained participants in agile methodologies, both within the IT organization and among participants from other business areas.",
+            "url": "https://harry.solsem.no",
+            "endDate": "2019-01-01",
+            "entity": "DNB",
+            "roles": [
+                "Scrum master"
+            ],
+            "highlights": [
+                "Served as Scrum Master for a cross-functional team of 8 people developing DNB's new business portal.",
+                "Conducted thorough training in agile methodologies for both IT developers and business representatives.",
+                "Facilitated daily stand-ups, sprint planning, and retrospectives, contributing to a 30% increase in development efficiency."
+            ]
+        },
+        {
+            "name": "GDPR at DNB Liv",
+            "startDate": "2018-01-01",
+            "description": "Compliance project with the mandate to ensure that DNB-Liv's systems meet GDPR requirements. In this project, I served as Scrum Master, performing tasks as described in the Scrum Guide.",
+            "url": "https://harry.solsem.no",
+            "endDate": "2018-03-01",
+            "entity": "DNB",
+            "roles": [
+                "project manager"
+            ],
+            "highlights": [
+                "Led the GDPR implementation project for DNB Liv, ensuring full compliance by the May 2018 deadline.",
+                "Coordinated a cross-functional team consisting of legal experts, IT specialists, and business analysts.",
+                "Implemented new systems and processes to manage data privacy rights and data deletion."
+            ]
+        },
+        {
+            "name": "Supplier catalogue",
+            "startDate": "2014-09-01",
+            "description": "The project's mandate was to adapt and implement Sharecat's family of catalog services to be used by one of the world's largest oil suppliers. I took over the project as project manager after it had been ongoing for a few months. My tasks included tying up all loose ends, creating a detailed project plan for the remaining deliverables, and daily follow-up. The project was carried out with multi-disciplinary resources and participants in several countries. Planning, execution, and follow-up were carried out using MS Project 2013.",
+            "url": "https://harry.solsem.no",
+            "endDate": "2015-04-01",
+            "entity": "Sharecat Solutions AS",
+            "roles": [
+                "project manager"
+            ],
+            "highlights": [
+                "Took over a complex international project and developed a detailed project plan that ensured successful delivery.",
+                "Led a geographically distributed team across multiple countries in implementing Sharecat's catalog services.",
+                "Managed the project's resources and schedule using MS Project 2013, delivering within the original budget."
+            ]
+        },
+        {
+            "name": "Expansion of vCRM",
+            "startDate": "2011-03-01",
+            "description": "The project's mandate was to expand and improve Ventelo's CRM system. Based on an analysis of incoming requests to the IT department, five critical areas were identified where the existing system lacked support for business needs. The task was to analyze these needs and implement solutions that addressed the defined business cases.",
+            "url": "https://harry.solsem.no",
+            "endDate": "2011-10-01",
+            "entity": "Ventelo",
+            "roles": [
+                "project manager",
+                "software engineer"
+            ],
+            "highlights": [
+                "Led and developed extensions to Ventelo's CRM system based on a thorough analysis of IT support requests.",
+                "Identified and implemented solutions for 5 critical business areas that lacked system support.",
+                "Performed both project manager and developer roles, resulting in seamless implementation and a 25% reduction in IT support requests."
+            ]
+        },
+        {
+            "name": "IRIS - Report Distribution System",
+            "startDate": "2007-02-01",
+            "description": "A system developed for the distribution of reports, with functionality for managing users and report objects to be distributed. The solution includes setting up subscriptions, scheduling distribution times and frequencies, and seamless integration with Active Directory (AD) for efficient user management. The system is built with C#, ADO.Net, and MS SQL Server as the database solution.",
+            "url": "https://harry.solsem.no",
+            "endDate": "2007-06-01",
+            "entity": "Umoe Mandal",
+            "roles": [
+                "project manager"
+            ],
+            "highlights": [
+                "Developed and implemented a complete report distribution system using C# and MS SQL Server.",
+                "Implemented advanced AD integration for automated user management.",
+                "Designed a flexible subscription solution that allowed users to schedule and receive reports based on individual needs."
+            ]
+        },
+        {
+            "name": "ULV - Tool delivery",
+            "startDate": "2005-03-01",
+            "description": "A system designed to manage the delivery and return of tools. The solution is developed in C# with MS SQL Server as the database and ADO.Net for data access. The system includes functionality for electronic signatures, generation of customized reports, and seamless integration with Active Directory (AD) for efficient user management.",
+            "url": "https://harry.solsem.no",
+            "endDate": "2006-05-01",
+            "entity": "Umoe Mandal",
+            "roles": [
+                "project manager"
+            ],
+            "highlights": [
+                "Led the project from requirements specification to implementation and operation.",
+                "Developed a C# application with MS SQL Server as the database.",
+                "Implemented AD integration and electronic signature functionality."
+            ]
+        },
+        {
+            "name": "tiUM - Time Registration Umoe Mandal",
+            "startDate": "2004-05-01",
+            "description": "Led a comprehensive implementation of a modern time registration system for Umoe Mandal, where I was responsible for all project phases from requirements analysis to deployment. The project included preparing a detailed requirements specification, designing a tailored solution architecture, technical implementation, coordinating rollout, and thorough training of both end-users and technical personnel. Additionally, I developed extensive user and system documentation to ensure sustainable future operations. The system was developed in VB.Net with a Winforms interface and MS SQL Server as the database solution. The solution included advanced functionality such as seamless integration with the existing time-stamping system, automatic email notifications for timesheet approvals, structured data transfer to the payroll system, and intelligent auto-generation of timesheets based on predefined criteria. This resulted in significantly reduced administrative workload and improved data quality in the organization's time registration and payroll processing.",
+            "url": "https://harry.solsem.no",
+            "endDate": "2007-08-01",
+            "entity": "Umoe Mandal",
+            "roles": [
+                "project manager"
+            ],
+            "highlights": [
+                "Led the project from requirements specification to implementation and operation.",
+                "Developed a VB.Net application with MS SQL Server as the database.",
+                "Implemented integration with the time-stamping system and email notifications."
+            ]
+        }
+    ]
+}
