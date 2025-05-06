@@ -25,7 +25,8 @@
                     "name": "Prince2Agile",
                     "date": "2019-01-01",
                     "issuer": "Axelos Global Best Practice",
-                    "url": "https://www.axelos.com/certifications/propath/prince2-agile-project-management/prince2-agile-foundation"
+                    "url": "https://www.axelos.com/certifications/propath/prince2-agile-project-management/prince2-agile-foundation",
+                    "tags": ["projectmanagement"]
                 },
                 {
                     "name": "Prince2 Registered Practitioner",
@@ -90,7 +91,8 @@
                     "name": "Prince2 Foundation",
                     "date": "2014-08-01",
                     "issuer": "Adding Value Consulting AB",
-                    "url": "https://www.axelos.com/certifications/propath/prince2-project-management/prince2-foundation"
+                    "url": "https://www.axelos.com/certifications/propath/prince2-project-management/prince2-foundation",
+                    "tags": [ "projectmanagement" ]
                 },
                 {
                     "name": "ITIL Foundation",
