@@ -1,64 +1,87 @@
 #!/bin/bash
+set -euo pipefail
 
 REPO_ROOT=$(git rev-parse --show-toplevel || { echo "Error: Not inside a Git repository." >&2; exit 1; })
 LOG_FILE="$REPO_ROOT/.dynamic_creation.log"
 
-export DEBUG_MODE=$(jq -r '.environment.debug // "0"' "$CONFIG_FILE")
+# Default language (if none provided)
+LANGUAGE="${1:-no}"  
 
+# Validate the language selection
+if [[ "$LANGUAGE" != "no" && "$LANGUAGE" != "en" ]]; then
+    echo "Error: Invalid language '$LANGUAGE'. Please use 'no' for Norwegian or 'en' for English."
+    exit 1
+fi
+
+export DEBUG_MODE=$(jq -r '.environment.debug // "0"' "$REPO_ROOT/config.json")
 
 # Define file paths
-VOLUNTEER_JSON="$REPO_ROOT/data/no/volunteer.json"
-WORK_JSON="$REPO_ROOT/data/no/work.json"
-EDUCATION_JSON="$REPO_ROOT/data/no/education.json"
-AWARDS_JSON="$REPO_ROOT/data/no/awards.json"
-CERTIFICATES_JSON="$REPO_ROOT/data/no/certificates.json"
-PUBLICATIONS_JSON="publications.json"
-SKILLS_JSON="skills.json"
-LANGUAGES_JSON="languages.json"
-INTERESTS_JSON="interests.json"
-REFERENCES_JSON="references.json"
-PROJECTS_JSON="projects.json"
-RESUME_JSON="resume.json"
-
+declare -A JSON_FILES=(
+    ["BASICS_JSON"]="$REPO_ROOT/data/basics.json"
+    ["VOLUNTEER_JSON"]="$REPO_ROOT/data/volunteer.json"
+    ["WORK_JSON"]="$REPO_ROOT/data/work.json"
+    ["EDUCATION_JSON"]="$REPO_ROOT/data/education.json"
+    ["AWARDS_JSON"]="$REPO_ROOT/data/awards.json"
+    ["CERTIFICATES_JSON"]="$REPO_ROOT/data/certificates.json"
+    ["PUBLICATIONS_JSON"]="$REPO_ROOT/data/publications.json"
+    ["SKILLS_JSON"]="$REPO_ROOT/data/skills.json"
+    ["LANGUAGES_JSON"]="$REPO_ROOT/data/languages.json"
+    ["INTERESTS_JSON"]="$REPO_ROOT/data/interests.json"
+    ["REFERENCES_JSON"]="$REPO_ROOT/data/references.json"
+    ["PROJECTS_JSON"]="$REPO_ROOT/data/projects.json"
+    ["RESUME_JSON"]="$REPO_ROOT/resume.json"
+)
 
 
 log() {
-  local level="$1"
-  local message="$2"
-  local timestamp
-  timestamp=$(date '+%Y-%m-%d %H:%M:%S')
-  local output="[$timestamp] $level $message"
-  echo "$output" | tee -a "$LOG_FILE"
+    local level="$1"
+    local message="$2"
+    local timestamp
+    timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+    local output="[$timestamp] $level $message"
+    echo "$output" | tee -a "$LOG_FILE"
 }
 
-# Debug log that only outputs when DEBUG_MODE is true.
-debug_log() {
-  # Handle DEBUG_MODE safely with a fallback default
-  if [ "${DEBUG_MODE:-0}" = "1" ]; then
-    log "[DEBUG]" "$1"
-  fi
-}
-
-# Define relevant tags for filtering
-declare -a TAGS=("projectmanagement" "management")
-
-# Function to filter experiences based on tags
-filter_experience() {
-    local json_file="$1"
-    local result="[]"
-
-    for tag in "${TAGS[@]}"; do
-        filtered=$(jq --arg tag "$tag" '[.items[] | select(.tags[] == $tag)]' "$json_file")
-        result=$(jq --argjson new "$filtered" '. + $new' <<< "$result")
+validate_json_files() {
+    log "[INFO]" "Validating required JSON files..."
+    local missing=0
+    
+    for file_key in "${!JSON_FILES[@]}"; do
+        local file_path="${JSON_FILES[$file_key]}"
+        if [[ ! -f "$file_path" ]]; then
+            log "[ERROR]" "Missing JSON file: $file_path"
+            missing=$((missing + 1))
+        fi
     done
 
-    echo "$result"
+    if [[ $missing -gt 0 ]]; then
+        log "[ERROR]" "$missing required JSON files are missing. Execution aborted."
+        exit 1
+    fi
 }
 
-# Step 1: Reset resume.json with predefined sections
+fetch_certificates() {
+    local json_file="${JSON_FILES["CERTIFICATES_JSON"]}"
+    jq --arg lang "$LANGUAGE" '.certificates[$lang].data // []' "$json_file"
+}
+
+check_prerequisites() {
+    log "[INFO]" "Checking prerequisites..."
+    if ! command -v jq &> /dev/null; then
+        log "[ERROR]" "jq is not installed. Install it with: sudo apt install jq (Linux) or brew install jq (Mac)."
+        exit 1
+    fi
+}
+
+# Step 1: Validate files and prerequisites
+validate_json_files
+check_prerequisites
+
+log "[INFO]" "Resetting resume.json..."
 echo '{
-    "work": [],
+    "basics": [],
     "volunteer": [],
+    "work": [],
     "education": [],
     "awards": [],
     "certificates": [],
@@ -68,47 +91,36 @@ echo '{
     "interests": [],
     "references": [],
     "projects": []
-}' > "$RESUME_JSON"
+}' > "${JSON_FILES["RESUME_JSON"]}"
 
-# Step 2: Load filtered experience from multiple sources
-work=$(filter_experience "$WORK_JSON")
-volunteer=$(filter_experience "$VOLUNTEER_JSON")
-education=$(filter_experience "$EDUCATION_JSON")
-awards=$(filter_experience "$AWARDS_JSON")
-certificates=$(filter_experience "$CERTIFICATES_JSON")
-publications=$(filter_experience "$PUBLICATIONS_JSON")
-skills=$(filter_experience "$SKILLS_JSON")
-languages=$(filter_experience "$LANGUAGES_JSON")
-interests=$(filter_experience "$INTERESTS_JSON")
-references=$(filter_experience "$REFERENCES_JSON")
-projects=$(filter_experience "$PROJECTS_JSON")
+fetch_resume_data() {
+    local json_file="${JSON_FILES[$1]}"
+    log "[DEBUG]" "Fetching data for section: $1, language: $LANGUAGE"
+    jq --arg lang "$LANGUAGE" '.[$lang].data // []' "$json_file"
+}
 
-# Step 3: Merge filtered data into respective resume sections
-updated_resume=$(jq \
-    --argjson work "$work" \
-    --argjson volunteer "$volunteer" \
-    --argjson edu "$education" \
-    --argjson award "$awards" \
-    --argjson cert "$certificates" \
-    --argjson pub "$publications" \
-    --argjson skill "$skills" \
-    --argjson lang "$languages" \
-    --argjson interest "$interests" \
-    --argjson ref "$references" \
-    --argjson proj "$projects" \
-    '.workerience += $work |
-    .volunteererience += $volunteer |
-    .education += $edu |
-    .awards += $award |
-    .certificates += $cert |
-    .publications += $pub |
-    .skills += $skill |
-    .languages += $lang |
-    .interests += $interest |
-    .references += $ref |
-    .projects += $proj' "$RESUME_JSON")
+# Step 3: Load multiple resume sections dynamically
+declare -A SECTIONS=( 
+    ["basics"]="BASICS_JSON" 
+    ["volunteer"]="VOLUNTEER_JSON" 
+    ["work"]="WORK_JSON" 
+    ["education"]="EDUCATION_JSON" 
+    ["awards"]="AWARDS_JSON" 
+    ["certificates"]="CERTIFICATES_JSON" 
+    ["publications"]="PUBLICATIONS_JSON" 
+    ["skills"]="SKILLS_JSON" 
+    ["languages"]="LANGUAGES_JSON" 
+    ["interests"]="INTERESTS_JSON" 
+    ["references"]="REFERENCES_JSON" 
+    ["projects"]="PROJECTS_JSON"
+)
 
-# Step 4: Save the updated resume.json file
-echo "$updated_resume" > "$RESUME_JSON"
+log "[INFO]" "Loading resume sections for language: $LANGUAGE"
 
-echo "Resume successfully reset and populated with relevant experiences!"
+updated_resume='{ }'
+for section in "${!SECTIONS[@]}"; do
+    data=$(fetch_resume_data "${SECTIONS[$section]}")
+    updated_resume=$(jq --argjson new_data "$data" --arg section "$section" '.[$section] = $new_data' <<< "$updated_resume")
+done
+
+log "[INFO]" "Resume successfully updated for language: $LANGUAGE!"
