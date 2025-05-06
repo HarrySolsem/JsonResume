@@ -1,4 +1,4 @@
-# This is a readme for my jsonresume repo
+# Repo with a solution for having and deploying multiple resumes based on jsonresume
 
 
 ## How to deploy
