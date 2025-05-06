@@ -15,10 +15,14 @@ jobs:
 
     - name: Read dry-run setting from JSON
       id: read_json_dryrun_value
-      run: echo "DRYRUN=$(jq -r '.deployment.dryrun' ./config.json)" >> $GITHUB_ENV
+      run: echo "DRYRUN=$(jq -r '.environment.dryrun' ./config.json)" >> $GITHUB_ENV
 
     - name: Performing resume substitution  
       uses: ./.github/actions/ConfigureResume
+
+    - name: Output values
+      run: |
+        echo "DRYRUN=${{ env.DRYRUN }}"
 
     - name: Update Resume Gist
       if: ${{ env.DRYRUN == '0' }}
@@ -27,5 +31,6 @@ jobs:
         token: ${{ secrets.TOKEN }}
         gist_id: ${{ env.GISTID }}
         file_path: resume.json
+
 permissions:
   contents: read
