@@ -1,0 +1,272 @@
+{
+    "education": {
+        "no": {
+            "language": "no",
+            "data": [
+                {
+                    "institution": "Handelshøyskolen BI",
+                    "area": "Management",
+                    "url": "https://wwww.bi.no",
+                    "studyType": "Bachelor",
+                    "startDate": "2018-01-01",
+                    "score": "",
+                    "courses": [
+                        "Prosjektledelse 1",
+                        "Prosjektledelse 2",
+                        "Prosjektledelse 3"
+                    ],
+                    "endDate": "2019-01-01"
+                },
+                {
+                    "institution": "Universitetet i Agder (UiA)",
+                    "area": "Software Engineering",
+                    "url": "https://www.uia.no",
+                    "studyType": "Bachelor",
+                    "startDate": "1999-08-01",
+                    "score": "",
+                    "courses": [
+                        "User interfaces",
+                        "Problem solving using Java",
+                        "Advanced Database Systems XML",
+                        "OO Systems Design using UML"
+                    ],
+                    "endDate": "2000-05-01"
+                },
+                {
+                    "institution": "NHI, Norges Høyskole for Informasjonsteknologi",
+                    "area": "Computer Science",
+                    "studyType": "Linje for administrativ databehandling",
+                    "startDate": "1992-08-01",
+                    "score": "",
+                    "courses": [
+                        "Administrasjonslære og Bedriftsøkonomi",
+                        "Innføring i systemutvikling",
+                        "Organisasjon samarbeid og ledelse",
+                        "Grunnkurs programmering",
+                        "Markedsføring",
+                        "Databaser og datamodeller",
+                        "Algoritmer og datastrukturer",
+                        "Maskinspråkprogrammering",
+                        "Datakommunikasjon I",
+                        "Systemutvikling II",
+                        "Applikasjonsutvikling",
+                        "Applikasjonsprogrammering i C++",
+                        "Matematisk Analyse I",
+                        "Diskrete matematikk",
+                        "Operativsystemer",
+                        "Sanntidsprogrammering"
+                    ],
+                    "endDate": "1994-05-01"
+                },
+                {
+                    "institution": "Melbu Videregående skole",
+                    "area": "IT",
+                    "studyType": "VK2, Handel og kontor, Data- og informasjonsbehandling",
+                    "startDate": "1989-08-01",
+                    "score": "",
+                    "courses": [
+                        "Norsk og kommunikasjon, hovedmål, skriftlig",
+                        "Norsk og kommunikasjon, sidemål, skriftlig",
+                        "Norsk og kommunikasjon, muntlig",
+                        "Organisasjonslære",
+                        "Engelsk, skriftlig",
+                        "Engelsk, muntlig",
+                        "Sosialøkonomi",
+                        "Kroppsøving",
+                        "Systemering",
+                        "Programmering",
+                        "Administrative EDB-verktøy",
+                        "Samfunnsfag"
+                    ],
+                    "endDate": "1990-06-01"
+                },
+                {
+                    "institution": "Melbu Videregående skole",
+                    "area": "Økonomi",
+                    "studyType": "VK1, Handel og kontor",
+                    "startDate": "1988-08-01",
+                    "score": "",
+                    "courses": [
+                        "Norsk med sidemål skriftlig",
+                        "Norsk muntlig",
+                        "Engelsk, skriftlig",
+                        "Engelsk, muntlig",
+                        "Kroppsøving",
+                        "Rettslære",
+                        "Sosialøkonomi",
+                        "Bedriftsøkonomi",
+                        "Markedsføring",
+                        "Matematikk og statistikk",
+                        "Informasjonsbehandling"
+                    ],
+                    "endDate": "1989-06-01"
+                },
+                {
+                    "institution": "Sortland Videregående skole",
+                    "area": "Handels- og kontorfag",
+                    "studyType": "Grunnkurs",
+                    "startDate": "1987-08-01",
+                    "score": "",
+                    "courses": [
+                        "Norsk",
+                        "Engelsk",
+                        "Kroppsøving",
+                        "Regnskapslære",
+                        "Matematikk I",
+                        "Samfunns- og næringslære",
+                        "Korrespondanse- og dokumentlære",
+                        "Maskinskriving",
+                        "Praktisk kontorarbeid",
+                        "Tekstbehandling"
+                    ],
+                    "endDate": "1988-06-01"
+                }
+            ]
+        },
+        "en": {
+            "language": "en",
+            "data": [
+                {
+                    "institution": "BI Norwegian Business School",
+                    "area": "Management",
+                    "url": "https://wwww.bi.no",
+                    "studyType": "Bachelor",
+                    "startDate": "2018-01-01",
+                    "score": "",
+                    "courses": [
+                        "Project Management 1",
+                        "Project Management 2",
+                        "Project Management 3"
+                    ],
+                    "endDate": "2019-01-01"
+                },
+                {
+                    "institution": "University of Agder (UiA)",
+                    "area": "Software Engineering",
+                    "url": "https://www.uia.no",
+                    "studyType": "Bachelor",
+                    "startDate": "1999-08-01",
+                    "score": "",
+                    "courses": [
+                        "User Interfaces",
+                        "Problem Solving Using Java",
+                        "Advanced Database Systems XML",
+                        "OO Systems Design Using UML"
+                    ],
+                    "endDate": "2000-05-01"
+                },
+                {
+                    "institution": "NHI, Norwegian School of Information Technology",
+                    "area": "Computer Science",
+                    "studyType": "Administrative Data Processing",
+                    "startDate": "1992-08-01",
+                    "score": "",
+                    "courses": [
+                        "Administration and Business Economics",
+                        "Introduction to Systems Development",
+                        "Organization, Collaboration, and Leadership",
+                        "Basic Programming",
+                        "Marketing",
+                        "Databases and Data Models",
+                        "Algorithms and Data Structures",
+                        "Assembly Language Programming",
+                        "Data Communication I",
+                        "Systems Development II",
+                        "Application Development",
+                        "Application Programming in C++",
+                        "Mathematical Analysis I",
+                        "Discrete Mathematics",
+                        "Operating Systems",
+                        "Real-Time Programming"
+                    ],
+                    "endDate": "1994-05-01"
+                },
+                {
+                    "institution": "Melbu Videregående skole",
+                    "area": "IT",
+                    "studyType": "VK2, Handel og kontor, Data- og informasjonsbehandling",
+                    "startDate": "1989-08-01",
+                    "score": "",
+                    "courses": [
+                        "Norsk og kommunikasjon, hovedmål, skriftlig",
+                        "Norsk og kommunikasjon, sidemål, skriftlig",
+                        "Norsk og kommunikasjon, muntlig",
+                        "Organisasjonslære",
+                        "Engelsk, skriftlig",
+                        "Engelsk, muntlig",
+                        "Sosialøkonomi",
+                        "Kroppsøving",
+                        "Systemering",
+                        "Programmering",
+                        "Administrative EDB-verktøy",
+                        "Samfunnsfag"
+                    ],
+                    "endDate": "1990-06-01"
+                },
+                {
+                    "institution": "Melbu Upper secodary school",
+                    "area": "IT",
+                    "studyType": "Advanced Course 2, Trade and Office, Data and Information Processing",
+                    "startDate": "1989-08-01",
+                    "score": "",
+                    "courses": [
+                        "Norwegian and Communication, Primary Language, Written",
+                        "Norwegian and Communication, Secondary Language, Written",
+                        "Norwegian and Communication, Oral",
+                        "Organizational Theory",
+                        "English, Written",
+                        "English, Oral",
+                        "Social Economics",
+                        "Physical Education",
+                        "Systems Development",
+                        "Programming",
+                        "Administrative EDP Tools",
+                        "Social Studies"
+                    ],
+                    "endDate": "1990-06-01"
+                },
+                {
+                    "institution": "Melbu Upper secodary school",
+                    "area": "Economics",
+                    "studyType": "Advanced Course 1, Trade and Office",
+                    "startDate": "1988-08-01",
+                    "score": "",
+                    "courses": [
+                        "Norwegian with Secondary Language, Written",
+                        "Norwegian, Oral",
+                        "English, Written",
+                        "English, Oral",
+                        "Physical Education",
+                        "Legal Studies",
+                        "Social Economics",
+                        "Business Economics",
+                        "Marketing",
+                        "Mathematics and Statistics",
+                        "Information Processing"
+                    ],
+                    "endDate": "1989-06-01"
+                },
+                {
+                    "institution": "Sortland Upper secodary school",
+                    "area": "Trade and Office Studies",
+                    "studyType": "Foundation Course",
+                    "startDate": "1987-08-01",
+                    "score": "",
+                    "courses": [
+                        "Norwegian",
+                        "English",
+                        "Physical Education",
+                        "Accounting",
+                        "Mathematics I",
+                        "Social and Business Studies",
+                        "Correspondence and Documentation Studies",
+                        "Typing",
+                        "Practical Office Work",
+                        "Word Processing"
+                    ],
+                    "endDate": "1988-06-01"
+                }
+            ]
+        }
+    }
+}
