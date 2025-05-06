@@ -23,6 +23,7 @@ jobs:
     - name: Output values
       run: |
         echo "DRYRUN=${{ env.DRYRUN }}"
+        echo "GISTID=${{ env.GISTID }}"
 
     - name: Update Resume Gist
       if: ${{ env.DRYRUN == '0' }}
