@@ -9,19 +9,29 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v3
 
-    - name: Read setting from JSON
-      id: read_json
+    - name: Read gist_id setting from JSON
+      id: read_json_gistid_value
+      run: echo "GISTID=$(jq -r '.deployment.gist_id' ./config.json)" >> $GITHUB_ENV
+
+    - name: Read dry-run setting from JSON
+      id: read_json_dryrun_value
+      run: echo "DRYRUN=$(jq -r '.environment.dryrun' ./config.json)" >> $GITHUB_ENV
+
+    - name: Output values read from config.json
       run: |
-          echo "VALUE=$(jq -r '.deployment.gist_id' ./config.json)" >> $GITHUB_ENV
-                
+        echo "DRYRUN=${{ env.DRYRUN }}"
+        echo "GISTID=${{ env.GISTID }}"
+
     - name: Performing resume substitution  
       uses: ./.github/actions/ConfigureResume
-
+    
     - name: Update Resume Gist
+      if: ${{ env.DRYRUN == '0' }}
       uses: exuanbo/actions-deploy-gist@v1
       with:
         token: ${{ secrets.TOKEN }}
-        gist_id: ${{ env.value }}
+        gist_id: ${{ env.GISTID }}
         file_path: resume.json
+
 permissions:
   contents: read
