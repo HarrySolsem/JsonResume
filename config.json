@@ -1,6 +1,6 @@
 {
     "deployment": {
-        "resumetype": "manager",
+        "resumetype": "master",
         "language": "no",
         "gist_id": "f92fdc3f7bee3d295f93b45aee401c29"
     },
