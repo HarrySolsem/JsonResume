@@ -20,6 +20,10 @@ jobs:
     - name: Performing resume substitution  
       uses: ./.github/actions/ConfigureResume
 
+    - name: Output values
+      run: |
+        echo "DRYRUN=${{ env.DRYRUN }}"
+
     - name: Update Resume Gist
       if: ${{ env.DRYRUN == '0' }}
       uses: exuanbo/actions-deploy-gist@v1
@@ -27,5 +31,6 @@ jobs:
         token: ${{ secrets.TOKEN }}
         gist_id: ${{ env.GISTID }}
         file_path: resume.json
+
 permissions:
   contents: read
