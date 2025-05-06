@@ -17,14 +17,14 @@ jobs:
       id: read_json_dryrun_value
       run: echo "DRYRUN=$(jq -r '.environment.dryrun' ./config.json)" >> $GITHUB_ENV
 
-    - name: Performing resume substitution  
-      uses: ./.github/actions/ConfigureResume
-
-    - name: Output values
+    - name: Output values read from config.json
       run: |
         echo "DRYRUN=${{ env.DRYRUN }}"
         echo "GISTID=${{ env.GISTID }}"
 
+    - name: Performing resume substitution  
+      uses: ./.github/actions/ConfigureResume
+    
     - name: Update Resume Gist
       if: ${{ env.DRYRUN == '0' }}
       uses: exuanbo/actions-deploy-gist@v1
