@@ -1,6 +1,19 @@
 {
     "meta": {
-        "language": "en"
+        "language": "no"
     },
-    "references": []
+    "references": [
+        {
+            "name": "Thor Milde",
+            "reference": "Harry er engasjert, utadvendt og kunnskapsrik. Som prosjektleder i en kompleks organisasjon med høyt tempo navigerte han rutinert prosjekter med mange leverandører, leveranser og lokasjoner. Harry er engasjert, utadvendt og kunnskapsrik. Som prosjektleder i en kompleks organisasjon med høyt tempo navigerte han rutinert prosjekter med mange leverandører, leveranser og lokasjoner."
+        },
+        {
+            "name": "Tom Kenneth Fossheim",
+            "reference": "Harry bidro godt i vårt selskap ved å fylle flere roller, inkludert seniorutvikler, scrum master og prosjektleder. Han hjalp til med å forbedre våre prosesser og arbeidet hardt for å sikre overholdelse av beste praksis-metodikker. Som prosjektleder bidro han til ett av våre største implementeringsprosjekter til dags dato. Harry var en lojal og talentfull medarbeider som alltid strakte seg etter å forbedre måten vi arbeider på."
+        },
+        {
+            "name": "Lars Søraas",
+            "reference": "Harry er en erfaren scrum master og smidig praktiker. Han er svært profesjonell og sørger effektivt for at teamet holder fokus og er på rett spor. Det er alltid en glede å samarbeide med ham, og han har mine varmeste anbefalinger."
+        }
+    ]
 }
