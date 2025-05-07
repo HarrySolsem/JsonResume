@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-REPO_ROOT=$(git rev-parse --show-toplevel || { echo "Error: Not inside a Git repository." >&2; exit 1; })
+REPO_ROOT=$(git rev-parse --show-toplevel || { log "[ERROR]" "Not inside a Git repository." >&2; exit 1; })
 LOG_FILE="$REPO_ROOT/.dynamic_creation.log"
 
 # Default language (if none provided)
@@ -12,13 +12,13 @@ TAG_FILTER="${2:-}"
 
 # Validate the language selection
 if [[ "$LANGUAGE" != "no" && "$LANGUAGE" != "en" ]]; then
-    echo "Error: Invalid language '$LANGUAGE'. Please use 'no' for Norwegian or 'en' for English."
+    log "[ERROR]" "Invalid language '$LANGUAGE'. Please use 'no' for Norwegian or 'en' for English."
     exit 1
 fi
 
 #Validate the tag filter    
 if [[ -n "$TAG_FILTER" && ! "$TAG_FILTER" =~ ^[a-zA-Z0-9_]+$ ]]; then
-    echo "Error: Invalid tag filter '$TAG_FILTER'. Only alphanumeric characters and underscores are allowed."
+    log "[ERROR]" "Invalid tag filter '$TAG_FILTER'. Only alphanumeric characters and underscores are allowed."
     exit 1
 fi
 
@@ -53,10 +53,19 @@ validate_json_files() {
     local missing=0
     
     for file_key in "${!JSON_FILES[@]}"; do
+        log "[DEBUG]" "Checking file: ${JSON_FILES[$file_key]}"
         local file_path="${JSON_FILES[$file_key]}"
         if [[ ! -f "$file_path" ]]; then
             log "[ERROR]" "Missing JSON file: $file_path"
             missing=$((missing + 1))
+        else
+        log "[INFO]" "Validating JSON file: $file_path"
+            if ! jq empty "$file_path" &> /dev/null; then
+                log "[ERROR]" "Invalid JSON in file: $file_path. Contents: $(cat "$file_path")"
+                missing=$((missing + 1))
+            else
+                log "[DEBUG]" "File $file_path is valid JSON."
+            fi
         fi
     done
 
@@ -101,11 +110,14 @@ echo '{
 
 fetch_resume_data() {
     local json_file="${JSON_FILES[$1]}"
-    log "[DEBUG]" "Fetching data for section: $1, language: $LANGUAGE${TAG_FILTER:+, tag filter: $TAG_FILTER}"
+
+    log "[DEBUG]" "Fetching data for section: $section, language: $LANGUAGE${TAG_FILTER:+, tag filter: $TAG_FILTER}, from file $json_file"
+
     if [[ -n "$TAG_FILTER" ]]; then
-        jq --arg lang "$LANGUAGE" --arg tag "$TAG_FILTER" '.[$lang].data // [] | map(select(.tags | index($tag)))' "$json_file"
+        jq --arg root "$1" --arg lang "$LANGUAGE" --arg tag "$TAG_FILTER" '.[$root][$lang].data // [] | map(select(.tags? | index($tag)))' "$json_file"
     else
-        jq --arg lang "$LANGUAGE" '.[$lang].data // []' "$json_file"
+        log "[ERROR]" "No tag filter provided. Fetching all data."
+        jq --arg section "$section" --arg lang "$LANGUAGE" '.[$section][$lang].data // []' "$json_file"
     fi
 }
 
@@ -129,8 +141,18 @@ log "[INFO]" "Loading resume sections for language: $LANGUAGE with tag filter: $
 
 updated_resume='{ }'
 for section in "${!SECTIONS[@]}"; do
+    log "[INFO]" "Processing section: $section"
+    
     data=$(fetch_resume_data "${SECTIONS[$section]}")
-    updated_resume=$(jq --argjson new_data "$data" --arg section "$section" '.[$section] = $new_data' <<< "$updated_resume")
+    if ! jq -e . <<< "$data" >/dev/null 2>&1; then
+        log "[ERROR]" "Invalid JSON returned from fetch_resume_data"
+        continue
+    fi
+
+    log "[DEBUG]" "Fetched data for section: $section , data is: $data"
+   
+    updated_resume=$(jq --argjson new_data "$data" --arg section "$section" '.[$section].data = $new_data' <<< "$updated_resume")
+    log "[DEBUG]" "Updated resume after processing section: $section, updated_resume: $updated_resume"
 done
 
 log "[INFO]" "Resume successfully updated for language: $LANGUAGE with tag filter: $TAG_FILTER"

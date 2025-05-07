@@ -26,7 +26,7 @@
                     "date": "2019-01-01",
                     "issuer": "Axelos Global Best Practice",
                     "url": "https://www.axelos.com/certifications/propath/prince2-agile-project-management/prince2-agile-foundation",
-                    "tags": ["projectmanagement"]
+                    "tags": ["projectmanager"]
                 },
                 {
                     "name": "Prince2 Registered Practitioner",
@@ -79,7 +79,8 @@
                     "name": "Prince2Agile",
                     "date": "2019-01-01",
                     "issuer": "Axelos Global Best Practice",
-                    "url": "https://www.axelos.com/certifications/propath/prince2-agile-project-management/prince2-agile-foundation"
+                    "url": "https://www.axelos.com/certifications/propath/prince2-agile-project-management/prince2-agile-foundation",
+                    "tags": [ "projectmanagement" ]
                 },
                 {
                     "name": "Prince2 Registered Practitioner",
@@ -91,20 +92,19 @@
                     "name": "Prince2 Foundation",
                     "date": "2014-08-01",
                     "issuer": "Adding Value Consulting AB",
-                    "url": "https://www.axelos.com/certifications/propath/prince2-project-management/prince2-foundation",
-                    "tags": [ "projectmanagement" ]
+                    "url": "https://www.axelos.com/certifications/propath/prince2-project-management/prince2-foundation"
                 },
                 {
                     "name": "ITIL Foundation",
                     "date": "2012-11-01",
-                    "issuer": "",
-                    "url": ""
+                    "issuer": "PeopleCert Group",
+                    "url": "https://www.axelos.com/certifications/itil-service-management/itil-4-foundation"
                 },
                 {
-                    "name": "",
-                    "date": "",
-                    "issuer": "",
-                    "url": ""
+                    "name": "Certified Scrum Master",
+                    "date": "2010-01-01",
+                    "issuer": "Scrum Alliance",
+                    "url": "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster"
                 }
             ]
         }
