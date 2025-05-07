@@ -26,7 +26,7 @@
                     "date": "2019-01-01",
                     "issuer": "Axelos Global Best Practice",
                     "url": "https://www.axelos.com/certifications/propath/prince2-agile-project-management/prince2-agile-foundation",
-                    "tags": ["projectmanager"]
+                    "tags": [ "projectmanagement" ]
                 },
                 {
                     "name": "Prince2 Registered Practitioner",

@@ -25,10 +25,7 @@
                         "url": "https://www.linkedin.com/in/harrysolsem"
                     }
                 ],
-                "tags": [
-                    "management",
-                    "projectmanagement"
-                ]
+                "tags": ["management","projectmanagement"]
             }
         },
         "en": {
@@ -56,9 +53,7 @@
                         "url": "https://www.linkedin.com/in/harrysolsem"
                     }
                 ],
-                "tags": [
-                    "management",
-                    "projectmanagement"
+                "tags": ["management", "projectmanagement"
                 ]
             }
         }

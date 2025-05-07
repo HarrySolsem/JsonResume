@@ -1,8 +1,8 @@
 ﻿{
     "basics":  {
                    "name":  "Harry Solsem",
-                   "label":  "Leadership | ISO27001 | Team Leader | Project Manager | Digital Product Development | Change Management | Enterprise Architect",
-                   "summary":  "With over 30 years of leadership experience, including technical and administrative roles in companies such as DNB, Riverty, Neonomics, and Sharecat Solutions. I have Leadership experience: Led teams of up to 50 employees, Managed full responsibility for personnel, budget, and results, provided leadership across multiple organizations. Key areas of expertise: Team leadership, Product development, IT project management. Notable Companies: DNB, Riverty, Neonomics, Sharecat Solutions",
+                   "label":  "IT-ledelse og prosjektledelse",
+                   "summary":  "Med over 30 Ã¥rs ledererfaring, inkludert tekniske og administrative roller i selskaper som DNB, Riverty, Neonomics og Sharecat Solutions. Min ledererfaring: Ledet team med opptil 50 ansatte, hatt fullt ansvar for personale, budsjett og resultater, samt gitt ledelse pÃ¥ tvers av flere organisasjoner. NÃ¸kkelomrÃ¥der for kompetanse: Teamledelse, produktutvikling, IT-prosjektledelse. Fremtredende selskaper: DNB, Riverty, Neonomics, Sharecat Solutions.",
                    "picture":  "https://avatars.githubusercontent.com/u/2042298?v=4",
                    "image":  "https://avatars.githubusercontent.com/u/2042298?v=4",
                    "email":  "harry.solsem@solsem.no",
@@ -17,40 +17,47 @@
                                 },
                    "profiles":  [
                                     {
-                                        "network":  "LinkedIn",
+                                        "network":  "Linkedin",
                                         "username":  "harrysolsem",
                                         "url":  "https://www.linkedin.com/in/harrysolsem"
                                     }
                                 ]
                },
-    "volunteer":  {
+    "volunteer":  [
 
-                  },
-    "skills":  {
+                  ],
+    "languages":  [
 
-               },
-    "education":  {
+                  ],
+    "certificates":  [
 
-                  },
+                     ],
+    "education":  [
+
+                  ],
     "work":  {
-
+                 "name":  "Prosperastiftelsen",
+                 "position":  "Prosjektleder",
+                 "url":  "https://www.prosperastiftelsen.no",
+                 "startDate":  "2024-10-01",
+                 "summary":  "Innleid prosjektleder hos Prosperastiftelsen med ansvar for prosjektteamledelse, planlegging, prioritering og beslutningstaking. Overordnet ansvar for Ã¥ sikre kvaliteten pÃ¥ leveranser, opprettholde tidsfrister og forankre prosjektene hos mottakere. I rollen drar jeg nytte av sertifiseringer innen Prosci endringsledelse og Prince2 prosjektmetodikk, kombinert med verdifull erfaring fra Lean og Agile. Jeg har bygget og ledet flere team pÃ¥ opptil fem personer, med fokus pÃ¥ Ã¥ skape en sterk teamfÃ¸lelse og psykologisk trygghet. Alle prosjekter har levert i henhold til mÃ¥l for kvalitet og innen de fastsatte tidsfrister."
              },
-    "certificates":  {
-                         "name":  "Prince2Agile",
-                         "date":  "2019-01-01",
-                         "issuer":  "Axelos Global Best Practice",
-                         "url":  "https://www.axelos.com/certifications/propath/prince2-agile-project-management/prince2-agile-foundation"
-                     },
-    "references":  {
+    "awards":  [
 
-                   },
-    "languages":  {
+               ],
+    "references":  [
 
-                  },
-    "interests":  {
+                   ],
+    "publications":  [
 
-                  },
-    "projects":  {
+                     ],
+    "interests":  [
 
-                 }
+                  ],
+    "skills":  [
+
+               ],
+    "projects":  [
+
+                 ]
 }

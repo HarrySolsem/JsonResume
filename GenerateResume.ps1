@@ -62,7 +62,6 @@ foreach ($section in $sections) {
             if ($sectionData.$section.$language -and $sectionData.$section.$language.basics) {
                 Write-Log "Extracting basics section for language: $language with filtering" "INFO"
 
-                # Filter basics section based on tags
                 if ($sectionData.$section.$language.basics.tags -and ($sectionData.$section.$language.basics.tags -contains $resumeType)) {
                     $basicsData = $sectionData.$section.$language.basics
                     
@@ -86,21 +85,24 @@ foreach ($section in $sections) {
                     $_.tags -and ($_.tags -contains $resumeType)
                 }
 
-                # Remove the 'tags' element before storing data
-                $filteredData | ForEach-Object { $_.PSObject.Properties.Remove('tags') }
-
-                $resumeJson[$section] = $filteredData
-                Write-Log "Filtered items count in '$section': $($filteredData.Count)" "INFO"
-
+                # Check if filtered data is empty
                 if ($filteredData.Count -eq 0) {
-                    Write-Log "Warning: No matching items in '$section' based on resume type '$resumeType'." "WARN"
+                    Write-Log "Warning: No matching items in '$section' based on resume type '$resumeType'. Empty array will be included." "WARN"
+                    $resumeJson[$section] = @()  # Ensure empty array is stored instead of null
+                } else {
+                    # Remove the 'tags' element before storing data
+                    $filteredData | ForEach-Object { $_.PSObject.Properties.Remove('tags') }
+                    $resumeJson[$section] = $filteredData
+                    Write-Log "Filtered items count in '$section': $($filteredData.Count)" "INFO"
                 }
             } else {
-                Write-Log "Error: No '$language' data found for section '$section'." "ERROR"
+                Write-Log "Warning: No '$language' data found for section '$section'. Empty array will be included." "WARN"
+                $resumeJson[$section] = @()  # Assign empty array for consistency
             }
         }
     } else {
-        Write-Log "Warning: Missing JSON file for section '$section'." "WARN"
+        Write-Log "Warning: Missing JSON file for section '$section'. Empty array will be included." "WARN"
+        $resumeJson[$section] = @()  # Ensure section structure remains intact
     }
 }
 
