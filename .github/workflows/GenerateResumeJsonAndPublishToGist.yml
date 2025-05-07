@@ -1,0 +1,41 @@
+name: Generate Resume JSON
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Read gist_id setting from JSON
+        id: read_json_gistid_value
+        run: echo "GISTID=$(jq -r '.deployment.gist_id' ./config.json)" >> $GITHUB_ENV
+
+      - name: Read dry-run setting from JSON
+        id: read_json_dryrun_value
+        run: echo "DRYRUN=$(jq -r '.environment.dryrun' ./config.json)" >> $GITHUB_ENV
+
+      - name: Set up PowerShell environment
+        run: |
+          Install-Module -Name PowerShellGet -Force -Scope CurrentUser
+          Install-Module -Name Pester -Force -Scope CurrentUser
+        shell: pwsh
+
+      - name: Execute PowerShell script
+        run: .\merge_resume.ps1 -inputFolder ".\data" -outputFile "resume.json" -configFile ".\config.json"
+        shell: pwsh
+
+      - name: Update Resume Gist
+        if: ${{ env.DRYRUN == '0' }}
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.TOKEN }}
+          gist_id: ${{ env.GISTID }}
+          file_path: resume.json
+
+permissions:
+  contents: read

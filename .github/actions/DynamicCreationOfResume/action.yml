@@ -1,9 +1,0 @@
-name: 'Run just_do_it.sh Script'
-description: 'Executes a shell script'
-runs:
-  using: 'composite'
-  steps:
-    - run: |
-        chmod +x .github/actions/DynamicCreationOfResume/just_do_it.sh
-        .github/actions/DynamicCreationOfResume/just_do_it.sh
-      shell: bash
