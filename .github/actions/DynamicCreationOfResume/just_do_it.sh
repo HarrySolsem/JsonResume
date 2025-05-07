@@ -110,16 +110,8 @@ echo '{
 
 fetch_resume_data() {
     local json_file="${JSON_FILES[$1]}"
-
-    log "[DEBUG]" "Fetching data for section: $section, language: $LANGUAGE${TAG_FILTER:+, tag filter: $TAG_FILTER}, from file $json_file"
-
-    if [[ -n "$TAG_FILTER" ]]; then
-        jq --arg root "$1" --arg lang "$LANGUAGE" --arg tag "$TAG_FILTER" '.[$root][$lang].data // [] | map(select(.tags? | index($tag)))' "$json_file"
-    else
-        log "[ERROR]" "No tag filter provided. Fetching all data."
-        jq --arg section "$section" --arg lang "$LANGUAGE" '.[$section][$lang].data // []' "$json_file"
-    fi
-}
+    jq --arg lang "$LANGUAGE" '.certificates[$lang].data' "$json_file"
+    }
 
 # Step 3: Load multiple resume sections dynamically
 declare -A SECTIONS=( 
@@ -144,12 +136,13 @@ for section in "${!SECTIONS[@]}"; do
     log "[INFO]" "Processing section: $section"
     
     data=$(fetch_resume_data "${SECTIONS[$section]}")
+    #log "[DEBUG]" "Fetched data for section: $section, data is: $data"
     if ! jq -e . <<< "$data" >/dev/null 2>&1; then
         log "[ERROR]" "Invalid JSON returned from fetch_resume_data"
         continue
     fi
 
-    log "[DEBUG]" "Fetched data for section: $section , data is: $data"
+    #log "[DEBUG]" "Fetched data for section: $section , data is: $data"
    
     updated_resume=$(jq --argjson new_data "$data" --arg section "$section" '.[$section].data = $new_data' <<< "$updated_resume")
     log "[DEBUG]" "Updated resume after processing section: $section, updated_resume: $updated_resume"
