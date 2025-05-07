@@ -1,5 +1,5 @@
 param (
-    [string]$inputFolder = ".\data",  # Updated input folder
+    [string]$inputFolder = ".\data",  # Input folder
     [string]$outputFile = "resume.json",
     [string]$logFile = ".\dynamic_creation.log",
     [string]$configFile = ".\config.json"
@@ -24,7 +24,8 @@ Write-Log "Starting resume generation process." "INFO"
 try {
     $config = Get-Content $configFile | ConvertFrom-Json
     $language = $config.deployment.language
-    Write-Log "Loaded configuration: Language = $language" "INFO"
+    $resumeType = $config.deployment.resumetype
+    Write-Log "Loaded configuration: Language = $language, Resume Type = $resumeType" "INFO"
 } catch {
     Write-Log "Error: Failed to load '$configFile' - $($_.Exception.Message)" "ERROR"
     exit
@@ -59,11 +60,16 @@ foreach ($section in $sections) {
         # Ensure section follows expected structure
         if ($sectionData.$section) {
             if ($sectionData.$section.$language -and $sectionData.$section.$language.data) {
-                Write-Log "Extracting data from section '$section' for language: $language" "INFO"
-                $resumeJson[$section] = $sectionData.$section.$language.data
+                Write-Log "Filtering section '$section' for language: $language" "INFO"
+                $filteredData = $sectionData.$section.$language.data | Where-Object {
+                    $_.tags -and ($_.tags -contains $resumeType)
+                }
 
-                if ($resumeJson[$section].Count -eq 0) {
-                    Write-Log "Warning: No items found in '$section' after filtering." "WARN"
+                $resumeJson[$section] = $filteredData
+                Write-Log "Filtered items count in '$section': $($filteredData.Count)" "INFO"
+
+                if ($filteredData.Count -eq 0) {
+                    Write-Log "Warning: No matching items in '$section' based on resume type '$resumeType'." "WARN"
                 }
             } else {
                 Write-Log "Error: No '$language' data found for section '$section'." "ERROR"

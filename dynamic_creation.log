@@ -1,27 +1,45 @@
 
-2025-05-07 16:32:09 [INFO] Starting resume generation process.
-2025-05-07 16:32:09 [INFO] Loaded configuration: Language = en
-2025-05-07 16:32:09 [DEBUG] Processing file: .\data\basics.json
-2025-05-07 16:32:09 [ERROR] Error: No 'en' data found for section 'basics'.
-2025-05-07 16:32:09 [DEBUG] Processing file: .\data\volunteer.json
-2025-05-07 16:32:09 [INFO] Extracting data from section 'volunteer' for language: en
-2025-05-07 16:32:09 [DEBUG] Processing file: .\data\work.json
-2025-05-07 16:32:09 [INFO] Extracting data from section 'work' for language: en
-2025-05-07 16:32:09 [DEBUG] Processing file: .\data\education.json
-2025-05-07 16:32:09 [INFO] Extracting data from section 'education' for language: en
-2025-05-07 16:32:09 [DEBUG] Processing file: .\data\awards.json
-2025-05-07 16:32:09 [ERROR] Error: No 'en' data found for section 'awards'.
-2025-05-07 16:32:09 [DEBUG] Processing file: .\data\certificates.json
-2025-05-07 16:32:09 [INFO] Extracting data from section 'certificates' for language: en
-2025-05-07 16:32:09 [DEBUG] Processing file: .\data\publications.json
-2025-05-07 16:32:09 [ERROR] Error: No 'en' data found for section 'publications'.
-2025-05-07 16:32:09 [DEBUG] Processing file: .\data\skills.json
-2025-05-07 16:32:09 [INFO] Extracting data from section 'skills' for language: en
-2025-05-07 16:32:09 [DEBUG] Processing file: .\data\languages.json
-2025-05-07 16:32:09 [INFO] Extracting data from section 'languages' for language: en
-2025-05-07 16:32:09 [DEBUG] Processing file: .\data\interests.json
-2025-05-07 16:32:09 [INFO] Extracting data from section 'interests' for language: en
-2025-05-07 16:32:09 [DEBUG] Processing file: .\data\references.json
-2025-05-07 16:32:09 [INFO] Extracting data from section 'references' for language: en
-2025-05-07 16:32:09 [DEBUG] Processing file: .\data\projects.json
-2025-05-07 16:32:09 [INFO] Extracting data from section 'projects' for language: en
+2025-05-07 16:48:03 [INFO] Starting resume generation process.
+2025-05-07 16:48:03 [INFO] Loaded configuration: Language = en, Resume Type = projectmanagement
+2025-05-07 16:48:03 [DEBUG] Processing file: .\data\basics.json
+2025-05-07 16:48:03 [ERROR] Error: No 'en' data found for section 'basics'.
+2025-05-07 16:48:03 [DEBUG] Processing file: .\data\volunteer.json
+2025-05-07 16:48:03 [INFO] Filtering section 'volunteer' for language: en
+2025-05-07 16:48:37 [INFO] Filtered items count in 'volunteer': 0
+2025-05-07 16:48:46 [WARN] Warning: No matching items in 'volunteer' based on resume type 'projectmanagement'.
+2025-05-07 16:48:58 [DEBUG] Processing file: .\data\work.json
+2025-05-07 16:48:58 [INFO] Filtering section 'work' for language: en
+2025-05-07 16:49:24 [INFO] Filtered items count in 'work': 0
+2025-05-07 16:49:24 [WARN] Warning: No matching items in 'work' based on resume type 'projectmanagement'.
+2025-05-07 16:49:24 [DEBUG] Processing file: .\data\education.json
+2025-05-07 16:49:25 [INFO] Filtering section 'education' for language: en
+2025-05-07 16:49:25 [INFO] Filtered items count in 'education': 0
+2025-05-07 16:49:25 [WARN] Warning: No matching items in 'education' based on resume type 'projectmanagement'.
+2025-05-07 16:49:25 [DEBUG] Processing file: .\data\awards.json
+2025-05-07 16:49:25 [ERROR] Error: No 'en' data found for section 'awards'.
+2025-05-07 16:49:25 [DEBUG] Processing file: .\data\certificates.json
+2025-05-07 16:49:25 [INFO] Filtering section 'certificates' for language: en
+2025-05-07 16:49:25 [INFO] Filtered items count in 'certificates': 
+2025-05-07 16:49:25 [DEBUG] Processing file: .\data\publications.json
+2025-05-07 16:49:26 [ERROR] Error: No 'en' data found for section 'publications'.
+2025-05-07 16:49:26 [DEBUG] Processing file: .\data\skills.json
+2025-05-07 16:49:26 [INFO] Filtering section 'skills' for language: en
+2025-05-07 16:49:26 [INFO] Filtered items count in 'skills': 0
+2025-05-07 16:49:26 [WARN] Warning: No matching items in 'skills' based on resume type 'projectmanagement'.
+2025-05-07 16:49:26 [DEBUG] Processing file: .\data\languages.json
+2025-05-07 16:49:27 [INFO] Filtering section 'languages' for language: en
+2025-05-07 16:49:27 [INFO] Filtered items count in 'languages': 0
+2025-05-07 16:49:27 [WARN] Warning: No matching items in 'languages' based on resume type 'projectmanagement'.
+2025-05-07 16:49:27 [DEBUG] Processing file: .\data\interests.json
+2025-05-07 16:49:27 [INFO] Filtering section 'interests' for language: en
+2025-05-07 16:49:27 [INFO] Filtered items count in 'interests': 0
+2025-05-07 16:49:27 [WARN] Warning: No matching items in 'interests' based on resume type 'projectmanagement'.
+2025-05-07 16:49:27 [DEBUG] Processing file: .\data\references.json
+2025-05-07 16:49:27 [INFO] Filtering section 'references' for language: en
+2025-05-07 16:49:27 [INFO] Filtered items count in 'references': 0
+2025-05-07 16:49:27 [WARN] Warning: No matching items in 'references' based on resume type 'projectmanagement'.
+2025-05-07 16:49:27 [DEBUG] Processing file: .\data\projects.json
+2025-05-07 16:49:28 [INFO] Filtering section 'projects' for language: en
+2025-05-07 16:49:28 [INFO] Filtered items count in 'projects': 0
+2025-05-07 16:49:28 [WARN] Warning: No matching items in 'projects' based on resume type 'projectmanagement'.
+2025-05-07 16:49:28 [INFO] Resume JSON created successfully!
