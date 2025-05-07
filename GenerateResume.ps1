@@ -57,43 +57,47 @@ foreach ($section in $sections) {
             continue
         }
 
-        # Special handling for basics section (filtering by resumetype)
+        # Special handling for basics (filtered by resumetype but stored as an object)
         if ($section -eq "basics") {
             if ($sectionData.$section.$language -and $sectionData.$section.$language.basics) {
                 Write-Log "Extracting basics section for language: $language with filtering" "INFO"
 
-                if ($sectionData.$section.$language.basics.tags -and ($sectionData.$section.$language.basics.tags -contains $resumeType)) {
+                # Check if any tag in tags array matches resumetype
+                if ($sectionData.$section.$language.basics.tags -and ($sectionData.$section.$language.basics.tags | Where-Object { $_ -eq $resumeType })) {
                     $basicsData = $sectionData.$section.$language.basics
-                    
+
                     # Remove the 'tags' element before storing
                     $basicsData.PSObject.Properties.Remove('tags')
-                    
-                    $resumeJson[$section] = $basicsData
+
+                    $resumeJson[$section] = $basicsData  # Store as an object
                     Write-Log "Basics section added successfully." "INFO"
                 } else {
-                    Write-Log "Warning: Basics section does not match resume type '$resumeType'." "WARN"
+                    Write-Log "Warning: Basics section does not match any resume type '$resumeType'." "WARN"
+                    $resumeJson[$section] = $null  # No basics match found
                 }
             } else {
                 Write-Log "Error: No '$language' basics found in '$section'." "ERROR"
+                $resumeJson[$section] = $null  # No basics match found
             }
         }
         else {
-            # Handle all other sections with filtering based on tags
+            # Handle all other sections with filtering based on tags (stored as arrays)
             if ($sectionData.$section.$language -and $sectionData.$section.$language.data) {
                 Write-Log "Filtering section '$section' for language: $language" "INFO"
+
+                # Ensure filtering checks each tag in the array
                 $filteredData = $sectionData.$section.$language.data | Where-Object {
-                    $_.tags -and ($_.tags -contains $resumeType)
+                    $_.tags -and ($_.tags | Where-Object { $_ -eq $resumeType })
                 }
 
-                # Check if filtered data is empty
-                if ($filteredData.Count -eq 0) {
-                    Write-Log "Warning: No matching items in '$section' based on resume type '$resumeType'. Empty array will be included." "WARN"
-                    $resumeJson[$section] = @()  # Ensure empty array is stored instead of null
-                } else {
-                    # Remove the 'tags' element before storing data
+                # Ensure all sections (except basics) are stored as arrays
+                if ($filteredData.Count -gt 0) {
                     $filteredData | ForEach-Object { $_.PSObject.Properties.Remove('tags') }
-                    $resumeJson[$section] = $filteredData
+                    $resumeJson[$section] = @($filteredData)  # Force array output
                     Write-Log "Filtered items count in '$section': $($filteredData.Count)" "INFO"
+                } else {
+                    Write-Log "Warning: No matching items in '$section' based on resume type '$resumeType'. Empty array will be included." "WARN"
+                    $resumeJson[$section] = @()  # Assign empty array for consistency
                 }
             } else {
                 Write-Log "Warning: No '$language' data found for section '$section'. Empty array will be included." "WARN"
