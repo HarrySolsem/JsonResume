@@ -1,5 +1,5 @@
 param (
-    [string]$inputFolder = ".\data",  # Input folder
+    [string]$inputFolder = ".\data",  # Updated input folder
     [string]$outputFile = "resume.json",
     [string]$logFile = ".\dynamic_creation.log",
     [string]$configFile = ".\config.json"
@@ -57,13 +57,37 @@ foreach ($section in $sections) {
             continue
         }
 
-        # Ensure section follows expected structure
-        if ($sectionData.$section) {
+        # Special handling for basics section (filtering by resumetype)
+        if ($section -eq "basics") {
+            if ($sectionData.$section.$language -and $sectionData.$section.$language.basics) {
+                Write-Log "Extracting basics section for language: $language with filtering" "INFO"
+
+                # Filter basics section based on tags
+                if ($sectionData.$section.$language.basics.tags -and ($sectionData.$section.$language.basics.tags -contains $resumeType)) {
+                    $basicsData = $sectionData.$section.$language.basics
+                    
+                    # Remove the 'tags' element before storing
+                    $basicsData.PSObject.Properties.Remove('tags')
+                    
+                    $resumeJson[$section] = $basicsData
+                    Write-Log "Basics section added successfully." "INFO"
+                } else {
+                    Write-Log "Warning: Basics section does not match resume type '$resumeType'." "WARN"
+                }
+            } else {
+                Write-Log "Error: No '$language' basics found in '$section'." "ERROR"
+            }
+        }
+        else {
+            # Handle all other sections with filtering based on tags
             if ($sectionData.$section.$language -and $sectionData.$section.$language.data) {
                 Write-Log "Filtering section '$section' for language: $language" "INFO"
                 $filteredData = $sectionData.$section.$language.data | Where-Object {
                     $_.tags -and ($_.tags -contains $resumeType)
                 }
+
+                # Remove the 'tags' element before storing data
+                $filteredData | ForEach-Object { $_.PSObject.Properties.Remove('tags') }
 
                 $resumeJson[$section] = $filteredData
                 Write-Log "Filtered items count in '$section': $($filteredData.Count)" "INFO"
@@ -74,8 +98,6 @@ foreach ($section in $sections) {
             } else {
                 Write-Log "Error: No '$language' data found for section '$section'." "ERROR"
             }
-        } else {
-            Write-Log "Warning: Section '$section' is missing from the JSON." "WARN"
         }
     } else {
         Write-Log "Warning: Missing JSON file for section '$section'." "WARN"

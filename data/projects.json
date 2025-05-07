@@ -210,6 +210,9 @@
                         "Ledet prosjektet fra kravspesifikasjon til implementering og drift.",
                         "Utviklet en C# applikasjon med MS SQL Server som database.",
                         "Implementert AD-integrasjon og elektronisk signatur."
+                    ],
+                    "tags": [
+                        "projectmanagement"
                     ]
                 },
                 {

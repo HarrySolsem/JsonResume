@@ -1,4 +1,28 @@
 ﻿{
+    "basics":  {
+                   "name":  "Harry Solsem",
+                   "label":  "Leadership | ISO27001 | Team Leader | Project Manager | Digital Product Development | Change Management | Enterprise Architect",
+                   "summary":  "With over 30 years of leadership experience, including technical and administrative roles in companies such as DNB, Riverty, Neonomics, and Sharecat Solutions. I have Leadership experience: Led teams of up to 50 employees, Managed full responsibility for personnel, budget, and results, provided leadership across multiple organizations. Key areas of expertise: Team leadership, Product development, IT project management. Notable Companies: DNB, Riverty, Neonomics, Sharecat Solutions",
+                   "picture":  "https://avatars.githubusercontent.com/u/2042298?v=4",
+                   "image":  "https://avatars.githubusercontent.com/u/2042298?v=4",
+                   "email":  "harry.solsem@solsem.no",
+                   "phone":  "+47 91 60 46 00",
+                   "url":  "https://harry.solsem.no",
+                   "location":  {
+                                    "address":  "Teglverksfaret 16",
+                                    "postalCode":  "1405",
+                                    "city":  "Langhus",
+                                    "countryCode":  "NO",
+                                    "region":  "Akershus"
+                                },
+                   "profiles":  [
+                                    {
+                                        "network":  "LinkedIn",
+                                        "username":  "harrysolsem",
+                                        "url":  "https://www.linkedin.com/in/harrysolsem"
+                                    }
+                                ]
+               },
     "volunteer":  {
 
                   },
@@ -15,10 +39,7 @@
                          "name":  "Prince2Agile",
                          "date":  "2019-01-01",
                          "issuer":  "Axelos Global Best Practice",
-                         "url":  "https://www.axelos.com/certifications/propath/prince2-agile-project-management/prince2-agile-foundation",
-                         "tags":  [
-                                      "projectmanagement"
-                                  ]
+                         "url":  "https://www.axelos.com/certifications/propath/prince2-agile-project-management/prince2-agile-foundation"
                      },
     "references":  {
 
