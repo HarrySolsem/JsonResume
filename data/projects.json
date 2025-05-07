@@ -211,9 +211,7 @@
                         "Utviklet en C# applikasjon med MS SQL Server som database.",
                         "Implementert AD-integrasjon og elektronisk signatur."
                     ],
-                    "tags": [
-                        "projectmanagement, management"
-                    ]
+                    "tags": [ "projectmanagement", "management" ]
                 },
                 {
                     "name": "tiUM - timeregistrering Umoe Mandal",

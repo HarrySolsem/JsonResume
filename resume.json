@@ -1,73 +1,275 @@
 ﻿{
-    "basics":  {
-                   "name":  "Harry Solsem",
-                   "label":  "IT-ledelse og prosjektledelse",
-                   "summary":  "Med over 30 Ã¥rs ledererfaring, inkludert tekniske og administrative roller i selskaper som DNB, Riverty, Neonomics og Sharecat Solutions. Min ledererfaring: Ledet team med opptil 50 ansatte, hatt fullt ansvar for personale, budsjett og resultater, samt gitt ledelse pÃ¥ tvers av flere organisasjoner. NÃ¸kkelomrÃ¥der for kompetanse: Teamledelse, produktutvikling, IT-prosjektledelse. Fremtredende selskaper: DNB, Riverty, Neonomics, Sharecat Solutions.",
-                   "picture":  "https://avatars.githubusercontent.com/u/2042298?v=4",
-                   "image":  "https://avatars.githubusercontent.com/u/2042298?v=4",
-                   "email":  "harry.solsem@solsem.no",
-                   "phone":  "+47 91 60 46 00",
-                   "url":  "https://harry.solsem.no",
-                   "location":  {
-                                    "address":  "Teglverksfaret 16",
-                                    "postalCode":  "1405",
-                                    "city":  "Langhus",
-                                    "countryCode":  "NO",
-                                    "region":  "Akershus"
-                                },
-                   "profiles":  [
-                                    {
-                                        "network":  "Linkedin",
-                                        "username":  "harrysolsem",
-                                        "url":  "https://www.linkedin.com/in/harrysolsem"
-                                    }
-                                ]
-               },
-    "volunteer":  [
+    "basics": {
+        "name": "Harry Solsem",
+        "label": "IT-ledelse og prosjektledelse",
+        "summary": "Med over 30 Ã¥rs ledererfaring, inkludert tekniske og administrative roller i selskaper som DNB, Riverty, Neonomics og Sharecat Solutions. Min ledererfaring: Ledet team med opptil 50 ansatte, hatt fullt ansvar for personale, budsjett og resultater, samt gitt ledelse pÃ¥ tvers av flere organisasjoner. NÃ¸kkelomrÃ¥der for kompetanse: Teamledelse, produktutvikling, IT-prosjektledelse. Fremtredende selskaper: DNB, Riverty, Neonomics, Sharecat Solutions.",
+        "picture": "https://avatars.githubusercontent.com/u/2042298?v=4",
+        "image": "https://avatars.githubusercontent.com/u/2042298?v=4",
+        "email": "harry.solsem@solsem.no",
+        "phone": "+47 91 60 46 00",
+        "url": "https://harry.solsem.no",
+        "location": {
+            "address": "Teglverksfaret 16",
+            "postalCode": "1405",
+            "city": "Langhus",
+            "countryCode": "NO",
+            "region": "Akershus"
+        },
+        "profiles": [
+            {
+                "network": "Linkedin",
+                "username": "harrysolsem",
+                "url": "https://www.linkedin.com/in/harrysolsem"
+            }
+        ]
+    },
+    "volunteer": [
+        {
+            "organization": "Langhus IL Bordtennis",
+            "position": "Gruppeleder og styreleder",
+            "url": "https://www.langhusil.no/bordtennis",
+            "startDate": "2024-09-01",
+            "summary": "Jeg koordinerer styremÃ¸ter og Ã¥rsmÃ¸ter, utarbeider sakslister og fÃ¸lger opp vedtak som blir fattet. Jeg representerer ogsÃ¥ klubben utad i mÃ¸ter med kommunen, idrettskrets og Norges Bordtennisforbund. God Ã¸konomistyring er en sentral del av min rolle, hvor jeg har ansvar for budsjett, rapportering og sÃ¸knader om Ã¸konomisk stÃ¸tte. Jeg organiserer treninger, skaffer kvalifiserte trenere og tilrettelegger for spillerutvikling pÃ¥ alle nivÃ¥er. Planlegging og gjennomfÃ¸ring av klubbturneringer samt koordinering av deltagelse i eksterne turneringer faller ogsÃ¥ under mitt ansvarsomrÃ¥de. Jeg jobber aktivt med Ã¥ rekruttere nye medlemmer gjennom markedsfÃ¸ring og ulike rekrutteringsaktiviteter. Videre sÃ¸rger jeg for vedlikehold av utstyr, bord og treningsfasiliteter. En viktig del av mitt lederskap er Ã¥ skape et godt miljÃ¸ i klubben gjennom sosiale aktiviteter og god kommunikasjon mellom medlemmene."
+        }
+    ],
+    "work": [
+        {
+            "name": "Prosperastiftelsen",
+            "position": "Prosjektleder",
+            "url": "https://www.prosperastiftelsen.no",
+            "startDate": "2024-10-01",
+            "summary": "Innleid prosjektleder hos Prosperastiftelsen med ansvar for prosjektteamledelse, planlegging, prioritering og beslutningstaking. Overordnet ansvar for Ã¥ sikre kvaliteten pÃ¥ leveranser, opprettholde tidsfrister og forankre prosjektene hos mottakere. I rollen drar jeg nytte av sertifiseringer innen Prosci endringsledelse og Prince2 prosjektmetodikk, kombinert med verdifull erfaring fra Lean og Agile. Jeg har bygget og ledet flere team pÃ¥ opptil fem personer, med fokus pÃ¥ Ã¥ skape en sterk teamfÃ¸lelse og psykologisk trygghet. Alle prosjekter har levert i henhold til mÃ¥l for kvalitet og innen de fastsatte tidsfrister."
+        },
+        {
+            "name": "STOFFSKIFTEFORBUNDET",
+            "position": "Konsulent",
+            "url": "https://www.stofo.org",
+            "startDate": "2023-05-01",
+            "summary": "Konsulent som har stÃ¸ttet nyansatt generalsekretÃ¦r med strategiavklaringer, organisasjonsutvikling, rekruttering, onboarding av nye medarbeidere og forefallende administrasjonsoppgaver innen drift av forbundet.",
+            "endDate": "2023-06-01"
+        }
+    ],
+    "education": [
+        {
+            "institution": "HandelshÃ¸yskolen BI",
+            "area": "Management",
+            "url": "https://wwww.bi.no",
+            "studyType": "Bachelor",
+            "startDate": "2018-01-01",
+            "score": "",
+            "courses": [
+                "Prosjektledelse 1",
+                "Prosjektledelse 2",
+                "Prosjektledelse 3"
+            ],
+            "endDate": "2019-01-01"
+        },
+        {
+            "institution": "Universitetet i Agder (UiA)",
+            "area": "Software Engineering",
+            "url": "https://www.uia.no",
+            "studyType": "Bachelor",
+            "startDate": "1999-08-01",
+            "score": "",
+            "courses": [
+                "User interfaces",
+                "Problem solving using Java",
+                "Advanced Database Systems XML",
+                "OO Systems Design using UML"
+            ],
+            "endDate": "2000-05-01"
+        },
+        {
+            "institution": "NHI, Norges HÃ¸yskole for Informasjonsteknologi",
+            "area": "Computer Science",
+            "studyType": "Linje for administrativ databehandling",
+            "startDate": "1992-08-01",
+            "score": "",
+            "courses": [
+                "AdministrasjonslÃ¦re og BedriftsÃ¸konomi",
+                "InnfÃ¸ring i systemutvikling",
+                "Organisasjon samarbeid og ledelse",
+                "Grunnkurs programmering",
+                "MarkedsfÃ¸ring",
+                "Databaser og datamodeller",
+                "Algoritmer og datastrukturer",
+                "MaskinsprÃ¥kprogrammering",
+                "Datakommunikasjon I",
+                "Systemutvikling II",
+                "Applikasjonsutvikling",
+                "Applikasjonsprogrammering i C++",
+                "Matematisk Analyse I",
+                "Diskrete matematikk",
+                "Operativsystemer",
+                "Sanntidsprogrammering"
+            ],
+            "endDate": "1994-05-01"
+        }
+    ],
+    "awards": [
 
-                  ],
-    "languages":  [
+    ],
+    "certificates": [
+        {
+            "name": "Applied TOGAF Enterprise Architecture Practitioner",
+            "date": "2024-10-01",
+            "issuer": "The Open Group",
+            "url": "https://www.credly.com/badges/3f2e9c94-582a-4b9f-ba7a-df65c303ee1b/linked_in_profile"
+        },
+        {
+            "name": "PROSCI Certified Change Practitioner",
+            "date": "2024-03-01",
+            "issuer": "PROSCI",
+            "url": "https://www.credly.com/badges/d734928d-07f3-4056-8b21-82e1e21bb0cc/linked_in_profile"
+        },
+        {
+            "name": "Product Owner",
+            "date": "2021-03-01",
+            "issuer": "Agile Lean House",
+            "url": "https://agileleanhouse.com/en/cspo"
+        },
+        {
+            "name": "Prince2 Registered Practitioner",
+            "date": "2016-11-01",
+            "issuer": "APMG International",
+            "url": "https://www.axelos.com/certifications/propath/prince2-project-management/prince2-practitioner"
+        },
+        {
+            "name": "Prince2 Foundation",
+            "date": "2014-08-01",
+            "issuer": "Adding Value Consulting AB",
+            "url": "https://www.axelos.com/certifications/propath/prince2-project-management/prince2-foundation"
+        },
+        {
+            "name": "ITIL Foundation",
+            "date": "2012-11-01",
+            "issuer": "PeopleCert Group",
+            "url": "https://www.axelos.com/certifications/itil-service-management/itil-4-foundation"
+        },
+        {
+            "name": "Certified Scrum Master",
+            "date": "2010-01-01",
+            "issuer": "Scrum Alliance",
+            "url": "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster"
+        }
+    ],
+    "publications": [
 
-                  ],
-    "certificates":  [
+    ],
+    "skills": [
+        {
+            "name": "Ledelse \u0026 Administrasjon",
+            "level": "Advanced",
+            "keywords": [
+                "vision setting",
+                "strategic direction",
+                "people management",
+                "influence",
+                "decision-making",
+                "team coordination",
+                "delegation",
+                "performance monitoring",
+                "team development",
+                "conflict resolution",
+                "employee engagement",
+                "performance incentives",
+                "morale building",
+                "team spirit",
+                "recognition programs",
+                "teamutvikling",
+                "mÃ¥lstyring",
+                "delegering",
+                "koordinering",
+                "oppfÃ¸lging",
+                "strategic planning",
+                "organizational direction",
+                "long-term thinking",
+                "executive decision-making",
+                "technical leadership",
+                "engineering management",
+                "technical strategy",
+                "innovation management",
+                "R\u0026D leadership"
+            ]
+        },
+        {
+            "name": "Prosjekt- og prosessledelse",
+            "level": "Advanced",
+            "keywords": [
+                "scope management",
+                "timeline planning",
+                "risk assessment",
+                "stakeholder management",
+                "project governance",
+                "controlled environments",
+                "structured project management",
+                "business case",
+                "project board",
+                "stage planning",
+                "development lifecycle",
+                "technical planning",
+                "code review",
+                "release management",
+                "quality assurance",
+                "prosessforbedring",
+                "kvalitetssikring",
+                "evaluering",
+                "optimalisering",
+                "innovasjon",
+                "resource planning",
+                "capacity management",
+                "utilization optimization",
+                "workload distribution",
+                "prioritization"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Norsk",
+            "fluency": "MorsmÃ¥l",
+            "native": true,
+            "keywords": [
+                "Norsk",
+                "BokmÃ¥l"
+            ]
+        },
+        {
+            "language": "Engelsk",
+            "fluency": "Full professional proficiency",
+            "native": false,
+            "keywords": [
+                "Engelsk",
+                "Engelsk (amerikansk)",
+                "Engelsk (britisk)"
+            ]
+        }
+    ],
+    "interests": [
 
-                     ],
-    "education":  [
-
-                  ],
-    "work":  [
-                 {
-                     "name":  "Prosperastiftelsen",
-                     "position":  "Prosjektleder",
-                     "url":  "https://www.prosperastiftelsen.no",
-                     "startDate":  "2024-10-01",
-                     "summary":  "Innleid prosjektleder hos Prosperastiftelsen med ansvar for prosjektteamledelse, planlegging, prioritering og beslutningstaking. Overordnet ansvar for Ã¥ sikre kvaliteten pÃ¥ leveranser, opprettholde tidsfrister og forankre prosjektene hos mottakere. I rollen drar jeg nytte av sertifiseringer innen Prosci endringsledelse og Prince2 prosjektmetodikk, kombinert med verdifull erfaring fra Lean og Agile. Jeg har bygget og ledet flere team pÃ¥ opptil fem personer, med fokus pÃ¥ Ã¥ skape en sterk teamfÃ¸lelse og psykologisk trygghet. Alle prosjekter har levert i henhold til mÃ¥l for kvalitet og innen de fastsatte tidsfrister."
-                 },
-                 {
-                     "name":  "STOFFSKIFTEFORBUNDET",
-                     "position":  "Konsulent",
-                     "url":  "https://www.stofo.org",
-                     "startDate":  "2023-05-01",
-                     "summary":  "Konsulent som har stÃ¸ttet nyansatt generalsekretÃ¦r med strategiavklaringer, organisasjonsutvikling, rekruttering, onboarding av nye medarbeidere og forefallende administrasjonsoppgaver innen drift av forbundet.",
-                     "endDate":  "2023-06-01"
-                 }
-             ],
-    "awards":  [
-
-               ],
-    "references":  [
-
-                   ],
-    "publications":  [
-
-                     ],
-    "interests":  [
-
-                  ],
-    "skills":  [
-
-               ],
-    "projects":  [
-
-                 ]
+    ],
+    "references": [
+        {
+            "name": "Thor Milde",
+            "reference": "Harry er engasjert, utadvendt og kunnskapsrik. Som prosjektleder i en kompleks organisasjon med hÃ¸yt tempo navigerte han rutinert prosjekter med mange leverandÃ¸rer, leveranser og lokasjoner. Harry er engasjert, utadvendt og kunnskapsrik. Som prosjektleder i en kompleks organisasjon med hÃ¸yt tempo navigerte han rutinert prosjekter med mange leverandÃ¸rer, leveranser og lokasjoner."
+        }
+    ],
+    "projects": [
+        {
+            "name": "ULV - UtLevering av VerktÃ¸y",
+            "startDate": "2005-03-01",
+            "description": "Et system designet for Ã¥ administrere utlevering og innlevering av verktÃ¸y. LÃ¸sningen er utviklet i C# med MS SQL Server som database og ADO.Net for datatilgang. Systemet inkluderer funksjonalitet for elektronisk signatur, generering av tilpassede rapporter og sÃ¸mlÃ¸s integrasjon med Active Directory (AD) for effektiv brukeradministrasjon",
+            "url": "https://harry.solsem.no",
+            "endDate": "2006-05-01",
+            "entity": "Umoe Mandal",
+            "roles": [
+                "prosjektleder"
+            ],
+            "highlights": [
+                "Ledet prosjektet fra kravspesifikasjon til implementering og drift.",
+                "Utviklet en C# applikasjon med MS SQL Server som database.",
+                "Implementert AD-integrasjon og elektronisk signatur."
+            ]
+        }
+    ]
 }

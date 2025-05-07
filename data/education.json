@@ -15,7 +15,8 @@
                         "Prosjektledelse 2",
                         "Prosjektledelse 3"
                     ],
-                    "endDate": "2019-01-01"
+                    "endDate": "2019-01-01",
+                    "tags": [ "management" ]
                 },
                 {
                     "institution": "Universitetet i Agder (UiA)",
@@ -30,7 +31,8 @@
                         "Advanced Database Systems XML",
                         "OO Systems Design using UML"
                     ],
-                    "endDate": "2000-05-01"
+                    "endDate": "2000-05-01",
+                    "tags": [ "management" ]
                 },
                 {
                     "institution": "NHI, Norges Høyskole for Informasjonsteknologi",
@@ -56,7 +58,8 @@
                         "Operativsystemer",
                         "Sanntidsprogrammering"
                     ],
-                    "endDate": "1994-05-01"
+                    "endDate": "1994-05-01",
+                    "tags": [ "management" ]
                 },
                 {
                     "institution": "Melbu Videregående skole",
@@ -153,7 +156,8 @@
                         "Advanced Database Systems XML",
                         "OO Systems Design Using UML"
                     ],
-                    "endDate": "2000-05-01"
+                    "endDate": "2000-05-01",
+                    "tags": [ "management" ]
                 },
                 {
                     "institution": "NHI, Norwegian School of Information Technology",
@@ -179,7 +183,8 @@
                         "Operating Systems",
                         "Real-Time Programming"
                     ],
-                    "endDate": "1994-05-01"
+                    "endDate": "1994-05-01",
+                    "tags": [ "management" ]
                 },
                 {
                     "institution": "Melbu Videregående skole",
@@ -201,7 +206,8 @@
                         "Administrative EDB-verktøy",
                         "Samfunnsfag"
                     ],
-                    "endDate": "1990-06-01"
+                    "endDate": "1990-06-01",
+                    "tags": [ "management" ]
                 },
                 {
                     "institution": "Melbu Upper secodary school",

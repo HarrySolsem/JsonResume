@@ -9,7 +9,8 @@
                     "keywords": [
                         "Norsk",
                         "Bokmål"
-                    ]
+                    ],
+                    "tags": [ "management" ]
                 },
                 {
                     "language": "Engelsk",
@@ -19,7 +20,8 @@
                         "Engelsk",
                         "Engelsk (amerikansk)",
                         "Engelsk (britisk)"
-                    ]
+                    ],
+                    "tags": [ "management" ]
                 }
             ]
         },

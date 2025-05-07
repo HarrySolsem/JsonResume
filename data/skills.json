@@ -100,7 +100,8 @@
                         "technical strategy",
                         "innovation management",
                         "R&D leadership"
-                    ]
+                    ],
+                    "tags": [ "management" ]
                 },
                 {
                     "name": "Prosjekt- og prosessledelse",
@@ -131,7 +132,8 @@
                         "utilization optimization",
                         "workload distribution",
                         "prioritization"
-                    ]
+                    ],
+                    "tags": [ "management" ]
                 },
                 {
                     "name": "Tekniske verktøy og plattformer",
