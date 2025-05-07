@@ -201,7 +201,6 @@ try {
                     # Filter data based on tags matching resumeType
                     $filteredData = $sectionData.$section.$language.data | Where-Object {
                         $_.tags -and ($resumeType -in $_.tags)
-}
                     }
 
                     # Ensure filteredData is always an array
