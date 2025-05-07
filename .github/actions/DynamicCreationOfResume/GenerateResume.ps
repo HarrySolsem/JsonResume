@@ -1,0 +1,32 @@
+param (
+    [string]$inputFile = "certifications.json",
+    [string]$outputFile = "resume.json",
+    [string]$language = "en",
+    [string[]]$tags = @("projectmanagement") # Default tag filter
+)
+
+# Read and parse JSON file
+$jsonData = Get-Content $inputFile | ConvertFrom-Json
+
+# Extract the relevant language section
+if ($jsonData.certificates.$language) {
+    $certificates = $jsonData.certificates.$language.data
+} else {
+    Write-Host "Error: Language '$language' not found in the JSON file."
+    exit
+}
+
+# Filter by tags
+$filteredCertificates = $certificates | Where-Object {
+    $_.tags -and ($_.tags | Where-Object { $tags -contains $_ })
+}
+
+# Create final JSON structure
+$finalJson = @{
+    certificates = $filteredCertificates
+} | ConvertTo-Json -Depth 3
+
+# Save to file
+$finalJson | Out-File -Encoding utf8 $outputFile
+
+Write-Host "Filtered resume JSON created successfully!"
