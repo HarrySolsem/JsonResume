@@ -16,6 +16,12 @@ if [[ "$LANGUAGE" != "no" && "$LANGUAGE" != "en" ]]; then
     exit 1
 fi
 
+#Validate the tag filter    
+if [[ -n "$TAG_FILTER" && ! "$TAG_FILTER" =~ ^[a-zA-Z0-9_]+$ ]]; then
+    echo "Error: Invalid tag filter '$TAG_FILTER'. Only alphanumeric characters and underscores are allowed."
+    exit 1
+fi
+
 # Define file paths
 declare -A JSON_FILES=(
     ["BASICS_JSON"]="$REPO_ROOT/data/basics.json"
@@ -57,15 +63,6 @@ validate_json_files() {
     if [[ $missing -gt 0 ]]; then
         log "[ERROR]" "$missing required JSON files are missing. Execution aborted."
         exit 1
-    fi
-}
-
-fetch_certificates() {
-    local json_file="${JSON_FILES["CERTIFICATES_JSON"]}"
-    if [[ -n "$TAG_FILTER" ]]; then
-        jq --arg lang "$LANGUAGE" --arg tag "$TAG_FILTER" '.certificates[$lang].data // [] | map(select(.tags | index($tag)))' "$json_file"
-    else
-        jq --arg lang "$LANGUAGE" '.certificates[$lang].data // []' "$json_file"
     fi
 }
 
