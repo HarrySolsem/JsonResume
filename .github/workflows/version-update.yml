@@ -1,0 +1,31 @@
+name: Auto Update Version (Windows)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-version:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Increment version in script
+        run: |
+          $file = "script.ps1"
+          $content = Get-Content $file
+          $newVersion = "1.0.$(Get-Date -Format yyyyMMddHHmm)"
+          $updatedContent = $content -replace "VERSION\s+(\d+\.\d+\.\d+)", "VERSION $newVersion"
+          Set-Content $file $updatedContent
+        shell: pwsh
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add script.ps1
+          git commit -m "Auto-update version to $newVersion"
+          git push
+        shell: pwsh
