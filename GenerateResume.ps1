@@ -1,22 +1,22 @@
 ﻿[CmdletBinding()]
 param (
-    [Parameter(Mandatory=$false)]
+    [Parameter(Mandatory = $false)]
     [ValidateNotNullOrEmpty()]
     [string]$inputFolder = ".\data",
     
-    [Parameter(Mandatory=$false)]
+    [Parameter(Mandatory = $false)]
     [ValidateNotNullOrEmpty()]
     [string]$outputFile = "resume.json",
     
-    [Parameter(Mandatory=$false)]
+    [Parameter(Mandatory = $false)]
     [ValidateNotNullOrEmpty()]
     [string]$logFile = ".\dynamic_creation.log",
     
-    [Parameter(Mandatory=$false)]
+    [Parameter(Mandatory = $false)]
     [ValidateNotNullOrEmpty()]
     [string]$configFile = ".\config.json",
     
-    [Parameter(Mandatory=$false)]
+    [Parameter(Mandatory = $false)]
     [int]$jsonDepth = 5
 )
 
@@ -25,20 +25,20 @@ Set-Content -Path $logFile -Value "" -Encoding utf8
 
 function Write-Log {
     param (
-        [Parameter(Mandatory=$true)]
+        [Parameter(Mandatory = $true)]
         [string]$message,
         
-        [Parameter(Mandatory=$false)]
+        [Parameter(Mandatory = $false)]
         [ValidateSet("INFO", "WARN", "ERROR", "DEBUG", "SUCCESS")]
         [string]$level = "INFO",
         
-        [Parameter(Mandatory=$false)]
+        [Parameter(Mandatory = $false)]
         [switch]$NoConsole,
         
-        [Parameter(Mandatory=$false)]
+        [Parameter(Mandatory = $false)]
         [switch]$NoFile,
         
-        [Parameter(Mandatory=$false)]
+        [Parameter(Mandatory = $false)]
         [string]$LogFile = $script:logFile
     )
     
@@ -51,17 +51,17 @@ function Write-Log {
     }
     
     # Determine if we should write to console
-    $writeToConsole = $false
+    $writeToConsole = $true
     
     if (-not $NoConsole) {
         # Write to console based on preference and level
         switch ($level) {
-            "ERROR"   { $writeToConsole = $true }  # Always show errors
-            "WARN"    { $writeToConsole = $true }  # Always show warnings
+            "ERROR" { $writeToConsole = $true }  # Always show errors
+            "WARN" { $writeToConsole = $true }  # Always show warnings
             "SUCCESS" { $writeToConsole = $true }  # Always show success messages
-            "INFO"    { $writeToConsole = ($VerbosePreference -eq 'Continue' -or $InformationPreference -eq 'Continue') }
-            "DEBUG"   { $writeToConsole = ($DebugPreference -eq 'Continue') }
-            default   { $writeToConsole = ($VerbosePreference -eq 'Continue') }
+            "INFO" { $writeToConsole = ($VerbosePreference -eq 'Continue' -or $InformationPreference -eq 'Continue') }
+            "DEBUG" { $writeToConsole = ($DebugPreference -eq 'Continue') }
+            default { $writeToConsole = ($VerbosePreference -eq 'Continue') }
         }
     }
     
@@ -69,22 +69,22 @@ function Write-Log {
     if ($writeToConsole) {
         # Determine color based on level
         $color = switch ($level) {
-            "ERROR"   { "Red" }
-            "WARN"    { "Yellow" }
-            "INFO"    { "White" }
-            "DEBUG"   { "Gray" }
+            "ERROR" { "Red" }
+            "WARN" { "Yellow" }
+            "INFO" { "White" }
+            "DEBUG" { "Gray" }
             "SUCCESS" { "Green" }
-            default   { "White" }
+            default { "White" }
         }
         
         # Add icon to message for better visual identification
         $icon = switch ($level) {
-            "ERROR"   { "✖ " }  # Cross mark
-            "WARN"    { "⚠ " }  # Warning sign
-            "INFO"    { "ℹ " }  # Information sign
-            "DEBUG"   { "⚙ " }  # Gear
+            "ERROR" { "✖ " }  # Cross mark
+            "WARN" { "⚠ " }  # Warning sign
+            "INFO" { "ℹ " }  # Information sign
+            "DEBUG" { "⚙ " }  # Gear
             "SUCCESS" { "✓ " }  # Check mark
-            default   { "" }
+            default { "" }
         }
         
         Write-Host "$icon$formattedMessage" -ForegroundColor $color
@@ -128,8 +128,11 @@ try {
         
         $language = $config.deployment.language
         $resumeType = $config.deployment.resumetype
-        
-        Write-Log "Loaded configuration: Language = $language, Resume Type = $resumeType" "INFO"
+
+        # Check if tagsmaintenance is enabled in config
+        $tagsMaintenance = if ($config.environment.tagsmaintenance -eq 1) { $true } else { $false }
+                
+        Write-Log "Loaded configuration: Language = $language, Resume Type = $resumeType, tagsmaintenance = $tagsMaintenance" "INFO"
     } 
     catch {
         Write-Log "Error: Failed to load or parse '$configFile' - $($_.Exception.Message)" "ERROR"
@@ -142,7 +145,7 @@ try {
     } 
     else { 
         @("basics", "volunteer", "work", "education", "awards", "certificates", 
-          "publications", "skills", "languages", "interests", "references", "projects")
+            "publications", "skills", "languages", "interests", "references", "projects")
     }
 
     # Initialize resume JSON object
@@ -165,72 +168,79 @@ try {
                 continue
             }
 
-            # Special handling for basics (stored as an object)
-            if ($section -eq "basics") {
-                if ($sectionData.$section.$language -and $sectionData.$section.$language.basics) {
-                    Write-Log "Extracting basics section for language: $language with filtering" "INFO"
-
-                    # Check if any tag in tags array matches resumetype
-                    if ($sectionData.$section.$language.basics.tags -and 
-                        ($sectionData.$section.$language.basics.tags | Where-Object { $_ -eq $resumeType })) {
-                        
-                        # Clone the object to avoid modifying the original
-                        $basicsData = $sectionData.$section.$language.basics | ConvertTo-Json -Depth $jsonDepth | ConvertFrom-Json
-
-                        # Remove the 'tags' element before storing
-                        $basicsData.PSObject.Properties.Remove('tags')
-
-                        $resumeJson[$section] = $basicsData  # Store as an object
-                        Write-Log "Basics section added successfully." "INFO"
-                    } 
-                    else {
-                        Write-Log "Warning: Basics section does not match resume type '$resumeType'." "WARN"
-                        $resumeJson[$section] = $null
-                    }
-                } 
-                else {
-                    Write-Log "Error: No '$language' basics found in '$section'." "ERROR"
-                    $resumeJson[$section] = $null
-                }
+            # If tagsMaintenance is enabled, include all data without filtering
+            if ($tagsMaintenance) {
+                Write-Log "Tags maintenance mode active - exporting all data for '$section'" "INFO"
+                $resumeJson[$section] = $sectionData.$section
             }
             else {
-                # Handle all other sections (stored as arrays)
-                if ($sectionData.$section.$language -and $sectionData.$section.$language.data) {
-                    Write-Log "Filtering section '$section' for language: $language" "INFO"
+                # Special handling for basics (stored as an object)
+                if ($section -eq "basics") {
+                    if ($sectionData.$section.$language -and $sectionData.$section.$language.basics) {
+                        Write-Log "Extracting basics section for language: $language with filtering" "INFO"
 
-                    # Filter data based on tags matching resumeType
-                    $filteredData = $sectionData.$section.$language.data | Where-Object {
-                        $_.tags -and ($resumeType -in $_.tags)
-                    }
+                        # Check if any tag in tags array matches resumetype
+                        if ($sectionData.$section.$language.basics.tags -and 
+                        ($sectionData.$section.$language.basics.tags | Where-Object { $_ -eq $resumeType })) {
+                        
+                            # Clone the object to avoid modifying the original
+                            $basicsData = $sectionData.$section.$language.basics | ConvertTo-Json -Depth $jsonDepth | ConvertFrom-Json
 
-                    # Ensure filteredData is always an array
-                    $filteredData = @($filteredData)
-                    
-                    # Clone the filtered data to avoid modifying the original
-                    if ($filteredData.Length -gt 0) {
-                        $clonedData = $filteredData | ConvertTo-Json -Depth $jsonDepth | ConvertFrom-Json
-                        
-                        # Ensure clonedData is always an array
-                        $clonedData = @($clonedData)
-                        
-                        # Remove tags from each item
-                        foreach ($item in $clonedData) {
-                            $item.PSObject.Properties.Remove('tags')
+                            # Remove the 'tags' element before storing
+                            $basicsData.PSObject.Properties.Remove('tags')
+
+                            $resumeJson[$section] = $basicsData  # Store as an object
+                            Write-Log "Basics section added successfully." "INFO"
+                        } 
+                        else {
+                            Write-Log "Warning: Basics section does not match resume type '$resumeType'." "WARN"
+                            $resumeJson[$section] = $null
                         }
-                        
-                        $resumeJson[$section] = @($clonedData)  # Force array output
-                        Write-Log "Filtered items count in '$section': $($filteredData.Length)" "INFO"
                     } 
                     else {
-                        Write-Log "Warning: No matching items in '$section' based on resume type '$resumeType'." "WARN"
+                        Write-Log "Error: No '$language' basics found in '$section'." "ERROR"
+                        $resumeJson[$section] = $null
+                    }
+                }
+                else {
+                    # Handle all other sections (stored as arrays)
+                    if ($sectionData.$section.$language -and $sectionData.$section.$language.data) {
+                        Write-Log "Filtering section '$section' for language: $language" "INFO"
+
+                        # Filter data based on tags matching resumeType
+                        $filteredData = $sectionData.$section.$language.data | Where-Object {
+                            $_.tags -and ($resumeType -in $_.tags)
+                        }
+
+                        # Ensure filteredData is always an array
+                        $filteredData = @($filteredData)
+                    
+                        # Clone the filtered data to avoid modifying the original
+                        if ($filteredData.Length -gt 0) {
+                            $clonedData = $filteredData | ConvertTo-Json -Depth $jsonDepth | ConvertFrom-Json
+                        
+                            # Ensure clonedData is always an array
+                            $clonedData = @($clonedData)
+                        
+                            # Remove tags from each item
+                            foreach ($item in $clonedData) {
+                                $item.PSObject.Properties.Remove('tags')
+                            }
+                        
+                            $resumeJson[$section] = @($clonedData)  # Force array output
+                            Write-Log "Filtered items count in '$section': $($filteredData.Length)" "INFO"
+                        } 
+                        else {
+                            Write-Log "Warning: No matching items in '$section' based on resume type '$resumeType'." "WARN"
+                            $resumeJson[$section] = @()
+                        }
+                    } 
+                    else {
+                        Write-Log "Warning: No '$language' data found for section '$section'." "WARN"
                         $resumeJson[$section] = @()
                     }
-                } 
-                else {
-                    Write-Log "Warning: No '$language' data found for section '$section'." "WARN"
-                    $resumeJson[$section] = @()
                 }
-            }
+            } #else !tagsMaintenance
         } 
         else {
             Write-Log "Warning: Missing JSON file for section '$section'." "WARN"
