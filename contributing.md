@@ -11,7 +11,6 @@ Thank you for considering contributing to this project! Your help is greatly app
 6. **Review Process** – Expect feedback from maintainers, be open to discussions, and refine changes as needed.
 
 ## Code Style & Best Practices
-- Follow the coding standards outlined in the `README.md` or project documentation.
 - Keep functions modular and well-documented.
 - Write meaningful comments where necessary.
 
