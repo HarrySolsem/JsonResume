@@ -242,8 +242,8 @@ try {
                 Write-Log "Tags maintenance mode active - exporting all data for '$section'" "INFO"
                 if ($section -eq "basics") {
                     $resumeJson[$section] = $sectionData.$section
-                } else 
-                {
+                }
+                else {
                     $resumeJson[$section] = @($sectionData.$section)
                 }
             }
