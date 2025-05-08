@@ -1,4 +1,11 @@
-﻿[CmdletBinding()]
+<# 
+.SYNOPSIS
+    PowerShell Script to autogenerate resumes
+.VERSION
+    0.0.4
+#>
+
+[CmdletBinding()]
 param (
     [Parameter(Mandatory=$false)]
     [ValidateNotNullOrEmpty()]
