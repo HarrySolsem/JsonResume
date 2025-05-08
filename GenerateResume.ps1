@@ -21,7 +21,13 @@ param (
 )
 
 # Reset the log file at the start of each execution
-Set-Content -Path $logFile -Value "" -Encoding utf8
+try {
+    Set-Content -Path $logFile -Value "" -Encoding utf8 -ErrorAction Stop
+}
+catch {
+    Write-Host "Error: Unable to create or reset log file at $logFile - $($_.Exception.Message)" -ForegroundColor Red
+    exit 4
+}
 
 function Write-Log {
     param (
@@ -47,21 +53,29 @@ function Write-Log {
     
     # Write to log file if not disabled
     if (-not $NoFile -and $LogFile) {
-        $formattedMessage | Out-File -Append -Encoding utf8 $LogFile
+        try {
+            $formattedMessage | Out-File -Append -Encoding utf8 -ErrorAction Stop $LogFile
+        }
+        catch {
+            # If logging to file fails, write to console regardless of NoConsole setting
+            Write-Host "Failed to write to log file: $($_.Exception.Message)" -ForegroundColor Red
+        }
     }
     
     # Determine if we should write to console
-    $writeToConsole = $true
+    $writeToConsole = -not $NoConsole
     
-    if (-not $NoConsole) {
-        # Write to console based on preference and level
-        switch ($level) {
-            "ERROR" { $writeToConsole = $true }  # Always show errors
-            "WARN" { $writeToConsole = $true }  # Always show warnings
-            "SUCCESS" { $writeToConsole = $true }  # Always show success messages
-            "INFO" { $writeToConsole = ($VerbosePreference -eq 'Continue' -or $InformationPreference -eq 'Continue') }
-            "DEBUG" { $writeToConsole = ($DebugPreference -eq 'Continue') }
-            default { $writeToConsole = ($VerbosePreference -eq 'Continue') }
+    if ($writeToConsole) {
+        # Apply VerbosePreference/DebugPreference filtering only if not explicitly requested
+        if (-not $PSBoundParameters.ContainsKey('NoConsole')) {
+            $writeToConsole = switch ($level) {
+                "ERROR" { $true }  # Always show errors
+                "WARN" { $true }  # Always show warnings
+                "SUCCESS" { $true }  # Always show success messages
+                "INFO" { ($VerbosePreference -eq 'Continue' -or $InformationPreference -eq 'Continue') }
+                "DEBUG" { ($DebugPreference -eq 'Continue') }
+                default { ($VerbosePreference -eq 'Continue') }
+            }
         }
     }
     
@@ -91,37 +105,71 @@ function Write-Log {
     }
 }
 
-# Example usage
-# Write-Log "Operation completed successfully" "SUCCESS"
-# Write-Log "Starting process..." "INFO" 
-# Write-Log "Debug information" "DEBUG"
-# Write-Log "Warning: disk space low" "WARN"
-# Write-Log "Failed to connect to server" "ERROR"
-# Write-Log "File-only message" -NoConsole
-# Write-Log "Console-only message" -NoFile
+function Test-ValidJson {
+    param (
+        [Parameter(Mandatory = $true)]
+        [string]$JsonContent,
+        
+        [Parameter(Mandatory = $true)]
+        [string]$FilePath
+    )
+    
+    try {
+        $null = $JsonContent | ConvertFrom-Json
+        return $true
+    }
+    catch {
+        Write-Log "Error: Invalid JSON format in file '$FilePath' - $($_.Exception.Message)" "ERROR"
+        return $false
+    }
+}
 
 # Main execution begins
 try {
     Write-Log "Starting resume generation process." "INFO"
 
-    # Verify input folder exists
-    if (!(Test-Path -Path $inputFolder)) {
-        Write-Log "Error: Input folder '$inputFolder' does not exist." "ERROR"
+    # Validate path parameters
+    $inputFolder = Resolve-Path -Path $inputFolder -ErrorAction SilentlyContinue
+    if (-not $inputFolder) {
+        Write-Log "Error: Input folder '$inputFolder' does not exist or is not accessible." "ERROR"
         exit 1
     }
 
-    # Verify config file exists
-    if (!(Test-Path -Path $configFile)) {
-        Write-Log "Error: Configuration file '$configFile' does not exist." "ERROR"
+    $configFilePath = Resolve-Path -Path $configFile -ErrorAction SilentlyContinue
+    if (-not $configFilePath) {
+        Write-Log "Error: Configuration file '$configFile' does not exist or is not accessible." "ERROR"
         exit 1
+    }
+
+    # Ensure output directory exists
+    $outputDir = Split-Path -Path $outputFile -Parent
+    if ($outputDir -and -not (Test-Path -Path $outputDir)) {
+        try {
+            $null = New-Item -Path $outputDir -ItemType Directory -Force -ErrorAction Stop
+            Write-Log "Created output directory: $outputDir" "INFO"
+        }
+        catch {
+            Write-Log "Error: Unable to create output directory '$outputDir' - $($_.Exception.Message)" "ERROR"
+            exit 3
+        }
     }
 
     # Load configuration from JSON
     try {
-        $config = Get-Content -Path $configFile -Raw | ConvertFrom-Json
+        $configContent = Get-Content -Path $configFilePath -Raw -Encoding UTF8
         
-        # Validate configuration
-        if (-not $config.deployment -or -not $config.deployment.language -or -not $config.deployment.resumetype) {
+        # Validate JSON format
+        if (-not (Test-ValidJson -JsonContent $configContent -FilePath $configFilePath)) {
+            Write-Log "Error: Configuration file contains invalid JSON." "ERROR"
+            exit 2
+        }
+        
+        $config = $configContent | ConvertFrom-Json
+        
+        # Validate configuration structure
+        if (-not $config.deployment -or 
+            -not (Get-Member -InputObject $config.deployment -Name "language" -MemberType Properties) -or 
+            -not (Get-Member -InputObject $config.deployment -Name "resumetype" -MemberType Properties)) {
             Write-Log "Error: Invalid configuration - missing required deployment settings" "ERROR"
             exit 1
         }
@@ -130,7 +178,13 @@ try {
         $resumeType = $config.deployment.resumetype
 
         # Check if tagsmaintenance is enabled in config
-        $tagsMaintenance = if ($config.environment.tagsmaintenance -eq 1) { $true } else { $false }
+        $tagsMaintenance = if ((Get-Member -InputObject $config.environment -Name "tagsmaintenance" -MemberType Properties) -and 
+            $config.environment.tagsmaintenance -eq 1) { 
+            $true 
+        }
+        else { 
+            $false 
+        }
                 
         Write-Log "Loaded configuration: Language = $language, Resume Type = $resumeType, tagsmaintenance = $tagsMaintenance" "INFO"
     } 
@@ -140,7 +194,7 @@ try {
     }
 
     # Get sections from config or use default list
-    $sections = if ($config.sections) { 
+    $sections = if (Get-Member -InputObject $config -Name "sections" -MemberType Properties) { 
         $config.sections 
     } 
     else { 
@@ -159,11 +213,26 @@ try {
             Write-Log "Processing file: $filePath" "DEBUG"
 
             try {
-                $sectionData = Get-Content -Path $filePath -Raw | ConvertFrom-Json
+                $fileContent = Get-Content -Path $filePath -Raw -Encoding UTF8
+                
+                # Validate JSON format
+                if (-not (Test-ValidJson -JsonContent $fileContent -FilePath $filePath)) {
+                    # Log already handled in Test-ValidJson function
+                    $resumeJson[$section] = if ($section -eq "basics") { $null } else { @() }
+                    continue
+                }
+                
+                $sectionData = $fileContent | ConvertFrom-Json
+                
+                # Validate section structure
+                if (-not (Get-Member -InputObject $sectionData -Name $section -MemberType Properties)) {
+                    Write-Log "Error: Missing '$section' property in '$filePath'" "ERROR"
+                    $resumeJson[$section] = if ($section -eq "basics") { $null } else { @() }
+                    continue
+                }
             }
             catch {
-                Write-Log "Error: Failed to parse JSON in '$filePath' - $($_.Exception.Message)" "ERROR"
-                # Continue to next section instead of failing the entire script
+                Write-Log "Error: Failed to process '$filePath' - $($_.Exception.Message)" "ERROR"
                 $resumeJson[$section] = if ($section -eq "basics") { $null } else { @() }
                 continue
             }
@@ -171,23 +240,40 @@ try {
             # If tagsMaintenance is enabled, include all data without filtering
             if ($tagsMaintenance) {
                 Write-Log "Tags maintenance mode active - exporting all data for '$section'" "INFO"
-                $resumeJson[$section] = $sectionData.$section
+                if ($section -eq "basics") {
+                    $resumeJson[$section] = $sectionData.$section
+                } else 
+                {
+                    $resumeJson[$section] = @($sectionData.$section)
+                }
             }
             else {
                 # Special handling for basics (stored as an object)
                 if ($section -eq "basics") {
-                    if ($sectionData.$section.$language -and $sectionData.$section.$language.basics) {
+                    # Check if language exists in basics section
+                    if ((Get-Member -InputObject $sectionData.$section -Name $language -MemberType Properties) -and
+                        (Get-Member -InputObject $sectionData.$section.$language -Name "basics" -MemberType Properties)) {
+                        
                         Write-Log "Extracting basics section for language: $language with filtering" "INFO"
 
-                        # Check if any tag in tags array matches resumetype
-                        if ($sectionData.$section.$language.basics.tags -and 
-                        ($sectionData.$section.$language.basics.tags | Where-Object { $_ -eq $resumeType })) {
+                        $basicsObj = $sectionData.$section.$language.basics
+                        $includeBasics = $false
                         
+                        # Check if any tag in tags array matches resumetype
+                        if ((Get-Member -InputObject $basicsObj -Name "tags" -MemberType Properties) -and
+                            ($basicsObj.tags -is [array]) -and
+                            ($basicsObj.tags -contains $resumeType)) {
+                            $includeBasics = $true
+                        }
+                        
+                        if ($includeBasics) {
                             # Clone the object to avoid modifying the original
-                            $basicsData = $sectionData.$section.$language.basics | ConvertTo-Json -Depth $jsonDepth | ConvertFrom-Json
+                            $basicsData = $basicsObj | ConvertTo-Json -Depth $jsonDepth | ConvertFrom-Json
 
                             # Remove the 'tags' element before storing
-                            $basicsData.PSObject.Properties.Remove('tags')
+                            if (Get-Member -InputObject $basicsData -Name "tags" -MemberType Properties) {
+                                $basicsData.PSObject.Properties.Remove('tags')
+                            }
 
                             $resumeJson[$section] = $basicsData  # Store as an object
                             Write-Log "Basics section added successfully." "INFO"
@@ -204,35 +290,44 @@ try {
                 }
                 else {
                     # Handle all other sections (stored as arrays)
-                    if ($sectionData.$section.$language -and $sectionData.$section.$language.data) {
+                    if ((Get-Member -InputObject $sectionData.$section -Name $language -MemberType Properties) -and
+                        (Get-Member -InputObject $sectionData.$section.$language -Name "data" -MemberType Properties)) {
+                        
                         Write-Log "Filtering section '$section' for language: $language" "INFO"
 
-                        # Filter data based on tags matching resumeType
-                        $filteredData = $sectionData.$section.$language.data | Where-Object {
-                            $_.tags -and ($resumeType -in $_.tags)
+                        $sectionItems = $sectionData.$section.$language.data
+                        
+                        # Ensure we're treating data as an array
+                        if ($sectionItems -isnot [array]) {
+                            $sectionItems = @($sectionItems)
                         }
 
-                        # Ensure filteredData is always an array
-                        $filteredData = @($filteredData)
-                    
-                        # Clone the filtered data to avoid modifying the original
-                        if ($filteredData.Length -gt 0) {
-                            $clonedData = $filteredData | ConvertTo-Json -Depth $jsonDepth | ConvertFrom-Json
-                        
-                            # Ensure clonedData is always an array
-                            $clonedData = @($clonedData)
-                        
-                            # Remove tags from each item
-                            foreach ($item in $clonedData) {
-                                $item.PSObject.Properties.Remove('tags')
+                        # Create a new array to hold filtered items
+                        $filteredData = [System.Collections.ArrayList]::new()
+
+                        # Filter data based on tags matching resumeType
+                        foreach ($item in $sectionItems) {
+                            if ((Get-Member -InputObject $item -Name "tags" -MemberType Properties) -and
+                                ($item.tags -is [array]) -and
+                                ($item.tags -contains $resumeType)) {
+                                
+                                # Create a clone without modifying the original
+                                $clonedItem = $item | ConvertTo-Json -Depth $jsonDepth | ConvertFrom-Json
+                                
+                                # Remove tags property before adding to results
+                                if (Get-Member -InputObject $clonedItem -Name "tags" -MemberType Properties) {
+                                    $clonedItem.PSObject.Properties.Remove('tags')
+                                }
+                                
+                                [void]$filteredData.Add($clonedItem)
                             }
+                        }
                         
-                            $resumeJson[$section] = @($clonedData)  # Force array output
-                            Write-Log "Filtered items count in '$section': $($filteredData.Length)" "INFO"
-                        } 
-                        else {
+                        $resumeJson[$section] = @($filteredData)
+                        Write-Log "Filtered items count in '$section': $($filteredData.Count)" "INFO"
+                        
+                        if ($filteredData.Count -eq 0) {
                             Write-Log "Warning: No matching items in '$section' based on resume type '$resumeType'." "WARN"
-                            $resumeJson[$section] = @()
                         }
                     } 
                     else {
@@ -251,15 +346,15 @@ try {
     # Convert final structure to JSON and save
     try {
         $finalJson = $resumeJson | ConvertTo-Json -Depth $jsonDepth
-        $finalJson | Out-File -FilePath $outputFile -Encoding utf8
-        Write-Log "Resume JSON created successfully!" "INFO"
+        $finalJson | Out-File -FilePath $outputFile -Encoding utf8 -NoNewline -NoClobber:$false -ErrorAction Stop
+        Write-Log "Resume JSON created successfully at '$outputFile'!" "SUCCESS"
     }
     catch {
         Write-Log "Error: Failed to write '$outputFile' - $($_.Exception.Message)" "ERROR"
         exit 3
     }
 
-    Write-Host "Resume generation complete. Check $logFile for details."
+    Write-Log "Resume generation complete." "SUCCESS"
     exit 0  # Successful completion
 }
 catch {
