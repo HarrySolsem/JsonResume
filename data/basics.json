@@ -5,7 +5,7 @@
             "basics": {
                 "name": "Harry Solsem",
                 "label": "IT-ledelse og prosjektledelse",
-                "summary": "Med over 30 års ledererfaring, inkludert tekniske og administrative roller i selskaper som DNB, Riverty, Neonomics og Sharecat Solutions. Min ledererfaring: Ledet team med opptil 50 ansatte, hatt fullt ansvar for personale, budsjett og resultater, samt gitt ledelse på tvers av flere organisasjoner. Nøkkelområder for kompetanse: Teamledelse, produktutvikling, IT-prosjektledelse. Fremtredende selskaper: DNB, Riverty, Neonomics, Sharecat Solutions.",
+                "summary": " *** DEV *** Med over 30 års ledererfaring, inkludert tekniske og administrative roller i selskaper som DNB, Riverty, Neonomics og Sharecat Solutions. Min ledererfaring: Ledet team med opptil 50 ansatte, hatt fullt ansvar for personale, budsjett og resultater, samt gitt ledelse på tvers av flere organisasjoner. Nøkkelområder for kompetanse: Teamledelse, produktutvikling, IT-prosjektledelse. Fremtredende selskaper: DNB, Riverty, Neonomics, Sharecat Solutions.",
                 "picture": "https://avatars.githubusercontent.com/u/2042298?v=4",
                 "image": "https://avatars.githubusercontent.com/u/2042298?v=4",
                 "email": "harry.solsem@solsem.no",
@@ -33,7 +33,7 @@
             "basics": {
                 "name": "Harry Solsem",
                 "label": "Leadership | ISO27001 | Team Leader | Project Manager | Digital Product Development | Change Management | Enterprise Architect",
-                "summary": "With over 30 years of leadership experience, including technical and administrative roles in companies such as DNB, Riverty, Neonomics, and Sharecat Solutions. I have Leadership experience: Led teams of up to 50 employees, Managed full responsibility for personnel, budget, and results, provided leadership across multiple organizations. Key areas of expertise: Team leadership, Product development, IT project management. Notable Companies: DNB, Riverty, Neonomics, Sharecat Solutions",
+                "summary": " *** DEV *** With over 30 years of leadership experience, including technical and administrative roles in companies such as DNB, Riverty, Neonomics, and Sharecat Solutions. I have Leadership experience: Led teams of up to 50 employees, Managed full responsibility for personnel, budget, and results, provided leadership across multiple organizations. Key areas of expertise: Team leadership, Product development, IT project management. Notable Companies: DNB, Riverty, Neonomics, Sharecat Solutions",
                 "picture": "https://avatars.githubusercontent.com/u/2042298?v=4",
                 "image": "https://avatars.githubusercontent.com/u/2042298?v=4",
                 "email": "harry.solsem@solsem.no",
@@ -53,7 +53,9 @@
                         "url": "https://www.linkedin.com/in/harrysolsem"
                     }
                 ],
-                "tags": ["management", "projectmanagement"
+                "tags": [
+                    "management",
+                    "projectmanagement"
                 ]
             }
         }

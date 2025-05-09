@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - test
 
 jobs:
   build:
@@ -26,7 +27,7 @@ jobs:
         shell: pwsh
 
       - name: Execute PowerShell script
-        run: .\merge_resume.ps1 -inputFolder ".\data" -outputFile "resume.json" -configFile ".\config.json"
+        run: .\GenerateResume.ps1 -inputFolder ".\data" -outputFile "resume.json" -configFile ".\config.json"
         shell: pwsh
 
       - name: Update Resume Gist
