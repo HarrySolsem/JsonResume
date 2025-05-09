@@ -16,9 +16,19 @@ jobs:
         id: read_json_gistid_value
         run: echo "GISTID=$(jq -r '.deployment.gist_id' .\config.json)" >> $GITHUB_ENV
 
+      - name: Output Gist ID to console
+        id: OutputGistID
+        run: |
+            Write-Host "Gist ID: ${{ env.GISTID }}"
+
       - name: Read dry-run setting from JSON
         id: read_json_dryrun_value
         run: echo "DRYRUN=$(jq -r '.environment.dryrun' .\config.json)" >> $GITHUB_ENV
+
+      - name: Output drytun to console
+        id: OutputDryRun
+        run: |
+            Write-Host "Dryrun: ${{ env.DRYRUN }}"
 
       - name: Execute PowerShell script
         run: .\GenerateResume.ps1
