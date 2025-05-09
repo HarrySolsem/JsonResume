@@ -78,7 +78,41 @@ The script uses a `config.json` file to control its behavior. Below is an exampl
 
 1. cd your-repo-name
 
-1. Run the script:
+1. Run the scri## Tagging Elements in JSON Files
+
+## How Tagging Works
+1. Each JSON file in the `data` folder corresponds to a specific section of the resume (e.g., `basics.json`, `work.json`, `education.json`).
+2. Each element in these files can include a `tags` property, which is an array of strings.
+3. The `tags` array should include the `resumetype` value from `config.json` for the element to be included in the generated resume.
+
+### Example JSON Files
+
+#### work.json
+```json
+{ "company": "TechCorp", "position": "Project Manager", "startDate": "2020-01-01", "endDate": "2022-12-31", "summary": "Managed multiple projects across various teams.", "tags": ["projectmanagement", "general"] }, { "company": "DevSolutions", "position": "Software Engineer", "startDate": "2018-01-01", "endDate": "2019-12-31", "summary": "Developed software solutions for clients.", "tags": ["softwaredevelopment"] }
+```
+
+
+#### education.json
+```json
+{ "institution": "University of Tech", "area": "Project Management", "studyType": "Master's", "startDate": "2016-09-01", "endDate": "2018-06-30", "tags": ["projectmanagement"] }, { "institution": "Community College", "area": "Computer Science", "studyType": "Bachelor's", "startDate": "2012-09-01", "endDate": "2016-06-30", "tags": ["softwaredevelopment"] }
+```
+
+
+### Default Behavior Without Tags
+If an element does not include a `tags` property:
+- It will be excluded from the generated resume unless the `tagsmaintenance` setting in `config.json` is set to `1`.
+- When `tagsmaintenance` is enabled, all elements will be included regardless of their tags.
+
+### Best Practices for Tagging
+1. **Use Consistent Tags**:
+   - Ensure that the tags in your JSON files match the `resumetype` values in `config.json`.
+   - For example, if your `resumetype` is `"projectmanagement"`, use `"projectmanagement"` as a tag in your JSON files.
+
+2. **Tag Multiple Resumetypes**:
+   - If an element is relevant to multiple resume types, include all applicable tags in the `tags` array.
+   - Example:
+    ```json "tags": ["projectmanagement", "softwaredevelopment"]```pt:
 ```
 pwsh ./GenerateResume.ps1 -inputFolder "./data" -outputFile "./resume.json" -configFile "./config.json" -Verbose -Debug
 ```
@@ -86,6 +120,8 @@ pwsh ./GenerateResume.ps1 -inputFolder "./data" -outputFile "./resume.json" -con
 3. Check the output:
    - Generated JSON: `resume.json`
    - Logs: `dynamic_creation.log`
+
+
 
 ## Troubleshooting
 - **GitHub Actions Workflow Fails**:
@@ -131,3 +167,5 @@ For issues or feature requests, please open an issue in the repository.
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+
