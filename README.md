@@ -89,6 +89,7 @@ The script uses a `config.json` file to control its behavior. Below is an exampl
 1. Run the script:
 
 ```
+
 pwsh ./GenerateResume.ps1 -inputFolder "./data_samples"
 ```
    
