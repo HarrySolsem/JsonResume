@@ -38,8 +38,28 @@
 
 ## Configuration
 The script uses a `config.json` file to control its behavior. Below is an example configuration:
-`{ "deployment": { "resumetype": "projectmanagement", "language": "en", "gist_id": "your-gist-id", "sections": [ "basics", "work", "education", "skills", "projects" ] }, "environment": { "debug": "1", "dryrun": "0", "tagsmaintenance": "0" } }
-`
+### Example `config.json`
+```json
+{
+  "deployment": {
+	"resumetype": "projectmanagement",
+	"language": "en",
+	"gist_id": "your-gist-id",
+	"sections": [
+	  "basics",
+	  "work",
+	  "education",
+	  "skills",
+	  "projects"
+	]
+  },
+  "environment": {
+	"debug": "1",
+	"dryrun": "0",
+	"tagsmaintenance": "0"
+  }
+}
+```
 
 
 ### Key Configuration Fields
@@ -58,7 +78,9 @@ The script uses a `config.json` file to control its behavior. Below is an exampl
    git clone https://github.com/HarrySolsem/JsonResume.git cd your-repo-name
    
 2. Run the script:
-``` pwsh ./GenerateResume.ps1 -inputFolder "./data" -outputFile "./resume.json" -configFile "./config.json" -Verbose -Debug ```
+```
+pwsh ./GenerateResume.ps1 -inputFolder "./data" -outputFile "./resume.json" -configFile "./config.json" -Verbose -Debug
+```
    
 3. Check the output:
    - Generated JSON: `resume.json`
