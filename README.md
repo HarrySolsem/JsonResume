@@ -29,7 +29,6 @@
 - **Logging**: Logs all operations to a specified log file for debugging and traceability.
 - **GitHub Actions Integration**: Automates the process of generating and publishing the resume JSON to a Gist.
 
-- 
 ## Prerequisites
 - **PowerShell**: Requires PowerShell 7 or later. You can download it from [PowerShell GitHub Releases](https://github.com/PowerShell/PowerShell/releases).
 - **GitHub Actions**: Ensure your repository is set up with GitHub Actions for automated workflows.
@@ -75,9 +74,11 @@ The script uses a `config.json` file to control its behavior. Below is an exampl
 
 ### Running the Script Locally
 1. Clone the repository:
-   git clone https://github.com/HarrySolsem/JsonResume.git cd your-repo-name
-   
-2. Run the script:
+   git clone https://github.com/HarrySolsem/JsonResume.git 
+
+1. cd your-repo-name
+
+1. Run the script:
 ```
 pwsh ./GenerateResume.ps1 -inputFolder "./data" -outputFile "./resume.json" -configFile "./config.json" -Verbose -Debug
 ```
@@ -119,8 +120,8 @@ Ensure you add the `TOKEN` secret in your repository settings under **Settings >
 ## Contributing
 We welcome contributions to this project! To contribute:
 1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Submit a pull request with a detailed description of your changes.
+1. Create a new branch for your feature or bug fix.
+1. Submit a pull request with a detailed description of your changes.
 
 For issues or feature requests, please open an issue in the repository.
 
