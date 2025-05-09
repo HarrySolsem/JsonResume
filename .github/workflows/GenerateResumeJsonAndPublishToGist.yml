@@ -23,6 +23,8 @@ jobs:
           exit 1
          } else {
            Write-Host "config.json exists"
+           Write-Host "Content of config.json:"
+           Get-Content -Path "config.json" | Write-Host
          }
         shell: pwsh
 
