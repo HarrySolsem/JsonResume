@@ -32,9 +32,20 @@ jobs:
             $config = Get-Content -Path .\config.json | ConvertFrom-Json
             echo "TAGSMAINTENANCE=$($config.environment.tagsmaintenance)" >> $env:GITHUB_ENV
         shell: pwsh
+
+      - name: Read inputfolder from config.json
+        id: read_json_inputfolder_value
+        run: |
+            $config = Get-Content -Path .\config.json | ConvertFrom-Json
+            echo "INPUTFOLDER=$($config.environment.inputfolder)" >> $env:GITHUB_ENV
+        shell: pwsh
+
+      - name: Debug INPUTFOLDER
+        run: echo "INPUTFOLDER is set to ${{ env.INPUTFOLDER }}"
+        shell: pwsh
       
-      - name: Execute PowerShell script
-        run: .\GenerateResume.ps1
+      - name: Execute PowerShell script to generate resume.json
+        run: .\GenerateResume.ps1 -inputFolder ${{env.INPUTFOLDER}}
         shell: pwsh
 
       - name: Update Resume Gist

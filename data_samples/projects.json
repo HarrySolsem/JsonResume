@@ -3,7 +3,25 @@
         "no": {
             "language": "no",
             "data": [
+                {
+                    "title": "Project 1",
+                    "description": "Description of project 1",
+                    "link": "https://example.com/project1",
+                    "tags": [
+                        "tag1",
+                        "tag2"
+                    ]
 
+                },
+                {
+                    "title": "Project 1",
+                    "description": "Description of project 1",
+                    "link": "https://example.com/project1",
+                    "tags": [
+                        "tag1",
+                        "tag2"
+                    ]
+                }
             ]
         },
         "en": {
@@ -29,6 +47,6 @@
                     ]
                 }
             ]
-        }"
+        }
     }
 }
