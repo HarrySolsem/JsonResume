@@ -28,9 +28,9 @@ jobs:
       - name: Read dry-run setting from JSON
         id: read_json_dryrun_value
         run: |
-         $config = Get-Content -Path .\config.json | ConvertFrom-Json
-         echo "DRYRUN=$($config.environment.dryrun)" >> $env:GITHUB_ENV
-         shell: pwsh
+            $config = Get-Content -Path .\config.json | ConvertFrom-Json
+            echo "DRYRUN=$($config.environment.dryrun)" >> $env:GITHUB_ENV
+        shell: pwsh
 
       - name: Output drytun to console
         id: OutputDryRun
