@@ -220,13 +220,13 @@ function ValidateConfigurationStructure{
 # Main execution begins
 try {
     Write-Log "Starting resume generation process." "INFO"
-    Write-Log "All good 1" "INFO"
+    Write-Debug "All good 1" "INFO"
 
     ValidatePathAndFiles
-    Write-Log "All good 2" "INFO"
+    Write-Debug "All good 2" "INFO"
     # Load configuration from JSON
     try {
-        Write-Log "All good 3" "INFO"
+        Write-Debug "All good 3" "INFO"
         $configContent = Get-Content -Path $configFilePath -Raw -Encoding UTF8
         
         # Validate JSON format
@@ -234,13 +234,13 @@ try {
             Write-Log "Error: Configuration file contains invalid JSON." "ERROR"
             exit 5
         }
-        Write-Log "All good 4" "INFO"
+        Write-Debug "All good 4" "INFO"
         $config = $configContent | ConvertFrom-Json
         ValidateConfigurationStructure
         
         $language = $config.deployment.language
         $resumeType = $config.deployment.resumetype
-        Write-Log "All good 5" "INFO"
+        Write-Debug "All good 5" "INFO"
         # Check if tagsmaintenance is enabled in config
         $tagsMaintenance = $config.environment.tagsmaintenance -eq 1
      

@@ -38,7 +38,8 @@ jobs:
 
       - name: Run PowerShell Script with Debug
         run: |
-         pwsh -NoProfile -Command ".\GenerateResume.ps1 -Verbose -Debug"
+            pwsh -NoProfile -Command "$VerbosePreference = 'Continue'; $DebugPreference = 'Continue'; .\GenerateResume.ps1 -Verbose -Debug"
+   
         
         
       # - name: Execute PowerShell script
