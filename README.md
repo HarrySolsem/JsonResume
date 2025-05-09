@@ -81,7 +81,6 @@ The script uses a `config.json` file to control its behavior. Below is an exampl
 - **`environment.tagsmaintenance`**: If set to `1`, includes all data without filtering.
 - **`environment.inputfolder`**: The folder where the sample JSON files are located. This should be set to the folder where your JSON files are located. The default is `data_samples`.
 
-
 ## Usage
 
 ### Running the Script Locally
