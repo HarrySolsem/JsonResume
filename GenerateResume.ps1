@@ -186,11 +186,11 @@ function ValidatePathAndFiles {
         exit 2
     }
 
-    $configFilePath = Resolve-Path -Path $configFile
-    if (-not $configFilePath) {
-        Write-Log "Error: Configuration file '$configFile' does not exist or is not accessible." "ERROR"
-        exit 3
-    }
+    #$configFilePath = Resolve-Path -Path $configFile
+    #if (-not $configFilePath) {
+    #    Write-Log "Error: Configuration file '$configFile' does not exist or is not accessible." "ERROR"
+    #    exit 3
+    #}
 
     # Ensure output directory exists
     $outputDir = Split-Path -Path $outputFile -Parent
@@ -227,6 +227,12 @@ try {
     # Load configuration from JSON
     try {
         Write-Log "All good 3" "DEBUG"
+
+        $configFilePath = Resolve-Path -Path $configFile
+        if (-not $configFilePath) {
+            Write-Log "Error: Configuration file '$configFile' does not exist or is not accessible." "ERROR"
+            exit 3
+        }
         Write-Log "Config file path: $configFilePath" "DEBUG"
         $configContent = Get-Content -Path $configFilePath -Raw -Encoding UTF8
         
