@@ -17,11 +17,11 @@ param (
     
     [Parameter(Mandatory = $false)]
     [ValidateNotNullOrEmpty()]
-    [string]$logFile = ".\dynamic_creation.log",
+    [string]$logFile = "dynamic_creation.log",
     
     [Parameter(Mandatory = $false)]
     [ValidateNotNullOrEmpty()]
-    [string]$configFile = ".\config.json",
+    [string]$configFile = "config.json",
     
     [Parameter(Mandatory = $false)]
     [int]$jsonDepth = 5
