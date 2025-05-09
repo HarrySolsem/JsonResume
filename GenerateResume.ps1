@@ -134,7 +134,7 @@ function IsBasicSection {
 
 # Define the array of all sections as a constant
 $AllSections = @("basics", "volunteer", "work", "education", "awards", "certificates", 
-                 "publications", "skills", "languages", "interests", "references", "projects")
+    "publications", "skills", "languages", "interests", "references", "projects")
 
 function GetSectionsToProcess {
     param (
@@ -178,15 +178,15 @@ function GetSectionsToProcess {
     return $AllSections
 }
 
-function ValidateConfigurationStructure{
- # Validate configuration structure
-        if (-not $config.deployment -or 
-            -not (Get-Member -InputObject $config.deployment -Name "language" -MemberType Properties) -or 
-            -not (Get-Member -InputObject $config.deployment -Name "resumetype" -MemberType Properties) -or
-            -not (Get-Member -InputObject $config.deployment -Name "gist_id" -MemberType Properties)) {
-            Write-Log "Error: Invalid configuration - missing required deployment settings" "ERROR"
-            exit 6
-        }
+function ValidateConfigurationStructure {
+    # Validate configuration structure
+    if (-not $config.deployment -or 
+        -not (Get-Member -InputObject $config.deployment -Name "language" -MemberType Properties) -or 
+        -not (Get-Member -InputObject $config.deployment -Name "resumetype" -MemberType Properties) -or
+        -not (Get-Member -InputObject $config.deployment -Name "gist_id" -MemberType Properties)) {
+        Write-Log "Error: Invalid configuration - missing required deployment settings" "ERROR"
+        exit 6
+    }
 }
 
 # Main execution begins
@@ -307,16 +307,17 @@ try {
 
                 if (IsBasicSection -SectionName $section -BasicSectionName $BasicSectionName) {
                     $sectionToGet = "$BasicSectionName"
-                } else {
+                }
+                else {
                     $sectionToGet = "data"
-}
+                }
                 if ((Get-Member -InputObject $sectionData.$section -Name $language -MemberType Properties) -and
                         (Get-Member -InputObject $sectionData.$section.$language -Name $sectionToGet -MemberType Properties)) {
                         
                     Write-Log "Filtering section '$section' for language: $language" "INFO"
 
-                    if (IsBasicSection -SectionName $section -BasicSectionName $BasicSectionName){
-                    #if ($section -eq "$BasicSectionName") {
+                    if (IsBasicSection -SectionName $section -BasicSectionName $BasicSectionName) {
+                        #if ($section -eq "$BasicSectionName") {
                         $basicsObj = $sectionData.$section.$language.basics
                     }
                     else {
@@ -352,7 +353,7 @@ try {
                         }
                     }
                         
-                    if (IsBasicSection -SectionName $section -BasicSectionName $BasicSectionName){
+                    if (IsBasicSection -SectionName $section -BasicSectionName $BasicSectionName) {
                         $resumeJson[$section] = $basicsObj
                     }
                     else {
