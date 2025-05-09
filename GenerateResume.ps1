@@ -180,13 +180,13 @@ function GetSectionsToProcess {
 
 function ValidatePathAndFiles {
     # Validate path parameters
-    $inputFolder = Resolve-Path -Path $inputFolder -ErrorAction SilentlyContinue
+    $inputFolder = Resolve-Path -Path $inputFolder
     if (-not $inputFolder) {
         Write-Log "Error: Input folder '$inputFolder' does not exist or is not accessible." "ERROR"
         exit 2
     }
 
-    $configFilePath = Resolve-Path -Path $configFile -ErrorAction SilentlyContinue
+    $configFilePath = Resolve-Path -Path $configFile
     if (-not $configFilePath) {
         Write-Log "Error: Configuration file '$configFile' does not exist or is not accessible." "ERROR"
         exit 3
@@ -227,7 +227,7 @@ try {
     # Load configuration from JSON
     try {
         Write-Log "All good 3" "DEBUG"
-        Write-Log "Config file path: $configFilePath" "DEBUG""
+        Write-Log "Config file path: $configFilePath" "DEBUG"
         $configContent = Get-Content -Path $configFilePath -Raw -Encoding UTF8
         
         Write-Log "All good 4" "DEBUG"
