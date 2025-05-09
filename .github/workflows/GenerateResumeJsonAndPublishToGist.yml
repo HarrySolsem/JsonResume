@@ -1,0 +1,49 @@
+name: Generate Resume JSON
+on:
+  push:
+    branches:
+      - main
+      - test
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Read gist_id setting from JSON
+        id: read_json_gistid_value
+        run: |
+            $config = Get-Content -Path .\config.json | ConvertFrom-Json
+            echo "GISTID=$($config.deployment.gist_id)" >> $env:GITHUB_ENV
+        shell: pwsh
+
+      - name: Read dry-run setting from JSON
+        id: read_json_dryrun_value
+        run: |
+            $config = Get-Content -Path .\config.json | ConvertFrom-Json
+            echo "DRYRUN=$($config.environment.dryrun)" >> $env:GITHUB_ENV
+        shell: pwsh
+
+      - name: Read tagsmaintenance setting from JSON
+        id: read_json_tagsmaintenance_value
+        run: |
+            $config = Get-Content -Path .\config.json | ConvertFrom-Json
+            echo "TAGSMAINTENANCE=$($config.environment.tagsmaintenance)" >> $env:GITHUB_ENV
+        shell: pwsh
+      
+      - name: Execute PowerShell script
+        run: .\GenerateResume.ps1
+        shell: pwsh
+
+      - name: Update Resume Gist
+        if: ${{ env.DRYRUN == '0' && env.TAGSMAINTENANCE == 0 }}
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.TOKEN }}
+          gist_id: ${{ env.GISTID }}
+          file_path: resume.json
+
+permissions:
+  contents: read

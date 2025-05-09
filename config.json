@@ -1,11 +1,26 @@
 {
     "deployment": {
-        "resumetype": "master",
-        "language": "en",
-        "gist_id": "f92fdc3f7bee3d295f93b45aee401c29"
+        "resumetype": "management",
+        "language": "no",
+        "gist_id": "f92fdc3f7bee3d295f93b45aee401c29",
+        "sections": [
+            "basics",
+            "volunteer",
+            "work",
+            "education",
+            "awards",
+            "certificates",
+            "publications",
+            "skills",
+            "languages",
+            "interests",
+            "references",
+            "projects"
+        ]
     },
     "environment": {
         "debug": "1",
-        "dryrun": "0"
+        "dryrun": "1",
+        "tagsmaintenance": 0
     }
-}   
+}  

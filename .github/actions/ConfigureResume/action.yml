@@ -1,9 +1,0 @@
-name: 'Run resume_manpulation.sh Script'
-description: 'Executes a shell script'
-runs:
-  using: 'composite'
-  steps:
-    - run: |
-        chmod +x .github/actions/ConfigureResume/resume_manipulation.sh
-        .github/actions/ConfigureResume/resume_manipulation.sh
-      shell: bash
