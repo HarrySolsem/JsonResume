@@ -20,14 +20,8 @@ jobs:
         id: read_json_dryrun_value
         run: echo "DRYRUN=$(jq -r '.environment.dryrun' ./config.json)" >> $GITHUB_ENV
 
-      - name: Set up PowerShell environment
-        run: |
-          Install-Module -Name PowerShellGet -Force -Scope CurrentUser
-          Install-Module -Name Pester -Force -Scope CurrentUser
-        shell: pwsh
-
       - name: Execute PowerShell script
-        run: .\GenerateResume.ps1 -inputFolder ".\data" -outputFile "resume.json" -configFile ".\config.json"
+        run: .\GenerateResume.ps1 -inputFolder ".\data" -outputFile "resume.json" -configFile "config.json"
         shell: pwsh
 
       - name: Update Resume Gist
