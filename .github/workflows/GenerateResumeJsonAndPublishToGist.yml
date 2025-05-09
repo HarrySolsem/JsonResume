@@ -19,12 +19,6 @@ jobs:
             echo "GISTID=$($config.deployment.gist_id)" >> $env:GITHUB_ENV
         shell: pwsh
 
-
-      - name: Output Gist ID to console
-        id: OutputGistID
-        run: |
-            Write-Host "Gist ID: ${{ env.GISTID }}"
-
       - name: Read dry-run setting from JSON
         id: read_json_dryrun_value
         run: |
@@ -32,17 +26,19 @@ jobs:
             echo "DRYRUN=$($config.environment.dryrun)" >> $env:GITHUB_ENV
         shell: pwsh
 
-      - name: Output drytun to console
-        id: OutputDryRun
+      - name: Read tagsmaintenance setting from JSON
+        id: read_json_tagsmaintenance_value
         run: |
-            Write-Host "Dryrun: ${{ env.DRYRUN }}"
-
+            $config = Get-Content -Path .\config.json | ConvertFrom-Json
+            echo "TAGSMAINTENANCE=$($config.environment.tagsmaintenance)" >> $env:GITHUB_ENV
+        shell: pwsh
+      
       - name: Execute PowerShell script
         run: .\GenerateResume.ps1
         shell: pwsh
 
       - name: Update Resume Gist
-        if: ${{ env.DRYRUN == '0' }}
+        if: ${{ env.DRYRUN == '0' && env.TAGSMAINTENANCE == 0 }}
         uses: exuanbo/actions-deploy-gist@v1
         with:
           token: ${{ secrets.TOKEN }}
