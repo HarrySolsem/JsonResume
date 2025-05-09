@@ -79,8 +79,7 @@ The script uses a `config.json` file to control its behavior. Below is an exampl
 - **`environment.debug`**: Enables debug mode (`1` for enabled, `0` for disabled).
 - **`environment.dryrun`**: If set to `1`, skips publishing to the Gist.
 - **`environment.tagsmaintenance`**: If set to `1`, includes all data without filtering.
-- ** 'environment.inputfolder'**: The folder where the sample JSON files are located. This should be set to the folder where your JSON files are located. The default is `data_samples`.
-
+- **`environment.inputfolder`**: The folder where the sample JSON files are located. This should be set to the folder where your JSON files are located. The default is `data_samples`.
 
 ## Usage
 
