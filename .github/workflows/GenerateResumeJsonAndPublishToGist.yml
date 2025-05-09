@@ -14,11 +14,11 @@ jobs:
 
       - name: Read gist_id setting from JSON
         id: read_json_gistid_value
-        run: echo "GISTID=$(jq -r '.deployment.gist_id' ./config.json)" >> $GITHUB_ENV
+        run: echo "GISTID=$(jq -r '.deployment.gist_id' config.json)" >> $GITHUB_ENV
 
       - name: Read dry-run setting from JSON
         id: read_json_dryrun_value
-        run: echo "DRYRUN=$(jq -r '.environment.dryrun' ./config.json)" >> $GITHUB_ENV
+        run: echo "DRYRUN=$(jq -r '.environment.dryrun' config.json)" >> $GITHUB_ENV
 
       - name: Execute PowerShell script
         run: .\GenerateResume.ps1
