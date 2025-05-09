@@ -229,12 +229,13 @@ try {
         Write-Log "All good 3" "DEBUG"
         $configContent = Get-Content -Path $configFilePath -Raw -Encoding UTF8
         
+        Write-Log "All good 4" "DEBUG"
         # Validate JSON format
         if (-not (Test-ValidJson -JsonContent $configContent -FilePath $configFilePath)) {
             Write-Log "Error: Configuration file contains invalid JSON." "ERROR"
             exit 5
         }
-        Write-Log "All good 4" "DEBUG"
+        
         $config = $configContent | ConvertFrom-Json
         ValidateConfigurationStructure
         
