@@ -1,0 +1,56 @@
+{
+    "interests": {
+        "no": {
+            "data": [
+                {
+                    "name": "Wildlife",
+                    "keywords": [
+                        "Ferrets",
+                        "Unicorns"
+                    ],
+                    "tags": [
+                        "Animals",
+                        "Nature"
+                    ]
+                },
+                {
+                    "name": "Wildlife",
+                    "keywords": [
+                        "Ferrets",
+                        "Unicorns"
+                    ],
+                    "tags": [
+                        "Animals",
+                        "Nature"
+                    ]
+                }
+            ]
+        },
+        "en": {
+            "data": [
+                {
+                    "name": "Wildlife",
+                    "keywords": [
+                        "Ferrets",
+                        "Unicorns"
+                    ],
+                    "tags": [
+                        "Animals",
+                        "Nature"
+                    ]
+                },
+                {
+                    "name": "Wildlife",
+                    "keywords": [
+                        "Ferrets",
+                        "Unicorns"
+                    ],
+                    "tags": [
+                        "Animals",
+                        "Nature"
+                    ]
+                }
+            ]
+        }
+    }
+}

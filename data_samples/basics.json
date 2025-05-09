@@ -1,0 +1,60 @@
+{
+    "basics": {
+        "no": {
+            "language": "no",
+            "basics": {
+                "name": "",
+                "label": "",
+                "summary": "",
+                "picture": "",
+                "image": "",
+                "email": "",
+                "phone": "",
+                "url": "",
+                "location": {
+                    "address": "",
+                    "postalCode": "",
+                    "city": "",
+                    "countryCode": "",
+                    "region": ""
+                },
+                "profiles": [
+                    {
+                        "network": "",
+                        "username": "",
+                        "url": ""
+                    }
+                ],
+                "tags": [ "", "" ]
+            }
+        },
+        "en": {
+            "language": "en",
+            "basics": {
+                "name": "",
+                "label": "",
+                "summary": "",
+                "picture": "",
+                "image": "",
+                "email": "",
+                "phone": "",
+                "url": "",
+                "location": {
+                    "address": "",
+                    "postalCode": "",
+                    "city": "",
+                    "countryCode": "",
+                    "region": ""
+                },
+                "profiles": [
+                    {
+                        "network": "",
+                        "username": "",
+                        "url": ""
+                    }
+                ],
+                "tags": [ "", "" ]
+            }
+        }
+    }
+}

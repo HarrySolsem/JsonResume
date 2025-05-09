@@ -1,0 +1,54 @@
+{
+    "certificates": {
+        "no": {
+            "language": "no",
+            "data": [
+                {
+                    "name": "Certificate",
+                    "date": "2021-11-07",
+                    "issuer": "Company",
+                    "url": "https://certificate.com",
+                    "tags": [
+                        "tag1",
+                        "tag2"
+                    ]
+                },
+                {
+                    "name": "Certificate",
+                    "date": "2021-11-07",
+                    "issuer": "Company",
+                    "url": "https://certificate.com",
+                    "tags": [
+                        "tag1",
+                        "tag2"
+                    ]
+                }
+            ]
+        },
+        "en": {
+            "language": "en",
+            "data": [
+                {
+                    "name": "Certificate",
+                    "date": "2021-11-07",
+                    "issuer": "Company",
+                    "url": "https://certificate.com",
+                    "tags": [
+                        "tag1",
+                        "tag2"
+                    ]
+                },
+                {
+                    "name": "Certificate",
+                    "date": "2021-11-07",
+                    "issuer": "Company",
+                    "url": "https://certificate.com",
+                    "tags": [
+                        "tag1",
+                        "tag2"
+                    ]
+                }
+            ]
+        }
+    }
+}

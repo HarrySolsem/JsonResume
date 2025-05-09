@@ -1,0 +1,74 @@
+{
+    "work": {
+        "no": {
+            "language": "no",
+            "data": [
+                {
+                    "name": "Company",
+                    "position": "President",
+                    "url": "https://company.com",
+                    "startDate": "2013-01-01",
+                    "endDate": "2014-01-01",
+                    "summary": "Description…",
+                    "highlights": [
+                        "Started the company"
+                    ],
+                    "tags": [
+                        "tag1",
+                        "tag2"
+                    ]
+                },
+                {
+                    "name": "Company",
+                    "position": "President",
+                    "url": "https://company.com",
+                    "startDate": "2013-01-01",
+                    "endDate": "2014-01-01",
+                    "summary": "Description…",
+                    "highlights": [
+                        "Started the company"
+                    ],
+                    "tags": [
+                        "tag1",
+                        "tag2"
+                    ]
+                }
+            ]
+        },
+        "en": {
+            "language": "en",
+            "data": [
+                {
+                    "name": "Company",
+                    "position": "President",
+                    "url": "https://company.com",
+                    "startDate": "2013-01-01",
+                    "endDate": "2014-01-01",
+                    "summary": "Description…",
+                    "highlights": [
+                        "Started the company"
+                    ],
+                    "tags": [
+                        "tag1",
+                        "tag2"
+                    ]
+                },
+                {
+                    "name": "Company",
+                    "position": "President",
+                    "url": "https://company.com",
+                    "startDate": "2013-01-01",
+                    "endDate": "2014-01-01",
+                    "summary": "Description…",
+                    "highlights": [
+                        "Started the company"
+                    ],
+                    "tags": [
+                        "tag1",
+                        "tag2"
+                    ]
+                }
+            ]
+        }
+    }
+}
