@@ -14,7 +14,11 @@ jobs:
 
       - name: Read gist_id setting from JSON
         id: read_json_gistid_value
-        run: echo "GISTID=$(jq -r '.deployment.gist_id' .\config.json)" >> $GITHUB_ENV
+        run: |
+            $config = Get-Content -Path .\config.json | ConvertFrom-Json
+            echo "GISTID=$($config.deployment.gist_id)" >> $env:GITHUB_ENV
+        shell: pwsh
+
 
       - name: Output Gist ID to console
         id: OutputGistID
@@ -23,7 +27,10 @@ jobs:
 
       - name: Read dry-run setting from JSON
         id: read_json_dryrun_value
-        run: echo "DRYRUN=$(jq -r '.environment.dryrun' .\config.json)" >> $GITHUB_ENV
+        run: |
+         $config = Get-Content -Path .\config.json | ConvertFrom-Json
+         echo "DRYRUN=$($config.environment.dryrun)" >> $env:GITHUB_ENV
+         shell: pwsh
 
       - name: Output drytun to console
         id: OutputDryRun
