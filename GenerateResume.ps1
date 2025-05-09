@@ -82,11 +82,11 @@ function Write-Log {
                 "INFO" { ($VerbosePreference -eq 'Continue' -or $InformationPreference -eq 'Continue') }
                 "DEBUG" { ($DebugPreference -eq 'Continue') }
                 default { ($VerbosePreference -eq 'Continue') }
-            }
+            } 
         }
     }
     
-    # Write to console if determined necessary
+    # Write to console if determined necessary 
     if ($writeToConsole) {
         # Determine color based on level
         $color = switch ($level) {
@@ -97,18 +97,8 @@ function Write-Log {
             "SUCCESS" { "Green" }
             default { "White" }
         }
-        
-        # Add icon to message for better visual identification
-        $icon = switch ($level) {
-            "ERROR" { "✖ " }  # Cross mark
-            "WARN" { "⚠ " }  # Warning sign
-            "INFO" { "ℹ " }  # Information sign
-            "DEBUG" { "⚙ " }  # Gear
-            "SUCCESS" { "✓ " }  # Check mark
-            default { "" }
-        }
-        
-        Write-Host "$icon$formattedMessage" -ForegroundColor $color
+               
+        Write-Host "$formattedMessage" -ForegroundColor $color
     }
 }
 
