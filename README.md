@@ -20,7 +20,7 @@
 
 
 ## Overview
-`GenerateResume.ps1` is a PowerShell script designed to automate the generation of resume data in JSON format. The script processes input data, validates configurations, and outputs a structured JSON file. Additionally, the project includes a GitHub Actions workflow to publish the generated JSON to a GitHub Gist.
+`GenerateResume.ps1` is a PowerShell script designed to automate the generation of resume data in [JsonResume](https://jsonresume.org/) format. The script processes input data, validates configurations, and outputs a structured JSON file. Additionally, the project includes a GitHub Actions workflow to publish the generated JSON to a GitHub Gist.
 
 
 ## Features
@@ -38,8 +38,8 @@
 
 ## Configuration
 The script uses a `config.json` file to control its behavior. Below is an example configuration:
-```{ "deployment": { "resumetype": "projectmanagement", "language": "en", "gist_id": "your-gist-id", "sections": [ "basics", "work", "education", "skills", "projects" ] }, "environment": { "debug": "1", "dryrun": "0", "tagsmaintenance": "0" } }
-```
+`{ "deployment": { "resumetype": "projectmanagement", "language": "en", "gist_id": "your-gist-id", "sections": [ "basics", "work", "education", "skills", "projects" ] }, "environment": { "debug": "1", "dryrun": "0", "tagsmaintenance": "0" } }
+`
 
 
 ### Key Configuration Fields
@@ -55,7 +55,7 @@ The script uses a `config.json` file to control its behavior. Below is an exampl
 
 ### Running the Script Locally
 1. Clone the repository:
-   git clone https://github.com/your-repo-name.git cd your-repo-name
+   git clone https://github.com/HarrySolsem/JsonResume.git cd your-repo-name
    
 2. Run the script:
 ``` pwsh ./GenerateResume.ps1 -inputFolder "./data" -outputFile "./resume.json" -configFile "./config.json" -Verbose -Debug ```
@@ -84,7 +84,7 @@ The project includes a GitHub Actions workflow (`.github/workflows/GenerateResum
 1. **Checkout Repository**: Clones the repository.
 2. **Read Configuration**: Extracts `gist_id`, `dryrun`, and `tagsmaintenance` from `config.json`.
 3. **Run PowerShell Script**: Executes `GenerateResume.ps1` to generate the JSON.
-4. **Publish to Gist**: Updates the specified Gist with the generated JSON (if `dryrun` is `0`).
+4. **Publish to Gist**: Updates the specified Gist with the generated JSON (if `dryrun` is `0` and 'tagsmaintenance' is '0').
 
 ### Workflow Permissions
 The GitHub Actions workflow requires the following permissions:
@@ -103,7 +103,7 @@ We welcome contributions to this project! To contribute:
 For issues or feature requests, please open an issue in the repository.
 
 ## Future Enhancements
-- tba
+- time will show
 
 
 ## License
