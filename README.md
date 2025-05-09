@@ -10,6 +10,13 @@
 - [Usage](#usage)
   - [Running the Script Locally](#running-the-script-locally)
 - [Troubleshooting](#troubleshooting)
+- [Tagging Elements in the JSON Files in the data folder](#tagging-elements-in-the-json-files-in-the-data-folder)
+  - [How Tagging Works](#how-tagging-works)
+  - [Example JSON Files](#example-json-files)
+    - [work.json](#workjson)
+    - [education.json](#educationjson)
+  - [Default Behavior Without Tags](#default-behavior-without-tags)
+  - [Best Practices for Tagging](#best-practices-for-tagging)
 - [GitHub Actions Workflow](#github-actions-workflow)
   - [Workflow Triggers](#workflow-triggers)
   - [Workflow Steps](#workflow-steps)
@@ -17,6 +24,7 @@
 - [Contributing](#contributing)
 - [Future Enhancements](#future-enhancements)
 - [License](#license)
+
 
 
 ## Overview
@@ -78,9 +86,32 @@ The script uses a `config.json` file to control its behavior. Below is an exampl
 
 1. cd your-repo-name
 
-1. Run the scri## Tagging Elements in JSON Files
+1. Run the script
 
-## How Tagging Works
+```
+pwsh ./GenerateResume.ps1 -inputFolder "./data" -outputFile "./resume.json" -configFile "./config.json" -Verbose -Debug
+```
+   
+1. Check the output:
+   - Generated JSON: `resume.json`
+   - Logs: `dynamic_creation.log`
+
+
+
+### Troubleshooting
+- **GitHub Actions Workflow Fails**:
+  - Verify that `config.json` exists in the repository.
+  - Ensure the `TOKEN` secret is configured in your repository settings.
+- **Generated JSON is Empty**:
+  - Check the `data` folder to ensure it contains valid JSON files for each section.
+  - Verify that the `sections` field in `config.json` matches the available files.
+  - Verify that you have tagged your data accordingly and that you are deploying the correct resume
+
+
+
+## Tagging Elements in the JSON Files in the data folder
+
+### How Tagging Works
 1. Each JSON file in the `data` folder corresponds to a specific section of the resume (e.g., `basics.json`, `work.json`, `education.json`).
 2. Each element in these files can include a `tags` property, which is an array of strings.
 3. The `tags` array should include the `resumetype` value from `config.json` for the element to be included in the generated resume.
@@ -113,24 +144,6 @@ If an element does not include a `tags` property:
    - If an element is relevant to multiple resume types, include all applicable tags in the `tags` array.
    - Example:
     ```json "tags": ["projectmanagement", "softwaredevelopment"]```pt:
-```
-pwsh ./GenerateResume.ps1 -inputFolder "./data" -outputFile "./resume.json" -configFile "./config.json" -Verbose -Debug
-```
-   
-3. Check the output:
-   - Generated JSON: `resume.json`
-   - Logs: `dynamic_creation.log`
-
-
-
-## Troubleshooting
-- **GitHub Actions Workflow Fails**:
-  - Verify that `config.json` exists in the repository.
-  - Ensure the `TOKEN` secret is configured in your repository settings.
-- **Generated JSON is Empty**:
-  - Check the `data` folder to ensure it contains valid JSON files for each section.
-  - Verify that the `sections` field in `config.json` matches the available files.
-  - Verify that you have tagged your data accordingly and that you are deploying the correct resume
 
 
 ### GitHub Actions Workflow
