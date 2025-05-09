@@ -17,7 +17,7 @@
             "references",
             "projects"
         ],
-        "inputfolder": ".\\data_samples"
+        "inputfolder": ".\\data"
     },
     "environment": {
         "debug": "1",
