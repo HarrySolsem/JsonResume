@@ -1,0 +1,52 @@
+{
+    "languages": {
+        "no": {
+            "data": [
+                {
+                    "language": "Norsk",
+                    "fluency": "Morsmål",
+                    "native": true,
+                    "keywords": [
+                        "Norsk",
+                        "Bokmål"
+                    ],
+                    "tags": [ "management" ]
+                },
+                {
+                    "language": "Engelsk",
+                    "fluency": "Full professional proficiency",
+                    "native": false,
+                    "keywords": [
+                        "Engelsk",
+                        "Engelsk (amerikansk)",
+                        "Engelsk (britisk)"
+                    ],
+                    "tags": [ "management" ]
+                }
+            ]
+        },
+        "en": {
+            "data": [
+                {
+                    "language": "Norwegian",
+                    "fluency": "Native",
+                    "native": true,
+                    "keywords": [
+                        "Norwegian",
+                        "Bokmål"
+                    ]
+                },
+                {
+                    "language": "English",
+                    "fluency": "Full Professional Proficiency",
+                    "native": false,
+                    "keywords": [
+                        "English",
+                        "American English",
+                        "British English"
+                    ]
+                }
+            ]
+        }
+    }
+}
