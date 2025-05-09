@@ -217,7 +217,6 @@ function ValidateConfigurationStructure{
         }
 }
 
-
 # Main execution begins
 try {
     Write-Log "Starting resume generation process." "INFO"
@@ -236,14 +235,6 @@ try {
         
         $config = $configContent | ConvertFrom-Json
         ValidateConfigurationStructure
-        ## Validate configuration structure
-        #if (-not $config.deployment -or 
-        #    -not (Get-Member -InputObject $config.deployment -Name "language" -MemberType Properties) -or 
-        #    -not (Get-Member -InputObject $config.deployment -Name "resumetype" -MemberType Properties) -or
-        #    -not (Get-Member -InputObject $config.deployment -Name "gist_id" -MemberType Properties)) {
-        #    Write-Log "Error: Invalid configuration - missing required deployment settings" "ERROR"
-        #    exit 6
-        #}
         
         $language = $config.deployment.language
         $resumeType = $config.deployment.resumetype

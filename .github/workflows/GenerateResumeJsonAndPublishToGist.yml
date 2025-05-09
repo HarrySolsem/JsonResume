@@ -36,9 +36,14 @@ jobs:
         id: read_json_dryrun_value
         run: echo "DRYRUN=$(jq -r '.environment.dryrun' config.json)" >> $GITHUB_ENV
 
-      - name: Execute PowerShell script
-        run: .\GenerateResume.ps1
-        shell: pwsh
+      - name: Run PowerShell Script with Debug
+        run: |
+         pwsh -NoProfile -Command ".\GenerateResume.ps1 -Verbose -Debug"
+        
+        
+      # - name: Execute PowerShell script
+      #   run: .\GenerateResume.ps1
+      #   shell: pwsh
 
       - name: Update Resume Gist
         if: ${{ env.DRYRUN == '0' }}
