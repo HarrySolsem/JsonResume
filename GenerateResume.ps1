@@ -26,7 +26,7 @@ try {
 }
 catch {
     Write-Host "Error: Unable to create or reset log file at $logFile - $($_.Exception.Message)" -ForegroundColor Red
-    exit 4
+    exit 1
 }
 
 function Write-Log {
@@ -124,21 +124,75 @@ function Test-ValidJson {
     }
 }
 
-# Main execution begins
-try {
-    Write-Log "Starting resume generation process." "INFO"
+function IsBasicSection {
+    param (
+        [Parameter(Mandatory = $true)]
+        [string]$SectionName,
+        
+        [Parameter(Mandatory = $true)]
+        [string]$BasicSectionName
+    )
+    return $SectionName -eq $BasicSectionName
+}
 
+# Define the array of all sections as a constant
+$AllSections = @("basics", "volunteer", "work", "education", "awards", "certificates", 
+                 "publications", "skills", "languages", "interests", "references", "projects")
+
+function GetSectionsToProcess {
+    param (
+        [Parameter(Mandatory = $true)]
+        [bool]$TagsMaintenance,
+        
+        [Parameter(Mandatory = $true)]
+        [PSCustomObject]$Config
+    )
+
+    if ($TagsMaintenance) {
+        Write-Log "Tags maintenance mode active - using all sections." "INFO"
+        return $AllSections
+    }
+
+    if ($Config.PSObject.Properties.Match("sections") -and $Config.deployment.sections -is [array]) {
+        Write-Log "Using sections from the configuration file." "INFO"
+        return $Config.deployment.sections
+    }
+
+    Write-Log "Using default hardcoded sections as fallback." "WARN"
+
+    
+    # Log the sections being processed
+    Write-Log "Sections to be processed: $($sections -join ', ')" "DEBUG"
+
+    # Ensure sections are not empty
+    if (-not $sections -or $sections.Count -eq 0) {
+        Write-Log "Error: No sections to process. The 'sections' property is empty or null." "ERROR"
+        exit 8
+    }
+
+    # Log the sections being processed
+    Write-Log "Sections to be processed: $($sections -join ', ')" "DEBUG"
+
+    # Ensure sections are not empty
+    if (-not $sections -or $sections.Count -eq 0) {
+        Write-Log "Error: No sections to process. The 'sections' property is empty or null." "ERROR"
+        exit 9
+    }
+    return $AllSections
+}
+
+function ValidatePathAndFiles {
     # Validate path parameters
     $inputFolder = Resolve-Path -Path $inputFolder -ErrorAction SilentlyContinue
     if (-not $inputFolder) {
         Write-Log "Error: Input folder '$inputFolder' does not exist or is not accessible." "ERROR"
-        exit 1
+        exit 2
     }
 
     $configFilePath = Resolve-Path -Path $configFile -ErrorAction SilentlyContinue
     if (-not $configFilePath) {
         Write-Log "Error: Configuration file '$configFile' does not exist or is not accessible." "ERROR"
-        exit 1
+        exit 3
     }
 
     # Ensure output directory exists
@@ -150,9 +204,28 @@ try {
         }
         catch {
             Write-Log "Error: Unable to create output directory '$outputDir' - $($_.Exception.Message)" "ERROR"
-            exit 3
+            exit 4
         }
     }
+}
+
+function ValidateConfigurationStructure{
+ # Validate configuration structure
+        if (-not $config.deployment -or 
+            -not (Get-Member -InputObject $config.deployment -Name "language" -MemberType Properties) -or 
+            -not (Get-Member -InputObject $config.deployment -Name "resumetype" -MemberType Properties) -or
+            -not (Get-Member -InputObject $config.deployment -Name "gist_id" -MemberType Properties)) {
+            Write-Log "Error: Invalid configuration - missing required deployment settings" "ERROR"
+            exit 6
+        }
+}
+
+
+# Main execution begins
+try {
+    Write-Log "Starting resume generation process." "INFO"
+
+    ValidatePathAndFiles
 
     # Load configuration from JSON
     try {
@@ -161,46 +234,38 @@ try {
         # Validate JSON format
         if (-not (Test-ValidJson -JsonContent $configContent -FilePath $configFilePath)) {
             Write-Log "Error: Configuration file contains invalid JSON." "ERROR"
-            exit 2
+            exit 5
         }
         
         $config = $configContent | ConvertFrom-Json
-        
-        # Validate configuration structure
-        if (-not $config.deployment -or 
-            -not (Get-Member -InputObject $config.deployment -Name "language" -MemberType Properties) -or 
-            -not (Get-Member -InputObject $config.deployment -Name "resumetype" -MemberType Properties)) {
-            Write-Log "Error: Invalid configuration - missing required deployment settings" "ERROR"
-            exit 1
-        }
+        ValidateConfigurationStructure
+        ## Validate configuration structure
+        #if (-not $config.deployment -or 
+        #    -not (Get-Member -InputObject $config.deployment -Name "language" -MemberType Properties) -or 
+        #    -not (Get-Member -InputObject $config.deployment -Name "resumetype" -MemberType Properties) -or
+        #    -not (Get-Member -InputObject $config.deployment -Name "gist_id" -MemberType Properties)) {
+        #    Write-Log "Error: Invalid configuration - missing required deployment settings" "ERROR"
+        #    exit 6
+        #}
         
         $language = $config.deployment.language
         $resumeType = $config.deployment.resumetype
 
         # Check if tagsmaintenance is enabled in config
-        $tagsMaintenance = if ((Get-Member -InputObject $config.environment -Name "tagsmaintenance" -MemberType Properties) -and 
-            $config.environment.tagsmaintenance -eq 1) { 
-            $true 
-        }
-        else { 
-            $false 
-        }
-                
+        $tagsMaintenance = $config.environment.tagsmaintenance -eq 1
+     
         Write-Log "Loaded configuration: Language = $language, Resume Type = $resumeType, tagsmaintenance = $tagsMaintenance" "INFO"
     } 
     catch {
         Write-Log "Error: Failed to load or parse '$configFile' - $($_.Exception.Message)" "ERROR"
-        exit 2
+        exit 7
     }
 
     # Get sections from config or use default list
-    $sections = if (Get-Member -InputObject $config -Name "sections" -MemberType Properties) { 
-        $config.sections 
-    } 
-    else { 
-        @("basics", "volunteer", "work", "education", "awards", "certificates", 
-            "publications", "skills", "languages", "interests", "references", "projects")
-    }
+    # Validate and load sections
+
+    # Get sections using the helper function
+    $sections = GetSectionsToProcess -TagsMaintenance $tagsMaintenance -Config $config
 
     # Initialize resume JSON object
     $resumeJson = [ordered]@{}
@@ -248,94 +313,76 @@ try {
                 }
             }
             else {
-                # Special handling for basics (stored as an object)
-                if ($section -eq "basics") {
-                    # Check if language exists in basics section
-                    if ((Get-Member -InputObject $sectionData.$section -Name $language -MemberType Properties) -and
-                        (Get-Member -InputObject $sectionData.$section.$language -Name "basics" -MemberType Properties)) {
-                        
-                        Write-Log "Extracting basics section for language: $language with filtering" "INFO"
+                # no tags maintenance. Handle sections with correct language and filter by resumeType and tags
 
+                $BasicSectionName = "basics"
+
+                if (IsBasicSection -SectionName $section -BasicSectionName $BasicSectionName) {
+                    $sectionToGet = "$BasicSectionName"
+                } else {
+                    $sectionToGet = "data"
+}
+                if ((Get-Member -InputObject $sectionData.$section -Name $language -MemberType Properties) -and
+                        (Get-Member -InputObject $sectionData.$section.$language -Name $sectionToGet -MemberType Properties)) {
+                        
+                    Write-Log "Filtering section '$section' for language: $language" "INFO"
+
+                    if (IsBasicSection -SectionName $section -BasicSectionName $BasicSectionName){
+                    #if ($section -eq "$BasicSectionName") {
                         $basicsObj = $sectionData.$section.$language.basics
-                        $includeBasics = $false
-                        
-                        # Check if any tag in tags array matches resumetype
-                        if ((Get-Member -InputObject $basicsObj -Name "tags" -MemberType Properties) -and
-                            ($basicsObj.tags -is [array]) -and
-                            ($basicsObj.tags -contains $resumeType)) {
-                            $includeBasics = $true
-                        }
-                        
-                        if ($includeBasics) {
-                            # Clone the object to avoid modifying the original
-                            $basicsData = $basicsObj | ConvertTo-Json -Depth $jsonDepth | ConvertFrom-Json
-
-                            # Remove the 'tags' element before storing
-                            if (Get-Member -InputObject $basicsData -Name "tags" -MemberType Properties) {
-                                $basicsData.PSObject.Properties.Remove('tags')
-                            }
-
-                            $resumeJson[$section] = $basicsData  # Store as an object
-                            Write-Log "Basics section added successfully." "INFO"
-                        } 
-                        else {
-                            Write-Log "Warning: Basics section does not match resume type '$resumeType'." "WARN"
-                            $resumeJson[$section] = $null
-                        }
-                    } 
-                    else {
-                        Write-Log "Error: No '$language' basics found in '$section'." "ERROR"
-                        $resumeJson[$section] = $null
                     }
-                }
-                else {
-                    # Handle all other sections (stored as arrays)
-                    if ((Get-Member -InputObject $sectionData.$section -Name $language -MemberType Properties) -and
-                        (Get-Member -InputObject $sectionData.$section.$language -Name "data" -MemberType Properties)) {
-                        
-                        Write-Log "Filtering section '$section' for language: $language" "INFO"
-
+                    else {
                         $sectionItems = $sectionData.$section.$language.data
-                        
+                    }
+                    
+                    #todo
+                    if ($section -ne "$BasicSectionName") {
                         # Ensure we're treating data as an array
                         if ($sectionItems -isnot [array]) {
                             $sectionItems = @($sectionItems)
                         }
+                    }
 
-                        # Create a new array to hold filtered items
-                        $filteredData = [System.Collections.ArrayList]::new()
+                    # Create a new array to hold filtered items
+                    $filteredData = [System.Collections.ArrayList]::new()
 
-                        # Filter data based on tags matching resumeType
-                        foreach ($item in $sectionItems) {
-                            if ((Get-Member -InputObject $item -Name "tags" -MemberType Properties) -and
+                    # Filter data based on tags matching resumeType
+                    foreach ($item in $sectionItems) {
+                        if ((Get-Member -InputObject $item -Name "tags" -MemberType Properties) -and
                                 ($item.tags -is [array]) -and
                                 ($item.tags -contains $resumeType)) {
                                 
-                                # Create a clone without modifying the original
-                                $clonedItem = $item | ConvertTo-Json -Depth $jsonDepth | ConvertFrom-Json
+                            # Create a clone without modifying the original
+                            $clonedItem = $item | ConvertTo-Json -Depth $jsonDepth | ConvertFrom-Json
                                 
-                                # Remove tags property before adding to results
-                                if (Get-Member -InputObject $clonedItem -Name "tags" -MemberType Properties) {
-                                    $clonedItem.PSObject.Properties.Remove('tags')
-                                }
-                                
-                                [void]$filteredData.Add($clonedItem)
+                            # Remove tags property before adding to results
+                            if (Get-Member -InputObject $clonedItem -Name "tags" -MemberType Properties) {
+                                $clonedItem.PSObject.Properties.Remove('tags')
                             }
+                                
+                            [void]$filteredData.Add($clonedItem)
                         }
-                        
-                        $resumeJson[$section] = @($filteredData)
-                        Write-Log "Filtered items count in '$section': $($filteredData.Count)" "INFO"
-                        
-                        if ($filteredData.Count -eq 0) {
-                            Write-Log "Warning: No matching items in '$section' based on resume type '$resumeType'." "WARN"
-                        }
-                    } 
-                    else {
-                        Write-Log "Warning: No '$language' data found for section '$section'." "WARN"
-                        $resumeJson[$section] = @()
                     }
+                        
+                    if (IsBasicSection -SectionName $section -BasicSectionName $BasicSectionName){
+                        $resumeJson[$section] = $basicsObj
+                    }
+                    else {
+                        $resumeJson[$section] = @($filteredData)
+                    }
+                            
+                    Write-Log "Filtered items count in '$section': $($filteredData.Count)" "INFO"
+                        
+                    if ($filteredData.Count -eq 0) {
+                        Write-Log "Warning: No matching items in '$section' based on resume type '$resumeType' and language '$language'." "WARN"
+                    }
+                } 
+                else {
+                    Write-Log "Warning: No '$language' data found for section '$section'." "WARN"
+                    $resumeJson[$section] = @()
                 }
-            } #else !tagsMaintenance
+                
+            }
         } 
         else {
             Write-Log "Warning: Missing JSON file for section '$section'." "WARN"
@@ -351,7 +398,7 @@ try {
     }
     catch {
         Write-Log "Error: Failed to write '$outputFile' - $($_.Exception.Message)" "ERROR"
-        exit 3
+        exit 10
     }
 
     Write-Log "Resume generation complete." "SUCCESS"
@@ -361,5 +408,5 @@ catch {
     # Catch any unexpected errors
     Write-Log "Critical Error: Unhandled exception - $($_.Exception.Message)" "ERROR"
     Write-Log "Stack Trace: $($_.ScriptStackTrace)" "ERROR"
-    exit 9
+    exit 11
 }
