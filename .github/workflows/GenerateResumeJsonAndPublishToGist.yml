@@ -37,7 +37,7 @@ jobs:
         id: read_json_inputfolder_value
         run: |
             $config = Get-Content -Path .\config.json | ConvertFrom-Json
-            echo "INPUTFOLDER=$($config.environment.inputfolder)" >> $env:GITHUB_ENV
+            echo "INPUTFOLDER=$($config.deployment.inputfolder)" >> $env:GITHUB_ENV
         shell: pwsh
         
       - name: Execute PowerShell script to generate resume.json
