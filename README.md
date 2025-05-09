@@ -36,11 +36,13 @@
 - **Configuration-Driven**: Reads settings from a `config.json` file to customize behavior.
 - **Logging**: Logs all operations to a specified log file for debugging and traceability.
 - **GitHub Actions Integration**: Automates the process of generating and publishing the resume JSON to a Gist.
+- **Sample Data**: Includes sample JSON files for each resume section to help you get started quickly, in the folder `data_samples`.
 
 ## Prerequisites
 - **PowerShell**: Requires PowerShell 7 or later. You can download it from [PowerShell GitHub Releases](https://github.com/PowerShell/PowerShell/releases).
 - **GitHub Actions**: Ensure your repository is set up with GitHub Actions for automated workflows.
-- **JSON Resume Data**: Place JSON files for each resume section in the `data` folder.
+- **JSON Resume Real Data**: Place real data JSON files for each resume section in the `data` folder.
+- - **JSON Resume Sample Data**: Place sample data JSON files for each resume section in the `data_samples` folder.
 
 
 ## Configuration
@@ -58,7 +60,8 @@ The script uses a `config.json` file to control its behavior. Below is an exampl
 	  "education",
 	  "skills",
 	  "projects"
-	]
+	],
+	"inputfolder": ".\\data_samples"
   },
   "environment": {
 	"debug": "1",
@@ -76,6 +79,7 @@ The script uses a `config.json` file to control its behavior. Below is an exampl
 - **`environment.debug`**: Enables debug mode (`1` for enabled, `0` for disabled).
 - **`environment.dryrun`**: If set to `1`, skips publishing to the Gist.
 - **`environment.tagsmaintenance`**: If set to `1`, includes all data without filtering.
+- ** 'environment.inputfolder'**: The folder where the sample JSON files are located. This should be set to the folder where your JSON files are located. The default is `data_samples`.
 
 
 ## Usage
@@ -89,7 +93,7 @@ The script uses a `config.json` file to control its behavior. Below is an exampl
 1. Run the script:
 
 ```
-pwsh ./GenerateResume.ps1 -inputFolder "./data" -outputFile "./resume.json" -configFile "./config.json" -Verbose -Debug
+pwsh ./GenerateResume.ps1 -inputFolder "./data_samples"
 ```
    
 1. Check the output:
@@ -104,15 +108,15 @@ pwsh ./GenerateResume.ps1 -inputFolder "./data" -outputFile "./resume.json" -con
   - Ensure the `TOKEN` secret is configured in your repository settings.
 - **Generated JSON is Empty**:
   - Check the `data` folder to ensure it contains valid JSON files for each section.
+  - Check the `data_samples` folder to ensure it contains valid JSON files for each section.
   - Verify that the `sections` field in `config.json` matches the available files.
   - Verify that you have tagged your data accordingly and that you are deploying the correct resume
 
 
-
-## Tagging Elements in the JSON Files in the data folder
+## Tagging Elements in the JSON Files in the data  and data_samples folder
 
 ### How Tagging Works
-1. Each JSON file in the `data` folder corresponds to a specific section of the resume (e.g., `basics.json`, `work.json`, `education.json`).
+1. Each JSON file in the `data` and `data_samples` folder corresponds to a specific section of the resume (e.g., `basics.json`, `work.json`, `education.json`).
 2. Each element in these files can include a `tags` property, which is an array of strings.
 3. The `tags` array should include the `resumetype` value from `config.json` for the element to be included in the generated resume.
 
@@ -132,7 +136,6 @@ pwsh ./GenerateResume.ps1 -inputFolder "./data" -outputFile "./resume.json" -con
   ]
 }
 ```
-
 
 #### education.json
 ```json
@@ -173,7 +176,7 @@ The project includes a GitHub Actions workflow (`.github/workflows/GenerateResum
 
 #### Workflow Steps
 1. **Checkout Repository**: Clones the repository.
-2. **Read Configuration**: Extracts `gist_id`, `dryrun`, and `tagsmaintenance` from `config.json`.
+2. **Read Configuration**: Extracts `gist_id`, `dryrun`, `inputfolder` and `tagsmaintenance` from `config.json`.
 3. **Run PowerShell Script**: Executes `GenerateResume.ps1` to generate the JSON.
 4. **Publish to Gist**: Updates the specified Gist with the generated JSON (if `dryrun` is `0` and 'tagsmaintenance' is '0').
 
@@ -195,6 +198,7 @@ For issues or feature requests, please open an issue in the repository.
 
 ## Future Enhancements
 - time will show
+- Hit me up with the expantions you want to see :)
 
 
 ## License

@@ -1,0 +1,46 @@
+{
+    "languages": {
+        "no": {
+            "data": [
+                {
+                    "language": "English",
+                    "fluency": "Native speaker",
+                    "tags": [
+                        "English",
+                        "American English",
+                        "British English"
+                    ]
+                },
+                {
+                    "language": "Norwegian",
+                    "fluency": "Full Professional Proficiency",
+                    "tags": [
+                        "Norwegian",
+                        "Bokmål"
+                    ]
+                }
+            ]
+        },
+        "en": {
+            "data": [
+                {
+                    "language": "English",
+                    "fluency": "Native speaker",
+                    "tags": [
+                        "English",
+                        "American English",
+                        "British English"
+                    ]
+                },
+                {
+                    "language": "Norwegian",
+                    "fluency": "Full Professional Proficiency",
+                    "tags": [
+                        "Norwegian",
+                        "Bokmål"
+                    ]
+                }
+            ]
+        }
+    }
+}

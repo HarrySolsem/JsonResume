@@ -1,0 +1,78 @@
+{
+    "education": {
+        "no": {
+            "language": "no",
+            "data": [
+                {
+                    "institution": "University",
+                    "url": "https://institution.com/",
+                    "area": "Software Development",
+                    "studyType": "Bachelor",
+                    "startDate": "2011-01-01",
+                    "endDate": "2013-01-01",
+                    "score": "4.0",
+                    "courses": [
+                        "DB1101 - Basic SQL"
+                    ],
+                    "tags": [
+                        "tag1",
+                        "tag2"
+                    ]
+                },
+                {
+                    "institution": "University",
+                    "url": "https://institution.com/",
+                    "area": "Software Development",
+                    "studyType": "Bachelor",
+                    "startDate": "2011-01-01",
+                    "endDate": "2013-01-01",
+                    "score": "4.0",
+                    "courses": [
+                        "DB1101 - Basic SQL"
+                    ],
+                    "tags": [
+                        "tag1",
+                        "tag2"
+                    ]
+                }
+            ]
+        },
+        "en": {
+            "language": "en",
+            "data": [
+                {
+                    "institution": "University",
+                    "url": "https://institution.com/",
+                    "area": "Software Development",
+                    "studyType": "Bachelor",
+                    "startDate": "2011-01-01",
+                    "endDate": "2013-01-01",
+                    "score": "4.0",
+                    "courses": [
+                        "DB1101 - Basic SQL"
+                    ],
+                    "tags": [
+                        "tag1",
+                        "tag2"
+                    ]
+                },
+                {
+                    "institution": "University",
+                    "url": "https://institution.com/",
+                    "area": "Software Development",
+                    "studyType": "Bachelor",
+                    "startDate": "2011-01-01",
+                    "endDate": "2013-01-01",
+                    "score": "4.0",
+                    "courses": [
+                        "DB1101 - Basic SQL"
+                    ],
+                    "tags": [
+                        "tag1",
+                        "tag2"
+                    ]
+                }
+            ]
+        }
+    }
+}
