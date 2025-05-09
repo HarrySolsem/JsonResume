@@ -227,6 +227,7 @@ try {
     # Load configuration from JSON
     try {
         Write-Log "All good 3" "DEBUG"
+        Write-Log "Config file path: $configFilePath" "DEBUG""
         $configContent = Get-Content -Path $configFilePath -Raw -Encoding UTF8
         
         Write-Log "All good 4" "DEBUG"
