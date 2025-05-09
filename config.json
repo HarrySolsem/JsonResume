@@ -21,7 +21,7 @@
     },
     "environment": {
         "debug": "1",
-        "dryrun": "1",
-        "tagsmaintenance": 1
+        "dryrun": "0",
+        "tagsmaintenance": 0
     }
 }  
