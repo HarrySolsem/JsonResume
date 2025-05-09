@@ -1,0 +1,66 @@
+{
+    "skills": {
+        "no": {
+            "language": "no",
+            "data": [
+                {
+                    "name": "Web Development",
+                    "level": "Master",
+                    "keywords": [
+                        "HTML",
+                        "CSS",
+                        "JavaScript"
+                    ],
+                    "tags": [
+                        "Frontend",
+                        "Backend"
+                    ]
+                },
+                {
+                    "name": "Web Development",
+                    "level": "Master",
+                    "keywords": [
+                        "HTML",
+                        "CSS",
+                        "JavaScript"
+                    ],
+                    "tags": [
+                        "Frontend",
+                        "Backend"
+                    ]
+                }
+            ]
+        },
+        "en": {
+            "language": "en",
+            "data": [
+                {
+                    "name": "Web Development",
+                    "level": "Master",
+                    "keywords": [
+                        "HTML",
+                        "CSS",
+                        "JavaScript"
+                    ],
+                    "tags": [
+                        "Frontend",
+                        "Backend"
+                    ]
+                },
+                {
+                    "name": "Web Development",
+                    "level": "Master",
+                    "keywords": [
+                        "HTML",
+                        "CSS",
+                        "JavaScript"
+                    ],
+                    "tags": [
+                        "Frontend",
+                        "Backend"
+                    ]
+                }
+            ]
+        }
+    }
+}

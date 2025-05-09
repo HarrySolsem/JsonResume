@@ -24,7 +24,7 @@ param (
     [string]$configFile = ".\config.json",
     
     [Parameter(Mandatory = $false)]
-    [int]$jsonDepth = 5
+    [int]$jsonDepth = 10
 )
 
 # Reset the log file at the start of each execution
@@ -192,7 +192,6 @@ function ValidateConfigurationStructure {
 # Main execution begins
 try {
     Write-Log "Starting resume generation process." "INFO"
-    Write-Log "All good 1" "DEBUG"
 
     # Validate path parameters
     $inputFolder = Resolve-Path -Path $inputFolder
@@ -213,10 +212,9 @@ try {
             exit 4
         }
     }
-    Write-Log "All good 2" "DEBUG"
+
     # Load configuration from JSON
     try {
-        Write-Log "All good 3" "DEBUG"
 
         $configFilePath = Resolve-Path -Path $configFile
         if (-not $configFilePath) {
@@ -226,7 +224,6 @@ try {
         Write-Log "Config file path: $configFilePath" "DEBUG"
         $configContent = Get-Content -Path $configFilePath -Raw -Encoding UTF8
         
-        Write-Log "All good 4" "DEBUG"
         # Validate JSON format
         if (-not (Test-ValidJson -JsonContent $configContent -FilePath $configFilePath)) {
             Write-Log "Error: Configuration file contains invalid JSON." "ERROR"
@@ -238,7 +235,6 @@ try {
         
         $language = $config.deployment.language
         $resumeType = $config.deployment.resumetype
-        Write-Log "All good 5" "DEBUG"
         # Check if tagsmaintenance is enabled in config
         $tagsMaintenance = $config.environment.tagsmaintenance -eq 1
      

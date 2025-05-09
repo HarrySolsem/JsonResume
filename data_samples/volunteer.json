@@ -1,0 +1,74 @@
+{
+    "volunteer": {
+        "no": {
+            "language": "no",
+            "data": [
+                {
+                    "organization": "Organization",
+                    "position": "Volunteer",
+                    "url": "https://organization.com/",
+                    "startDate": "2012-01-01",
+                    "endDate": "2013-01-01",
+                    "summary": "Description…",
+                    "highlights": [
+                        "Awarded 'Volunteer of the Month'"
+                    ],
+                    "tags": [
+                        "Volunteer",
+                        "Community Service"
+                    ]
+                },
+                {
+                    "organization": "Organization",
+                    "position": "Volunteer",
+                    "url": "https://organization.com/",
+                    "startDate": "2012-01-01",
+                    "endDate": "2013-01-01",
+                    "summary": "Description…",
+                    "highlights": [
+                        "Awarded 'Volunteer of the Month'"
+                    ],
+                    "tags": [
+                        "Volunteer",
+                        "Community Service"
+                    ]
+                }
+            ]
+        },
+        "en": {
+            "language": "en",
+            "data": [
+                {
+                    "organization": "Organization",
+                    "position": "Volunteer",
+                    "url": "https://organization.com/",
+                    "startDate": "2012-01-01",
+                    "endDate": "2013-01-01",
+                    "summary": "Description…",
+                    "highlights": [
+                        "Awarded 'Volunteer of the Month'"
+                    ],
+                    "tags": [
+                        "Volunteer",
+                        "Community Service"
+                    ]
+                },
+                {
+                    "organization": "Organization",
+                    "position": "Volunteer",
+                    "url": "https://organization.com/",
+                    "startDate": "2012-01-01",
+                    "endDate": "2013-01-01",
+                    "summary": "Description…",
+                    "highlights": [
+                        "Awarded 'Volunteer of the Month'"
+                    ],
+                    "tags": [
+                        "Volunteer",
+                        "Community Service"
+                    ]
+                }
+            ]
+        }
+    }
+}
