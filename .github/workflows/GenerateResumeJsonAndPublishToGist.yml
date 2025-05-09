@@ -12,22 +12,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: List files in the working directory
-        run: dir
-        shell: cmd
-
-      - name: Check if config.json exists
-        run: |
-         if (!(Test-Path -Path "config.json")) {
-          Write-Host "config.json is missing"
-          exit 1
-         } else {
-           Write-Host "config.json exists"
-           Write-Host "Content of config.json:"
-           Get-Content -Path "config.json" | Write-Host
-         }
-        shell: pwsh
-
       - name: Read gist_id setting from JSON
         id: read_json_gistid_value
         run: echo "GISTID=$(jq -r '.deployment.gist_id' config.json)" >> $GITHUB_ENV

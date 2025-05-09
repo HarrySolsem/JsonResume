@@ -178,34 +178,6 @@ function GetSectionsToProcess {
     return $AllSections
 }
 
-function ValidatePathAndFiles {
-    # Validate path parameters
-    $inputFolder = Resolve-Path -Path $inputFolder
-    if (-not $inputFolder) {
-        Write-Log "Error: Input folder '$inputFolder' does not exist or is not accessible." "ERROR"
-        exit 2
-    }
-
-    #$configFilePath = Resolve-Path -Path $configFile
-    #if (-not $configFilePath) {
-    #    Write-Log "Error: Configuration file '$configFile' does not exist or is not accessible." "ERROR"
-    #    exit 3
-    #}
-
-    # Ensure output directory exists
-    $outputDir = Split-Path -Path $outputFile -Parent
-    if ($outputDir -and -not (Test-Path -Path $outputDir)) {
-        try {
-            $null = New-Item -Path $outputDir -ItemType Directory -Force -ErrorAction Stop
-            Write-Log "Created output directory: $outputDir" "INFO"
-        }
-        catch {
-            Write-Log "Error: Unable to create output directory '$outputDir' - $($_.Exception.Message)" "ERROR"
-            exit 4
-        }
-    }
-}
-
 function ValidateConfigurationStructure{
  # Validate configuration structure
         if (-not $config.deployment -or 
@@ -222,7 +194,25 @@ try {
     Write-Log "Starting resume generation process." "INFO"
     Write-Log "All good 1" "DEBUG"
 
-    ValidatePathAndFiles
+    # Validate path parameters
+    $inputFolder = Resolve-Path -Path $inputFolder
+    if (-not $inputFolder) {
+        Write-Log "Error: Input folder '$inputFolder' does not exist or is not accessible." "ERROR"
+        exit 2
+    }
+
+    # Ensure output directory exists
+    $outputDir = Split-Path -Path $outputFile -Parent
+    if ($outputDir -and -not (Test-Path -Path $outputDir)) {
+        try {
+            $null = New-Item -Path $outputDir -ItemType Directory -Force -ErrorAction Stop
+            Write-Log "Created output directory: $outputDir" "INFO"
+        }
+        catch {
+            Write-Log "Error: Unable to create output directory '$outputDir' - $($_.Exception.Message)" "ERROR"
+            exit 4
+        }
+    }
     Write-Log "All good 2" "DEBUG"
     # Load configuration from JSON
     try {
