@@ -254,7 +254,7 @@ try {
         Write-Log "Loaded configuration: Language = $language, Resume Type = $resumeType, tagsmaintenance = $tagsMaintenance" "INFO"
     } 
     catch {
-        Write-Log "Error: Failed to load or parse '$configFile' - $($_.Exception.Message)" "ERROR"
+        Write-Log "Failed to load or parse '$configFile' - $($_.Exception.Message)" "ERROR"
         exit 7
     }
 
