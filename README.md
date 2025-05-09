@@ -86,7 +86,7 @@ The script uses a `config.json` file to control its behavior. Below is an exampl
 
 1. cd your-repo-name
 
-1. Run the script
+1. Run the script:
 
 ```
 pwsh ./GenerateResume.ps1 -inputFolder "./data" -outputFile "./resume.json" -configFile "./config.json" -Verbose -Debug
@@ -120,13 +120,32 @@ pwsh ./GenerateResume.ps1 -inputFolder "./data" -outputFile "./resume.json" -con
 
 #### work.json
 ```json
-{ "company": "TechCorp", "position": "Project Manager", "startDate": "2020-01-01", "endDate": "2022-12-31", "summary": "Managed multiple projects across various teams.", "tags": ["projectmanagement", "general"] }, { "company": "DevSolutions", "position": "Software Engineer", "startDate": "2018-01-01", "endDate": "2019-12-31", "summary": "Developed software solutions for clients.", "tags": ["softwaredevelopment"] }
+{
+  "company": "TechCorp",
+  "position": "Project Manager",
+  "startDate": "2020-01-01",
+  "endDate": "2022-12-31",
+  "summary": "Managed multiple projects across various teams.",
+  "tags": [
+    "projectmanagement",
+    "general"
+  ]
+}
 ```
 
 
 #### education.json
 ```json
-{ "institution": "University of Tech", "area": "Project Management", "studyType": "Master's", "startDate": "2016-09-01", "endDate": "2018-06-30", "tags": ["projectmanagement"] }, { "institution": "Community College", "area": "Computer Science", "studyType": "Bachelor's", "startDate": "2012-09-01", "endDate": "2016-06-30", "tags": ["softwaredevelopment"] }
+{
+  "institution": "University of Tech",
+  "area": "Project Management",
+  "studyType": "Master's",
+  "startDate": "2016-09-01",
+  "endDate": "2018-06-30",
+  "tags": [
+    "projectmanagement"
+  ]
+}
 ```
 
 
@@ -143,7 +162,7 @@ If an element does not include a `tags` property:
 2. **Tag Multiple Resumetypes**:
    - If an element is relevant to multiple resume types, include all applicable tags in the `tags` array.
    - Example:
-    ```json "tags": ["projectmanagement", "softwaredevelopment"]```pt:
+    ```json "tags": ["projectmanagement", "softwaredevelopment"]```
 
 
 ### GitHub Actions Workflow
