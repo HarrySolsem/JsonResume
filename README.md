@@ -79,7 +79,7 @@ The script uses a `config.json` file to control its behavior. Below is an exampl
 - **`deployment.gist_id`**: ID of the GitHub Gist where the JSON will be published.
 - **`environment.debug`**: Enables debug mode (`1` for enabled, `0` for disabled).
 - **`environment.dryrun`**: If set to `1`, skips publishing to the Gist.
-- **`environment.tagsmaintenance`**: If set to `1`, includes all data without filtering.
+- **`environment.tagsmaintenance`**: If set to `1`, includes all data without filtering. The generated JSON will be named `tagsmaintenance.json` instead of `resume.json`.
 - **`environment.inputfolder`**: The folder where the sample JSON files are located. This should be set to the folder where your JSON files are located. The default is `data_samples`.
 
 ## Usage
@@ -106,11 +106,15 @@ pwsh ./GenerateResume.ps1 -inputFolder "./data_samples"
 - **GitHub Actions Workflow Fails**:
   - Verify that `config.json` exists in the repository.
   - Ensure the `TOKEN` secret is configured in your repository settings.
+- **Generated JSON File Name**:
+  - When `tagsMaintenance` is enabled in the `config.json` file, the generated JSON file will be named `tagsmaintenance.json` instead of the default `resume.json`.
 - **Generated JSON is Empty**:
   - Check the `data` folder to ensure it contains valid JSON files for each section.
   - Check the `data_samples` folder to ensure it contains valid JSON files for each section.
   - Verify that the `sections` field in `config.json` matches the available files.
-  - Verify that you have tagged your data accordingly and that you are deploying the correct resume
+  - Verify that you have tagged your data accordingly and that you are deploying the correct resume.
+
+
 
 #### Exit codes
 - Exit codes are available for debugging:

@@ -215,6 +215,8 @@ try {
         exit 2
     }
 
+    
+
     # Ensure output directory exists
     $outputDir = Split-Path -Path $outputFile -Parent
     if ($outputDir -and -not (Test-Path -Path $outputDir)) {
@@ -255,11 +257,11 @@ try {
 
         if ($tagsMaintenance) {
             Write-Log "Tags maintenance mode is enabled." "INFO"
+            $outputFile=".\tagsmaintenance.json"
         }
         else {
             Write-Log "Loaded configuration: Language = $language, Resume Type = $resumeType, tagsmaintenance = $tagsMaintenance" "INFO"
-        })
-     
+        }
     } 
     catch {
         Write-Log "Failed to load or parse '$configFile' - $($_.Exception.Message)" "ERROR"
