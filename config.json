@@ -20,6 +20,6 @@
     },
     "environment": {
         "dryrun": "0",
-        "tagsmaintenance": 1
+        "tagsmaintenance": 0
     }
 }  

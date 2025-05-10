@@ -61,11 +61,9 @@ The script uses a `config.json` file to control its behavior. Below is an exampl
 	  "education",
 	  "skills",
 	  "projects"
-	],
-	"inputfolder": ".\\data_samples"
+	]
   },
   "environment": {
-	"debug": "1",
 	"dryrun": "0",
 	"tagsmaintenance": "0"
   }
@@ -77,10 +75,9 @@ The script uses a `config.json` file to control its behavior. Below is an exampl
 - **`deployment.resumetype`**: Specifies the type of resume to generate.
 - **`deployment.language`**: Language for the resume content.
 - **`deployment.gist_id`**: ID of the GitHub Gist where the JSON will be published.
-- **`environment.debug`**: Enables debug mode (`1` for enabled, `0` for disabled).
 - **`environment.dryrun`**: If set to `1`, skips publishing to the Gist.
 - **`environment.tagsmaintenance`**: If set to `1`, includes all data without filtering. The generated JSON will be named `tagsmaintenance.json` instead of `resume.json`.
-- **`environment.inputfolder`**: The folder where the sample JSON files are located. This should be set to the folder where your JSON files are located. The default is `data_samples`.
+
 
 ## Usage
 
@@ -99,7 +96,7 @@ pwsh ./GenerateResume.ps1 -inputFolder "./data_samples"
 1. Check the output:
    - Generated JSON: `resume.json`
    - Logs: `dynamic_creation.log`
-   - If `tagsmaintenance` is enabled, the generated JSON will be named `tagsmaintenance.json`.
+   - If `tagsmaintenance` is enabled, the generated JSON will be named `tagsmaintenance.json`. This file will be available as an artifact in the GitHub Actions workflow.
 
 
 
@@ -205,7 +202,7 @@ The project includes a GitHub Actions workflow (`.github/workflows/GenerateResum
 
 #### Workflow Steps
 1. **Checkout Repository**: Clones the repository.
-1. **Read Configuration**: Extracts `gist_id`, `dryrun`, `inputfolder` and `tagsmaintenance` from `config.json`.
+1. **Read Configuration**: Extracts `gist_id`, `dryrun` and `tagsmaintenance` from `config.json`.
 1. **Run PowerShell Script**: Executes `GenerateResume.ps1` to generate the JSON.
 1. **Publish to Gist**: Updates the specified Gist with the generated JSON (if `dryrun` is `0` and 'tagsmaintenance' is '0').
 1. **Upload Artifact**: Uploads the generated JSON as an artifact (if `tagsmaintenance` is `1`).

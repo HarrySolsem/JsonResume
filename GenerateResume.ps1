@@ -27,14 +27,7 @@ param (
     [int]$jsonDepth = 10
 )
 
-# Reset the log file at the start of each execution
-try {
-    Set-Content -Path $logFile -Value "" -Encoding utf8 -ErrorAction Stop
-}
-catch {
-    Write-Host "Error: Unable to create or reset log file at $logFile - $($_.Exception.Message)" -ForegroundColor Red
-    exit 1
-}
+
 
 # Function: Write-Log
 # Purpose: Logs messages to both the console and a log file, with support for different log levels.
@@ -210,6 +203,15 @@ function ValidateConfigurationStructure {
 ###########################
 try {
     Write-Log "Starting resume generation process." "INFO"
+
+    # Reset the log file at the start of each execution
+    try {
+        Set-Content -Path $logFile -Value "" -Encoding utf8 -ErrorAction Stop
+    }
+    catch {
+        Write-Host "Error: Unable to create or reset log file at $logFile - $($_.Exception.Message)" -ForegroundColor Red
+        exit 1
+    }
 
     # Load configuration from JSON
     try {
@@ -402,14 +404,21 @@ try {
     try {
         $finalJson = $resumeJson | ConvertTo-Json -Depth $jsonDepth
         $finalJson | Out-File -FilePath $outputFile -Encoding utf8 -NoNewline -NoClobber:$false -ErrorAction Stop
-        Write-Log "Resume JSON created successfully at '$outputFile'!" "SUCCESS"
+
+        if ($tagsMaintenance){
+            Write-Log "Tag maintenance JSON created successfully at '$outputFile'!" "SUCCESS"
+        }
+        else {
+            Write-Log "Resume JSON created successfully at '$outputFile'!" "SUCCESS"
+        }
+        
     }
     catch {
         Write-Log "Error: Failed to write '$outputFile' - $($_.Exception.Message)" "ERROR"
         exit 10
     }
 
-    Write-Log "Resume generation complete." "SUCCESS"
+    Write-Log "Generation complete." "SUCCESS"
     exit 0  # Successful completion
 }
 catch {
