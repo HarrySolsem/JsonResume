@@ -52,5 +52,29 @@ jobs:
           gist_id: ${{ env.GISTID }}
           file_path: resume.json
 
+      - name: Validate File Size
+        if: ${{ env.TAGSMAINTENANCE == 1 }}  
+        run: |
+         $filePath = ".\tagsmaintenance.json"
+         if (Test-Path $filePath) {
+            $fileSize = (Get-Item $filePath).Length / 1KB
+            Write-Host "File size: $fileSize KB"
+         } else {
+          Write-Error "File not found: $filePath"
+         }
+        shell: pwsh
+
+      - name: Upload tagsmaintenance.json
+        if: ${{ env.TAGSMAINTENANCE == 1 }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: tagsmaintenance-json
+          path: .\tagsmaintenance.json
+          if-no-files-found: error
+
+      - name: Notify user about artifact
+        if: ${{ env.TAGSMAINTENANCE == 1 }}
+        run: echo "The tagsmaintenance.json file has been uploaded as an artifact. You can download it from the 'Artifacts' section in the GitHub Actions workflow run summary."
+
 permissions:
   contents: read

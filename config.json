@@ -1,7 +1,7 @@
 {
     "deployment": {
         "resumetype": "management",
-        "language": "no",
+        "language": "en",
         "gist_id": "f92fdc3f7bee3d295f93b45aee401c29",
         "sections": [
             "basics",
@@ -20,8 +20,7 @@
         "inputfolder": ".\\data"
     },
     "environment": {
-        "debug": "1",
         "dryrun": "0",
-        "tagsmaintenance": 0
+        "tagsmaintenance": 1
     }
 }  
