@@ -7,7 +7,7 @@
     <RootNamespace>MyApplication</RootNamespace>
     <AssemblyName>MyApplication</AssemblyName>
     <Name>JsonResume</Name>
-    <DebugArguments> -inputFolder "./data_samples"</DebugArguments>
+    <DebugArguments> -inputFolder "./data"</DebugArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
