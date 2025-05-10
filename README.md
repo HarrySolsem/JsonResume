@@ -232,6 +232,6 @@ For issues or feature requests, please open an issue in the repository.
 
 
 ## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the GPLv3 License. See the `LICENSE` file for details.
 
 
