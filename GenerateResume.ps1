@@ -27,14 +27,7 @@ param (
     [int]$jsonDepth = 10
 )
 
-# Reset the log file at the start of each execution
-try {
-    Set-Content -Path $logFile -Value "" -Encoding utf8 -ErrorAction Stop
-}
-catch {
-    Write-Host "Error: Unable to create or reset log file at $logFile - $($_.Exception.Message)" -ForegroundColor Red
-    exit 1
-}
+
 
 # Function: Write-Log
 # Purpose: Logs messages to both the console and a log file, with support for different log levels.
@@ -168,7 +161,10 @@ function GetSectionsToProcess {
     )
 
     if ($TagsMaintenance) {
-        Write-Log "Tags maintenance mode active - using all sections." "INFO"
+        Write-Log "Tags maintenance mode active - using all hardcoded sections." "INFO"
+        # Define the array of all sections as a constant
+        $AllSections = @("basics", "volunteer", "work", "education", "awards", "certificates", 
+                 "publications", "skills", "languages", "interests", "references", "projects")
         return $AllSections
     }
 
@@ -208,26 +204,13 @@ function ValidateConfigurationStructure {
 try {
     Write-Log "Starting resume generation process." "INFO"
 
-    # Validate path parameters
-    $inputFolder = Resolve-Path -Path $inputFolder
-    if (-not $inputFolder) {
-        Write-Log "Error: Input folder '$inputFolder' does not exist or is not accessible." "ERROR"
-        exit 2
+    # Reset the log file at the start of each execution
+    try {
+        Set-Content -Path $logFile -Value "" -Encoding utf8 -ErrorAction Stop
     }
-
-    
-
-    # Ensure output directory exists
-    $outputDir = Split-Path -Path $outputFile -Parent
-    if ($outputDir -and -not (Test-Path -Path $outputDir)) {
-        try {
-            $null = New-Item -Path $outputDir -ItemType Directory -Force -ErrorAction Stop
-            Write-Log "Created output directory: $outputDir" "INFO"
-        }
-        catch {
-            Write-Log "Error: Unable to create output directory '$outputDir' - $($_.Exception.Message)" "ERROR"
-            exit 4
-        }
+    catch {
+        Write-Host "Error: Unable to create or reset log file at $logFile - $($_.Exception.Message)" -ForegroundColor Red
+        exit 1
     }
 
     # Load configuration from JSON
@@ -249,6 +232,26 @@ try {
         
         $config = $configContent | ConvertFrom-Json
         ValidateConfigurationStructure
+
+        # Validate inputFolder parameters
+        $inputFolder = Resolve-Path -Path $inputFolder
+        if (-not $inputFolder) {
+            Write-Log "Error: Input folder '$inputFolder' does not exist or is not accessible." "ERROR"
+            exit 2
+        }
+
+        # Ensure output directory exists
+        $outputDir = Split-Path -Path $outputFile -Parent
+        if ($outputDir -and -not (Test-Path -Path $outputDir)) {
+            try {
+                $null = New-Item -Path $outputDir -ItemType Directory -Force -ErrorAction Stop
+                Write-Log "Created output directory: $outputDir" "INFO"
+            }
+            catch {
+                Write-Log "Error: Unable to create output directory '$outputDir' - $($_.Exception.Message)" "ERROR"
+                exit 4
+            }
+        }
         
         $language = $config.deployment.language
         $resumeType = $config.deployment.resumetype
@@ -289,7 +292,6 @@ try {
                 
                 # Validate JSON format
                 if (-not (Test-ValidJson -JsonContent $fileContent -FilePath $filePath)) {
-                    # Log already handled in Test-ValidJson function
                     $resumeJson[$section] = if ($section -eq "basics") { $null } else { @() }
                     continue
                 }
@@ -402,14 +404,21 @@ try {
     try {
         $finalJson = $resumeJson | ConvertTo-Json -Depth $jsonDepth
         $finalJson | Out-File -FilePath $outputFile -Encoding utf8 -NoNewline -NoClobber:$false -ErrorAction Stop
-        Write-Log "Resume JSON created successfully at '$outputFile'!" "SUCCESS"
+
+        if ($tagsMaintenance){
+            Write-Log "Tag maintenance JSON created successfully at '$outputFile'!" "SUCCESS"
+        }
+        else {
+            Write-Log "Resume JSON created successfully at '$outputFile'!" "SUCCESS"
+        }
+        
     }
     catch {
         Write-Log "Error: Failed to write '$outputFile' - $($_.Exception.Message)" "ERROR"
         exit 10
     }
 
-    Write-Log "Resume generation complete." "SUCCESS"
+    Write-Log "Generation complete." "SUCCESS"
     exit 0  # Successful completion
 }
 catch {
