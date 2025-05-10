@@ -1,47 +1,128 @@
-{
-  "basics": {
-    "name": "John Doe",
-    "label": "Programmer",
-    "image": "",
-    "email": "john@gmail.com",
-    "phone": "(912) 555-4321",
-    "url": "https://johndoe.com",
-    "summary": "A summary of John Doe…",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "john",
-        "url": "https://twitter.com/john"
-      }
-    ],
-    "tags": [
-      "tag1",
-      "tag2"
-    ]
-  },
-  "volunteer": [],
-  "work": [],
-  "education": [],
-  "awards": [
-    {
-      "title": "Award",
-      "date": "2014-11-01",
-      "awarder": "Company",
-      "summary": "There is no spoon."
-    }
-  ],
-  "certificates": [],
-  "publications": [],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
-  "projects": []
+﻿{
+    "basics":  {
+                   "name":  "Harry Solsem",
+                   "label":  "Leadership | ISO27001 | Team Leader | Project Manager | Digital Product Development | Change Management | Enterprise Architect",
+                   "summary":  " *** TEST *** With over 30 years of leadership experience, including technical and administrative roles in companies such as DNB, Riverty, Neonomics, and Sharecat Solutions. I have Leadership experience: Led teams of up to 50 employees, Managed full responsibility for personnel, budget, and results, provided leadership across multiple organizations. Key areas of expertise: Team leadership, Product development, IT project management. Notable Companies: DNB, Riverty, Neonomics, Sharecat Solutions",
+                   "picture":  "https://avatars.githubusercontent.com/u/2042298?v=4",
+                   "image":  "https://avatars.githubusercontent.com/u/2042298?v=4",
+                   "email":  "harry.solsem@solsem.no",
+                   "phone":  "+47 91 60 46 00",
+                   "url":  "https://harry.solsem.no",
+                   "location":  {
+                                    "address":  "Teglverksfaret 16",
+                                    "postalCode":  "1405",
+                                    "city":  "Langhus",
+                                    "countryCode":  "NO",
+                                    "region":  "Akershus"
+                                },
+                   "profiles":  [
+                                    {
+                                        "network":  "LinkedIn",
+                                        "username":  "harrysolsem",
+                                        "url":  "https://www.linkedin.com/in/harrysolsem"
+                                    }
+                                ],
+                   "tags":  [
+                                "management",
+                                "projectmanagement"
+                            ]
+               },
+    "volunteer":  [
+
+                  ],
+    "work":  [
+
+             ],
+    "education":  [
+                      {
+                          "institution":  "University of Agder (UiA)",
+                          "area":  "Software Engineering",
+                          "url":  "https://www.uia.no",
+                          "studyType":  "Bachelor",
+                          "startDate":  "1999-08-01",
+                          "score":  "",
+                          "courses":  [
+                                          "User Interfaces",
+                                          "Problem Solving Using Java",
+                                          "Advanced Database Systems XML",
+                                          "OO Systems Design Using UML"
+                                      ],
+                          "endDate":  "2000-05-01"
+                      },
+                      {
+                          "institution":  "NHI, Norwegian School of Information Technology",
+                          "area":  "Computer Science",
+                          "studyType":  "Administrative Data Processing",
+                          "startDate":  "1992-08-01",
+                          "score":  "",
+                          "courses":  [
+                                          "Administration and Business Economics",
+                                          "Introduction to Systems Development",
+                                          "Organization, Collaboration, and Leadership",
+                                          "Basic Programming",
+                                          "Marketing",
+                                          "Databases and Data Models",
+                                          "Algorithms and Data Structures",
+                                          "Assembly Language Programming",
+                                          "Data Communication I",
+                                          "Systems Development II",
+                                          "Application Development",
+                                          "Application Programming in C++",
+                                          "Mathematical Analysis I",
+                                          "Discrete Mathematics",
+                                          "Operating Systems",
+                                          "Real-Time Programming"
+                                      ],
+                          "endDate":  "1994-05-01"
+                      },
+                      {
+                          "institution":  "Melbu Videregående skole",
+                          "area":  "IT",
+                          "studyType":  "VK2, Handel og kontor, Data- og informasjonsbehandling",
+                          "startDate":  "1989-08-01",
+                          "score":  "",
+                          "courses":  [
+                                          "Norsk og kommunikasjon, hovedmål, skriftlig",
+                                          "Norsk og kommunikasjon, sidemål, skriftlig",
+                                          "Norsk og kommunikasjon, muntlig",
+                                          "Organisasjonslære",
+                                          "Engelsk, skriftlig",
+                                          "Engelsk, muntlig",
+                                          "Sosialøkonomi",
+                                          "Kroppsøving",
+                                          "Systemering",
+                                          "Programmering",
+                                          "Administrative EDB-verktøy",
+                                          "Samfunnsfag"
+                                      ],
+                          "endDate":  "1990-06-01"
+                      }
+                  ],
+    "awards":  [
+
+               ],
+    "certificates":  [
+
+                     ],
+    "publications":  [
+
+                     ],
+    "skills":  [
+
+               ],
+    "languages":  [
+
+                  ],
+    "interests":  [
+
+                  ],
+    "references":  [
+                       {
+                           "name":  "Thor Milde",
+                           "reference":  "Harry is engaged, outgoing, and knowledgeable. As a project manager in a fast-paced and complex organization, he skillfully navigated projects involving multiple suppliers, deliveries, and locations. Harry is engaged, outgoing, and knowledgeable. As a project manager in a fast-paced and complex organization, he skillfully navigated projects involving multiple suppliers, deliveries, and locations."
+                       }
+                   ],
+    "projects":  [
+
+                 ]
 }

@@ -208,28 +208,6 @@ function ValidateConfigurationStructure {
 try {
     Write-Log "Starting resume generation process." "INFO"
 
-    # Validate path parameters
-    $inputFolder = Resolve-Path -Path $inputFolder
-    if (-not $inputFolder) {
-        Write-Log "Error: Input folder '$inputFolder' does not exist or is not accessible." "ERROR"
-        exit 2
-    }
-
-    
-
-    # Ensure output directory exists
-    $outputDir = Split-Path -Path $outputFile -Parent
-    if ($outputDir -and -not (Test-Path -Path $outputDir)) {
-        try {
-            $null = New-Item -Path $outputDir -ItemType Directory -Force -ErrorAction Stop
-            Write-Log "Created output directory: $outputDir" "INFO"
-        }
-        catch {
-            Write-Log "Error: Unable to create output directory '$outputDir' - $($_.Exception.Message)" "ERROR"
-            exit 4
-        }
-    }
-
     # Load configuration from JSON
     try {
 
@@ -249,6 +227,26 @@ try {
         
         $config = $configContent | ConvertFrom-Json
         ValidateConfigurationStructure
+
+        # Validate inputFolder parameters
+        $inputFolder = Resolve-Path -Path $inputFolder
+        if (-not $inputFolder) {
+            Write-Log "Error: Input folder '$inputFolder' does not exist or is not accessible." "ERROR"
+            exit 2
+        }
+
+        # Ensure output directory exists
+        $outputDir = Split-Path -Path $outputFile -Parent
+        if ($outputDir -and -not (Test-Path -Path $outputDir)) {
+            try {
+                $null = New-Item -Path $outputDir -ItemType Directory -Force -ErrorAction Stop
+                Write-Log "Created output directory: $outputDir" "INFO"
+            }
+            catch {
+                Write-Log "Error: Unable to create output directory '$outputDir' - $($_.Exception.Message)" "ERROR"
+                exit 4
+            }
+        }
         
         $language = $config.deployment.language
         $resumeType = $config.deployment.resumetype
