@@ -6,3 +6,5 @@
 /node_modules
 /.git-pre-push.log
 /dynamic_creation.log
+/obj/Debug
+/JsonResume.pssproj.user
