@@ -7,6 +7,7 @@
     <RootNamespace>MyApplication</RootNamespace>
     <AssemblyName>MyApplication</AssemblyName>
     <Name>JsonResume</Name>
+    <DebugArguments> -inputFolder "./data_samples"</DebugArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -25,9 +26,19 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Compile Include="JsonResume.ps1" />
+    <Compile Include="GenerateResume.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="changelog.md" />
+    <Content Include="config.json" />
+    <Content Include="contributing.md" />
+    <Content Include="dynamic_creation.log" />
+    <Content Include="exitcodes.md" />
+    <Content Include="README.md" />
+    <Content Include="resume.json" />
+    <Content Include="security.md" />
+    <Content Include="tagsmaintenance.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets" Condition="Exists('$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets')" />
 </Project>
