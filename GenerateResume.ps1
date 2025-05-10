@@ -289,7 +289,6 @@ try {
                 
                 # Validate JSON format
                 if (-not (Test-ValidJson -JsonContent $fileContent -FilePath $filePath)) {
-                    # Log already handled in Test-ValidJson function
                     $resumeJson[$section] = if ($section -eq "basics") { $null } else { @() }
                     continue
                 }
