@@ -16,7 +16,8 @@
             "interests",
             "references",
             "projects"
-        ]
+        ],
+        "inputfolder": ".\\data_samples"
     },
     "environment": {
         "dryrun": "0",
