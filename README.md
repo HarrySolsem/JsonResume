@@ -107,8 +107,15 @@ pwsh ./GenerateResume.ps1 -inputFolder "./data_samples"
 - **GitHub Actions Workflow Fails**:
   - Verify that `config.json` exists in the repository.
   - Ensure the `TOKEN` secret is configured in your repository settings.
+
 - **Generated JSON File Name**:
   - When `tagsMaintenance` is enabled in the `config.json` file, the generated JSON file will be named `tagsmaintenance.json` instead of the default `resume.json`.
+  - If `tagsMaintenance` is created during a Github Actions workflow, it will be uploaded as an artifact
+  1.	Navigate to the Actions tab in your GitHub repository.
+  1.	Select the workflow run where the artifact was generated.
+  1.	Scroll down to the Artifacts section in the workflow summary.
+  1.	Click on the tagsmaintenance-json artifact to download it.
+
 - **Generated JSON is Empty**:
   - Check the `data` folder to ensure it contains valid JSON files for each section.
   - Check the `data_samples` folder to ensure it contains valid JSON files for each section.
@@ -198,9 +205,11 @@ The project includes a GitHub Actions workflow (`.github/workflows/GenerateResum
 
 #### Workflow Steps
 1. **Checkout Repository**: Clones the repository.
-2. **Read Configuration**: Extracts `gist_id`, `dryrun`, `inputfolder` and `tagsmaintenance` from `config.json`.
-3. **Run PowerShell Script**: Executes `GenerateResume.ps1` to generate the JSON.
-4. **Publish to Gist**: Updates the specified Gist with the generated JSON (if `dryrun` is `0` and 'tagsmaintenance' is '0').
+1. **Read Configuration**: Extracts `gist_id`, `dryrun`, `inputfolder` and `tagsmaintenance` from `config.json`.
+1. **Run PowerShell Script**: Executes `GenerateResume.ps1` to generate the JSON.
+1. **Publish to Gist**: Updates the specified Gist with the generated JSON (if `dryrun` is `0` and 'tagsmaintenance' is '0').
+1. **Upload Artifact**: Uploads the generated JSON as an artifact (if `tagsmaintenance` is `1`).
+1. **Notify user**: Sends a message to the user that the `tagsmaintenance.json` is available for download in the artifacts section.
 
 ### Workflow Permissions
 The GitHub Actions workflow requires the following permissions:
