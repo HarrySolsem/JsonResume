@@ -10,6 +10,7 @@
 - [Usage](#usage)
   - [Running the Script Locally](#running-the-script-locally)
 - [Troubleshooting](#troubleshooting)
+  - [Exit Codes](#exit-codes)
 - [Tagging Elements in the JSON Files in the data folder](#tagging-elements-in-the-json-files-in-the-data-folder)
   - [How Tagging Works](#how-tagging-works)
   - [Example JSON Files](#example-json-files)
@@ -42,7 +43,7 @@
 - **PowerShell**: Requires PowerShell 7 or later. You can download it from [PowerShell GitHub Releases](https://github.com/PowerShell/PowerShell/releases).
 - **GitHub Actions**: Ensure your repository is set up with GitHub Actions for automated workflows.
 - **JSON Resume Real Data**: Place real data JSON files for each resume section in the `data` folder.
-- - **JSON Resume Sample Data**: Place sample data JSON files for each resume section in the `data_samples` folder.
+- **JSON Resume Sample Data**: Place sample data JSON files for each resume section in the `data_samples` folder.
 
 
 ## Configuration
@@ -78,7 +79,7 @@ The script uses a `config.json` file to control its behavior. Below is an exampl
 - **`deployment.gist_id`**: ID of the GitHub Gist where the JSON will be published.
 - **`environment.debug`**: Enables debug mode (`1` for enabled, `0` for disabled).
 - **`environment.dryrun`**: If set to `1`, skips publishing to the Gist.
-- **`environment.tagsmaintenance`**: If set to `1`, includes all data without filtering.
+- **`environment.tagsmaintenance`**: If set to `1`, includes all data without filtering. The generated JSON will be named `tagsmaintenance.json` instead of `resume.json`.
 - **`environment.inputfolder`**: The folder where the sample JSON files are located. This should be set to the folder where your JSON files are located. The default is `data_samples`.
 
 ## Usage
@@ -98,6 +99,7 @@ pwsh ./GenerateResume.ps1 -inputFolder "./data_samples"
 1. Check the output:
    - Generated JSON: `resume.json`
    - Logs: `dynamic_creation.log`
+   - If `tagsmaintenance` is enabled, the generated JSON will be named `tagsmaintenance.json`.
 
 
 
@@ -105,11 +107,32 @@ pwsh ./GenerateResume.ps1 -inputFolder "./data_samples"
 - **GitHub Actions Workflow Fails**:
   - Verify that `config.json` exists in the repository.
   - Ensure the `TOKEN` secret is configured in your repository settings.
+- **Generated JSON File Name**:
+  - When `tagsMaintenance` is enabled in the `config.json` file, the generated JSON file will be named `tagsmaintenance.json` instead of the default `resume.json`.
 - **Generated JSON is Empty**:
   - Check the `data` folder to ensure it contains valid JSON files for each section.
   - Check the `data_samples` folder to ensure it contains valid JSON files for each section.
   - Verify that the `sections` field in `config.json` matches the available files.
-  - Verify that you have tagged your data accordingly and that you are deploying the correct resume
+  - Verify that you have tagged your data accordingly and that you are deploying the correct resume.
+
+
+
+#### Exit codes
+- Exit codes are available for debugging:
+  - **Exit Code 0**: Successful completion.
+  - **Exit Code 1**: Failed to create or reset the log file.
+  - **Exit Code 2**: Input folder does not exist.
+  - **Exit Code 3**: Failed to create or reset the output folder.
+  - **Exit Code 4**: Failed to create or reset the log file.
+  - **Exit Code 5**: Configuration file contains invalid JSON.
+  - **Exit Code 6**: Invalid configuration structure.
+  - **Exit Code 7**: Failed to load or parse the configuration file.
+  - **Exit Code 8**: No sections to process (empty or null `sections` property).
+  - **Exit Code 9**: No sections to process (duplicate check for empty or null `sections` property).
+  - **Exit Code 10**: Failed to write the output JSON file.
+  - **Exit Code 11**: Unhandled exception.
+  
+  For a detailed explanation of each exit code, refer to [exitcodes.md](exitcodes.md). This file provides additional context and troubleshooting tips for each exit code.
 
 
 ## Tagging Elements in the JSON Files in the data  and data_samples folder

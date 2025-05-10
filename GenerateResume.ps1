@@ -36,6 +36,14 @@ catch {
     exit 1
 }
 
+# Function: Write-Log
+# Purpose: Logs messages to both the console and a log file, with support for different log levels.
+# Parameters:
+#   - $message: The message to log.
+#   - $level: The log level (e.g., INFO, WARN, ERROR, DEBUG, SUCCESS).
+#   - $NoConsole: If specified, suppresses console output.
+#   - $NoFile: If specified, suppresses file output.
+#   - $LogFile: The path to the log file (default is the global $logFile variable).
 function Write-Log {
     param (
         [Parameter(Mandatory = $true)]
@@ -102,6 +110,12 @@ function Write-Log {
     }
 }
 
+# Function: Test-ValidJson
+# Purpose: Validates whether a given string is a valid JSON format.
+# Parameters:
+#   - $JsonContent: The JSON content to validate.
+#   - $FilePath: The file path of the JSON content (used for logging purposes).
+# Returns: $true if the JSON is valid, $false otherwise.
 function Test-ValidJson {
     param (
         [Parameter(Mandatory = $true)]
@@ -121,6 +135,12 @@ function Test-ValidJson {
     }
 }
 
+# Function: IsBasicSection
+# Purpose: Checks if a given section name matches the "basics" section.
+# Parameters:
+#   - $SectionName: The name of the section to check.
+#   - $BasicSectionName: The name of the "basics" section (default is "basics").
+# Returns: $true if the section is "basics", $false otherwise.
 function IsBasicSection {
     param (
         [Parameter(Mandatory = $true)]
@@ -132,10 +152,12 @@ function IsBasicSection {
     return $SectionName -eq $BasicSectionName
 }
 
-# Define the array of all sections as a constant
-$AllSections = @("basics", "volunteer", "work", "education", "awards", "certificates", 
-    "publications", "skills", "languages", "interests", "references", "projects")
-
+# Function: GetSectionsToProcess
+# Purpose: Determines which sections to process based on the configuration and tags maintenance mode.
+# Parameters:
+#   - $TagsMaintenance: A boolean indicating whether tags maintenance mode is enabled.
+#   - $Config: The configuration object containing the sections to process.
+# Returns: An array of section names to process.
 function GetSectionsToProcess {
     param (
         [Parameter(Mandatory = $true)]
@@ -157,29 +179,20 @@ function GetSectionsToProcess {
 
     Write-Log "Using default hardcoded sections as fallback." "WARN"
 
-    
-    # Log the sections being processed
-    Write-Log "Sections to be processed: $($sections -join ', ')" "DEBUG"
-
     # Ensure sections are not empty
     if (-not $sections -or $sections.Count -eq 0) {
         Write-Log "Error: No sections to process. The 'sections' property is empty or null." "ERROR"
         exit 8
     }
 
-    # Log the sections being processed
-    Write-Log "Sections to be processed: $($sections -join ', ')" "DEBUG"
-
-    # Ensure sections are not empty
-    if (-not $sections -or $sections.Count -eq 0) {
-        Write-Log "Error: No sections to process. The 'sections' property is empty or null." "ERROR"
-        exit 9
-    }
     return $AllSections
 }
 
+# Function: ValidateConfigurationStructure
+# Purpose: Validates the structure of the configuration object to ensure required fields are present.
+# Parameters: None (uses the global $config object).
+# Exits: Exits with code 6 if the configuration structure is invalid.
 function ValidateConfigurationStructure {
-    # Validate configuration structure
     if (-not $config.deployment -or 
         -not (Get-Member -InputObject $config.deployment -Name "language" -MemberType Properties) -or 
         -not (Get-Member -InputObject $config.deployment -Name "resumetype" -MemberType Properties) -or
@@ -189,7 +202,9 @@ function ValidateConfigurationStructure {
     }
 }
 
+###########################
 # Main execution begins
+###########################
 try {
     Write-Log "Starting resume generation process." "INFO"
 
@@ -199,6 +214,8 @@ try {
         Write-Log "Error: Input folder '$inputFolder' does not exist or is not accessible." "ERROR"
         exit 2
     }
+
+    
 
     # Ensure output directory exists
     $outputDir = Split-Path -Path $outputFile -Parent
@@ -237,8 +254,14 @@ try {
         $resumeType = $config.deployment.resumetype
         # Check if tagsmaintenance is enabled in config
         $tagsMaintenance = $config.environment.tagsmaintenance -eq 1
-     
-        Write-Log "Loaded configuration: Language = $language, Resume Type = $resumeType, tagsmaintenance = $tagsMaintenance" "INFO"
+
+        if ($tagsMaintenance) {
+            Write-Log "Tags maintenance mode is enabled." "INFO"
+            $outputFile=".\tagsmaintenance.json"
+        }
+        else {
+            Write-Log "Loaded configuration: Language = $language, Resume Type = $resumeType, tagsmaintenance = $tagsMaintenance" "INFO"
+        }
     } 
     catch {
         Write-Log "Failed to load or parse '$configFile' - $($_.Exception.Message)" "ERROR"
@@ -298,7 +321,7 @@ try {
             }
             else {
                 # no tags maintenance. Handle sections with correct language and filter by resumeType and tags
-
+                Write-Log "Processing section '$section' for language '$language' and resume type '$resumeType'" "INFO"
                 $BasicSectionName = "basics"
 
                 if (IsBasicSection -SectionName $section -BasicSectionName $BasicSectionName) {
@@ -394,4 +417,8 @@ catch {
     Write-Log "Critical Error: Unhandled exception - $($_.Exception.Message)" "ERROR"
     Write-Log "Stack Trace: $($_.ScriptStackTrace)" "ERROR"
     exit 11
+}
+finally {
+    # Cleanup or final actions if needed
+    Write-Log "Exiting script." "INFO"
 }
