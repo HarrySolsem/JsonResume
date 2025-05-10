@@ -54,10 +54,11 @@ jobs:
 
       - name: Upload tagsmaintenance.json
         if: ${{ env.TAGSMAINTENANCE == 1 }}
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: tagsmaintenance-json
           path: .\tagsmaintenance.json
+          if-no-files-found: error
 
       - name: Notify user about artifact
         if: ${{ env.TAGSMAINTENANCE == 1 }}
