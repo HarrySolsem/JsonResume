@@ -99,6 +99,7 @@ pwsh ./GenerateResume.ps1 -inputFolder "./data_samples"
 1. Check the output:
    - Generated JSON: `resume.json`
    - Logs: `dynamic_creation.log`
+   - If `tagsmaintenance` is enabled, the generated JSON will be named `tagsmaintenance.json`.
 
 
 
