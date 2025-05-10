@@ -52,5 +52,12 @@ jobs:
           gist_id: ${{ env.GISTID }}
           file_path: resume.json
 
+      - name: Upload tagsmaintenance.json
+        if: ${{ env.TAGSMAINTENANCE == 1 }}
+        uses: actions/upload-artifact@v3
+        with:
+         name: tagsmaintenance-json
+         path: .\tagsmaintenance.json
+
 permissions:
   contents: read
