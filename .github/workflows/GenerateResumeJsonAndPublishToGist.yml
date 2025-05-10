@@ -56,8 +56,12 @@ jobs:
         if: ${{ env.TAGSMAINTENANCE == 1 }}
         uses: actions/upload-artifact@v3
         with:
-         name: tagsmaintenance-json
-         path: .\tagsmaintenance.json
+          name: tagsmaintenance-json
+          path: .\tagsmaintenance.json
+
+      - name: Notify user about artifact
+        if: ${{ env.TAGSMAINTENANCE == 1 }}
+        run: echo "The tagsmaintenance.json file has been uploaded as an artifact. You can download it from the 'Artifacts' section in the GitHub Actions workflow run summary."
 
 permissions:
   contents: read
