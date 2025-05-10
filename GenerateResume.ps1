@@ -168,7 +168,10 @@ function GetSectionsToProcess {
     )
 
     if ($TagsMaintenance) {
-        Write-Log "Tags maintenance mode active - using all sections." "INFO"
+        Write-Log "Tags maintenance mode active - using all hardcoded sections." "INFO"
+        # Define the array of all sections as a constant
+        $AllSections = @("basics", "volunteer", "work", "education", "awards", "certificates", 
+                 "publications", "skills", "languages", "interests", "references", "projects")
         return $AllSections
     }
 
