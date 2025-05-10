@@ -16,12 +16,10 @@
             "interests",
             "references",
             "projects"
-        ],
-        "inputfolder": ".\\data"
+        ]
     },
     "environment": {
-        "debug": "1",
         "dryrun": "0",
-        "tagsmaintenance": 0
+        "tagsmaintenance": 1
     }
 }  
